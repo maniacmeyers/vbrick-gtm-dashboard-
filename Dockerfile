@@ -10,7 +10,7 @@ RUN npm install -g pnpm@10.4.1
 
 # Copy patches and install dependencies
 COPY patches ./patches
-RUN pnpm install --frozen-lockfile --prod
+RUN pnpm install --frozen-lockfile 
 
 # Copy built application and database schema
 COPY dist ./dist
