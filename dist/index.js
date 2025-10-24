@@ -2681,6 +2681,11 @@ init_db();
 import { OAuth2Client } from "google-auth-library";
 
 // server/_core/cookies.ts
+var LOCAL_HOSTS = /* @__PURE__ */ new Set(["localhost", "127.0.0.1", "::1"]);
+function isIpAddress(host) {
+  if (/^\d{1,3}(\.\d{1,3}){3}$/.test(host)) return true;
+  return host.includes(":");
+}
 function isSecureRequest(req) {
   if (req.protocol === "https") return true;
   const forwardedProto = req.headers["x-forwarded-proto"];
@@ -2689,11 +2694,17 @@ function isSecureRequest(req) {
   return protoList.some((proto) => proto.trim().toLowerCase() === "https");
 }
 function getSessionCookieOptions(req) {
+  const isSecure = isSecureRequest(req);
+  const hostname = req.hostname;
+  const isLocal = LOCAL_HOSTS.has(hostname) || isIpAddress(hostname);
+  const sameSite = isLocal ? "lax" : "lax";
   return {
     httpOnly: true,
     path: "/",
-    sameSite: "none",
-    secure: isSecureRequest(req)
+    sameSite,
+    secure: isSecure
+    // Don't set domain - let browser handle it automatically
+    // This works better with Render's domain setup
   };
 }
 
@@ -2927,6 +2938,7 @@ var SDKServer = class {
 var sdk = new SDKServer();
 
 // server/_core/googleOAuth.ts
+init_env();
 var GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || "";
 var GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET || "";
 var GOOGLE_REDIRECT_URI = process.env.GOOGLE_REDIRECT_URI || "";
@@ -2944,6 +2956,10 @@ function registerGoogleOAuthRoutes(app) {
   console.log("[Google OAuth] Client ID:", GOOGLE_CLIENT_ID ? "SET" : "MISSING");
   console.log("[Google OAuth] Client Secret:", GOOGLE_CLIENT_SECRET ? "SET" : "MISSING");
   console.log("[Google OAuth] Redirect URI:", GOOGLE_REDIRECT_URI || "MISSING");
+  console.log("[Google OAuth] JWT_SECRET:", ENV.cookieSecret ? "SET" : "MISSING");
+  if (!ENV.cookieSecret) {
+    console.error("[Google OAuth] CRITICAL: JWT_SECRET is not set! Session tokens will fail!");
+  }
   app.get("/api/auth/google", (req, res) => {
     console.log("[Google OAuth] Initiating OAuth flow");
     const authorizeUrl = oauth2Client.generateAuthUrl({
@@ -2972,6 +2988,8 @@ function registerGoogleOAuthRoutes(app) {
       });
       const userInfo = userInfoResponse.data;
       console.log("[Google OAuth] User authenticated:", userInfo.email);
+      console.log("[Google OAuth] User ID:", userInfo.id);
+      console.log("[Google OAuth] Upserting user to database...");
       await upsertUser({
         id: userInfo.id,
         name: userInfo.name || null,
@@ -2979,22 +2997,34 @@ function registerGoogleOAuthRoutes(app) {
         loginMethod: "google",
         lastSignedIn: /* @__PURE__ */ new Date()
       });
+      console.log("[Google OAuth] User upserted successfully");
+      console.log("[Google OAuth] Creating session token...");
       const sessionToken = await sdk.createSessionToken(userInfo.id, {
         name: userInfo.name || "",
         expiresInMs: ONE_YEAR_MS
       });
+      console.log("[Google OAuth] Session token created:", sessionToken.substring(0, 20) + "...");
       const cookieOptions = getSessionCookieOptions(req);
+      console.log("[Google OAuth] Cookie options:", {
+        httpOnly: cookieOptions.httpOnly,
+        secure: cookieOptions.secure,
+        sameSite: cookieOptions.sameSite,
+        path: cookieOptions.path,
+        maxAge: ONE_YEAR_MS
+      });
       res.cookie(COOKIE_NAME, sessionToken, { ...cookieOptions, maxAge: ONE_YEAR_MS });
+      console.log("[Google OAuth] Cookie set with name:", COOKIE_NAME);
       console.log("[Google OAuth] Login successful, redirecting to dashboard");
       res.redirect(302, "/");
     } catch (error) {
       console.error("[Google OAuth] Callback failed:", error);
-      res.status(500).json({ error: "Google OAuth authentication failed" });
+      res.status(500).json({ error: "Google OAuth authentication failed", details: String(error) });
     }
   });
   app.get("/api/auth/logout", (req, res) => {
     console.log("[Google OAuth] User logging out");
-    res.clearCookie(COOKIE_NAME);
+    const cookieOptions = getSessionCookieOptions(req);
+    res.clearCookie(COOKIE_NAME, cookieOptions);
     res.redirect(302, "/");
   });
 }
