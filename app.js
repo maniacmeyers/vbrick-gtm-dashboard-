@@ -68,6 +68,7 @@
   // ---- Sidebar Nav ----
   var navItems = document.querySelectorAll(".nav-item");
   var viewTitles = {
+    whats_changed: "What's Changed",
     overview: "Intelligence Overview",
     competitors: "Competitor Intelligence",
     triggers: "Market Triggers",
@@ -165,7 +166,11 @@
     var data = FINDINGS.slice();
 
     // View filter
-    if (currentView !== "overview") {
+    if (currentView === "whats_changed") {
+      data = data.filter(function (f) {
+        return f.is_new === true;
+      });
+    } else if (currentView !== "overview") {
       var viewCategory = viewTitles[currentView];
       data = data.filter(function (f) {
         return f.category === viewCategory;
@@ -289,6 +294,14 @@
     updateKPIs(data);
     findingCount.textContent = data.length + " findings";
 
+    // Update the "What's Changed" badge count (always, even on empty filter results)
+    var newItems = FINDINGS.filter(function (f) { return f.is_new === true; });
+    var newCountEl = document.getElementById("newCount");
+    if (newCountEl) {
+      newCountEl.textContent = newItems.length;
+      newCountEl.setAttribute("data-count", newItems.length);
+    }
+
     if (data.length === 0) {
       findingsBody.innerHTML =
         '<tr><td colspan="7"><div class="empty-state"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><p>No findings match your current filters. Try adjusting your search or filter criteria.</p></div></td></tr>';
@@ -307,8 +320,9 @@
           ? f.summary.substring(0, 137) + "..."
           : f.summary;
       var confClass = "confidence-" + (f.confidence || "Low").toLowerCase();
+      var rowClass = f.is_new === true ? ' class="finding-row--new"' : '';
 
-      html += '<tr data-id="' + f.id + '">';
+      html += '<tr' + rowClass + ' data-id="' + f.id + '">';
       html +=
         '<td><span class="urgency-badge ' +
         urgencyClass +
