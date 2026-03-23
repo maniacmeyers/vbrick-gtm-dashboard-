@@ -604,6 +604,168 @@
       "Again, {{Your Name}} from VBRICK — {{your number, spoken slowly}}. I'll follow up with a quick note.";
   }
 
+  // ---- ICP Title Expansion for Sales Navigator Boolean Search ----
+  var ICP_TITLE_MAP = {
+    // C-Suite IT/Technology
+    "CIO": ["CIO", "Chief Information Officer", "Chief Technology Officer", "CTO", "Chief Digital Officer", "CDO", "Chief Data Officer", "SVP Information Technology", "SVP IT", "Senior Vice President IT", "Senior Vice President Information Technology", "EVP Technology", "EVP IT", "Executive Vice President Technology"],
+    "CTO": ["CTO", "Chief Technology Officer", "Chief Information Officer", "CIO", "Chief Digital Officer", "SVP Engineering", "SVP Technology", "EVP Technology", "VP of Engineering", "Head of Engineering"],
+    "VP of IT": ["VP IT", "VP of IT", "Vice President IT", "Vice President of IT", "VP Information Technology", "Vice President Information Technology", "VP of Information Technology", "VP Enterprise Technology", "VP Technology", "Vice President Technology", "VP Infrastructure", "VP IT Infrastructure", "VP Enterprise Infrastructure", "Senior VP IT", "SVP IT", "AVP Information Technology"],
+    "VP of Technology": ["VP Technology", "VP of Technology", "Vice President Technology", "Vice President of Technology", "VP Digital Technology", "VP Enterprise Technology", "SVP Technology", "Senior VP Technology"],
+    "IT Director": ["IT Director", "Director of IT", "Director Information Technology", "Director of Information Technology", "Senior Director IT", "Senior Director of IT", "Director IT Infrastructure", "Director Enterprise Technology", "Director Technology", "Director of Technology", "Director IT Operations"],
+    "Enterprise Architect": ["Enterprise Architect", "Principal Enterprise Architect", "Senior Enterprise Architect", "Chief Architect", "IT Architect", "Solutions Architect", "Infrastructure Architect", "Technology Architect", "Director Enterprise Architecture", "VP Enterprise Architecture"],
+
+    // Security
+    "CISO": ["CISO", "Chief Information Security Officer", "VP Information Security", "VP of Information Security", "VP IT Security", "VP of IT Security", "Vice President Information Security", "SVP Information Security", "Head of Information Security", "Head of IT Security", "Director Information Security", "Director of Information Security", "Senior Director Information Security", "Director IT Security", "Director of IT Security", "Director Cybersecurity", "VP Cybersecurity"],
+    "Security Architect": ["Security Architect", "Senior Security Architect", "Principal Security Architect", "IT Security Architect", "Cybersecurity Architect", "Information Security Architect", "Cloud Security Architect", "Enterprise Security Architect"],
+    "IT Security Manager": ["IT Security Manager", "Information Security Manager", "Cybersecurity Manager", "Security Operations Manager", "IT Security Lead", "Senior IT Security Manager"],
+
+    // Compliance
+    "Chief Compliance Officer": ["Chief Compliance Officer", "CCO", "Head of Compliance", "VP Compliance", "VP of Compliance", "Vice President Compliance", "SVP Compliance", "Director of Compliance", "Director Compliance", "Senior Director Compliance", "Global Head of Compliance", "Compliance Director"],
+    "Compliance Officer": ["Compliance Officer", "Compliance Manager", "Senior Compliance Officer", "Compliance Director", "Director of Compliance", "Regulatory Compliance Manager", "Compliance Analyst", "Senior Compliance Manager", "VP Compliance", "Head of Compliance"],
+    "Risk Officer": ["Chief Risk Officer", "CRO", "VP Risk", "VP of Risk", "Director Risk Management", "Director of Risk", "Head of Risk", "Risk Manager", "Senior Risk Manager", "Enterprise Risk Manager", "VP Risk Management", "Operational Risk Director"],
+    "DPO": ["Data Protection Officer", "DPO", "Chief Privacy Officer", "CPO", "VP Privacy", "VP of Privacy", "Director of Privacy", "Privacy Director", "Head of Privacy", "Privacy Officer", "Director Data Privacy", "Head of Data Protection", "Privacy Manager"],
+    "General Counsel": ["General Counsel", "GC", "Chief Legal Officer", "CLO", "VP Legal", "VP of Legal", "Head of Legal", "Senior Counsel", "Deputy General Counsel", "Associate General Counsel"],
+
+    // Communications
+    "Chief Communications Officer": ["Chief Communications Officer", "CCO", "VP Communications", "VP of Communications", "VP Corporate Communications", "VP of Corporate Communications", "Vice President Communications", "SVP Communications", "Head of Communications", "Head of Corporate Communications", "Director of Communications", "Director Communications", "Director Corporate Communications", "Senior Director Communications", "EVP Communications", "Global Head of Communications"],
+    "VP Internal Communications": ["VP Internal Communications", "VP of Internal Communications", "Vice President Internal Communications", "Director Internal Communications", "Director of Internal Communications", "Senior Director Internal Communications", "Head of Internal Communications", "Head of Internal Comms", "VP Employee Communications", "Director Employee Communications"],
+    "Head of Internal Communications": ["Head of Internal Communications", "Head of Internal Comms", "Director Internal Communications", "Director of Internal Communications", "VP Internal Communications", "VP of Internal Communications", "Senior Director Internal Communications", "Manager Internal Communications", "VP Employee Communications"],
+
+    // Digital Transformation
+    "Chief Digital Officer": ["Chief Digital Officer", "CDO", "VP Digital Transformation", "VP of Digital Transformation", "Vice President Digital Transformation", "SVP Digital", "Head of Digital Transformation", "Director Digital Transformation", "Director of Digital Transformation", "VP Digital Strategy", "VP of Digital Strategy", "SVP Digital Transformation", "Digital Transformation Leader"],
+    "VP Digital Transformation": ["VP Digital Transformation", "VP of Digital Transformation", "Vice President Digital Transformation", "SVP Digital Transformation", "Director Digital Transformation", "Director of Digital Transformation", "Head of Digital Transformation", "Chief Digital Officer", "CDO"],
+    "VP Digital Strategy": ["VP Digital Strategy", "VP of Digital Strategy", "Vice President Digital Strategy", "Director Digital Strategy", "Director of Digital Strategy", "Head of Digital Strategy", "SVP Digital Strategy", "VP Digital Innovation"],
+    "VP Digital Workplace": ["VP Digital Workplace", "VP of Digital Workplace", "Director Digital Workplace", "Director of Digital Workplace", "Head of Digital Workplace", "VP Digital Employee Experience", "Director Digital Employee Experience", "VP Workplace Technology"],
+
+    // HR / People
+    "CHRO": ["CHRO", "Chief Human Resources Officer", "Chief People Officer", "CPO", "VP Human Resources", "VP of Human Resources", "SVP Human Resources", "SVP HR", "EVP Human Resources", "Head of HR", "Head of Human Resources", "VP People", "VP of People", "VP People Operations"],
+    "Chief People Officer": ["Chief People Officer", "CPO", "CHRO", "Chief Human Resources Officer", "VP People", "VP of People", "SVP People", "Head of People", "VP People Operations", "VP of People Operations", "SVP HR", "VP Human Resources"],
+    "Head of L&D": ["Head of Learning and Development", "Head of L&D", "VP Learning and Development", "VP of Learning and Development", "Director Learning and Development", "Director of Learning and Development", "Chief Learning Officer", "CLO", "Director L&D", "Director of L&D", "VP Training", "VP of Training", "Director Training", "Director of Training", "Head of Training", "VP Talent Development", "Director Talent Development"],
+    "Head of HR Technology": ["Head of HR Technology", "VP HR Technology", "VP of HR Technology", "Director HR Technology", "Director of HR Technology", "Director HRIS", "VP HRIS", "Head of HRIS", "Head of People Technology", "VP People Technology"],
+
+    // Unified Communications
+    "Unified Communications Manager": ["Unified Communications Manager", "UC Manager", "Unified Communications Engineer", "Unified Communications Architect", "Director Unified Communications", "Director of Unified Communications", "Head of Unified Communications", "UC Architect", "Collaboration Engineer", "Collaboration Architect", "Director Collaboration", "VP Collaboration", "VP Unified Communications"],
+    "Network Architect": ["Network Architect", "Senior Network Architect", "Principal Network Architect", "Network Engineer", "Senior Network Engineer", "Director Network Engineering", "Director of Network Engineering", "VP Network Engineering", "Network Operations Manager", "Infrastructure Architect"],
+
+    // Media / Video
+    "VP of Digital Media": ["VP Digital Media", "VP of Digital Media", "Vice President Digital Media", "Director Digital Media", "Director of Digital Media", "Head of Digital Media", "VP Video", "VP of Video", "Director Video", "Director of Video", "Head of Video", "VP Media", "VP of Media", "VP Media Operations", "Director Media Operations"],
+    "VP Video Technology": ["VP Video Technology", "VP of Video Technology", "Director Video Technology", "Director of Video Technology", "Head of Video Technology", "VP Media Technology", "VP of Media Technology", "Director Media Technology", "Video Platform Manager", "Enterprise Video Manager"],
+
+    // Federal / Government
+    "Federal CIO": ["CIO", "Chief Information Officer", "Deputy CIO", "Associate CIO", "IT Director", "Director Information Technology", "Director of IT", "Chief Technology Officer", "CTO"],
+    "Contracting Officer": ["Contracting Officer", "Contracting Officer Representative", "COR", "Procurement Officer", "Acquisition Officer", "IT Acquisition Lead", "Senior Contracting Officer", "Contract Specialist"],
+    "Section 508 Coordinator": ["Section 508 Coordinator", "Section 508 Program Manager", "Accessibility Coordinator", "Accessibility Program Manager", "Chief Accessibility Officer", "Director of Accessibility", "Digital Accessibility Manager", "508 Compliance Manager"],
+    "Program Manager": ["Program Manager", "IT Program Manager", "Senior Program Manager", "Defense Program Manager", "Program Director", "Program Executive Officer", "PEO"],
+
+    // Procurement / Finance
+    "Procurement": ["Procurement Director", "Director of Procurement", "VP Procurement", "VP of Procurement", "Head of Procurement", "Procurement Manager", "Senior Procurement Manager", "Category Manager", "IT Procurement Manager", "Sourcing Manager", "Strategic Sourcing Manager", "VP Sourcing", "Director Sourcing"],
+    "Finance": ["CFO", "Chief Financial Officer", "VP Finance", "VP of Finance", "Finance Director", "Director of Finance", "Controller", "VP Financial Planning"],
+
+    // Microsoft-specific
+    "M365 Admin": ["Microsoft 365 Administrator", "M365 Admin", "Microsoft 365 Platform Owner", "M365 Platform Manager", "Microsoft Teams Administrator", "Teams Admin", "Collaboration Platform Manager", "Director Microsoft Platform", "Microsoft Platform Architect", "Microsoft 365 Architect", "SharePoint Administrator", "VP Collaboration"],
+    "Microsoft 365 Platform Owner": ["Microsoft 365 Platform Owner", "M365 Platform Manager", "Microsoft 365 Administrator", "M365 Admin", "Microsoft Teams Administrator", "Teams Admin", "Collaboration Platform Manager", "Director Microsoft Platform", "Microsoft Platform Architect", "SharePoint Administrator"]
+  };
+
+  // Keywords that trigger specific title families when found in the persona string
+  var PERSONA_KEYWORDS = [
+    { pattern: /\bCIO\b/i, key: "CIO" },
+    { pattern: /\bCTO\b/i, key: "CTO" },
+    { pattern: /\bCISO\b|\bChief Information Security/i, key: "CISO" },
+    { pattern: /\bSecurity Architect/i, key: "Security Architect" },
+    { pattern: /\bIT Security Manager/i, key: "IT Security Manager" },
+    { pattern: /\bChief Compliance Officer\b|\bCCO\b/i, key: "Chief Compliance Officer" },
+    { pattern: /\bCompliance Officer\b|\bCompliance Director/i, key: "Compliance Officer" },
+    { pattern: /\bRisk Officer\b|\bCRO\b/i, key: "Risk Officer" },
+    { pattern: /\bDPO\b|\bData Protection Officer\b|\bChief Privacy Officer\b|\bPrivacy Officer/i, key: "DPO" },
+    { pattern: /\bGeneral Counsel\b/i, key: "General Counsel" },
+    { pattern: /\bCHRO\b|\bChief Human Resources/i, key: "CHRO" },
+    { pattern: /\bChief People Officer\b/i, key: "Chief People Officer" },
+    { pattern: /\bChief Communications Officer\b/i, key: "Chief Communications Officer" },
+    { pattern: /\bChief Digital Officer\b/i, key: "Chief Digital Officer" },
+    { pattern: /\bVP.*Internal Communications\b|\bHead of Internal Communications/i, key: "VP Internal Communications" },
+    { pattern: /\bVP.*Corporate Communications\b|\bHead of Corporate Communications/i, key: "Chief Communications Officer" },
+    { pattern: /\bVP.*Digital Transformation\b/i, key: "VP Digital Transformation" },
+    { pattern: /\bVP.*Digital Strategy\b/i, key: "VP Digital Strategy" },
+    { pattern: /\bVP.*Digital Workplace\b|\bDigital Employee Experience/i, key: "VP Digital Workplace" },
+    { pattern: /\bVP.*IT\b|\bVP.*Information Technology\b/i, key: "VP of IT" },
+    { pattern: /\bVP.*Technology\b/i, key: "VP of Technology" },
+    { pattern: /\bIT Director\b|\bDirector.*IT\b|\bDirector.*Information Technology/i, key: "IT Director" },
+    { pattern: /\bEnterprise Architect\b/i, key: "Enterprise Architect" },
+    { pattern: /\bUnified Communications/i, key: "Unified Communications Manager" },
+    { pattern: /\bNetwork Architect\b|\bNetwork Engineer/i, key: "Network Architect" },
+    { pattern: /\bVP.*Digital Media\b|\bHead of Digital Media/i, key: "VP of Digital Media" },
+    { pattern: /\bVP.*Video Technology\b|\bMedia Operations/i, key: "VP Video Technology" },
+    { pattern: /\bL&D\b|\bLearning.*Development\b|\bChief Learning Officer\b|\bTraining/i, key: "Head of L&D" },
+    { pattern: /\bHR Technology\b|\bHRIS\b|\bPeople Technology/i, key: "Head of HR Technology" },
+    { pattern: /\bContracting Officer\b/i, key: "Contracting Officer" },
+    { pattern: /\bSection 508\b|\bAccessibility/i, key: "Section 508 Coordinator" },
+    { pattern: /\bProgram Manager\b/i, key: "Program Manager" },
+    { pattern: /\bProcurement\b|\bSourcing/i, key: "Procurement" },
+    { pattern: /\bM365\b|\bMicrosoft 365\b|\bMicrosoft.*Platform/i, key: "M365 Admin" },
+    { pattern: /\bFederal.*CIO\b|\bAgency.*CIO/i, key: "Federal CIO" }
+  ];
+
+  function generateICPTitles(finding) {
+    var persona = finding.target_persona || "";
+    var category = finding.category || "";
+    var findingType = finding.finding_type || "";
+    var titlesSet = {}; // use object keys for dedup
+
+    // Match keywords from the persona string
+    PERSONA_KEYWORDS.forEach(function (pk) {
+      if (pk.pattern.test(persona)) {
+        var titles = ICP_TITLE_MAP[pk.key];
+        if (titles) {
+          titles.forEach(function (t) { titlesSet[t] = true; });
+        }
+      }
+    });
+
+    // If no matches found, add base IT/executive titles as fallback
+    if (Object.keys(titlesSet).length === 0) {
+      var fallback = ["CIO", "VP of IT", "IT Director"];
+      fallback.forEach(function (key) {
+        var titles = ICP_TITLE_MAP[key];
+        if (titles) {
+          titles.forEach(function (t) { titlesSet[t] = true; });
+        }
+      });
+    }
+
+    // Add category-specific titles
+    if (category === "Compliance & Regulatory") {
+      ["Chief Compliance Officer", "Compliance Officer", "DPO"].forEach(function (key) {
+        var titles = ICP_TITLE_MAP[key];
+        if (titles) {
+          titles.forEach(function (t) { titlesSet[t] = true; });
+        }
+      });
+    }
+
+    // Convert to array and sort by seniority (C-suite first, then VP, then Director, etc.)
+    var allTitles = Object.keys(titlesSet);
+    var seniorityOrder = ["Chief", "CIO", "CTO", "CISO", "CHRO", "CCO", "CDO", "CLO", "CPO", "CRO", "CFO", "GC", "EVP", "SVP", "Senior Vice President", "VP", "Vice President", "Head of", "Senior Director", "Director", "Principal", "Senior", "Manager", "Lead", "Architect", "Engineer"];
+
+    allTitles.sort(function (a, b) {
+      var aIdx = seniorityOrder.length;
+      var bIdx = seniorityOrder.length;
+      for (var i = 0; i < seniorityOrder.length; i++) {
+        if (aIdx === seniorityOrder.length && a.indexOf(seniorityOrder[i]) !== -1) aIdx = i;
+        if (bIdx === seniorityOrder.length && b.indexOf(seniorityOrder[i]) !== -1) bIdx = i;
+      }
+      if (aIdx !== bIdx) return aIdx - bIdx;
+      return a.localeCompare(b);
+    });
+
+    return allTitles;
+  }
+
+  function formatBooleanSearch(titles) {
+    return titles.map(function (t) {
+      return '"' + t + '"';
+    }).join(" OR ");
+  }
+
   // ---- Modal ----
   function openModal(id) {
     var finding = FINDINGS.find(function (f) {
@@ -753,6 +915,24 @@
         html += '</div>';
       });
       html += '</div></div>';
+    }
+
+    // ICP Title Search for Sales Navigator
+    var icpTitles = generateICPTitles(finding);
+    if (icpTitles.length > 0) {
+      var booleanSearch = formatBooleanSearch(icpTitles);
+      html += '<div class="modal-section">';
+      html += '<div class="modal-section-title" style="display:flex;align-items:center;gap:var(--space-2)">';
+      html += '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>';
+      html += 'ICP Titles &mdash; Sales Navigator Search';
+      html += '</div>';
+      html += '<div class="icp-search-hint">Copy and paste into LinkedIn Sales Navigator\'s Title filter (boolean mode)</div>';
+      html += '<div style="position:relative">';
+      html += '<button class="copy-btn" data-copy="icp-titles">Copy</button>';
+      html += '<div class="icp-search-box" data-copy-target="icp-titles">' + escapeHtml(booleanSearch) + '</div>';
+      html += '</div>';
+      html += '<div class="icp-title-count">' + icpTitles.length + ' title variations</div>';
+      html += '</div>';
     }
 
     // Metadata grid
