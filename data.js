@@ -9,7 +9,7 @@ const FINDINGS = [
     "outreach_angle": "Teams Live Events retires in 99 days. Town Hall has bandwidth and compliance gaps for large orgs. VBrick extends Teams with enterprise-grade broadcast at scale—no rip-and-replace.",
     "target_persona": "IT Director / Unified Communications Manager",
     "industry": "Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -21,6 +21,7 @@ const FINDINGS = [
     "finding_type": "Migration Signal",
     "finding_id": "RA01-001",
     "competitor": "Microsoft Stream/Teams Live Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -33,7 +34,7 @@ const FINDINGS = [
     "outreach_angle": "Federal agencies losing Teams Live Events need a FedRAMP/FIPS 140-2 compliant broadcast alternative. VBrick is deployed across DoD and civilian agencies today.",
     "target_persona": "Federal IT Director / CIO",
     "industry": "Government / Defense",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -45,6 +46,7 @@ const FINDINGS = [
     "finding_type": "Integration Challenge",
     "finding_id": "RA01-003",
     "competitor": "Microsoft Stream/Teams Live Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -57,7 +59,7 @@ const FINDINGS = [
     "outreach_angle": "Brightcove now runs on ~80 employees post-Bending Spoons. If your enterprise SLA requires dedicated support or roadmap investment, the math no longer works. VBrick is a proven migration path.",
     "target_persona": "VP of Digital Strategy / Enterprise IT Director",
     "industry": "Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -69,6 +71,7 @@ const FINDINGS = [
     "finding_type": "Contract Churn",
     "finding_id": "RA01-007",
     "competitor": "Brightcove",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -81,7 +84,7 @@ const FINDINGS = [
     "outreach_angle": "Vimeo just eliminated its entire video engineering team post-Bending Spoons acquisition. Enterprise customers hosting mission-critical content need a platform still investing in the product.",
     "target_persona": "CTO / VP of Digital Media",
     "industry": "Media / Technology",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -93,6 +96,7 @@ const FINDINGS = [
     "finding_type": "Contract Churn",
     "finding_id": "RA01-010",
     "competitor": "Vimeo Enterprise/OTT",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -105,7 +109,7 @@ const FINDINGS = [
     "outreach_angle": "CVE-2026-22844 (CVSS 9.9) allows any Zoom meeting participant to execute code on your MMR infrastructure. Regulated enterprises need a video platform built for security—not patched reactively.",
     "target_persona": "CISO / Security Architect",
     "industry": "Financial Services / Healthcare / Government",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -117,6 +121,7 @@ const FINDINGS = [
     "finding_type": "Security Concern",
     "finding_id": "RA01-013",
     "competitor": "Zoom Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -129,7 +134,7 @@ const FINDINGS = [
     "outreach_angle": "Aragon Research specifically named VBrick as a stable Brightcove migration path in January 2026. Use this third-party validation with Brightcove accounts in active renewal or evaluation cycles.",
     "target_persona": "CTO / VP of Digital Content",
     "industry": "Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -141,6 +146,7 @@ const FINDINGS = [
     "finding_type": "Migration Signal",
     "finding_id": "RA01-021",
     "competitor": "Brightcove",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -153,7 +159,7 @@ const FINDINGS = [
     "outreach_angle": "If your team built workflows on the Teams Live Events Graph API, you face a June 30 hard deadline. VBrick integrates natively with M365 and Teams to preserve automation without rebuilding from scratch.",
     "target_persona": "Enterprise Architect / M365 Admin / IT Director",
     "industry": "Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -165,6 +171,7 @@ const FINDINGS = [
     "finding_type": "Integration Challenge",
     "finding_id": "RA01-025",
     "competitor": "Microsoft Stream/Teams Live Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -177,7 +184,7 @@ const FINDINGS = [
     "outreach_angle": "Aragon Research, Gumlet, and multiple analysts published Brightcove/Vimeo migration guides in Q1 2026. Enterprise prospects are actively in evaluation mode—VBrick's compliance and stability narrative is resonant now.",
     "target_persona": "VP of Technology / Enterprise IT Director",
     "industry": "Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -189,6 +196,7 @@ const FINDINGS = [
     "finding_type": "Migration Signal",
     "finding_id": "RA01-029",
     "competitor": "Vimeo Enterprise/OTT",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -201,7 +209,7 @@ const FINDINGS = [
     "outreach_angle": "Deepa Soni joined NY Life specifically to modernize platforms. Vbrick's enterprise video platform with FINRA-ready archiving and AI search positions as a natural part of the contemporary platform strategy she's building.",
     "target_persona": "Deepa Soni, CIO / VP of Digital Transformation",
     "industry": "Insurance / Financial Services",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -214,6 +222,7 @@ const FINDINGS = [
     "finding_id": "RA02-008",
     "employee_count": 19000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": [
       {
         "name": "Yesenia Diaz",
@@ -287,7 +296,7 @@ const FINDINGS = [
     "outreach_angle": "Nationwide's $1.5B tech investment and 90% AI adoption target are Carrel's mandate. Vbrick's AI-powered enterprise video platform—with automated search, transcription, and analytics—directly advances both priorities.",
     "target_persona": "Michael Carrel, CTO / VP of Digital Employee Experience",
     "industry": "Insurance",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -300,6 +309,7 @@ const FINDINGS = [
     "finding_id": "RA02-009",
     "employee_count": 25000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": [
       {
         "name": "Guru Vasudeva",
@@ -361,7 +371,7 @@ const FINDINGS = [
     "outreach_angle": "Cindy Stoddard is rebuilding Intel's enterprise platform from scratch after a massive restructuring. Vbrick's AI-driven video platform fits her AI-enabled IT strategy and replaces legacy systems as part of the transformation.",
     "target_persona": "Cindy Stoddard, CIO / VP of IT Infrastructure",
     "industry": "Semiconductor / Technology",
-    "urgency_score": 0,
+    "urgency_score": 3,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -374,6 +384,7 @@ const FINDINGS = [
     "finding_id": "RA02-010",
     "employee_count": 75000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": [
       {
         "name": "Wendy Lonergan",
@@ -448,6 +459,7 @@ const FINDINGS = [
     "finding_id": "RA02-011",
     "employee_count": 40000,
     "is_fortune500": false,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -473,6 +485,7 @@ const FINDINGS = [
     "finding_id": "RA02-013",
     "employee_count": 48000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -498,6 +511,7 @@ const FINDINGS = [
     "finding_id": "RA02-019",
     "employee_count": 47000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -522,6 +536,7 @@ const FINDINGS = [
     "finding_type": "Accessibility Mandate",
     "finding_id": "RA03-001",
     "compliance_standard": "ADA Title II / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -546,6 +561,7 @@ const FINDINGS = [
     "finding_type": "Accessibility Mandate",
     "finding_id": "RA03-003",
     "compliance_standard": "ADA Title II / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -570,6 +586,7 @@ const FINDINGS = [
     "finding_type": "Active RFP/RFI",
     "finding_id": "RA03-005",
     "compliance_standard": "FedRAMP / FIPS 140-2 / DoD Cloud SRG",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -594,6 +611,7 @@ const FINDINGS = [
     "finding_type": "Accessibility Mandate",
     "finding_id": "RA03-021",
     "compliance_standard": "ADA Title II / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -618,6 +636,7 @@ const FINDINGS = [
     "finding_type": "Accessibility Mandate",
     "finding_id": "RA03-022",
     "compliance_standard": "ADA Title II / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -649,6 +668,7 @@ const FINDINGS = [
       "Teams Premium licensing restructure April 2026",
       "Teams Live Events Graph API deprecation June 2026"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -681,6 +701,7 @@ const FINDINGS = [
       "FIPS 140-2 certificates go historical September 21, 2026 — federal contractors must transition or risk non-compliance",
       "CMMC Level 2/3 compliance requirements mandate FedRAMP-authorized platforms for all CUI handling"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -713,6 +734,7 @@ const FINDINGS = [
       "Ford's Fortune 500 status and global workforce demand enterprise-grade broadcast eCDN for all-hands events at scale",
       "Ford return-to-office pivot (November 2025) increases demand for hybrid town hall and live streaming capabilities"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -725,7 +747,7 @@ const FINDINGS = [
     "outreach_angle": "Teams Town Hall without Premium burns 1.5 Mbps per viewer. VBrick eCDN reduces WAN load by 90%+ with one integration—no Premium license required.",
     "target_persona": "Network Architect / IT Director",
     "industry": "Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -737,6 +759,7 @@ const FINDINGS = [
     "finding_type": "Integration Challenge",
     "finding_id": "RA01-002",
     "competitor": "Microsoft Stream/Teams Live Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -749,7 +772,7 @@ const FINDINGS = [
     "outreach_angle": "Kaltura's M&T revenue fell 12% in Q4 amid its third layoff round. If your Kaltura contract renews soon, now is the time to benchmark VBrick's capabilities and pricing.",
     "target_persona": "VP of Digital Media / Enterprise IT Buyer",
     "industry": "Media / Telecom",
-    "urgency_score": 0,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -761,6 +784,7 @@ const FINDINGS = [
     "finding_type": "Contract Churn",
     "finding_id": "RA01-004",
     "competitor": "Kaltura",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -773,7 +797,7 @@ const FINDINGS = [
     "outreach_angle": "Vimeo gates DRM, SSO, and watermarking behind expensive enterprise tiers—then raised prices at Evernote and WeTransfer post-acquisition. VBrick includes all security features by default.",
     "target_persona": "Enterprise Video Architect / Security Officer",
     "industry": "Media / Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -785,6 +809,7 @@ const FINDINGS = [
     "finding_type": "Competitor Complaint",
     "finding_id": "RA01-011",
     "competitor": "Vimeo Enterprise/OTT",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -797,7 +822,7 @@ const FINDINGS = [
     "outreach_angle": "Vimeo shut down the security R&D team built through $200M in acquisitions. If your compliance framework requires a vendor with documented SOC 2 Type 2 and active patching, evaluate VBrick.",
     "target_persona": "CISO / Compliance Officer",
     "industry": "Financial Services / Healthcare",
-    "urgency_score": 0,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -809,6 +834,7 @@ const FINDINGS = [
     "finding_type": "Security Concern",
     "finding_id": "RA01-012",
     "competitor": "Vimeo Enterprise/OTT",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -821,7 +847,7 @@ const FINDINGS = [
     "outreach_angle": "Zoom's April 2025 global DNS outage took down every enterprise event simultaneously—including the status page. VBrick's eCDN architecture eliminates single points of failure for mission-critical broadcasts.",
     "target_persona": "IT Director / VP of Corporate Communications",
     "industry": "Cross-industry",
-    "urgency_score": 0,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -833,6 +859,7 @@ const FINDINGS = [
     "finding_type": "Outage/Downtime",
     "finding_id": "RA01-014",
     "competitor": "Zoom Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -845,7 +872,7 @@ const FINDINGS = [
     "outreach_angle": "Zoom has disclosed 6+ High/Critical Windows privilege escalation CVEs in 12 months. For enterprises with strict endpoint security policies, VBrick's browser-native playback eliminates this attack surface.",
     "target_persona": "CISO / IT Security Manager",
     "industry": "Financial Services / Healthcare / Government",
-    "urgency_score": 0,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -857,6 +884,7 @@ const FINDINGS = [
     "finding_type": "Security Concern",
     "finding_id": "RA01-015",
     "competitor": "Zoom Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -869,7 +897,7 @@ const FINDINGS = [
     "outreach_angle": "Zoom for Government is only FedRAMP Moderate and updates 1–3 months behind commercial. VBrick is FedRAMP High authorized with FIPS 140-2 and FINRA-ready archiving built in from day one.",
     "target_persona": "Federal CIO / Compliance Officer / CCO",
     "industry": "Government / Financial Services",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -881,6 +909,7 @@ const FINDINGS = [
     "finding_type": "Integration Challenge",
     "finding_id": "RA01-016",
     "competitor": "Zoom Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -893,7 +922,7 @@ const FINDINGS = [
     "outreach_angle": "Panopto just entered the government market via Carahsoft but lacks FedRAMP and FIPS 140-2 authorization. Brief agencies on the compliance gap before Panopto gets traction in their next procurement.",
     "target_persona": "Federal Agency CIO / Contracting Officer",
     "industry": "Government / Defense",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -905,6 +934,7 @@ const FINDINGS = [
     "finding_type": "Migration Signal",
     "finding_id": "RA01-018",
     "competitor": "Panopto",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -917,7 +947,7 @@ const FINDINGS = [
     "outreach_angle": "An enterprise with just 850 Town Hall viewers hit quality issues from eCDN license conflicts. VBrick's eCDN is IT-admin controlled, policy-consistent, and scales to 100K+ without configuration landmines.",
     "target_persona": "Network Architect / Unified Communications Manager",
     "industry": "Cross-industry",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -929,6 +959,7 @@ const FINDINGS = [
     "finding_type": "Integration Challenge",
     "finding_id": "RA01-022",
     "competitor": "Zoom Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -941,7 +972,7 @@ const FINDINGS = [
     "outreach_angle": "Vimeo's bandwidth overage policy pushes enterprise accounts to $6K+ annual enterprise tier with price hikes expected under Bending Spoons. VBrick offers predictable contract pricing with eCDN efficiency.",
     "target_persona": "VP of Digital Media / Finance/Procurement Lead",
     "industry": "Media / Corporate",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -953,6 +984,7 @@ const FINDINGS = [
     "finding_type": "Contract Churn",
     "finding_id": "RA01-024",
     "competitor": "Vimeo Enterprise/OTT",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -965,7 +997,7 @@ const FINDINGS = [
     "outreach_angle": "Kaltura management projects continued media/telecom segment churn into 2026. Customers in that segment are evaluating now. Lead with VBrick's real-time analytics and live broadcast eCDN capabilities.",
     "target_persona": "VP of Video Technology / Media Operations Director",
     "industry": "Media / Telecom",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -977,6 +1009,7 @@ const FINDINGS = [
     "finding_type": "Contract Churn",
     "finding_id": "RA01-027",
     "competitor": "Kaltura",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -989,7 +1022,7 @@ const FINDINGS = [
     "outreach_angle": "Zoom has disclosed 3 critical/high Windows privilege escalation CVEs in 12 months. For healthcare or financial enterprises recording regulated communications through Zoom Events, the risk calculus has changed.",
     "target_persona": "CISO / Risk Officer",
     "industry": "Financial Services / Healthcare",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1001,6 +1034,7 @@ const FINDINGS = [
     "finding_type": "Security Concern",
     "finding_id": "RA01-028",
     "competitor": "Zoom Events",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1013,7 +1047,7 @@ const FINDINGS = [
     "outreach_angle": "Verizon's massive restructuring requires Schulman to communicate culture change to 87K employees. Vbrick ensures live CEO town halls scale without degradation while analytics show who's actually tuning in.",
     "target_persona": "CHRO / VP of Internal Communications / CIO",
     "industry": "Telecommunications",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1026,6 +1060,7 @@ const FINDINGS = [
     "finding_id": "RA02-003",
     "employee_count": 100000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1038,7 +1073,7 @@ const FINDINGS = [
     "outreach_angle": "Truist's 5-day RTO signals investment in in-office infrastructure. Vbrick's FINRA-ready archiving and eCDN are built for exactly the financial services compliance and scale Truist needs.",
     "target_persona": "CIO / Chief Compliance Officer / Head of Learning & Development",
     "industry": "Financial Services",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1051,6 +1086,7 @@ const FINDINGS = [
     "finding_id": "RA02-006",
     "employee_count": 40000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": [
       {
         "name": "Jeff Taylor",
@@ -1118,7 +1154,7 @@ const FINDINGS = [
     "outreach_angle": "Schwab is unifying technology, operations, and data under one leader with 220+ AI use cases in flight. Vbrick's FINRA-ready archiving and AI-powered video search extend Schwab's AI capabilities to every recorded executive communication.",
     "target_persona": "Dennis Howard, CTO/Operations/Data Officer / Head of Financial Technology",
     "industry": "Financial Services",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1131,6 +1167,7 @@ const FINDINGS = [
     "finding_id": "RA02-012",
     "employee_count": 35000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1143,7 +1180,7 @@ const FINDINGS = [
     "outreach_angle": "Pinnacle and Synovus are integrating two cultures across a year-long roadmap to 2027 conversion. Vbrick's FINRA-ready enterprise video platform gives HR and leadership the tools to align both teams from day one.",
     "target_persona": "CIO / Chief People Officer / Head of Technology Integration",
     "industry": "Financial Services",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1156,6 +1193,7 @@ const FINDINGS = [
     "finding_id": "RA02-014",
     "employee_count": 9800,
     "is_fortune500": false,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1168,7 +1206,7 @@ const FINDINGS = [
     "outreach_angle": "Navratil is transforming Nestlé top-to-bottom with 16K layoffs and a 2-year restructuring. Vbrick's GDPR-compliant platform with multilingual AI transcription enables CEO communications to 261K employees globally.",
     "target_persona": "Global CIO / Chief Communications Officer / Head of Digital Workplace",
     "industry": "Consumer Products / Food & Beverage",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1181,6 +1219,7 @@ const FINDINGS = [
     "finding_id": "RA02-018",
     "employee_count": 261000,
     "is_fortune500": false,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1193,7 +1232,7 @@ const FINDINGS = [
     "outreach_angle": "UPS is eliminating 92K+ positions while automating operations—the largest restructuring in its history. Vbrick's scalable eCDN ensures live change communications reach every remaining operational employee without network failures.",
     "target_persona": "CIO / Chief People Officer / Head of Internal Communications",
     "industry": "Logistics / Supply Chain",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1206,6 +1245,7 @@ const FINDINGS = [
     "finding_id": "RA02-020",
     "employee_count": 360000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1218,7 +1258,7 @@ const FINDINGS = [
     "outreach_angle": "Accenture is retraining 789K people for AI while cutting those who won't adapt. Vbrick's AI-powered enterprise video platform—with searchable archives and live broadcast eCDN—is the delivery mechanism for that transformation.",
     "target_persona": "Global CIO / Chief Learning Officer / VP of Learning Technology",
     "industry": "Professional Services / Consulting",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1231,6 +1271,7 @@ const FINDINGS = [
     "finding_id": "RA02-021",
     "employee_count": 789000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1243,7 +1284,7 @@ const FINDINGS = [
     "outreach_angle": "New Pentagon CIO Davies is modernizing DoD's IT with cyber deterrence as priority. Vbrick's FedRAMP-authorized, FIPS 140-2 compliant enterprise video is the only platform that meets DoD's security requirements by default.",
     "target_persona": "Kirsten Davies, CIO / DoD Component CIOs / Defense IT Program Managers",
     "industry": "Defense / Federal Government",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -1256,6 +1297,7 @@ const FINDINGS = [
     "finding_id": "RA02-027",
     "employee_count": 900000,
     "is_fortune500": false,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1268,7 +1310,7 @@ const FINDINGS = [
     "outreach_angle": "Northrop's digital transformation demands enterprise video that meets defense security requirements. Vbrick's FedRAMP-authorized platform with FIPS 140-2 is built for exactly the compliance requirements that Northrop's defense programs require.",
     "target_persona": "CIO / VP of Digital Transformation / CISO",
     "industry": "Defense / Aerospace",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1281,6 +1323,7 @@ const FINDINGS = [
     "finding_id": "RA02-030",
     "employee_count": 97000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1293,7 +1336,7 @@ const FINDINGS = [
     "outreach_angle": "Atlassian makes enterprise collaboration tools but needs enterprise video infrastructure. Vbrick's AI-powered platform models the AI-first capabilities Atlassian is telling its customers to adopt—credible alignment for internal and product conversations.",
     "target_persona": "CIO / VP of Information Technology / Chief People Officer",
     "industry": "Enterprise Software",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -1306,6 +1349,7 @@ const FINDINGS = [
     "finding_id": "RA02-034",
     "employee_count": 16000,
     "is_fortune500": false,
+    "is_new": false,
     "stakeholders": [
       {
         "name": "Kelsey Castellow",
@@ -1343,7 +1387,7 @@ const FINDINGS = [
     "outreach_angle": "Citi's multi-year 20K-person restructuring requires sustained change communications to 220K banking employees in 95 countries. Vbrick's FINRA-ready archiving and GDPR-compliant platform is purpose-built for Citi's regulatory environment.",
     "target_persona": "CIO / Chief Communications Officer / Head of Internal Technology",
     "industry": "Financial Services / Banking",
-    "urgency_score": 1,
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -1356,6 +1400,7 @@ const FINDINGS = [
     "finding_id": "RA02-035",
     "employee_count": 220000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": [
       {
         "name": "James Lewchuk",
@@ -1441,6 +1486,7 @@ const FINDINGS = [
     "finding_type": "Accessibility Mandate",
     "finding_id": "RA03-002",
     "compliance_standard": "ADA Title II / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1465,6 +1511,7 @@ const FINDINGS = [
     "finding_type": "Accessibility Mandate",
     "finding_id": "RA03-004",
     "compliance_standard": "European Accessibility Act (EAA) / EN 301 549 / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1489,6 +1536,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-006",
     "compliance_standard": "CMMC 2.0 / DFARS 252.204-7021 / NIST SP 800-171",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1513,6 +1561,7 @@ const FINDINGS = [
     "finding_type": "Enforcement Action",
     "finding_id": "RA03-007",
     "compliance_standard": "SEC Rule 17a-4 / SEC Rule 204-2 / Investment Advisers Act",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1537,6 +1586,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-008",
     "compliance_standard": "FINRA Rule 4511 / FINRA 2026 Oversight Report",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1561,6 +1611,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-009",
     "compliance_standard": "HIPAA Security Rule (2024 Update) / HIPAA Privacy Rule",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1585,6 +1636,7 @@ const FINDINGS = [
     "finding_type": "Enforcement Action",
     "finding_id": "RA03-010",
     "compliance_standard": "HIPAA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1609,6 +1661,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-013",
     "compliance_standard": "Regulation S-P (2024 Amendments) / FINRA Rule 3110",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1633,6 +1686,7 @@ const FINDINGS = [
     "finding_type": "Compliance Gap Signal",
     "finding_id": "RA03-016",
     "compliance_standard": "SEC Rule 204-2 / SEC Rule 206(4)-7",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1657,6 +1711,7 @@ const FINDINGS = [
     "finding_type": "Compliance Gap Signal",
     "finding_id": "RA03-017",
     "compliance_standard": "HIPAA Security Rule (2024) / HIPAA Privacy Rule",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1681,6 +1736,7 @@ const FINDINGS = [
     "finding_type": "Audit/Assessment",
     "finding_id": "RA03-019",
     "compliance_standard": "CMMC 2.0 Level 2 / NIST SP 800-171 / FedRAMP Moderate Equivalency",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1705,6 +1761,7 @@ const FINDINGS = [
     "finding_type": "Active RFP/RFI",
     "finding_id": "RA03-024",
     "compliance_standard": "DoD Cloud SRG / FedRAMP / FIPS 140-2 / Information Assurance",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1729,6 +1786,7 @@ const FINDINGS = [
     "finding_type": "Compliance Gap Signal",
     "finding_id": "RA03-025",
     "compliance_standard": "HIPAA Security Rule / HIPAA Privacy Rule",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1753,6 +1811,7 @@ const FINDINGS = [
     "finding_type": "Compliance Gap Signal",
     "finding_id": "RA03-026",
     "compliance_standard": "CMMC 2.0 / DFARS 252.204-7021 / FedRAMP Moderate Equivalency",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1777,6 +1836,7 @@ const FINDINGS = [
     "finding_type": "Compliance Gap Signal",
     "finding_id": "RA03-029",
     "compliance_standard": "FINRA Rule 2210 / FINRA Rule 4511 / FINRA 2026 Oversight Report",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1801,6 +1861,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-030",
     "compliance_standard": "FIPS 140-2 / DoD Cloud SRG / CMMC 2.0",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1832,6 +1893,7 @@ const FINDINGS = [
       "Infrastructure Financial Management Platform Engineering Lead posted March 13 2026",
       "Automation Platform Engineering Lead posted March 13 2026"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1863,6 +1925,7 @@ const FINDINGS = [
       "Enterprise-level infrastructure oversight role",
       "FINRA-regulated financial institution with compliance archiving requirements"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1895,6 +1958,7 @@ const FINDINGS = [
       "300,000+ employees with HIPAA compliance requirements",
       "Active technology investment cycle"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1927,6 +1991,7 @@ const FINDINGS = [
       "DISA manages DoD-wide communications infrastructure",
       "FY2026 DISA procurement budget active"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1959,6 +2024,7 @@ const FINDINGS = [
       "2.1 million employees requiring eCDN for any-scale video delivery",
       "Digital transformation investment ongoing"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -1991,6 +2057,7 @@ const FINDINGS = [
       "IBM Video Streaming positioned externally; internal EVP gap potential",
       "AI-recast roles requiring significant training video investment"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2023,6 +2090,7 @@ const FINDINGS = [
       "EIS contract transition deadline May 31 2026 creating urgency",
       "FedRAMP authorization requirements for all cloud services"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2055,6 +2123,7 @@ const FINDINGS = [
       "1,000+ enterprise clients at the summit signal market influence",
       "Orange Business is Kollective eCDN reference customer"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2087,6 +2156,7 @@ const FINDINGS = [
       "Data and analytics platform for DoD mission-critical operations",
       "FedRAMP IL5/IL6 environment requirements"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2119,6 +2189,7 @@ const FINDINGS = [
       "HIPAA and FedRAMP compliance mandatory",
       "Section 508 accessibility required for all federal video content"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2151,6 +2222,7 @@ const FINDINGS = [
       "ChatGPT and Google Gemini AI partnerships signed",
       "440,000 employees across 1,900+ stores requiring distributed video delivery"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2183,6 +2255,7 @@ const FINDINGS = [
       "88,000 employees across global R&D and commercial operations",
       "Active video content series for stakeholder communications"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2215,6 +2288,7 @@ const FINDINGS = [
       "400,000 employees with HIPAA and FedRAMP compliance mandates",
       "Section 508 accessibility required for all veteran-facing video content"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2247,6 +2321,7 @@ const FINDINGS = [
       "Video conferencing estate optimization identified as top challenge",
       "AWS, Zoom, RingCentral, Dialpad all showcasing enterprise video solutions"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2271,6 +2346,7 @@ const FINDINGS = [
     "finding_type": "Competitor Complaint",
     "finding_id": "RA01-005",
     "competitor": "Kaltura",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2295,6 +2371,7 @@ const FINDINGS = [
     "finding_type": "Job Posting Signal",
     "finding_id": "RA01-006",
     "competitor": "Kaltura",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2319,6 +2396,7 @@ const FINDINGS = [
     "finding_type": "Competitor Complaint",
     "finding_id": "RA01-017",
     "competitor": "Panopto",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2343,6 +2421,7 @@ const FINDINGS = [
     "finding_type": "Competitor Complaint",
     "finding_id": "RA01-020",
     "competitor": "Kaltura",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2367,6 +2446,7 @@ const FINDINGS = [
     "finding_type": "Security Concern",
     "finding_id": "RA01-023",
     "competitor": "Kaltura",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2392,6 +2472,7 @@ const FINDINGS = [
     "finding_id": "RA02-028",
     "employee_count": 260000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2417,6 +2498,7 @@ const FINDINGS = [
     "finding_id": "RA02-031",
     "employee_count": 21300,
     "is_fortune500": false,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2442,6 +2524,7 @@ const FINDINGS = [
     "finding_id": "RA02-032",
     "employee_count": 400000,
     "is_fortune500": true,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2467,6 +2550,7 @@ const FINDINGS = [
     "finding_id": "RA02-033",
     "employee_count": 220000,
     "is_fortune500": false,
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2491,6 +2575,7 @@ const FINDINGS = [
     "finding_type": "Compliance Gap Signal",
     "finding_id": "RA03-011",
     "compliance_standard": "Section 508 / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2515,6 +2600,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-012",
     "compliance_standard": "GDPR / EU Cross-Border DPA Cooperation Regulation",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2539,6 +2625,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-014",
     "compliance_standard": "DoD Cloud SRG V1R5 / FedRAMP / DISA PA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2563,6 +2650,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-015",
     "compliance_standard": "FedRAMP Rev5 / FedRAMP 20X",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2587,6 +2675,7 @@ const FINDINGS = [
     "finding_type": "Compliance Gap Signal",
     "finding_id": "RA03-018",
     "compliance_standard": "CFTC Regulation 1.35 / NFA Notice 9070",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2611,6 +2700,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-020",
     "compliance_standard": "GDPR / MiFID II Recordkeeping / ESMA Communications Retention",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2635,6 +2725,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-023",
     "compliance_standard": "SEC Rule 17a-4 / Investment Advisers Act Rule 204-2",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2659,6 +2750,7 @@ const FINDINGS = [
     "finding_type": "Enforcement Action",
     "finding_id": "RA03-027",
     "compliance_standard": "GDPR Article 46 / Standard Contractual Clauses",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2683,6 +2775,7 @@ const FINDINGS = [
     "finding_type": "Regulatory Change",
     "finding_id": "RA03-028",
     "compliance_standard": "Section 508 / FAR 39.2 / WCAG 2.1 AA",
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2714,6 +2807,7 @@ const FINDINGS = [
       "Ongoing technology infrastructure expansion",
       "FINRA compliance requirements for communications archiving"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2746,6 +2840,7 @@ const FINDINGS = [
       "HIPAA and PHI requirements for video content",
       "Active digital transformation investments in 2026"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2778,6 +2873,7 @@ const FINDINGS = [
       "FedRAMP/FIPS 140-2 requirements for DoD contractor communications",
       "122,000+ global workforce requiring secure internal video"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2810,6 +2906,7 @@ const FINDINGS = [
       "FIPS 140-2 and FedRAMP mandatory for DoD contractors",
       "100,000+ employees across classified and unclassified programs"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2842,6 +2939,7 @@ const FINDINGS = [
       "Active digital transformation advisory positioning signals internal adoption",
       "Agentic AI platform evaluation cited in 2026 outlook"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2874,6 +2972,7 @@ const FINDINGS = [
       "AI transcription and voice analytics for regulated environments",
       "Q4 2026 availability creates competitive window for Vbrick"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2906,6 +3005,7 @@ const FINDINGS = [
       "DoD contractor requiring FedRAMP/FIPS compliant internal comms",
       "C4ISR work signals video intelligence integration requirements"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2938,6 +3038,7 @@ const FINDINGS = [
       "Air Force, Army, Navy program requirements mandate FedRAMP video",
       "ITAR requirements for program communications security"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -2970,6 +3071,7 @@ const FINDINGS = [
       "Network bandwidth expertise makes eCDN ROI compelling",
       "Active digital workplace modernization signals"
     ],
+    "is_new": false,
     "stakeholders": []
   },
   {
@@ -3002,6 +3104,7 @@ const FINDINGS = [
       "Government and enterprise customer base requiring compliant video",
       "5G infrastructure expertise suggests eCDN network optimization interest"
     ],
+    "is_new": false,
     "stakeholders": []
   }
 ];
