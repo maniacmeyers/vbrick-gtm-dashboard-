@@ -19,7 +19,15 @@ const AUTH_CONFIG = {
     // kara.pryor@vbrick.com
     "2e85e77774ab9b7b557c56c2f8dce6089caa7581559660965c2fe98272b679c1",
     // bfzm@vbrick.com
-    "0463c1115bf30cdc4cc7598886c03f8eb8ff39c6a7a30da614fa7d2ccd369af2"
+    "0463c1115bf30cdc4cc7598886c03f8eb8ff39c6a7a30da614fa7d2ccd369af2",
+    // jeff.meyers@me.com
+    "4e862796ceddea1f92e4a26d2b1bba541fb69df41ff81200eff9e326d740d8e9",
+    // jeff@forgetime.ai
+    "ab50fb4e73220fa23b2f9c335fee90665598d734c2f0fc4dabb7091ba29a1d30",
+    // jeff@careermaniacs.com
+    "74deb573ac01bc95c8b2fab2ce4f82e6a06f13bef4a42922484505bf2272ac9d",
+    // ai@aimaniacs.ai
+    "11934bc4e575cbbd1ba0cc458fe309eea6099f30ef6893abf058a589614e1d99"
   ],
   
   // Session duration in hours
