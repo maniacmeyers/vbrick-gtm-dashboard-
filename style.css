@@ -247,6 +247,100 @@ html, body { height: 100%; overflow: hidden; margin: 0; }
   flex-shrink: 0;
 }
 
+/* ---- What's Changed nav item (bright red) ---- */
+.nav-item--changed {
+  color: #ff2d2d;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-item--changed:hover {
+  background: rgba(255, 45, 45, 0.1);
+  color: #ff2d2d;
+}
+
+.nav-item--changed.active {
+  background: rgba(255, 45, 45, 0.15);
+  color: #ff2d2d;
+}
+
+.nav-item--changed svg {
+  stroke: #ff2d2d;
+}
+
+.nav-badge {
+  margin-left: auto;
+  background: #ff2d2d;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.nav-badge:empty,
+.nav-badge[data-count="0"] {
+  display: none;
+}
+
+.nav-divider {
+  height: 1px;
+  background: var(--color-divider);
+  margin: var(--space-2) var(--space-3);
+}
+
+/* ---- New finding row indicator ---- */
+.finding-row--new {
+  border-left: 3px solid #ff2d2d;
+}
+
+.finding-row--new td:first-child::before {
+  content: "NEW";
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background: #ff2d2d;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* What's Changed banner */
+.whats-changed-banner {
+  background: linear-gradient(135deg, rgba(255, 45, 45, 0.08), rgba(255, 45, 45, 0.03));
+  border: 1px solid rgba(255, 45, 45, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  display: none;
+}
+
+.whats-changed-banner.visible {
+  display: block;
+}
+
+.whats-changed-banner h3 {
+  color: #ff2d2d;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin: 0 0 var(--space-2) 0;
+}
+
+.whats-changed-banner p {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
 .sidebar-footer {
   padding: var(--space-3) var(--space-4);
   border-top: 1px solid var(--color-divider);
