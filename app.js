@@ -549,7 +549,7 @@
 
   // --- VOICEMAIL: short, directs to email/DM only ---
   function generateVoicemail(company, finding) {
-    return 'Hey {{First Name}}, this is {{Your Name}} from VBRICK. Just wanted to give you a heads up -- I\'m going to send over a quick email [or LinkedIn message] on something I think is relevant to ' + (company === "your organization" ? "your team" : company) + '. Keep an eye out for it. Again, {{Your Name}} from VBRICK -- talk soon.';
+    return 'Hey {{First Name}}, this is {{Your Name}} from VBRICK. Giving you a heads up -- I\'m sending over an email [or LinkedIn message] on something relevant to ' + (company === "your organization" ? "your team" : company) + '. Keep an eye out for it. Again, {{Your Name}} from VBRICK -- talk soon.';
   }
 
   // --- STAKEHOLDER-SPECIFIC MESSAGES ---
@@ -569,21 +569,21 @@
     messages.push({
       role: 'Director (Influencer)',
       email: 'Hey {{First Name}},\n\nCame across ' + trigger + ' and your name came up as someone who\'d have a pulse on this. Curious how ' + company + ' is thinking about the video platform side of things. We\'re seeing some interesting patterns from similar orgs.\n\nOpen to a quick exchange?\n\n{{Your First Name}}',
-      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey, appreciate you picking up. The reason for my call -- ' + trigger + ' is creating some questions around video infrastructure at a lot of orgs your size. Wanted to get your take and see if what we\'re seeing matches up.'
+      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey -- so the reason for my call, ' + trigger + ' is creating some questions around video infrastructure at a lot of orgs your size. Wanted to get your take and see if what we\'re seeing matches up.'
     });
 
     // Manager (Evaluator)
     messages.push({
       role: 'Manager (Evaluator)',
       email: 'Hey {{First Name}},\n\nI know you\'re probably in the weeds on this already, but ' + trigger + ' is something we\'ve been helping teams navigate. Figured it might save your team some legwork if I shared what we\'re seeing.\n\nWorth a quick look?\n\n{{Your First Name}}',
-      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey, quick question for you -- with ' + trigger + ', how is your team handling the video platform piece? We keep hearing it\'s one of those things that falls to folks in your position to figure out.'
+      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey -- with ' + trigger + ', how is your team handling the video platform piece? We keep hearing it\'s one of those things that lands on folks in your position to figure out.'
     });
 
     // Sr. Engineer / Architect (Technical Evaluator)
     messages.push({
       role: 'Sr. Engineer / Architect (Technical Evaluator)',
       email: 'Hey {{First Name}},\n\nNot sure if this is on your plate, but ' + trigger + ' has a direct impact on ' + domain + '. We\'ve been working with engineering teams on the eCDN and compliance side and I think there\'s some overlap with what you\'re dealing with.\n\nWould it make sense to compare notes?\n\n{{Your First Name}}',
-      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey, I\'ll be quick -- with ' + trigger + ', I\'m guessing the ' + domain + ' piece is landing on your desk. We work on the eCDN and video infrastructure side and I wanted to see if there\'s an overlap worth discussing.'
+      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey -- with ' + trigger + ', the ' + domain + ' piece is probably landing on your desk. We work on the eCDN and video infrastructure side and I wanted to see if there\'s an overlap worth discussing.'
     });
 
     return messages;
