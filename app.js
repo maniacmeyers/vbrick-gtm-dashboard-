@@ -387,24 +387,23 @@
     var persona = finding.target_persona || "IT/Infrastructure";
     var pain = finding.summary || "";
     var whyVbrick = finding.why_vbrick || "";
-    var outreach = finding.outreach_angle || "";
     var findingType = finding.finding_type || "";
-    var industry = finding.industry || "";
     var competitor = finding.competitor || "";
-    var date = finding.date || "";
 
     var painShort = extractPain(pain, findingType, competitor, company);
     var proofPoint = extractProof(whyVbrick);
-    var personaTitle = mapPersonaToTitle(persona);
     var companyRef = company === "Multiple" || company === "Unknown" ? "your organization" : company;
     var isMultiCompany = company === "Multiple" || company === "Unknown";
+    var triggerEvent = buildTriggerPhrase(finding, companyRef, isMultiCompany);
+    var domain = getDomainWord(finding);
 
-    var email = generateEmail(companyRef, personaTitle, painShort, proofPoint, isMultiCompany, finding);
-    var linkedin = generateLinkedIn(companyRef, personaTitle, painShort, proofPoint, isMultiCompany, finding);
-    var coldcall = generateColdCall(companyRef, personaTitle, painShort, proofPoint, persona, finding);
-    var voicemail = generateVoicemail(companyRef, personaTitle, painShort, proofPoint, finding);
+    var email = generateEmail(companyRef, painShort, proofPoint, isMultiCompany, finding, triggerEvent);
+    var linkedinDM = generateLinkedInDM(companyRef, painShort, proofPoint, isMultiCompany, finding, triggerEvent);
+    var coldcall = generateColdCall(companyRef, painShort, proofPoint, persona, finding, triggerEvent, domain);
+    var voicemail = generateVoicemail(companyRef, finding);
+    var stakeholderMessages = generateStakeholderMessages(finding, companyRef, triggerEvent, domain);
 
-    return { email: email, linkedin: linkedin, coldcall: coldcall, voicemail: voicemail };
+    return { email: email, linkedin: linkedinDM, coldcall: coldcall, voicemail: voicemail, stakeholderMessages: stakeholderMessages };
   }
 
   function extractPain(summary, findingType, competitor, company) {
@@ -421,22 +420,6 @@
     return whyVbrick || "VBRICK's enterprise video platform with eCDN, FedRAMP authorization, and real-time analytics";
   }
 
-  function mapPersonaToTitle(persona) {
-    var map = {
-      "IT/Infrastructure": "IT leadership",
-      "Corporate Communications": "communications leadership",
-      "CISO/Security": "security leadership",
-      "Compliance Officer": "compliance team",
-      "Procurement": "procurement",
-      "Digital Transformation": "digital transformation leadership",
-      "HR/People Ops": "HR and People Ops team",
-      "Network Engineering": "network engineering team",
-      "VP IT": "IT leadership",
-      "Head of Corporate Communications": "communications leadership"
-    };
-    return map[persona] || persona.toLowerCase();
-  }
-
   function getDomainWord(finding) {
     var type = finding.finding_type || "";
     if (type.includes("Compliance") || type.includes("Regulatory")) return "compliance";
@@ -449,24 +432,27 @@
     return "enterprise video strategy";
   }
 
-  function generateEmail(company, personaTitle, pain, proof, isMulti, finding) {
-    var domain = getDomainWord(finding);
-    var subject = generateSubject(finding);
-    var cta = "Worth a conversation?";
-
-    var painLine = buildPainLine(company, pain, finding, isMulti);
-    var proofLine = buildProofLine(proof, finding);
-
-    return {
-      subject: subject,
-      body: "Hey {{First Name}},\n\n" + painLine + "\n" + proofLine + "\n" + cta + "\n\n{{Your First Name}}"
-    };
+  // Build a natural trigger phrase from the finding for use in scripts
+  function buildTriggerPhrase(finding, company, isMulti) {
+    var type = finding.finding_type || "";
+    var competitor = finding.competitor || "";
+    if (type.includes("Migration") || type.includes("Churn")) {
+      return competitor ? competitor + "'s recent changes" : "your video vendor's recent shake-up";
+    }
+    if (type.includes("RTO")) return isMulti ? "the return-to-office push" : company + "'s return-to-office mandate";
+    if (type.includes("Compliance") || type.includes("Regulatory")) return "the upcoming compliance deadlines affecting video";
+    if (type.includes("Security")) return "the recent security concerns in enterprise video";
+    if (type.includes("Leadership")) return "the recent leadership change";
+    if (type.includes("M&A")) return "the merger integration";
+    if (type.includes("Workforce")) return "the workforce restructuring";
+    if (type.includes("Digital")) return "the digital transformation initiative";
+    if (type.includes("eCDN") || type.includes("Network")) return "the video delivery challenges at scale";
+    return "something I came across about " + company;
   }
 
   function generateSubject(finding) {
     var company = finding.company || "";
     var type = finding.finding_type || "";
-
     if (type.includes("Migration") || type.includes("Churn")) return "video risk";
     if (type.includes("RTO")) return company !== "Multiple" && company !== "Unknown" ? company.toLowerCase().split(" ")[0] + " + video" : "rto + video";
     if (type.includes("Compliance") || type.includes("Regulatory")) return "compliance gap";
@@ -481,127 +467,126 @@
     return "enterprise video";
   }
 
-  function buildPainLine(company, pain, finding, isMulti) {
+  // --- EMAIL: casual, conversational, short ---
+  function generateEmail(company, pain, proof, isMulti, finding, trigger) {
+    var subject = generateSubject(finding);
     var type = finding.finding_type || "";
     var competitor = finding.competitor || "";
 
-    if (type.includes("Migration") && competitor) {
-      return isMulti
-        ? "Organizations on " + competitor + " are facing real platform risk right now — " + pain.toLowerCase() + "."
-        : company + "'s reliance on " + competitor + " is a growing risk — " + pain.toLowerCase() + ".";
-    }
-    if (type.includes("Churn") && competitor) {
-      return competitor + "'s instability is creating real continuity risk for enterprise customers — " + pain.toLowerCase() + ".";
-    }
-    if (type.includes("RTO")) {
-      return isMulti
-        ? "With return-to-office mandates scaling up, " + pain.toLowerCase() + "."
-        : company + "'s RTO mandate means thousands of employees need reliable video for town halls, training, and all-hands — fast.";
-    }
-    if (type.includes("Compliance") || type.includes("Regulatory")) {
-      return pain.charAt(0).toUpperCase() + pain.slice(1) + ".";
-    }
-    if (type.includes("Security")) {
-      return pain.charAt(0).toUpperCase() + pain.slice(1) + ".";
-    }
-    if (type.includes("Leadership")) {
-      return company + "'s new " + (finding.target_persona || "IT") + " leadership likely means a fresh look at vendor stack — including video infrastructure.";
-    }
-    if (type.includes("M&A")) {
-      return pain.charAt(0).toUpperCase() + pain.slice(1) + ".";
-    }
-    return pain.charAt(0).toUpperCase() + pain.slice(1) + ".";
-  }
-
-  function buildProofLine(proof, finding) {
-    return proof + ".";
-  }
-
-  function generateLinkedIn(company, personaTitle, pain, proof, isMulti, finding) {
-    var type = finding.finding_type || "";
-    var competitor = finding.competitor || "";
-    var domain = getDomainWord(finding);
-
-    var opener = "";
+    var body = "Hey {{First Name}},\n\n";
     if (type.includes("Migration") || type.includes("Churn")) {
-      opener = "Noticed " + (competitor || "your video vendor") + " is going through major changes. Curious how your team is thinking about " + domain + " continuity.";
+      body += isMulti
+        ? "Seeing a lot of orgs scrambling because of " + trigger + ". Figured it might be on your radar too."
+        : "Came across " + trigger + " and figured it's probably creating some headaches for " + company + ".";
     } else if (type.includes("RTO")) {
-      opener = isMulti
-        ? "RTO mandates are putting real pressure on internal video infrastructure. Curious if that's hitting your radar."
-        : "Saw " + company + "'s RTO announcement. Scaling video for distributed town halls and training is a challenge we've solved for similar orgs.";
+      body += isMulti
+        ? "With RTO mandates ramping up, video for town halls and all-hands is becoming a real pain point. Curious if that's hitting your world."
+        : "Saw " + company + "'s RTO news. When thousands of people need to be in the same virtual room at once, things break fast.";
     } else if (type.includes("Compliance") || type.includes("Regulatory")) {
-      opener = "New " + domain + " requirements are creating real urgency around video platform certification. Worth a quick exchange?";
+      body += "With " + trigger + ", wanted to flag something that might save your team some time.";
     } else if (type.includes("Leadership")) {
-      opener = "Congrats on the new role. When you're evaluating the video stack, happy to share what's working at similar-scale orgs.";
-    } else if (type.includes("Security")) {
-      opener = (competitor || "Your current video platform") + "'s security posture is a growing concern for regulated enterprises. Quick question on how you're handling it.";
+      body += "Congrats on the new role. When the dust settles and you start looking at the video stack, I think there's something worth a conversation.";
+    } else if (type.includes("M&A")) {
+      body += "Integration is always a beast. When two orgs collide, video infrastructure is one of the first things that falls through the cracks.";
     } else {
-      opener = "Your " + domain + " is likely under review given recent changes. Happy to share what similar orgs are doing.";
+      body += "Came across " + trigger + " and thought this might be relevant.";
     }
+    body += "\n\n" + proof + ".";
+    body += "\n\nWorth a conversation?";
+    body += "\n\n{{Your First Name}}";
 
-    return opener;
+    return { subject: subject, body: body };
   }
 
-  function generateColdCall(company, personaTitle, pain, proof, persona, finding) {
-    var domain = getDomainWord(finding);
+  // --- LINKEDIN DM: casual, conversational, after blank connection request ---
+  function generateLinkedInDM(company, pain, proof, isMulti, finding, trigger) {
     var type = finding.finding_type || "";
     var competitor = finding.competitor || "";
+
+    var msg = "";
+    if (type.includes("Migration") || type.includes("Churn")) {
+      msg = "Hey {{First Name}} -- thanks for connecting. Noticed " + trigger + " and figured it might be creating some questions on your end. Happy to share what we're seeing from orgs in a similar spot if it'd be useful.";
+    } else if (type.includes("RTO")) {
+      msg = isMulti
+        ? "Hey {{First Name}} -- thanks for connecting. RTO is putting a lot of pressure on video infrastructure right now. Curious if that's something you're dealing with."
+        : "Hey {{First Name}} -- thanks for connecting. Saw " + company + "'s RTO announcement and thought this might resonate. Scaling video for all-hands across locations is a challenge we hear about constantly.";
+    } else if (type.includes("Compliance") || type.includes("Regulatory")) {
+      msg = "Hey {{First Name}} -- thanks for connecting. With " + trigger + ", wanted to flag something that might be relevant to how your team handles video compliance. Happy to share more if useful.";
+    } else if (type.includes("Leadership")) {
+      msg = "Hey {{First Name}} -- thanks for connecting. Congrats on the new role. When you get a chance to look at the video infrastructure, happy to share what's been working at similar orgs.";
+    } else if (type.includes("Security")) {
+      msg = "Hey {{First Name}} -- thanks for connecting. With " + trigger + ", figured you might be re-evaluating the video stack. Happy to share what we're seeing.";
+    } else {
+      msg = "Hey {{First Name}} -- thanks for connecting. Came across " + trigger + " and thought it might be worth a quick exchange. Let me know if you're open to it.";
+    }
+    return msg;
+  }
+
+  // --- COLD CALL: name-pause-route-trigger methodology ---
+  function generateColdCall(company, pain, proof, persona, finding, trigger, domain) {
     var isMulti = company === "your organization";
+    var companyPossessive = isMulti ? "your organization's" : company + "'s";
 
-    var routeQ = "Who's in charge of " + domain + " at " + (isMulti ? "your organization" : company) + "?";
+    // Step 1: Opener (always the same pattern)
+    var opener = '{{First Name}} {{Last Name}}?\n[PAUSE -- wait for them to confirm]';
 
-    var ruinQ = "";
-    if (type.includes("Migration") || type.includes("Churn")) {
-      ruinQ = "How are you handling the transition given " + (competitor || "your vendor") + "'s recent changes?";
-    } else if (type.includes("RTO")) {
-      ruinQ = "With the return-to-office push, how are you scaling internal video for town halls and all-hands across locations?";
-    } else if (type.includes("Compliance") || type.includes("Regulatory")) {
-      ruinQ = "How are you handling the new " + domain + " requirements for your video platform?";
-    } else if (type.includes("Security")) {
-      ruinQ = "Given the recent security concerns, how confident is your team in your current video platform's security posture?";
-    } else if (type.includes("Leadership")) {
-      ruinQ = "As you're evaluating the current stack, what's your biggest concern with the video infrastructure?";
-    } else if (type.includes("Integration")) {
-      ruinQ = "How are you handling video delivery across your network — especially for large-scale broadcasts?";
-    } else {
-      ruinQ = "How are you handling " + domain + " right now?";
-    }
+    // Step 2a: If they confirm AND are believed to be an executive
+    var execRoute = 'Great, I was hoping you could help me out real quick. Do you head up the team that\'s responsible for ' + companyPossessive + ' enterprise video platform and eCDN?';
 
-    var multiplyLine = "Got it — why not plug VBRICK in alongside what you have now to multiply its effectiveness? We handle the eCDN, compliance, and analytics layer so your team doesn't have to rebuild.";
+    // Step 2b: If they say YES to heading up the team
+    var yesPath = 'Perfect. The reason for my call -- ' + trigger + ' caught my eye and I wanted to get your take on how it\'s impacting your video infrastructure. ' + proof + '. Thought it\'d be worth a quick conversation to see if there\'s a fit.';
+
+    // Step 2c: If they say NO (not the right person)
+    var noPath = 'No problem at all. Who might that person be?\n[They give a name]\nAppreciate that. Would it be okay if I let {{Referred Name}} know that we briefly spoke?\n[Then call referred person:]\n"{{Original First Name}} said you were the person I should speak with concerning ' + companyPossessive + ' enterprise video platform."\n[PAUSE for response, then:]\nThe reason for my call -- ' + trigger + '. ' + proof + '.';
 
     return {
-      route: routeQ,
-      ruin: ruinQ,
-      multiply: multiplyLine
+      opener: opener,
+      execRoute: execRoute,
+      yesPath: yesPath,
+      noPath: noPath
     };
   }
 
-  function generateVoicemail(company, personaTitle, pain, proof, finding) {
+  // --- VOICEMAIL: short, directs to email/DM only ---
+  function generateVoicemail(company, finding) {
+    return 'Hey {{First Name}}, this is {{Your Name}} from VBRICK. Just wanted to give you a heads up -- I\'m going to send over a quick email [or LinkedIn message] on something I think is relevant to ' + (company === "your organization" ? "your team" : company) + '. Keep an eye out for it. Again, {{Your Name}} from VBRICK -- talk soon.';
+  }
+
+  // --- STAKEHOLDER-SPECIFIC MESSAGES ---
+  function generateStakeholderMessages(finding, company, trigger, domain) {
     var type = finding.finding_type || "";
     var competitor = finding.competitor || "";
-    var isMulti = company === "your organization";
+    var messages = [];
 
-    var relevance = "";
-    if (type.includes("Migration") || type.includes("Churn")) {
-      relevance = "I wanted to reach out because " + (competitor || "your video vendor") + "'s recent changes are creating real risk for enterprise customers";
-    } else if (type.includes("RTO")) {
-      relevance = "I'm calling because " + (isMulti ? "organizations scaling RTO" : company + "'s RTO mandate") + " creates a real need for enterprise-grade video infrastructure";
-    } else if (type.includes("Compliance") || type.includes("Regulatory")) {
-      relevance = "I'm calling because new compliance requirements are creating urgency around video platform certification";
-    } else if (type.includes("Security")) {
-      relevance = "I'm calling because recent security incidents in the video space are putting enterprise platforms under scrutiny";
-    } else if (type.includes("Leadership")) {
-      relevance = "I noticed the leadership change and wanted to share something relevant to the video infrastructure evaluation";
-    } else {
-      relevance = "I'm calling about something directly relevant to your enterprise video strategy";
-    }
+    // SVP/VP (Decision Maker)
+    messages.push({
+      role: 'SVP / VP (Decision Maker)',
+      email: 'Hey {{First Name}},\n\nQuick note -- ' + trigger + ' is something I\'ve been hearing a lot about from folks at your level. The video infrastructure piece tends to get overlooked until it becomes a fire drill. Happy to share what orgs like ' + company + ' are doing differently.\n\nWorth a quick chat?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nGreat, I was hoping you could help me out real quick. Do you head up the team responsible for ' + company + '\'s enterprise video and eCDN? [If yes:] Perfect -- the reason for my call is ' + trigger + '. I\'ve been talking to a few folks at your level about it and thought it\'d be worth connecting.'
+    });
 
-    var proofShort = "We've helped organizations like yours achieve FedRAMP-authorized, compliant video delivery with real-time analytics";
+    // Director (Influencer)
+    messages.push({
+      role: 'Director (Influencer)',
+      email: 'Hey {{First Name}},\n\nCame across ' + trigger + ' and your name came up as someone who\'d have a pulse on this. Curious how ' + company + ' is thinking about the video platform side of things. We\'re seeing some interesting patterns from similar orgs.\n\nOpen to a quick exchange?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey, appreciate you picking up. The reason for my call -- ' + trigger + ' is creating some questions around video infrastructure at a lot of orgs your size. Wanted to get your take and see if what we\'re seeing matches up.'
+    });
 
-    return "Hey {{First Name}}, {{Your Name}} from VBRICK — {{your number, spoken slowly}}.\n\n" +
-      relevance + ".\n\n" +
-      proofShort + ".\n\n" +
-      "Again, {{Your Name}} from VBRICK — {{your number, spoken slowly}}. I'll follow up with a quick note.";
+    // Manager (Evaluator)
+    messages.push({
+      role: 'Manager (Evaluator)',
+      email: 'Hey {{First Name}},\n\nI know you\'re probably in the weeds on this already, but ' + trigger + ' is something we\'ve been helping teams navigate. Figured it might save your team some legwork if I shared what we\'re seeing.\n\nWorth a quick look?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey, quick question for you -- with ' + trigger + ', how is your team handling the video platform piece? We keep hearing it\'s one of those things that falls to folks in your position to figure out.'
+    });
+
+    // Sr. Engineer / Architect (Technical Evaluator)
+    messages.push({
+      role: 'Sr. Engineer / Architect (Technical Evaluator)',
+      email: 'Hey {{First Name}},\n\nNot sure if this is on your plate, but ' + trigger + ' has a direct impact on ' + domain + '. We\'ve been working with engineering teams on the eCDN and compliance side and I think there\'s some overlap with what you\'re dealing with.\n\nWould it make sense to compare notes?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey, I\'ll be quick -- with ' + trigger + ', I\'m guessing the ' + domain + ' piece is landing on your desk. We work on the eCDN and video infrastructure side and I wanted to see if there\'s an overlap worth discussing.'
+    });
+
+    return messages;
   }
 
   // ---- ICP Title Expansion for Sales Navigator Boolean Search ----
@@ -855,9 +840,12 @@
     html += '<div class="modal-section-title">Maniac Method Outreach</div>';
     html += '<div class="outreach-tabs">';
     html += '<button class="outreach-tab active" data-tab="email">Email</button>';
-    html += '<button class="outreach-tab" data-tab="linkedin">LinkedIn DM</button>';
+    html += '<button class="outreach-tab" data-tab="linkedin">LinkedIn</button>';
     html += '<button class="outreach-tab" data-tab="coldcall">Cold Call</button>';
     html += '<button class="outreach-tab" data-tab="voicemail">Voicemail</button>';
+    if (outreach.stakeholderMessages && outreach.stakeholderMessages.length > 0) {
+      html += '<button class="outreach-tab" data-tab="stakeholder-outreach">By Role</button>';
+    }
     html += '</div>';
     html += '<div class="outreach-panels">';
 
@@ -871,6 +859,7 @@
 
     // LinkedIn panel
     html += '<div class="outreach-panel" data-panel="linkedin">';
+    html += '<div class="linkedin-note">Connection requests are sent blank &mdash; no note. The DM below is sent after they accept.</div>';
     html += '<div style="position:relative">';
     html += '<button class="copy-btn" data-copy="linkedin">Copy</button>';
     html += '<div class="outreach-script" data-copy-target="linkedin">' + escapeHtml(outreach.linkedin).replace(/\n/g, '<br>') + '</div>';
@@ -881,20 +870,50 @@
     html += '<div style="position:relative">';
     html += '<button class="copy-btn" data-copy="coldcall">Copy</button>';
     html += '<div class="outreach-script" data-copy-target="coldcall">';
-    html += '<div class="cold-call-section"><div class="cold-call-label route">ROUTE</div>';
-    html += escapeHtml('"' + outreach.coldcall.route + '"') + '</div>';
-    html += '<div class="cold-call-section"><div class="cold-call-label ruin">RUIN</div>';
-    html += escapeHtml('"' + outreach.coldcall.ruin + '"') + '</div>';
-    html += '<div class="cold-call-section"><div class="cold-call-label multiply">MULTIPLY</div>';
-    html += escapeHtml('"' + outreach.coldcall.multiply + '"') + '</div>';
+    html += '<div class="cold-call-section"><div class="cold-call-label opener">OPENER</div>';
+    html += '<div class="cold-call-text">' + escapeHtml(outreach.coldcall.opener).replace(/\n/g, '<br>') + '</div></div>';
+    html += '<div class="cold-call-section"><div class="cold-call-label exec-route">EXECUTIVE ROUTE</div>';
+    html += '<div class="cold-call-text">' + escapeHtml(outreach.coldcall.execRoute).replace(/\n/g, '<br>') + '</div></div>';
+    html += '<div class="cold-call-section"><div class="cold-call-label yes-path">IF YES &mdash; THEY OWN IT</div>';
+    html += '<div class="cold-call-text">' + escapeHtml(outreach.coldcall.yesPath).replace(/\n/g, '<br>') + '</div></div>';
+    html += '<div class="cold-call-section"><div class="cold-call-label no-path">IF NO &mdash; REFERRAL PATH</div>';
+    html += '<div class="cold-call-text">' + escapeHtml(outreach.coldcall.noPath).replace(/\n/g, '<br>') + '</div></div>';
     html += '</div></div></div>';
 
     // Voicemail panel
     html += '<div class="outreach-panel" data-panel="voicemail">';
+    html += '<div class="voicemail-note">Keep it short &mdash; the only goal is to direct them to your email or LinkedIn DM.</div>';
     html += '<div style="position:relative">';
     html += '<button class="copy-btn" data-copy="voicemail">Copy</button>';
     html += '<div class="outreach-script" data-copy-target="voicemail">' + escapeHtml(outreach.voicemail).replace(/\n/g, '<br>') + '</div>';
     html += '</div></div>';
+
+    // Stakeholder Outreach panel (By Role)
+    if (outreach.stakeholderMessages && outreach.stakeholderMessages.length > 0) {
+      html += '<div class="outreach-panel" data-panel="stakeholder-outreach">';
+      html += '<div class="stakeholder-outreach-note">Tailored messaging for each stakeholder tier. Adjust the trigger event and company details as needed.</div>';
+      outreach.stakeholderMessages.forEach(function(sm, idx) {
+        html += '<div class="stakeholder-msg-block">';
+        html += '<div class="stakeholder-msg-role">' + escapeHtml(sm.role) + '</div>';
+        html += '<div class="stakeholder-msg-channels">';
+        // Email variant
+        html += '<div class="stakeholder-msg-channel">';
+        html += '<div class="stakeholder-msg-channel-label">Email</div>';
+        html += '<div style="position:relative">';
+        html += '<button class="copy-btn" data-copy="sh-email-' + idx + '">Copy</button>';
+        html += '<div class="outreach-script" data-copy-target="sh-email-' + idx + '">' + escapeHtml(sm.email).replace(/\n/g, '<br>') + '</div>';
+        html += '</div></div>';
+        // Cold call variant
+        html += '<div class="stakeholder-msg-channel">';
+        html += '<div class="stakeholder-msg-channel-label">Cold Call</div>';
+        html += '<div style="position:relative">';
+        html += '<button class="copy-btn" data-copy="sh-call-' + idx + '">Copy</button>';
+        html += '<div class="outreach-script" data-copy-target="sh-call-' + idx + '">' + escapeHtml(sm.coldcall).replace(/\n/g, '<br>') + '</div>';
+        html += '</div></div>';
+        html += '</div></div>';
+      });
+      html += '</div>';
+    }
 
     html += '</div></div>';
 
