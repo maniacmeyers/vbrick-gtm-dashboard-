@@ -82,7 +82,43 @@ const FINDINGS = [
     "employee_count": 38000,
     "is_fortune500": false,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Dan Griffiths",
+        "title": "Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/dan-griffiths-0842642"
+      },
+      {
+        "name": "Sree Rella",
+        "title": "Chief Information Officer, Life Company & Investment Experience",
+        "linkedin": "https://www.linkedin.com/in/sreerella"
+      },
+      {
+        "name": "Kenan Bubela",
+        "title": "SVP Head of Digital and Design",
+        "linkedin": "https://www.linkedin.com/in/kenan-bubela-433658a"
+      },
+      {
+        "name": "Elias Jalomo",
+        "title": "Director of Media Engineering and Infrastructure Support",
+        "linkedin": "https://www.linkedin.com/in/elias-jalomo-92759455"
+      },
+      {
+        "name": "Matthew M",
+        "title": "Media Engineer Lead",
+        "linkedin": "https://www.linkedin.com/in/matthew-m-5a146535"
+      },
+      {
+        "name": "John Pawloski",
+        "title": "SVP - Risk, Compliance, Privacy And Ethics",
+        "linkedin": "https://www.linkedin.com/in/johnpawloski"
+      },
+      {
+        "name": "Timothy Beninato",
+        "title": "Director of Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/timothy-beninato-38bb555a"
+      }
+    ]
   },
   {
     "id": 4,
@@ -110,7 +146,43 @@ const FINDINGS = [
     "employee_count": 48000,
     "is_fortune500": true,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Alexandra Guenther",
+        "title": "SVP & Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/lexyguenther"
+      },
+      {
+        "name": "Blake Nelson",
+        "title": "Vice President Cloud Practice, Digital Modernization Sector",
+        "linkedin": "https://www.linkedin.com/in/blakenelson"
+      },
+      {
+        "name": "Thomas Downey",
+        "title": "EVP, Communications, Marketing, and Government Affairs",
+        "linkedin": "https://www.linkedin.com/in/thomas-downey-506562342"
+      },
+      {
+        "name": "Leslie Fautsch",
+        "title": "Chief Human Resources Officer",
+        "linkedin": "https://www.linkedin.com/in/leslie-fautsch-jd-5355201"
+      },
+      {
+        "name": "Erin Carey",
+        "title": "Director, Tech & Innovation",
+        "linkedin": "https://www.linkedin.com/in/3rincarey"
+      },
+      {
+        "name": "Adam Frederick",
+        "title": "Voice and Video Network Engineer",
+        "linkedin": "https://www.linkedin.com/in/adam-frederick-b6a07472"
+      },
+      {
+        "name": "Jonathan Jowers",
+        "title": "Senior Principal Cybersecurity Compliance",
+        "linkedin": "https://www.linkedin.com/in/jonathan-jowers-595676b"
+      }
+    ]
   },
   {
     "id": 5,
@@ -438,7 +510,43 @@ const FINDINGS = [
     "employee_count": 99600,
     "is_fortune500": true,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Wael Faheem",
+        "title": "SVP and Chief Information Officer - Network Systems",
+        "linkedin": "https://www.linkedin.com/in/waelfaheem"
+      },
+      {
+        "name": "Jim McCarthy",
+        "title": "Sr Director - IT Network & Unified Communications",
+        "linkedin": "https://www.linkedin.com/in/jim-mccarthy-2b4a183b"
+      },
+      {
+        "name": "Lynn Cox",
+        "title": "SVP and Chief Network Officer, Fiber",
+        "linkedin": "https://www.linkedin.com/in/lynn-cox-03610063"
+      },
+      {
+        "name": "Nasrin Rezai",
+        "title": "SVP, Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/nasrin-rezai-b3a85629"
+      },
+      {
+        "name": "Samantha Hammock",
+        "title": "Executive Vice President and Chief Human Resources Officer",
+        "linkedin": "https://www.linkedin.com/in/samanthahammock"
+      },
+      {
+        "name": "Lou Tedrick",
+        "title": "Vice President, Global Learning and Development",
+        "linkedin": "https://www.linkedin.com/in/lou-tedrick-31290510"
+      },
+      {
+        "name": "Franz Paasche",
+        "title": "Executive Vice President, Corporate Affairs",
+        "linkedin": "https://www.linkedin.com/in/franz-paasche"
+      }
+    ]
   },
   {
     "id": 15,
@@ -620,7 +728,43 @@ const FINDINGS = [
     "employee_count": 20014,
     "is_fortune500": true,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Tim Peterson",
+        "title": "Executive Vice President and Chief Customer and Technology Officer",
+        "linkedin": "https://www.linkedin.com/in/timothygpeterson"
+      },
+      {
+        "name": "Cynthia McCabe",
+        "title": "Senior Vice President, Chief Communications Officer",
+        "linkedin": ""
+      },
+      {
+        "name": "Elizabeth Pitts-Madonna",
+        "title": "Senior Vice President and Chief Human Resources Officer",
+        "linkedin": "https://www.linkedin.com/in/elizabeth-pitts-madonna-02977945"
+      },
+      {
+        "name": "Colette D. Honorable",
+        "title": "Executive Vice President, Chief Legal Officer, Compliance and Corporate Secretary",
+        "linkedin": ""
+      },
+      {
+        "name": "Jennifer Peterson-Gutleber",
+        "title": "Vice President Information Technology",
+        "linkedin": "https://www.linkedin.com/in/jennifer-peterson-gutleber"
+      },
+      {
+        "name": "Craig Maternoski",
+        "title": "Director of IT",
+        "linkedin": "https://www.linkedin.com/in/craig-maternoski-b23b243"
+      },
+      {
+        "name": "Kevin De Leon",
+        "title": "Director of IT",
+        "linkedin": "https://www.linkedin.com/in/kevin-de-leon-pmp-80a7744"
+      }
+    ]
   },
   {
     "id": 18,
@@ -729,7 +873,43 @@ const FINDINGS = [
     "employee_count": 22000,
     "is_fortune500": true,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Jim Fowler",
+        "title": "Executive VP and Chief Technology & Product Officer",
+        "linkedin": "https://www.lumen.com/en-us/news/press-resources/jim-fowler.html"
+      },
+      {
+        "name": "Robert Nance",
+        "title": "Sr Director, Global CDN Engineering Development",
+        "linkedin": "https://www.linkedin.com/in/robert-nance-2b680b3"
+      },
+      {
+        "name": "Erin Giese",
+        "title": "Director Information Technology",
+        "linkedin": "https://www.linkedin.com/in/erin-giese-5488206"
+      },
+      {
+        "name": "David Keller",
+        "title": "Director Digital Operations",
+        "linkedin": "https://www.linkedin.com/in/david-keller-5350811a3"
+      },
+      {
+        "name": "Hugo Teufel III",
+        "title": "VP, Deputy General Counsel for Cyber, Privacy; Chief Privacy Officer",
+        "linkedin": "https://www.linkedin.com/in/hugoteufel"
+      },
+      {
+        "name": "Ana White",
+        "title": "Chief People & AI Enablement Officer",
+        "linkedin": "https://www.businesswire.com/news/home/20260317753973/en/Lumen-Technologies-Announces-Board-Chair-Transition-New-Director-Nominee-and-Executive-Role-Expansions"
+      },
+      {
+        "name": "James Butler",
+        "title": "SVP, Deputy General Counsel & Chief Ethics and Compliance Officer",
+        "linkedin": "people/lumen_technologies_ciso_or_vp_security_o_mneaczmo.csv"
+      }
+    ]
   },
   {
     "id": 20,
@@ -873,7 +1053,43 @@ const FINDINGS = [
     "finding_id": "RA03-007",
     "compliance_standard": "FINRA",
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Jennifer Liguori Picard",
+        "title": "Managing Director, Technology",
+        "linkedin": "https://www.linkedin.com/in/jennpicard"
+      },
+      {
+        "name": "Jeffrey Brennan",
+        "title": "Director, Technology",
+        "linkedin": "https://www.linkedin.com/in/jeffrey-brennan-a7b2641b1"
+      },
+      {
+        "name": "Frank Y",
+        "title": "Senior Vice President of Technology / Director of Technology",
+        "linkedin": "https://www.linkedin.com/in/frank-y-47489954"
+      },
+      {
+        "name": "Alan Davies",
+        "title": "Director of Data Infrastructure and Architecture",
+        "linkedin": "https://www.linkedin.com/in/alanhdavies"
+      },
+      {
+        "name": "Albert Mui",
+        "title": "Director, Network and Cloud Connectivity",
+        "linkedin": "https://www.linkedin.com/in/jtksinc"
+      },
+      {
+        "name": "Adrienne Tam",
+        "title": "Managing Director, Compliance",
+        "linkedin": "https://www.linkedin.com/in/adrienne-tam-4a33285"
+      },
+      {
+        "name": "Matt Margiotta",
+        "title": "Managing Director, Compliance",
+        "linkedin": "https://www.linkedin.com/in/matt-margiotta-1b53922b"
+      }
+    ]
   },
   {
     "id": 23,
@@ -1039,7 +1255,43 @@ const FINDINGS = [
     "current_platform": "Microsoft Teams Live Events + Kollective eCDN",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Yves Caseau",
+        "title": "Group Chief Digital & Information Officer",
+        "linkedin": "https://www.linkedin.com/in/ycaseau"
+      },
+      {
+        "name": "Etienne Coursimault",
+        "title": "Chief Digital Experience Officer",
+        "linkedin": "https://www.linkedin.com/in/etienne-coursimault-16242775"
+      },
+      {
+        "name": "Pauline Flament",
+        "title": "CDIO Americas - Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/pauline-flament-3315071b"
+      },
+      {
+        "name": "Chuck Church",
+        "title": "Network Architect",
+        "linkedin": "https://www.linkedin.com/in/chuck-church-44223236"
+      },
+      {
+        "name": "Christophe Albertoli",
+        "title": "Infrastructure Architect - Network",
+        "linkedin": "https://www.linkedin.com/in/christophe-albertoli-5929088"
+      },
+      {
+        "name": "Jean-frédéric Douroux",
+        "title": "Corporate Communications & Contents Chief Officer",
+        "linkedin": "https://www.linkedin.com/in/jean-fr%C3%A9d%C3%A9ric-douroux-23470741"
+      },
+      {
+        "name": "Mike Oster",
+        "title": "Director of Learning & Development",
+        "linkedin": "https://www.linkedin.com/in/mike-oster-101633161"
+      }
+    ]
   },
   {
     "id": 29,
@@ -1184,7 +1436,43 @@ const FINDINGS = [
     "employee_count": 18600,
     "is_fortune500": false,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Shiva P",
+        "title": "SVP of Infrastructure and Cloud Advancement",
+        "linkedin": "https://www.linkedin.com/in/shivaparanandi"
+      },
+      {
+        "name": "Marcin Kiełek",
+        "title": "Senior Director, Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/marcinkielek"
+      },
+      {
+        "name": "Linda C Davidoff",
+        "title": "Executive Vice President, Chief Compliance Officer",
+        "linkedin": "https://www.linkedin.com/in/lindacdavidoff"
+      },
+      {
+        "name": "David Bittler",
+        "title": "Executive Vice President, Communications",
+        "linkedin": "https://www.linkedin.com/in/davidbittler"
+      },
+      {
+        "name": "Phil Wiser",
+        "title": "Chief Technology Officer and Head, Multiplatform Operations",
+        "linkedin": "https://www.linkedin.com/in/phil-wiser-b8533"
+      },
+      {
+        "name": "Ankur Patel",
+        "title": "Director, Live Video Systems and Technology",
+        "linkedin": "https://www.linkedin.com/in/ankur-patel-9223b645"
+      },
+      {
+        "name": "Todd Rowen",
+        "title": "Vice President Global Compliance",
+        "linkedin": "https://www.linkedin.com/in/toddrowen"
+      }
+    ]
   },
   {
     "id": 32,
@@ -1718,7 +2006,43 @@ const FINDINGS = [
     "employee_count": 61000,
     "is_fortune500": true,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Niall Johnston",
+        "title": "SVP & Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/nialljohnston"
+      },
+      {
+        "name": "Piyush Agarwal",
+        "title": "VP, Head of Information Technology Operations",
+        "linkedin": "https://www.linkedin.com/in/piyush-agarwal-a23714"
+      },
+      {
+        "name": "Tom Mills",
+        "title": "Principal Solutions Architect - Video",
+        "linkedin": "https://www.linkedin.com/in/tom9933"
+      },
+      {
+        "name": "Mark Zizzamia",
+        "title": "Sr. Principal Solutions Architect - ZOOM",
+        "linkedin": "https://www.linkedin.com/in/mzizzamia"
+      },
+      {
+        "name": "Melissa Hubert",
+        "title": "Chief of Staff @ HP | Championing Digital Transformation & Operational Excellence",
+        "linkedin": "https://www.linkedin.com/in/melissa-hubert-7225a47"
+      },
+      {
+        "name": "Clint Gee",
+        "title": "Sr. Engineering Manager, Unified Communications",
+        "linkedin": "https://www.linkedin.com/in/clint-gee-a928a75"
+      },
+      {
+        "name": "Justin Duncan",
+        "title": "Senior Director, CEO Communications",
+        "linkedin": "https://www.linkedin.com/in/justin-duncan"
+      }
+    ]
   },
   {
     "id": 44,
@@ -1746,7 +2070,43 @@ const FINDINGS = [
     "employee_count": 36000,
     "is_fortune500": true,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Melanie Kalmar",
+        "title": "Corporate Vice President, Chief Information Officer & Chief Digital Officer",
+        "linkedin": "https://www.linkedin.com/in/melaniekalmar"
+      },
+      {
+        "name": "Donald Wright",
+        "title": "Global Director IT Services, Director Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/donald-wright-2146056b"
+      },
+      {
+        "name": "Mario Ferket",
+        "title": "Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/mario-ferket"
+      },
+      {
+        "name": "Lisa Brzozowski",
+        "title": "Enterprise Learning Director",
+        "linkedin": "https://www.linkedin.com/in/lisa-brzozowski-9808bbb"
+      },
+      {
+        "name": "Lisa Bryant",
+        "title": "Chief Human Resources Officer",
+        "linkedin": "https://www.linkedin.com/in/lisa-bryant-9b293a13"
+      },
+      {
+        "name": "Rebecca Bentley",
+        "title": "Vice President, Corporate Affairs",
+        "linkedin": "https://www.linkedin.com/in/rebecca-bentley-57113b9"
+      },
+      {
+        "name": "Jeremy Hyland",
+        "title": "Director of Cyber Defense",
+        "linkedin": "https://www.linkedin.com/in/hylandj"
+      }
+    ]
   },
   {
     "id": 45,
@@ -1798,7 +2158,43 @@ const FINDINGS = [
     "finding_id": "RA03-015",
     "compliance_standard": "FedRAMP",
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "David A. Shive",
+        "title": "Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/david-shive-4b4a1711"
+      },
+      {
+        "name": "Sid Sripada",
+        "title": "Division Director, Digital Infrastructure Technologies",
+        "linkedin": "https://www.linkedin.com/in/sidsripada"
+      },
+      {
+        "name": "Shannon Casucci",
+        "title": "Director, Office of Public Buildings Information Technology Services",
+        "linkedin": "https://www.linkedin.com/in/shannon-casucci-a05b89b"
+      },
+      {
+        "name": "Joseph Hoyt",
+        "title": "Acting Chief Information Security Officer (CISO)",
+        "linkedin": ""
+      },
+      {
+        "name": "Lawrence Hale",
+        "title": "Acting Assistant Commissioner, Information Technology Category",
+        "linkedin": ""
+      },
+      {
+        "name": "Lesley Briante",
+        "title": "Associate CIO of Digital Management",
+        "linkedin": ""
+      },
+      {
+        "name": "Cara Battaglini Schatz",
+        "title": "Director, Outreach Communications, Federal Acquisition Service IT Category",
+        "linkedin": "https://www.linkedin.com/in/cara-battaglini-schatz-718a3b3"
+      }
+    ]
   },
   {
     "id": 47,
@@ -2006,7 +2402,43 @@ const FINDINGS = [
     "employee_count": 5000,
     "is_fortune500": false,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Raj Velmurugan",
+        "title": "Vice President, Global CIO",
+        "linkedin": "https://www.linkedin.com/in/rajvelmurugan"
+      },
+      {
+        "name": "Dave Krabill",
+        "title": "Director, ERP Programs",
+        "linkedin": "https://www.linkedin.com/in/dave-krabill-a3b8bb"
+      },
+      {
+        "name": "Rich Flahaven",
+        "title": "Chief Info Security Officer",
+        "linkedin": "https://www.linkedin.com/in/rich-flahaven-454186153"
+      },
+      {
+        "name": "George Prassas",
+        "title": "Chief Communications Officer",
+        "linkedin": "https://www.linkedin.com/in/georgeprassas"
+      },
+      {
+        "name": "Sean Zielinski",
+        "title": "Head of Communications",
+        "linkedin": "https://www.linkedin.com/in/sean-zielinski-72757a1"
+      },
+      {
+        "name": "Paul Krause",
+        "title": "Chief Legal Officer, Chief Compliance Officer, and Corporate Secretary",
+        "linkedin": "https://www.linkedin.com/in/paul-krause-10a9027"
+      },
+      {
+        "name": "Tori Termaat",
+        "title": "Chief Human Resources Officer",
+        "linkedin": "https://www.linkedin.com/in/tori-termaat-9b18296"
+      }
+    ]
   },
   {
     "id": 55,
@@ -2114,7 +2546,43 @@ const FINDINGS = [
     "employee_count": 273000,
     "is_fortune500": false,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Christopher Wright",
+        "title": "Head of Information Technology and Nestlé Group CIO",
+        "linkedin": "https://www.linkedin.com/in/christopher-michael-wright"
+      },
+      {
+        "name": "Michael Page",
+        "title": "VP of Office of The CIO - Nestle IT North America",
+        "linkedin": "https://www.linkedin.com/in/michaelpageatl"
+      },
+      {
+        "name": "Rafael Villoria Ferrer",
+        "title": "Deputy CISO",
+        "linkedin": "https://www.linkedin.com/in/rafael-villoria-ferrer-3b9a3117"
+      },
+      {
+        "name": "John Siniff",
+        "title": "Vice President of Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/john-siniff-79252512"
+      },
+      {
+        "name": "Amy Howard",
+        "title": "Global Head of Internal Communication and Employee Engagement",
+        "linkedin": "https://www.linkedin.com/in/amy-howard-66a8307"
+      },
+      {
+        "name": "Hengameh Van Der Kaaij",
+        "title": "Global Head of Communication, Learning & Training for Operations",
+        "linkedin": "https://www.linkedin.com/in/hengameh-van-der-kaaij-5901005b"
+      },
+      {
+        "name": "Justin K Buckle",
+        "title": "Senior Global LAN/WiFi Solution Architect",
+        "linkedin": "https://www.linkedin.com/in/justin-k-buckle-708a9635"
+      }
+    ]
   },
   {
     "id": 59,
@@ -2387,7 +2855,38 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Hemant Baidwan",
+        "title": "Chief Information Security Officer (DHS CISO)",
+        "linkedin": "https://www.linkedin.com/in/hbaidwan"
+      },
+      {
+        "name": "Peyton Rollins",
+        "title": "Digital Communications Director",
+        "linkedin": "https://www.linkedin.com/in/peyton-rollins-"
+      },
+      {
+        "name": "Matthew T Harmon",
+        "title": "Director of Web Communications",
+        "linkedin": "https://www.linkedin.com/in/mtharmon"
+      },
+      {
+        "name": "Erica Pitts Dyson",
+        "title": "Director Internal Communications",
+        "linkedin": "https://www.linkedin.com/in/erica-pitts-dyson-89308121"
+      },
+      {
+        "name": "Lisa Boothe",
+        "title": "Director of Workforce Development",
+        "linkedin": "https://www.linkedin.com/in/lisa-boothe-b5147596"
+      },
+      {
+        "name": "Michelle Hoffman",
+        "title": "Director of Learning And Development",
+        "linkedin": "https://www.linkedin.com/in/michelle-hoffman-5823181b2"
+      }
+    ]
   },
   {
     "id": 69,
@@ -2471,7 +2970,43 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Suresh Kumar",
+        "title": "Executive VP, Global CTO & Chief Development Officer",
+        "linkedin": "https://digitaldefynd.com/IQ/meet-the-executive-csuite-team-of-walmart/"
+      },
+      {
+        "name": "Hari Vasudev",
+        "title": "EVP and Tech Operating Partner, Walmart U.S.",
+        "linkedin": "https://www.linkedin.com/in/harivasudev"
+      },
+      {
+        "name": "Jerry R. Geisler III",
+        "title": "EVP and Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/jerry-geisler-289824b0"
+      },
+      {
+        "name": "Mischa Dunton",
+        "title": "Group Director, Global Communications, Head of Walmart Global Tech Communications",
+        "linkedin": "https://www.linkedin.com/in/mischa-dunton-3314bb"
+      },
+      {
+        "name": "Jessica Smith",
+        "title": "Director of Communications, Emerging Technologies, Walmart Global Tech",
+        "linkedin": "https://www.linkedin.com/in/jmsmith438"
+      },
+      {
+        "name": "Mandy McDonald-Brashear",
+        "title": "SVP and Chief People Officer, Global Corporate Functions",
+        "linkedin": "https://www.linkedin.com/in/mandy-mcdonald-brashear"
+      },
+      {
+        "name": "Sherin Sunny",
+        "title": "Sr Software Engineering Manager Architect, Vizio (Walmart)",
+        "linkedin": "https://www.linkedin.com/in/sunnysherin"
+      }
+    ]
   },
   {
     "id": 72,
@@ -2582,7 +3117,43 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Phil Wall",
+        "title": "SVP, Business Technology Executive Enterprise CTO Infrastructure Delivery",
+        "linkedin": "https://www.linkedin.com/in/phil-wall-89588a45"
+      },
+      {
+        "name": "Rob Salter",
+        "title": "Technology Infrastructure Domain Executive SVP",
+        "linkedin": "https://www.linkedin.com/in/rob-salter-3b590b113"
+      },
+      {
+        "name": "Kevin A Cooper",
+        "title": "Senior Vice President Video Collaboration Solutions",
+        "linkedin": "https://www.linkedin.com/in/kevinacooper"
+      },
+      {
+        "name": "Chris Abouchacra",
+        "title": "Production Services Lead Live Streaming Video Distribution",
+        "linkedin": "https://www.linkedin.com/in/chris-abouchacra-mcse-vcp-85a54a19"
+      },
+      {
+        "name": "Shonali Gupte",
+        "title": "SVP Learning and Leadership Development Executive Global Technology",
+        "linkedin": "https://www.linkedin.com/in/shonali-gupte-b67424"
+      },
+      {
+        "name": "Alison Gallagher",
+        "title": "Corporate Communications Executive",
+        "linkedin": "https://www.linkedin.com/in/alison-gallagher-34771039"
+      },
+      {
+        "name": "George Smirnoff",
+        "title": "Managing Director Global Information Security Compliance Operational Risk",
+        "linkedin": "https://www.linkedin.com/in/georgesmirnoff"
+      }
+    ]
   },
   {
     "id": 74,
@@ -2612,7 +3183,43 @@ const FINDINGS = [
     "current_platform": "Kaltura",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Zack Kahn",
+        "title": "Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/zack-kahn"
+      },
+      {
+        "name": "Julissa Marenco",
+        "title": "Assistant Secretary for Communications and External Affairs and Chief Marketing Officer",
+        "linkedin": "https://www.si.edu/about/bios/julissa-marenco"
+      },
+      {
+        "name": "Jenny Sue Ross",
+        "title": "Chief Data and AI Officer",
+        "linkedin": "https://www.linkedin.com/in/jennysueross"
+      },
+      {
+        "name": "Carmen Iannacone",
+        "title": "Chief Technology Officer",
+        "linkedin": "https://www.linkedin.com/in/carmen-iannacone-54397436"
+      },
+      {
+        "name": "Monique M. Chism",
+        "title": "Under Secretary for Education",
+        "linkedin": "https://www.si.edu/about/ouse"
+      },
+      {
+        "name": "Toby Dodds",
+        "title": "Director of Web and IT",
+        "linkedin": "https://folklife.si.edu/staff/smithsonian"
+      },
+      {
+        "name": "David Perkins",
+        "title": "Media AV/IT Specialist",
+        "linkedin": "https://www.linkedin.com/in/david-perkins-9a4a43354"
+      }
+    ]
   },
   {
     "id": 75,
@@ -2640,7 +3247,43 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Paul T. Stanton",
+        "title": "Director",
+        "linkedin": "https://www.linkedin.com/in/paul-stanton6"
+      },
+      {
+        "name": "Jeff Marshall",
+        "title": "Director, DISA J-9 Hosting and Compute",
+        "linkedin": "https://www.linkedin.com/in/jeff-marshall-bb2189a7"
+      },
+      {
+        "name": "Steve Wallace",
+        "title": "Chief Technology Officer, DISA Emerging Technology Directorate",
+        "linkedin": "https://www.linkedin.com/in/steve-wallace-1771645"
+      },
+      {
+        "name": "Byron Stephenson",
+        "title": "J-9 Vice Director",
+        "linkedin": "https://www.linkedin.com/in/byron-stephenson-ab7045241"
+      },
+      {
+        "name": "Marcus Walker",
+        "title": "Deputy Chief of Enterprise Operations",
+        "linkedin": "https://www.linkedin.com/in/marcus-walker-36b8024b"
+      },
+      {
+        "name": "Sharon Mcmillon",
+        "title": "Vice Director for Programs / Deputy Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/sharonmcmillon"
+      },
+      {
+        "name": "Katrina Logan",
+        "title": "Director, Manpower and Personnel Directorate (J1)",
+        "linkedin": "https://www.linkedin.com/in/katrina-logan-758a5a4"
+      }
+    ]
   },
   {
     "id": 76,
@@ -2698,7 +3341,43 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Maria Demaree",
+        "title": "SVP and CIO, Enterprise Business & Digital Transformation",
+        "linkedin": "https://www.linkedin.com/in/maria-demaree"
+      },
+      {
+        "name": "Jenna McMullin",
+        "title": "Senior Vice President, Chief Communications Officer",
+        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/jenna-mcmullin.html"
+      },
+      {
+        "name": "Kristopher Singer",
+        "title": "Director, Digital Workplace & Communications Services",
+        "linkedin": "https://www.linkedin.com/in/kristopher-singer"
+      },
+      {
+        "name": "Daniel Driscoll",
+        "title": "CIO and Digital Enablement Vice President, Lockheed Martin Space",
+        "linkedin": "https://www.linkedin.com/in/daniel-driscoll-5619802a"
+      },
+      {
+        "name": "Chris Wronsky",
+        "title": "Senior Vice President and Chief Human Resources Officer",
+        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html"
+      },
+      {
+        "name": "Leo Mackay",
+        "title": "Senior Vice President, Ethics and Enterprise Assurance",
+        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html"
+      },
+      {
+        "name": "Stuart Holliday",
+        "title": "Senior Vice President, Chief Public Affairs Officer",
+        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html"
+      }
+    ]
   },
   {
     "id": 78,
@@ -2726,7 +3405,43 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Darrell Brooks",
+        "title": "SVP, Infrastructure Services, UHG Information Technology",
+        "linkedin": "https://www.linkedin.com/in/darrell-brooks-3a537a10"
+      },
+      {
+        "name": "Jeremy Stern",
+        "title": "Vice President, Information Technology",
+        "linkedin": "https://www.linkedin.com/in/jeremy-stern-8442004"
+      },
+      {
+        "name": "Daniel Thorson",
+        "title": "IT Director, Datacenter Network Engineering",
+        "linkedin": "https://www.linkedin.com/in/dan-thorson"
+      },
+      {
+        "name": "Scott Moyer",
+        "title": "Senior Manager, Network Engineering",
+        "linkedin": "https://www.linkedin.com/in/scott-moyer-7819671"
+      },
+      {
+        "name": "Vicki Schultz",
+        "title": "Director, Provider Communications, UnitedHealthcare",
+        "linkedin": "https://www.linkedin.com/in/vicki-schultz"
+      },
+      {
+        "name": "Mark Archer",
+        "title": "SVP, Enterprise Security Office",
+        "linkedin": "https://www.linkedin.com/in/archerme"
+      },
+      {
+        "name": "Dennis Genkinger",
+        "title": "Sr. IS Architect",
+        "linkedin": "https://www.linkedin.com/in/dennis-genkinger-0b64067"
+      }
+    ]
   },
   {
     "id": 79,
@@ -2806,6 +3521,42 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "is_new": true,
-    "stakeholders": []
+    "stakeholders": [
+      {
+        "name": "Les Copeland",
+        "title": "Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/les-copeland-6b158918"
+      },
+      {
+        "name": "Grant Gauld",
+        "title": "Senior Technical Manager – IT Service Management, Application & Platform Engineering",
+        "linkedin": "https://www.linkedin.com/in/grant-gauld-6996ba7a"
+      },
+      {
+        "name": "Sarah Mahone",
+        "title": "Program Manager, Global Exploration",
+        "linkedin": "https://www.linkedin.com/in/sarah-mahone-b6647a12"
+      },
+      {
+        "name": "Josh Durham",
+        "title": "Video Collaboration Architect",
+        "linkedin": "https://www.linkedin.com/in/josh-durham-10099428"
+      },
+      {
+        "name": "Sherry Hunyadi",
+        "title": "Chief Security Architect / General Manager, Cyber Intelligence Center",
+        "linkedin": "https://www.linkedin.com/in/sherry-hunyadi"
+      },
+      {
+        "name": "Lindsey Benton",
+        "title": "Senior Manager, Communications Strategy, Planning and Analytics",
+        "linkedin": "https://www.linkedin.com/in/lindseyabenton"
+      },
+      {
+        "name": "Minh Lee",
+        "title": "Principal Network Engineer",
+        "linkedin": "https://www.linkedin.com/in/minh-lee-58b91927"
+      }
+    ]
   }
 ];
