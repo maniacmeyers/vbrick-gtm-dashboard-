@@ -1140,68 +1140,170 @@
     return div.innerHTML;
   }
 
-  // ---- CSV Export (with stakeholders) ----
+  // ---- CSV Export with Column Picker ----
+  var CSV_COLUMNS = [
+    { key: 'id', label: 'ID', getter: function(f){ return f.id; } },
+    { key: 'urgency', label: 'Urgency', getter: function(f){ return URGENCY_NAMES[f.urgency_score||0]||'Low'; } },
+    { key: 'company', label: 'Company', getter: function(f){ return f.company||''; } },
+    { key: 'category', label: 'Category', getter: function(f){ return f.category||''; } },
+    { key: 'finding_type', label: 'Finding Type', getter: function(f){ return f.finding_type||''; } },
+    { key: 'summary', label: 'Summary', getter: function(f){ return f.summary||''; } },
+    { key: 'target_persona', label: 'Target Persona', getter: function(f){ return f.target_persona||''; } },
+    { key: 'industry', label: 'Industry', getter: function(f){ return f.industry||''; } },
+    { key: 'why_vbrick', label: 'Why Vbrick', getter: function(f){ return f.why_vbrick||''; } },
+    { key: 'confidence', label: 'Confidence', getter: function(f){ return f.confidence||''; } },
+    { key: 'source_url', label: 'Source URL', getter: function(f){ return f.source_url||''; } },
+    { key: 'competitor', label: 'Competitor', getter: function(f){ return f.competitor||''; } },
+    { key: 'stakeholders', label: 'Stakeholders (Name / Title / LinkedIn)', getter: null }
+  ];
+
+  // Column selection (in-memory, persists within session)
+  var _exportPrefsCache = null;
+  function getExportPrefs() {
+    if (_exportPrefsCache) return _exportPrefsCache;
+    var prefs = {};
+    CSV_COLUMNS.forEach(function(c){ prefs[c.key] = true; });
+    _exportPrefsCache = prefs;
+    return prefs;
+  }
+  function saveExportPrefs(prefs) {
+    _exportPrefsCache = prefs;
+  }
+
+  function buildExportModal() {
+    var overlay = document.createElement('div');
+    overlay.className = 'modal-overlay open';
+    overlay.id = 'exportModalOverlay';
+    var modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.style.maxWidth = '520px';
+    var prefs = getExportPrefs();
+    var data = getFilteredFindings();
+
+    var html = '<div class="modal-content">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">';
+    html += '<h2 style="margin:0;font-size:var(--text-lg);">Export CSV</h2>';
+    html += '<button id="exportModalClose" style="padding:6px;border-radius:8px;color:var(--color-text-muted);" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>';
+    html += '</div>';
+    html += '<p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:1rem;">' + data.length + ' findings in current view. Select columns to include:</p>';
+
+    // Select all / none
+    html += '<div style="display:flex;gap:0.75rem;margin-bottom:1rem;">';
+    html += '<button class="export-toggle-btn" id="csvSelectAll" style="font-size:var(--text-xs);font-weight:600;color:var(--nm-accent);cursor:pointer;">Select All</button>';
+    html += '<button class="export-toggle-btn" id="csvSelectNone" style="font-size:var(--text-xs);font-weight:600;color:var(--color-text-muted);cursor:pointer;">Select None</button>';
+    html += '</div>';
+
+    // Column checkboxes
+    html += '<div class="export-col-grid">';
+    CSV_COLUMNS.forEach(function(c) {
+      var checked = prefs[c.key] ? ' checked' : '';
+      html += '<label class="export-col-label">';
+      html += '<input type="checkbox" class="export-col-cb" data-key="' + c.key + '"' + checked + '>';
+      html += '<span>' + c.label + '</span>';
+      html += '</label>';
+    });
+    html += '</div>';
+
+    // Download button
+    html += '<div style="display:flex;gap:0.75rem;margin-top:1.5rem;">';
+    html += '<button id="csvDownloadBtn" class="csv-download-btn">Download CSV</button>';
+    html += '</div>';
+    html += '</div>';
+
+    modal.innerHTML = html;
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    // Wire up events
+    document.getElementById('exportModalClose').addEventListener('click', function() {
+      overlay.remove();
+    });
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) overlay.remove();
+    });
+    document.getElementById('csvSelectAll').addEventListener('click', function() {
+      overlay.querySelectorAll('.export-col-cb').forEach(function(cb){ cb.checked = true; });
+    });
+    document.getElementById('csvSelectNone').addEventListener('click', function() {
+      overlay.querySelectorAll('.export-col-cb').forEach(function(cb){ cb.checked = false; });
+    });
+    document.getElementById('csvDownloadBtn').addEventListener('click', function() {
+      // Read selected columns
+      var selected = {};
+      overlay.querySelectorAll('.export-col-cb').forEach(function(cb) {
+        selected[cb.dataset.key] = cb.checked;
+      });
+      saveExportPrefs(selected);
+      runCsvExport(data, selected);
+      overlay.remove();
+    });
+  }
+
+  function runCsvExport(data, selected) {
+    var maxStake = 0;
+    if (selected.stakeholders) {
+      data.forEach(function(f) {
+        if (f.stakeholders && f.stakeholders.length > maxStake) maxStake = f.stakeholders.length;
+      });
+      if (maxStake < 7) maxStake = 7;
+    }
+
+    // Build headers
+    var headers = [];
+    CSV_COLUMNS.forEach(function(c) {
+      if (!selected[c.key]) return;
+      if (c.key === 'stakeholders') {
+        for (var si = 1; si <= maxStake; si++) {
+          headers.push('Stakeholder ' + si + ' Name');
+          headers.push('Stakeholder ' + si + ' Title');
+          headers.push('Stakeholder ' + si + ' LinkedIn');
+        }
+      } else {
+        headers.push(c.label);
+      }
+    });
+
+    var csvRows = [headers.join(',')];
+    data.forEach(function(f) {
+      var row = [];
+      CSV_COLUMNS.forEach(function(c) {
+        if (!selected[c.key]) return;
+        if (c.key === 'stakeholders') {
+          for (var si = 0; si < maxStake; si++) {
+            if (f.stakeholders && f.stakeholders[si]) {
+              row.push(csvEscape(f.stakeholders[si].name||''));
+              row.push(csvEscape(f.stakeholders[si].title||''));
+              row.push(csvEscape(f.stakeholders[si].linkedin||''));
+            } else {
+              row.push(''); row.push(''); row.push('');
+            }
+          }
+        } else {
+          row.push(csvEscape(String(c.getter(f))));
+        }
+      });
+      csvRows.push(row.join(','));
+    });
+
+    var csvContent = csvRows.join('\n');
+    var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    var viewLabel = viewTitles[currentView] || 'all';
+    a.download = 'vbrick-gtm-' + viewLabel.toLowerCase().replace(/[^a-z0-9]+/g,'-') + '-' + new Date().toISOString().slice(0,10) + '.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
   var exportBtn = document.getElementById('exportCsvBtn');
   if (exportBtn) {
-    exportBtn.addEventListener('click', function () {
+    exportBtn.addEventListener('click', function() {
       var data = getFilteredFindings();
       if (data.length === 0) { alert('No findings to export.'); return; }
-
-      // Build CSV with stakeholder columns
-      var maxStakeholders = 0;
-      data.forEach(function (f) {
-        if (f.stakeholders && f.stakeholders.length > maxStakeholders) {
-          maxStakeholders = f.stakeholders.length;
-        }
-      });
-      if (maxStakeholders < 7) maxStakeholders = 7;
-
-      var headers = ['ID', 'Urgency', 'Company', 'Category', 'Finding Type', 'Summary', 'Target Persona', 'Industry', 'Why Vbrick', 'Confidence', 'Source URL'];
-      for (var si = 1; si <= maxStakeholders; si++) {
-        headers.push('Stakeholder ' + si + ' Name');
-        headers.push('Stakeholder ' + si + ' Title');
-        headers.push('Stakeholder ' + si + ' LinkedIn');
-      }
-
-      var csvRows = [headers.join(',')];
-      data.forEach(function (f) {
-        var urgLabel = URGENCY_NAMES[f.urgency_score || 0] || 'Low';
-        var row = [
-          f.id,
-          urgLabel,
-          csvEscape(f.company || ''),
-          csvEscape(f.category || ''),
-          csvEscape(f.finding_type || ''),
-          csvEscape(f.summary || ''),
-          csvEscape(f.target_persona || ''),
-          csvEscape(f.industry || ''),
-          csvEscape(f.why_vbrick || ''),
-          csvEscape(f.confidence || ''),
-          csvEscape(f.source_url || '')
-        ];
-        for (var si = 0; si < maxStakeholders; si++) {
-          if (f.stakeholders && f.stakeholders[si]) {
-            row.push(csvEscape(f.stakeholders[si].name || ''));
-            row.push(csvEscape(f.stakeholders[si].title || ''));
-            row.push(csvEscape(f.stakeholders[si].linkedin || ''));
-          } else {
-            row.push(''); row.push(''); row.push('');
-          }
-        }
-        csvRows.push(row.join(','));
-      });
-
-      var csvContent = csvRows.join('\n');
-      var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-      var url = URL.createObjectURL(blob);
-      var a = document.createElement('a');
-      a.href = url;
-      var viewLabel = viewTitles[currentView] || 'all';
-      a.download = 'vbrick-gtm-' + viewLabel.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + new Date().toISOString().slice(0, 10) + '.csv';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+      buildExportModal();
     });
   }
 
