@@ -74,6 +74,7 @@
     triggers: "Market Triggers",
     compliance: "Compliance & Regulatory",
     fortune500: "Fortune 500 Accounts",
+    playbook: "Outbound Playbook",
   };
 
   navItems.forEach(function (item) {
@@ -290,6 +291,33 @@
 
   // ---- Render Table ----
   function renderFindings() {
+    // Handle playbook view separately
+    var filtersBar = document.querySelector('.filters-bar');
+    var kpiGrid = document.getElementById('kpiGrid');
+    var tableContainer = document.querySelector('.table-container');
+    var playbookEl = document.getElementById('playbookContainer');
+
+    if (currentView === 'playbook') {
+      if (filtersBar) filtersBar.style.display = 'none';
+      if (kpiGrid) kpiGrid.style.display = 'none';
+      if (tableContainer) tableContainer.style.display = 'none';
+      findingCount.textContent = '';
+      if (!playbookEl) {
+        playbookEl = document.createElement('div');
+        playbookEl.id = 'playbookContainer';
+        document.getElementById('mainContent').appendChild(playbookEl);
+      }
+      playbookEl.style.display = 'block';
+      renderPlaybook(playbookEl);
+      return;
+    }
+
+    // Normal view: show standard elements, hide playbook
+    if (filtersBar) filtersBar.style.display = '';
+    if (kpiGrid) kpiGrid.style.display = '';
+    if (tableContainer) tableContainer.style.display = '';
+    if (playbookEl) playbookEl.style.display = 'none';
+
     var data = getFilteredFindings();
     updateKPIs(data);
     findingCount.textContent = data.length + " findings";
@@ -467,77 +495,78 @@
     return "enterprise video";
   }
 
-  // --- EMAIL: casual, conversational, short ---
+  // --- EMAIL: Maniac Method Spear — under 50 words, no pleasantries, conversational ---
   function generateEmail(company, pain, proof, isMulti, finding, trigger) {
     var subject = generateSubject(finding);
     var type = finding.finding_type || "";
     var competitor = finding.competitor || "";
 
-    var body = "Hey {{First Name}},\n\n";
+    var body = "{{First Name}},\n\n";
     if (type.includes("Migration") || type.includes("Churn")) {
       body += isMulti
-        ? "Seeing a lot of orgs scrambling because of " + trigger + ". Figured it might be on your radar too."
-        : "Came across " + trigger + " and figured it's probably creating some headaches for " + company + ".";
+        ? trigger + ". When your video vendor implodes mid-town-hall, it's your problem. We kept similar orgs live through theirs."
+        : trigger + ". " + company + "'s video stack is exposed. We kept orgs like yours live when their vendor cratered.";
     } else if (type.includes("RTO")) {
       body += isMulti
-        ? "With RTO mandates ramping up, video for town halls and all-hands is becoming a real pain point. Curious if that's hitting your world."
-        : "Saw " + company + "'s RTO news. When thousands of people need to be in the same virtual room at once, things break fast.";
+        ? "RTO mandates. 10K people, one all-hands, network melts. We prevent that with eCDN."
+        : company + " RTO. 10K people, one all-hands, network melts. We prevent that with eCDN.";
     } else if (type.includes("Compliance") || type.includes("Regulatory")) {
-      body += "With " + trigger + ", wanted to flag something that might save your team some time.";
+      body += "New compliance deadlines hit video archiving. Most orgs aren't ready. We got similar companies audit-proof in 6 weeks.";
     } else if (type.includes("Leadership")) {
-      body += "Congrats on the new role. When the dust settles and you start looking at the video stack, I think there's something worth a conversation.";
+      body += "New role, inherited video stack. The gaps show up fast when the CEO town hall crashes. We fix that.";
     } else if (type.includes("M&A")) {
-      body += "Integration is always a beast. When two orgs collide, video infrastructure is one of the first things that falls through the cracks.";
+      body += "Two orgs merge, two video platforms collide. It breaks. We've unified video infrastructure through 3 major integrations this year.";
+    } else if (type.includes("Security")) {
+      body += trigger + ". Most enterprise video platforms have security gaps your CISO doesn't know about yet. We close them.";
+    } else if (type.includes("Job Posting") || type.includes("eCDN")) {
+      body += "Saw " + company + " is building out " + getDomainWord(finding) + ". We do this for F500s with eCDN, FedRAMP, real-time analytics.";
     } else {
-      body += "Came across " + trigger + " and thought this might be relevant.";
+      body += trigger + ". Directly impacts your video infrastructure. We handle this for similar orgs.";
     }
-    body += "\n\n" + proof + ".";
-    body += "\n\nWorth a conversation?";
-    body += "\n\n{{Your First Name}}";
+    body += "\n\nRelevant?\n\n{{Your First Name}}";
 
     return { subject: subject, body: body };
   }
 
-  // --- LINKEDIN DM: casual, conversational, after blank connection request ---
+  // --- LINKEDIN DM: after blank connection request, under 40 words, no pitch ---
   function generateLinkedInDM(company, pain, proof, isMulti, finding, trigger) {
     var type = finding.finding_type || "";
-    var competitor = finding.competitor || "";
 
     var msg = "";
     if (type.includes("Migration") || type.includes("Churn")) {
-      msg = "Hey {{First Name}} -- thanks for connecting. Noticed " + trigger + " and figured it might be creating some questions on your end. Happy to share what we're seeing from orgs in a similar spot if it'd be useful.";
+      msg = "{{First Name}} -- " + trigger + ". Seeing a pattern with orgs dealing with this. Curious if it's on your radar too.";
     } else if (type.includes("RTO")) {
       msg = isMulti
-        ? "Hey {{First Name}} -- thanks for connecting. RTO is putting a lot of pressure on video infrastructure right now. Curious if that's something you're dealing with."
-        : "Hey {{First Name}} -- thanks for connecting. Saw " + company + "'s RTO announcement and thought this might resonate. Scaling video for all-hands across locations is a challenge we hear about constantly.";
+        ? "{{First Name}} -- RTO is exposing video infrastructure gaps everywhere. Figured you might be in the thick of it."
+        : "{{First Name}} -- saw " + company + "'s RTO news. Scaling video for all-hands at that size is brutal. Worth comparing notes?";
     } else if (type.includes("Compliance") || type.includes("Regulatory")) {
-      msg = "Hey {{First Name}} -- thanks for connecting. With " + trigger + ", wanted to flag something that might be relevant to how your team handles video compliance. Happy to share more if useful.";
+      msg = "{{First Name}} -- new compliance deadlines are catching video teams off guard. Thought this might be relevant to what you're working on.";
     } else if (type.includes("Leadership")) {
-      msg = "Hey {{First Name}} -- thanks for connecting. Congrats on the new role. When you get a chance to look at the video infrastructure, happy to share what's been working at similar orgs.";
+      msg = "{{First Name}} -- saw the move. When you start poking at the video stack, I think there's something worth discussing.";
     } else if (type.includes("Security")) {
-      msg = "Hey {{First Name}} -- thanks for connecting. With " + trigger + ", figured you might be re-evaluating the video stack. Happy to share what we're seeing.";
+      msg = "{{First Name}} -- " + trigger + ". Most enterprise video has security gaps nobody's looking at. Worth a quick exchange?";
     } else {
-      msg = "Hey {{First Name}} -- thanks for connecting. Came across " + trigger + " and thought it might be worth a quick exchange. Let me know if you're open to it.";
+      msg = "{{First Name}} -- came across " + trigger + ". Thought it might connect to what you're working on. Open to comparing notes?";
     }
     return msg;
   }
 
-  // --- COLD CALL: name-pause-route-trigger methodology ---
+  // --- COLD CALL: Maniac Method — name-pause, pattern interrupt, eCDN question, silence ---
   function generateColdCall(company, pain, proof, persona, finding, trigger, domain) {
     var isMulti = company === "your organization";
     var companyPossessive = isMulti ? "your organization's" : company + "'s";
 
-    // Step 1: Opener (always the same pattern)
-    var opener = '{{First Name}} {{Last Name}}?\n[PAUSE -- wait for them to confirm]';
+    // Step 1: Opener (inquisitive tone, first + last name, pause)
+    var opener = '{{First Name}} {{Last Name}}?\n[PAUSE — everyone loves hearing their name. Wait for them to confirm or deny.]';
 
-    // Step 2a: If they confirm AND are believed to be an executive
-    var execRoute = 'Great, I was hoping you could help me out real quick. Do you head up the team that\'s responsible for ' + companyPossessive + ' enterprise video platform and eCDN?';
+    // Step 2: Pattern interrupt + eCDN question + SILENCE
+    var execRoute = 'I know you weren\'t expecting my call, so I\'ll keep it brief. I\'m hoping you can help me out real quick — are you on the team responsible for ' + companyPossessive + ' eCDN strategy?\n[SILENCE — let them respond]';
 
-    // Step 2b: If they say YES to heading up the team
-    var yesPath = 'Perfect. The reason for my call -- ' + trigger + ' caught my eye and I wanted to get your take on how it\'s impacting your video infrastructure. ' + proof + '. Thought it\'d be worth a quick conversation to see if there\'s a fit.';
+    // Step 3a: If YES — ask "Why?" then reference trigger
+    var yesPath = 'Why?\n[Let them talk. Get them explaining their world. Then tie in the trigger naturally:]\n"That makes sense — the reason I ask is ' + trigger + '. We\'ve been working with similar orgs on exactly that. Worth a quick conversation to see if there\'s a fit."';
 
-    // Step 2c: If they say NO (not the right person)
-    var noPath = 'No problem at all. Who might that person be?\n[They give a name]\nAppreciate that. Would it be okay if I let {{Referred Name}} know that we briefly spoke?\n[Then call referred person:]\n"{{Original First Name}} said you were the person I should speak with concerning ' + companyPossessive + ' enterprise video platform."\n[PAUSE for response, then:]\nThe reason for my call -- ' + trigger + '. ' + proof + '.';
+    // Step 3b: If NO / wrong person — get referral, use social proof
+    var noPath = 'Who might that person be?\n[They give a name]\nWould it be okay if I let {{Referred Name}} know that we briefly spoke?\n[Call referred person:]\n"{{Original First Name}} said you were the person I should speak with concerning ' + companyPossessive + ' eCDN strategy."\n[PAUSE — let them respond, then:]\n"The reason for my call — ' + trigger + '. We\'ve been working with similar orgs on this and I wanted to get your take."';
 
     return {
       opener: opener,
@@ -552,38 +581,38 @@
     return 'Hey {{First Name}}, this is {{Your Name}} from VBRICK. Giving you a heads up -- I\'m sending over an email [or LinkedIn message] on something relevant to ' + (company === "your organization" ? "your team" : company) + '. Keep an eye out for it. Again, {{Your Name}} from VBRICK -- talk soon.';
   }
 
-  // --- STAKEHOLDER-SPECIFIC MESSAGES ---
+  // --- STAKEHOLDER-SPECIFIC MESSAGES (Maniac Method — under 50 word emails, same call structure) ---
   function generateStakeholderMessages(finding, company, trigger, domain) {
     var type = finding.finding_type || "";
-    var competitor = finding.competitor || "";
     var messages = [];
+    var companyPoss = company === "your organization" ? "your organization's" : company + "'s";
 
     // SVP/VP (Decision Maker)
     messages.push({
       role: 'SVP / VP (Decision Maker)',
-      email: 'Hey {{First Name}},\n\nQuick note -- ' + trigger + ' is something I\'ve been hearing a lot about from folks at your level. The video infrastructure piece tends to get overlooked until it becomes a fire drill. Happy to share what orgs like ' + company + ' are doing differently.\n\nWorth a quick chat?\n\n{{Your First Name}}',
-      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nGreat, I was hoping you could help me out real quick. Do you head up the team responsible for ' + company + '\'s enterprise video and eCDN? [If yes:] Perfect -- the reason for my call is ' + trigger + '. I\'ve been talking to a few folks at your level about it and thought it\'d be worth connecting.'
+      email: '{{First Name}},\n\n' + trigger + '. Video infrastructure is the thing nobody thinks about until the CEO town hall crashes. We prevent that for orgs your size.\n\nRelevant?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}?\n[PAUSE]\nI know you weren\'t expecting my call, so I\'ll keep it brief. I\'m hoping you can help me out real quick — are you on the team responsible for ' + companyPoss + ' eCDN strategy?\n[SILENCE]\n[If YES:] Why?\n[Let them talk, then:] "That makes sense — ' + trigger + '. We\'ve been working with similar orgs on exactly that."'
     });
 
     // Director (Influencer)
     messages.push({
       role: 'Director (Influencer)',
-      email: 'Hey {{First Name}},\n\nCame across ' + trigger + ' and your name came up as someone who\'d have a pulse on this. Curious how ' + company + ' is thinking about the video platform side of things. We\'re seeing some interesting patterns from similar orgs.\n\nOpen to a quick exchange?\n\n{{Your First Name}}',
-      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey -- so the reason for my call, ' + trigger + ' is creating some questions around video infrastructure at a lot of orgs your size. Wanted to get your take and see if what we\'re seeing matches up.'
+      email: '{{First Name}},\n\n' + trigger + '. Your name came up as the person closest to the video infrastructure decisions at ' + company + '. We\'re seeing patterns here worth discussing.\n\nOpen to it?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}?\n[PAUSE]\nI know you weren\'t expecting my call, so I\'ll keep it brief. I\'m hoping you can help me out real quick — are you involved in ' + companyPoss + ' video infrastructure decisions?\n[SILENCE]\n[If YES:] Why?\n[Let them talk, then tie in ' + trigger + ']'
     });
 
     // Manager (Evaluator)
     messages.push({
       role: 'Manager (Evaluator)',
-      email: 'Hey {{First Name}},\n\nI know you\'re probably in the weeds on this already, but ' + trigger + ' is something we\'ve been helping teams navigate. Figured it might save your team some legwork if I shared what we\'re seeing.\n\nWorth a quick look?\n\n{{Your First Name}}',
-      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey -- with ' + trigger + ', how is your team handling the video platform piece? We keep hearing it\'s one of those things that lands on folks in your position to figure out.'
+      email: '{{First Name}},\n\n' + trigger + '. This usually lands on someone in your position to figure out. We\'ve been helping teams navigate it.\n\nWorth comparing notes?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}?\n[PAUSE]\nI know you weren\'t expecting my call, so I\'ll keep it brief. I\'m hoping you can help me out real quick — are you on the team evaluating ' + companyPoss + ' video platform?\n[SILENCE]\n[If YES:] Why?\n[Let them talk, then tie in ' + trigger + ']'
     });
 
     // Sr. Engineer / Architect (Technical Evaluator)
     messages.push({
       role: 'Sr. Engineer / Architect (Technical Evaluator)',
-      email: 'Hey {{First Name}},\n\nNot sure if this is on your plate, but ' + trigger + ' has a direct impact on ' + domain + '. We\'ve been working with engineering teams on the eCDN and compliance side and I think there\'s some overlap with what you\'re dealing with.\n\nWould it make sense to compare notes?\n\n{{Your First Name}}',
-      coldcall: '{{First Name}} {{Last Name}}? [PAUSE]\nHey -- with ' + trigger + ', the ' + domain + ' piece is probably landing on your desk. We work on the eCDN and video infrastructure side and I wanted to see if there\'s an overlap worth discussing.'
+      email: '{{First Name}},\n\n' + trigger + '. Direct impact on ' + domain + '. We work on the eCDN and video delivery architecture side — think there\'s overlap.\n\nWorth a quick exchange?\n\n{{Your First Name}}',
+      coldcall: '{{First Name}} {{Last Name}}?\n[PAUSE]\nI know you weren\'t expecting my call, so I\'ll keep it brief. I\'m hoping you can help me out real quick — are you working on ' + companyPoss + ' video delivery architecture?\n[SILENCE]\n[If YES:] Why?\n[Let them talk, then tie in ' + trigger + ']'
     });
 
     return messages;
@@ -1109,6 +1138,152 @@
     var div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
+  }
+
+  // ---- CSV Export (with stakeholders) ----
+  var exportBtn = document.getElementById('exportCsvBtn');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', function () {
+      var data = getFilteredFindings();
+      if (data.length === 0) { alert('No findings to export.'); return; }
+
+      // Build CSV with stakeholder columns
+      var maxStakeholders = 0;
+      data.forEach(function (f) {
+        if (f.stakeholders && f.stakeholders.length > maxStakeholders) {
+          maxStakeholders = f.stakeholders.length;
+        }
+      });
+      if (maxStakeholders < 7) maxStakeholders = 7;
+
+      var headers = ['ID', 'Urgency', 'Company', 'Category', 'Finding Type', 'Summary', 'Target Persona', 'Industry', 'Why Vbrick', 'Confidence', 'Source URL'];
+      for (var si = 1; si <= maxStakeholders; si++) {
+        headers.push('Stakeholder ' + si + ' Name');
+        headers.push('Stakeholder ' + si + ' Title');
+        headers.push('Stakeholder ' + si + ' LinkedIn');
+      }
+
+      var csvRows = [headers.join(',')];
+      data.forEach(function (f) {
+        var urgLabel = URGENCY_NAMES[f.urgency_score || 0] || 'Low';
+        var row = [
+          f.id,
+          urgLabel,
+          csvEscape(f.company || ''),
+          csvEscape(f.category || ''),
+          csvEscape(f.finding_type || ''),
+          csvEscape(f.summary || ''),
+          csvEscape(f.target_persona || ''),
+          csvEscape(f.industry || ''),
+          csvEscape(f.why_vbrick || ''),
+          csvEscape(f.confidence || ''),
+          csvEscape(f.source_url || '')
+        ];
+        for (var si = 0; si < maxStakeholders; si++) {
+          if (f.stakeholders && f.stakeholders[si]) {
+            row.push(csvEscape(f.stakeholders[si].name || ''));
+            row.push(csvEscape(f.stakeholders[si].title || ''));
+            row.push(csvEscape(f.stakeholders[si].linkedin || ''));
+          } else {
+            row.push(''); row.push(''); row.push('');
+          }
+        }
+        csvRows.push(row.join(','));
+      });
+
+      var csvContent = csvRows.join('\n');
+      var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      var viewLabel = viewTitles[currentView] || 'all';
+      a.download = 'vbrick-gtm-' + viewLabel.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + new Date().toISOString().slice(0, 10) + '.csv';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  }
+
+  function csvEscape(str) {
+    if (!str) return '';
+    str = String(str);
+    if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+      return '"' + str.replace(/"/g, '""') + '"';
+    }
+    return str;
+  }
+
+  // ---- Outbound Playbook Renderer ----
+  function renderPlaybook(container) {
+    // Only render once
+    if (container.dataset.rendered === 'true') return;
+    container.dataset.rendered = 'true';
+
+    var ICONS = {
+      lightbulb: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>',
+      brain: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 1 5 5c0 1.5-.5 2.5-1.5 3.5L12 14l-3.5-3.5C7.5 9.5 7 8.5 7 7a5 5 0 0 1 5-5z"/><path d="M12 14v8"/><path d="M8 18h8"/></svg>',
+      phone: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+      shield: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+      layers: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
+      'message-circle': '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+      target: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+      zap: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>'
+    };
+    var chevronSvg = '<svg class="playbook-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+
+    var sections = [
+      { id: 'product-knowledge', title: 'Product Knowledge', icon: 'lightbulb', desc: 'What Vbrick does in plain English \u2014 the foundation for every conversation.', cards: [
+        { title: 'What VBRICK Does (Plain English)', source: 'Day 2 \u2014 Module 2', html: '<div class="pb-principle">VBRICK helps large organizations use video internally without breaking their network or risking security.</div><div class="pb-label">When consumer tools break</div><ul class="pb-list"><li><strong>5,000+ employees join at once</strong> \u2014 Teams/Zoom causes network crush, buffering, lag. VBRICK: smooth delivery via eCDN.</li><li><strong>Security and compliance matter</strong> \u2014 Consumer tools have gaps. VBRICK: enterprise-grade security, full compliance, audit trails.</li><li><strong>Bandwidth is limited</strong> \u2014 Standard streaming eats bandwidth. VBRICK: adaptive bitrate, bandwidth optimization.</li></ul><div class="pb-label">The real problem we solve</div><p>It\'s not about features. It\'s about <strong>risk</strong>. Companies come when their CEO town hall crashed, they got flagged in a compliance audit, or their network can\'t handle video at scale. We eliminate that risk.</p><div class="pb-label">Mental model</div><div class="pb-principle">VBRICK is insurance + infrastructure. Like a hospital backup generator \u2014 you hope you never need it, but when you do, it has to work perfectly.</div>' }
+      ]},
+      { id: 'mindset', title: 'Mindset & Energy', icon: 'brain', desc: 'The mental foundation that separates top performers from everyone else.', cards: [
+        { title: 'Calm Energy', source: 'Day 2 \u2014 Module 2', html: '<div class="pb-principle">Good conversations are calm. Not rushed, frantic, desperate, or defensive. Your energy sets the tone.</div><p>When you\'re calm, the prospect relaxes. When you\'re rushed, they feel pressured. When you\'re defensive, they get suspicious.</p><div class="pb-label">Athlete Analogy</div><p>Nervous energy = tight muscles, rushed movements, mistakes.<br>Calm confidence = smooth execution, good decisions, peak performance.<br><strong>Sales is the same.</strong></p>' },
+        { title: 'The Status Problem', source: 'Day 2 \u2014 Module 2', html: '<div class="pb-principle">Lowering your status kills trust. Enterprise buyers want to talk to peers, not beggars.</div><div class="pb-label">Never say these</div><div class="pb-never">"I know you\'re super busy, so I\'ll be really quick..."</div><div class="pb-never">"Is this a good time? I don\'t want to bother you..."</div><div class="pb-never">"Can I just have 5 minutes? I promise it\'ll be worth it..."</div><div class="pb-never">"I\'d love to pick your brain if you have a second..."</div><div class="pb-never">"Hey, appreciate you picking up..."</div><div class="pb-label">Instead: direct, honest questions</div><div class="pb-good">"Is internal video breaking at scale something you\'re dealing with right now?"</div><div class="pb-good">"Are you the right person to talk to about this, or should I connect with someone else?"</div><div class="pb-good">"Does this sound relevant, or should we not waste each other\'s time?"</div>' },
+        { title: 'Go for the No', source: 'Day 5 \u2014 Module 5', html: '<div class="pb-principle">The less you need the \'yes,\' the more likely you get it. Invite the \'no.\'</div><div class="pb-label">What it sounds like</div><div class="pb-script">"Based on what you\'re describing, it sounds like this might not be relevant right now. Should we just call it here, or is there something I\'m missing?"</div><div class="pb-script">"If this isn\'t a priority, totally get it. Should I stop following up, or is there a better time to check back?"</div><div class="pb-script">"Got it. Sounds like you\'re all set. Should I take you off my list, or is there a scenario where this might be relevant down the road?"</div><div class="pb-label">Common mistakes</div><div class="pb-never"><strong>Passive-Aggressive:</strong> "Well, if you\'re not interested, I guess I\'ll just leave you alone then..."</div><div class="pb-good"><strong>Better:</strong> "Got it. Should I check back in Q3, or would you prefer I don\'t follow up?"</div><div class="pb-never"><strong>Giving Up:</strong> "Okay, no problem. Have a great day!" (and never follow up)</div><div class="pb-good"><strong>Better:</strong> "Out of curiosity, is that because you\'re handling this internally, or is video just not a priority right now?"</div>' }
+      ]},
+      { id: 'call-structure', title: 'Call Structure (Maniac Method)', icon: 'phone', desc: 'The cold call framework \u2014 name, pause, pattern interrupt, eCDN question, silence.', cards: [
+        { title: 'The Cold Call Opener', source: 'Maniac Method', html: '<div class="pb-label">Step 1: Name + Pause</div><div class="pb-script">{{First Name}} {{Last Name}}?<br>[PAUSE \u2014 everyone loves hearing their name. Wait for them to confirm or deny.]</div><div class="pb-label">Step 2: Pattern Interrupt + eCDN Question + Silence</div><div class="pb-script">I know you weren\'t expecting my call, so I\'ll keep it brief. I\'m hoping you can help me out real quick \u2014 are you on the team responsible for {Company}\'s eCDN strategy?<br>[SILENCE \u2014 let them respond]</div><div class="pb-label">Step 3a: If YES \u2014 ask "Why?"</div><div class="pb-script">Why?<br>[Let them talk. Get them explaining their world. Then tie in the trigger naturally:]<br>"That makes sense \u2014 the reason I ask is {trigger event}. We\'ve been working with similar orgs on exactly that. Worth a quick conversation to see if there\'s a fit."</div><div class="pb-label">Step 3b: If NO / Wrong Person \u2014 Get Referral</div><div class="pb-script">Who might that person be?<br>[They give a name]<br>Would it be okay if I let {Referred Name} know that we briefly spoke?<br>[Call referred person:]<br>"{Original First Name} said you were the person I should speak with concerning {Company}\'s eCDN strategy."<br>[PAUSE \u2014 then tie in trigger]</div>' },
+        { title: 'Lead with Problems, Not Features', source: 'Day 3 \u2014 Module 3', html: '<div class="pb-principle">Stop telling prospects what you do. Start naming what\'s broken in their world.</div><div class="pb-label">The hierarchy</div><ul class="pb-list"><li>Crap reps sell features.</li><li>Good reps sell benefits.</li><li><strong>Pros lead with problems.</strong></li></ul><div class="pb-label">The contrast</div><div class="pb-contrast"><div class="pb-never"><strong>Feature pitch:</strong><br>"We have an AI-powered CRM with automated pipeline tracking."</div><div class="pb-good"><strong>Problem pitch:</strong><br>"Most sales managers say their reps hide behind email instead of picking up the phone. The pipeline\'s a mess and growth is a coin flip."</div></div><p><strong>When the problem lands, it\'s not a cold call anymore. It\'s a real conversation.</strong></p>' }
+      ]},
+      { id: 'objection-handling', title: 'Objection Handling', icon: 'shield', desc: 'How to handle every common objection with calm, peer-status energy.', cards: [
+        { title: 'Common Objections', source: 'Day 3 \u2014 Module 3', html: '<div class="pb-scenario"><div class="pb-scenario-title">"We\'re all set"</div><div class="pb-good">"Got it. What are you using now?"</div><p>Stays curious. Gathers intel. Doesn\'t argue.</p></div><div class="pb-scenario"><div class="pb-scenario-title">"Send me an email"</div><div class="pb-good">"Happy to. Are you the right person making these decisions?"</div><p>Qualifies before investing email effort.</p></div><div class="pb-scenario"><div class="pb-scenario-title">"Not interested"</div><div class="pb-good">"No problem. Is it timing, or is video just not a priority?"</div><p>Gathers intel. Keeps door open.</p></div><div class="pb-scenario"><div class="pb-scenario-title">"We\'re just exploring"</div><div class="pb-good">"Perfect timing then. Most of the best conversations I have are at the exploration stage \u2014 before people have locked into a direction. What\'s prompting the exploration?"</div><p>Reframes exploration as opportunity.</p></div><div class="pb-scenario"><div class="pb-scenario-title">"Just send me information"</div><div class="pb-good">"I can do that. Help me understand what you\'re specifically trying to figure out \u2014 that way I can send you exactly what\'s relevant instead of a generic deck."</div><p>Keeps the conversation going.</p></div>' }
+      ]},
+      { id: 'triple-play', title: 'The Triple (Maniac Method)', icon: 'zap', desc: 'Call + Voicemail + Email in under 90 seconds. Be impossible to ignore.', cards: [
+        { title: 'The Triple Sequence', source: 'Maniac Method + Day 11', html: '<div class="pb-principle">One touch is easy to miss. Three touches across three channels in 48 hours creates pattern interruption.</div><div class="pb-label">The Triple = 90 seconds</div><ol class="pb-list" style="list-style:decimal;padding-left:1.5rem;"><li style="padding-left:0.5rem;"><strong>Phone call</strong> (with voicemail if no answer)</li><li style="padding-left:0.5rem;"><strong>Email</strong> (Maniac Method Spear \u2014 sent within 5 min of call)</li><li style="padding-left:0.5rem;"><strong>LinkedIn</strong> (blank connection request same day, DM after connecting)</li></ol><div class="pb-label">Cluster Cadence (3 clusters, 11 days)</div><table class="pb-timing-table"><thead><tr><th>Day</th><th>Action</th></tr></thead><tbody><tr><td>Day 1</td><td><strong>Triple</strong>: Call + VM + Email Spear 1 (pain narrative) + Blank LI connect</td></tr><tr><td>Day 2</td><td>Reply bump ("Thoughts?") + LI DM if connected</td></tr><tr><td>Day 3</td><td>Reply bump (visual/Venn) + Ghost call (no VM)</td></tr><tr><td>Day 5</td><td><strong>Triple</strong>: Call + VM + Email Spear 2 (case study) + LI touch</td></tr><tr><td>Day 6</td><td>Reply bump</td></tr><tr><td>Day 7</td><td>Reply bump + Ghost call</td></tr><tr><td>Day 9</td><td><strong>Triple</strong>: Call + VM + Email Spear 3 (competitive landscape)</td></tr><tr><td>Day 10</td><td>Reply bump + Final breakup email</td></tr><tr><td>Day 11</td><td>Reply bump + Ghost call</td></tr></tbody></table><div class="pb-label">Reply Bump Examples</div><div class="pb-script">Thoughts?</div><div class="pb-script">^</div><div class="pb-script">Did a crocodile eat you?</div><div class="pb-label">Signal-Based Triggers</div><ul class="pb-list"><li>Profile view \u2192 Triple immediately</li><li>3+ email opens \u2192 Triple immediately</li><li>Social post interaction \u2192 Triple immediately</li></ul>' },
+        { title: 'Email Spear Format (Under 50 Words)', source: 'Maniac Method', html: '<div class="pb-principle">Hyper-short. No pleasantries. Pain \u2192 Proof \u2192 CTA. Every email stands alone.</div><div class="pb-label">Structure</div><div class="pb-script">{{First Name}},<br><br>{Pain or trigger event}. {Social proof with similar client}.<br><br>Relevant?<br><br>{{Your First Name}}</div><div class="pb-label">Subject lines (1-3 words)</div><ul class="pb-list"><li>video risk</li><li>eCDN</li><li>compliance gap</li><li>{company} + video</li><li>video delivery</li></ul><div class="pb-label">Checklist before sending</div><ul class="pb-list"><li>Is it painfully short? (under 50 words)</li><li>Is it assertive? (no deference)</li><li>Does it highlight a pain or fear?</li><li>Can it stand alone? (fractal approach)</li><li>Did you spend under 60 seconds on personalization?</li></ul>' }
+      ]},
+      { id: 'conversation-vs-demo', title: 'Conversation vs. Demo', icon: 'message-circle', desc: 'Why booking a demo is the wrong goal \u2014 and what to do instead.', cards: [
+        { title: 'The Demo Trap', source: 'Day 11 \u2014 Module 11.5', html: '<div class="pb-principle">Book a demo and you\'ve scheduled an event. Start a conversation and you\'ve started a relationship.</div><p>A demo is one-directional. Demos are easy to cancel, reschedule, and ghost. A conversation is two-directional. You learn something. They learn something.</p><div class="pb-label">When someone requests a demo</div><div class="pb-script">"Before I get you set up with a demo, I want to make sure we\'re showing you the right things. Can I ask you two quick questions?"<br><br>1. "What\'s the main thing you\'re trying to solve right now?"<br>2. "Who else on your team is involved in this decision?"</div><div class="pb-label">Conversation Scorecard (after every interaction)</div><ul class="pb-list"><li>Responded within 5 minutes?</li><li>Asked what prompted their inquiry?</li><li>Identified who else is involved?</li><li>Avoided sending a generic deck or Calendly link?</li><li>Expanded the pod by at least 3 new contacts?</li></ul><p><strong>Target: 5/5. Below 4/5 = review with your manager.</strong></p>' }
+      ]},
+      { id: 'execution', title: 'Daily Execution', icon: 'target', desc: 'Activity targets, time blocks, and energy management for peak performance.', cards: [
+        { title: 'Activity Targets', source: 'Day 3 \u2014 Module 3', html: '<div class="pb-contrast"><div class="pb-scenario"><div class="pb-scenario-title">Minimum</div><ul class="pb-list"><li>20 cold calls</li><li>20 emails</li><li>10 LinkedIn messages</li><li>2 videos</li></ul></div><div class="pb-scenario"><div class="pb-scenario-title">Stretch</div><ul class="pb-list"><li>50 calls</li><li>50 emails</li><li>20 LinkedIn</li><li>5 videos</li></ul></div></div><div class="pb-principle">Success = hitting activity numbers. Responses are bonus.</div>' },
+        { title: 'Time Blocking & Energy', source: 'Day 3 \u2014 Module 3', html: '<div class="pb-label">Block Structure</div><div class="pb-scenario"><div class="pb-scenario-title">Cold Calling Block (60-90 min)</div><p>3-5 min per call. Break every 10 calls. Start here \u2014 highest energy.</p></div><div class="pb-scenario"><div class="pb-scenario-title">Email Block (60 min)</div><p>2-3 min per email. 20 emails = 40-60 min. Medium energy.</p></div><div class="pb-scenario"><div class="pb-scenario-title">LinkedIn Block (45 min)</div><p>4-5 min per prospect. 10 messages = 40-50 min. Lowest energy.</p></div><div class="pb-label">End-of-Day Checklist</div><ul class="pb-list"><li>Hit minimum targets</li><li>Logged all activities</li><li>Updated tracking</li><li>Scheduled follow-ups</li></ul>' }
+      ]}
+    ];
+
+    var html = '<div class="playbook-container cascade-in">';
+    sections.forEach(function(section) {
+      html += '<div class="playbook-section">';
+      html += '<div class="playbook-section-header">';
+      html += '<div class="playbook-section-icon">' + (ICONS[section.icon] || ICONS.target) + '</div>';
+      html += '<div class="playbook-section-info"><h2>' + section.title + '</h2><p>' + section.desc + '</p></div>';
+      html += '</div>';
+      section.cards.forEach(function(card) {
+        html += '<div class="playbook-card">';
+        html += '<div class="playbook-card-header" onclick="this.parentElement.classList.toggle(\'open\')">';
+        html += '<div class="playbook-card-title-group">';
+        html += '<div class="playbook-card-title">' + card.title + '</div>';
+        html += '<span class="playbook-card-source">' + card.source + '</span>';
+        html += '</div>';
+        html += chevronSvg;
+        html += '</div>';
+        html += '<div class="playbook-card-body"><div class="playbook-card-body-inner"><div class="playbook-card-content">' + card.html + '</div></div></div>';
+        html += '</div>';
+      });
+      html += '</div>';
+    });
+    html += '</div>';
+    container.innerHTML = html;
   }
 
   // ---- Update Time ----
