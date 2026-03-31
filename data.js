@@ -437,49 +437,57 @@ const FINDINGS = [
         "name": "Kaynaz Behdin",
         "title": "Senior Vice President Global Digital Platforms, Data And AI",
         "linkedin_url": "https://www.linkedin.com/in/kaynaz-behdin-170725a6",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/kaynaz-behdin-170725a6"
       },
       {
         "name": "Daria Colvett",
         "title": "SVP & Chief Information Officer",
         "linkedin_url": "https://www.linkedin.com/in/daria-colvett-2238377",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/daria-colvett-2238377"
       },
       {
         "name": "Fernão Silveira",
         "title": "Sr. Vice President, Global Corporate Communications",
         "linkedin_url": "https://www.linkedin.com/in/fernaosilveira",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/fernaosilveira"
       },
       {
         "name": "Kaileen Connelly",
         "title": "Senior Vice President, North America Communications",
         "linkedin_url": "https://www.linkedin.com/in/kcconnelly",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/kcconnelly"
       },
       {
         "name": "Tracie Stoltenburg",
         "title": "Director, Corporate Communications",
         "linkedin_url": "https://www.linkedin.com/in/traciestoltenburg",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/traciestoltenburg"
       },
       {
         "name": "Jayakanthan Venugopal",
         "title": "IT Director, Head Of IT Infrastructure, India And Asia Pacific",
         "linkedin_url": "https://www.linkedin.com/in/jayakanthan-venugopal-3ab37927",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/jayakanthan-venugopal-3ab37927"
       },
       {
         "name": "Arnaud Bardet",
         "title": "Network Solution Architect",
         "linkedin_url": "https://www.linkedin.com/in/arnaud-bardet-230b1720",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/arnaud-bardet-230b1720"
       },
       {
         "name": "Claudio Frencia",
         "title": "Head Of Cybersecurity",
         "linkedin_url": "https://www.linkedin.com/in/claudiofrencia",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/claudiofrencia"
       }
     ]
   },
@@ -579,49 +587,57 @@ const FINDINGS = [
         "name": "Wendy Lonergan",
         "title": "Vice President, General Manager Corporate Functions And Product Engineering",
         "linkedin_url": "https://www.linkedin.com/in/wendy-lonergan-2981b08",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/wendy-lonergan-2981b08"
       },
       {
         "name": "Kelly Okamoto",
         "title": "Director Internal Communications",
         "linkedin_url": "https://www.linkedin.com/in/kellyo",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/kellyo"
       },
       {
         "name": "Stephen Tadman",
         "title": "Sr Director Global Infrastructure Engineering",
         "linkedin_url": "https://www.linkedin.com/in/stephen-tadman",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/stephen-tadman"
       },
       {
         "name": "Ethan Warner",
         "title": "Director Of Learning And Development",
         "linkedin_url": "https://www.linkedin.com/in/ethan-warner-ab55364",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/ethan-warner-ab55364"
       },
       {
         "name": "Kyle Harris",
         "title": "IT Director Lab Infrastructure",
         "linkedin_url": "https://www.linkedin.com/in/kyle-harris-b279b912",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/kyle-harris-b279b912"
       },
       {
         "name": "Louise Summerton",
         "title": "Director Of Learning And Development",
         "linkedin_url": "https://www.linkedin.com/in/lhawker",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/lhawker"
       },
       {
         "name": "Joseph Lim",
         "title": "IT Director - Global IT Customer Support Experience & Engineering",
         "linkedin_url": "https://www.linkedin.com/in/joseph-lim-15986a12",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/joseph-lim-15986a12"
       },
       {
         "name": "Jennifer Talerico",
         "title": "Senior Director Business Development",
         "linkedin_url": "https://www.linkedin.com/in/jennifertalerico",
-        "role": "Evaluator"
+        "role": "Evaluator",
+        "linkedin": "https://www.linkedin.com/in/jennifertalerico"
       }
     ]
   },
@@ -656,49 +672,57 @@ const FINDINGS = [
         "name": "Guru Vasudeva",
         "title": "SVP & CIO, Infrastructure & Operations",
         "linkedin_url": "https://www.linkedin.com/in/guruvasudeva",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/guruvasudeva"
       },
       {
         "name": "Mike Palmer",
         "title": "AVP, Corporate Communications",
         "linkedin_url": "https://www.linkedin.com/in/mike-palmer-730607a",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/mike-palmer-730607a"
       },
       {
         "name": "Brian Grace",
         "title": "VP Communications",
         "linkedin_url": "https://www.linkedin.com/in/brian-grace-cco",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/brian-grace-cco"
       },
       {
         "name": "Brant Peters",
         "title": "Director, Infrastructure Engineering And Operations",
         "linkedin_url": "https://www.linkedin.com/in/brant-peters-1879b2121",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/brant-peters-1879b2121"
       },
       {
         "name": "Shane Mulpas",
         "title": "Director, Human Resources Technology Consulting",
         "linkedin_url": "https://www.linkedin.com/in/shane-mulpas-msmsl-72454483",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/shane-mulpas-msmsl-72454483"
       },
       {
         "name": "Laura Mierzejewski",
         "title": "Director, Learning Excellence",
         "linkedin_url": "https://www.linkedin.com/in/laura-mierzejewski-b5090a9",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/laura-mierzejewski-b5090a9"
       },
       {
         "name": "Mike Perrin",
         "title": "Voice/Video Engineer Manager",
         "linkedin_url": "https://www.linkedin.com/in/mike-perrin-a1ba05b",
-        "role": "Evaluator"
+        "role": "Evaluator",
+        "linkedin": "https://www.linkedin.com/in/mike-perrin-a1ba05b"
       },
       {
         "name": "Krish Rajaram",
         "title": "Solutions Architect",
         "linkedin_url": "https://www.linkedin.com/in/krish-rajaram-70b4279",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/krish-rajaram-70b4279"
       }
     ]
   },
@@ -737,7 +761,7 @@ const FINDINGS = [
       {
         "name": "Cynthia McCabe",
         "title": "Senior Vice President, Chief Communications Officer",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/cynthiamccabe"
       },
       {
         "name": "Elizabeth Pitts-Madonna",
@@ -747,7 +771,7 @@ const FINDINGS = [
       {
         "name": "Colette D. Honorable",
         "title": "Executive Vice President, Chief Legal Officer, Compliance and Corporate Secretary",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/colette-honorable-51547310"
       },
       {
         "name": "Jennifer Peterson-Gutleber",
@@ -795,55 +819,64 @@ const FINDINGS = [
         "name": "Mahesh Sogal",
         "title": "Vice President - IT Transformation And International Technology",
         "linkedin_url": "https://www.linkedin.com/in/mahesh-sogal",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/mahesh-sogal"
       },
       {
         "name": "Narayanan Krishnakumar",
         "title": "VP And CTO",
         "linkedin_url": "https://www.linkedin.com/in/krishnakumarkk",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/krishnakumarkk"
       },
       {
         "name": "Trebor Banstetter",
         "title": "Managing Director - Corporate & Executive Communications",
         "linkedin_url": "https://www.linkedin.com/in/treborbanstetter",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/treborbanstetter"
       },
       {
         "name": "Brian J Wright",
         "title": "Director, Global Learning & Leadership Development",
         "linkedin_url": "https://www.linkedin.com/in/bjwright1",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/bjwright1"
       },
       {
         "name": "Michael Crownhart",
         "title": "Director - IT, TechOps Technology",
         "linkedin_url": "https://www.linkedin.com/in/michael-crownhart-115b536",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/michael-crownhart-115b536"
       },
       {
         "name": "Jagat Kiran Gurugubelli",
         "title": "Sr. Network Engineer",
         "linkedin_url": "https://www.linkedin.com/in/jagat-kiran-gurugubelli-0a97971ba",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/jagat-kiran-gurugubelli-0a97971ba"
       },
       {
         "name": "Geoff Kuchera",
         "title": "Senior Network Engineer",
         "linkedin_url": "https://www.linkedin.com/in/gkuchera",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/gkuchera"
       },
       {
         "name": "Badie Naser",
         "title": "Senior Network Architect",
         "linkedin_url": "https://www.linkedin.com/in/badie-naser-35ab2734",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/badie-naser-35ab2734"
       },
       {
         "name": "Dean Vanderkley",
         "title": "Information Security Manager",
         "linkedin_url": "https://www.linkedin.com/in/dean-vanderkley",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/dean-vanderkley"
       }
     ]
   },
@@ -877,7 +910,7 @@ const FINDINGS = [
       {
         "name": "Jim Fowler",
         "title": "Executive VP and Chief Technology & Product Officer",
-        "linkedin": "https://www.lumen.com/en-us/news/press-resources/jim-fowler.html"
+        "linkedin": "https://www.linkedin.com/in/jamesrfowler"
       },
       {
         "name": "Robert Nance",
@@ -902,12 +935,12 @@ const FINDINGS = [
       {
         "name": "Ana White",
         "title": "Chief People & AI Enablement Officer",
-        "linkedin": "https://www.businesswire.com/news/home/20260317753973/en/Lumen-Technologies-Announces-Board-Chair-Transition-New-Director-Nominee-and-Executive-Role-Expansions"
+        "linkedin": "https://www.linkedin.com/in/whiteana"
       },
       {
         "name": "James Butler",
         "title": "SVP, Deputy General Counsel & Chief Ethics and Compliance Officer",
-        "linkedin": "people/lumen_technologies_ciso_or_vp_security_o_mneaczmo.csv"
+        "linkedin": "https://www.linkedin.com/in/jameslandrumbutler"
       }
     ]
   },
@@ -942,61 +975,71 @@ const FINDINGS = [
         "name": "Yesenia Diaz",
         "title": "Corporate Vice President, Head Of Digital Support",
         "linkedin_url": "https://www.linkedin.com/in/yeseniadiaz1008",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/yeseniadiaz1008"
       },
       {
         "name": "John Healy",
         "title": "VP - CIO Corporate Technology",
         "linkedin_url": "https://www.linkedin.com/in/johnjhealy",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/johnjhealy"
       },
       {
         "name": "Meredith Hyland",
         "title": "Vice President, Corporate Communications",
         "linkedin_url": "https://www.linkedin.com/in/meredithhyland",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/meredithhyland"
       },
       {
         "name": "Joe S",
         "title": "Corporate Vice President, Internal Communications",
         "linkedin_url": "https://www.linkedin.com/in/joeschulz",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/joeschulz"
       },
       {
         "name": "Ken Petro",
         "title": "Managing Director - Head Of Infrastructure",
         "linkedin_url": "https://www.linkedin.com/in/kenpetro",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/kenpetro"
       },
       {
         "name": "Thomas Matthew",
         "title": "Corporate VP - Head of Platform Operations",
         "linkedin_url": "https://www.linkedin.com/in/thomas-matthew-jr-4a772147",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/thomas-matthew-jr-4a772147"
       },
       {
         "name": "Jonathan Sookdeo",
         "title": "Video Collaboration Technology Lead",
         "linkedin_url": "https://www.linkedin.com/in/jonathansookdeo",
-        "role": "Evaluator"
+        "role": "Evaluator",
+        "linkedin": "https://www.linkedin.com/in/jonathansookdeo"
       },
       {
         "name": "Taha Abd-elhameed",
         "title": "Sr. Network Engineer /Architect",
         "linkedin_url": "https://www.linkedin.com/in/taha-abd-elhameed-01159b9",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/taha-abd-elhameed-01159b9"
       },
       {
         "name": "Alex Sanchez",
         "title": "Senior Network Engineer",
         "linkedin_url": "https://www.linkedin.com/in/alex-sanchez-29b9b7114",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/alex-sanchez-29b9b7114"
       },
       {
         "name": "Ryan Lem",
         "title": "Cyber Risk And Analysis Manager",
         "linkedin_url": "https://www.linkedin.com/in/ryan-lem",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/ryan-lem"
       }
     ]
   },
@@ -1352,61 +1395,71 @@ const FINDINGS = [
         "name": "Daniel Grider",
         "title": "Vice President of Technology, Head of Infrastructure Operations",
         "linkedin_url": "https://www.linkedin.com/in/danielgrider",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/danielgrider"
       },
       {
         "name": "Josh Kruck",
         "title": "VP Technology",
         "linkedin_url": "https://www.linkedin.com/in/joshkruck",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/joshkruck"
       },
       {
         "name": "Paul Antony",
         "title": "SVP of Technology",
         "linkedin_url": "https://www.linkedin.com/in/paulkantony",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/paulkantony"
       },
       {
         "name": "Ann Mitchell Caren",
         "title": "Corporate Communications Manager",
         "linkedin_url": "https://www.linkedin.com/in/annpcaren",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/annpcaren"
       },
       {
         "name": "Franck Meier",
         "title": "IT Director",
         "linkedin_url": "https://www.linkedin.com/in/franckmeier",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/franckmeier"
       },
       {
         "name": "Stacie Heim",
         "title": "Director Contact Center Learning & Development",
         "linkedin_url": "https://www.linkedin.com/in/stacie-heim-6b357594",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/stacie-heim-6b357594"
       },
       {
         "name": "Christy Duncan",
         "title": "Manager - Visual Communications",
         "linkedin_url": "https://www.linkedin.com/in/christy-duncan-1140794",
-        "role": "Evaluator"
+        "role": "Evaluator",
+        "linkedin": "https://www.linkedin.com/in/christy-duncan-1140794"
       },
       {
         "name": "Ilona Garland",
         "title": "Sr. Manager Cybersecurity",
         "linkedin_url": "https://www.linkedin.com/in/ilonagarland",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/ilonagarland"
       },
       {
         "name": "Christine White",
         "title": "Manager - Cybersecurity Governance",
         "linkedin_url": "https://www.linkedin.com/in/christine-white-a6a3ab7",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/christine-white-a6a3ab7"
       },
       {
         "name": "Alberto Luna",
         "title": "Sr. Network Engineer",
         "linkedin_url": "https://www.linkedin.com/in/alberto-luna-a4778973",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/alberto-luna-a4778973"
       }
     ]
   },
@@ -1505,55 +1558,64 @@ const FINDINGS = [
         "name": "Craig Cuyar",
         "title": "SVP Global Chief Information Officer, Global CIO",
         "linkedin_url": "https://www.linkedin.com/in/cuyar",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/cuyar"
       },
       {
         "name": "Gerri Dyrek",
         "title": "VP, Director Corporate Communications",
         "linkedin_url": "https://www.linkedin.com/in/gerridyrek",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/gerridyrek"
       },
       {
         "name": "Marco Maria Gerlach",
         "title": "Regional Director Infrastructure Operations EMEA",
         "linkedin_url": "https://www.linkedin.com/in/marcomgerlach",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/marcomgerlach"
       },
       {
         "name": "Kelley Vickroy",
         "title": "Director, Global Learning & Development",
         "linkedin_url": "https://www.linkedin.com/in/kelleyvickroy",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/kelleyvickroy"
       },
       {
         "name": "Chiranjit Chowdhury",
         "title": "Country IT Director – Omnicom Group India",
         "linkedin_url": "https://www.linkedin.com/in/chiranjit-chowdhury-a590b530",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/chiranjit-chowdhury-a590b530"
       },
       {
         "name": "Leticia Sobrado",
         "title": "Regional Information Security Officer For North America",
         "linkedin_url": "https://www.linkedin.com/in/leticia-sobrado-8080555",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/leticia-sobrado-8080555"
       },
       {
         "name": "Brian Russo",
         "title": "Lead Business Information Security Compliance",
         "linkedin_url": "https://www.linkedin.com/in/brian-russo-8659328",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/brian-russo-8659328"
       },
       {
         "name": "Christa Domroes",
         "title": "Global Business Information Security Officer",
         "linkedin_url": "https://www.linkedin.com/in/christa-domroes",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/christa-domroes"
       },
       {
         "name": "Shaun Belders",
         "title": "Deputy CISO",
         "linkedin_url": "https://www.linkedin.com/in/sbelders",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/sbelders"
       }
     ]
   },
@@ -1588,55 +1650,64 @@ const FINDINGS = [
         "name": "Dave Pellegrini",
         "title": "Vice President Information Technology, Americas",
         "linkedin_url": "https://www.linkedin.com/in/dpellegrini",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/dpellegrini"
       },
       {
         "name": "Christy Bykowski",
         "title": "Senior Director, Global Communications",
         "linkedin_url": "https://www.linkedin.com/in/christybykowski",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/christybykowski"
       },
       {
         "name": "Christian Malkmus",
         "title": "Senior Director IT, Enterprise Architecture",
         "linkedin_url": "https://www.linkedin.com/in/christian-malkmus-3532177",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/christian-malkmus-3532177"
       },
       {
         "name": "Judson Pitt",
         "title": "Director Of Information Technology",
         "linkedin_url": "https://www.linkedin.com/in/judsonpitt",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/judsonpitt"
       },
       {
         "name": "Amy Weller",
         "title": "Director Of Learning And Development",
         "linkedin_url": "https://www.linkedin.com/in/amy-weller",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/amy-weller"
       },
       {
         "name": "Aaron Gibbons",
         "title": "Cloud Solutions Architect",
         "linkedin_url": "https://www.linkedin.com/in/aaron-gibbons",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/aaron-gibbons"
       },
       {
         "name": "Thierry Mamer",
         "title": "Solutions Architect",
         "linkedin_url": "https://www.linkedin.com/in/thierry-mamer",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/thierry-mamer"
       },
       {
         "name": "Gloria Rangel",
         "title": "Director Compliance And Ethics",
         "linkedin_url": "https://www.linkedin.com/in/gloria-rangel-776ba16a",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/gloria-rangel-776ba16a"
       },
       {
         "name": "Matt Clokey",
         "title": "Director, Global Facility Security Investigations",
         "linkedin_url": "https://www.linkedin.com/in/matt-clokey-cpp-667417b1",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/matt-clokey-cpp-667417b1"
       }
     ]
   },
@@ -1853,55 +1924,64 @@ const FINDINGS = [
         "name": "Jeff Taylor",
         "title": "SVP - IT Infrastructure Group Manager",
         "linkedin_url": "https://www.linkedin.com/in/jeff1taylor",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/jeff1taylor"
       },
       {
         "name": "Paul Brant",
         "title": "SVP - Infrastructure Services Division Manager",
         "linkedin_url": "https://www.linkedin.com/in/paulbrant",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/paulbrant"
       },
       {
         "name": "Brad Kozak",
         "title": "SVP Head Of Employee And Business Function Communication",
         "linkedin_url": "https://www.linkedin.com/in/bradleykozak",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/bradleykozak"
       },
       {
         "name": "Rajesh Ramasamy",
         "title": "SVP Group Head Of Software Engineering, Enterprise Functions",
         "linkedin_url": "https://www.linkedin.com/in/rajesh-ramasamy-4529592",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/rajesh-ramasamy-4529592"
       },
       {
         "name": "Rochelle Ramos",
         "title": "Senior Director (SVP), Talent Management - Enterprise Learning",
         "linkedin_url": "https://www.linkedin.com/in/rochelleramostds",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/rochelleramostds"
       },
       {
         "name": "Stephen Butcher",
         "title": "Audio Visual Collaboration Lead",
         "linkedin_url": "https://www.linkedin.com/in/stephen-butcher",
-        "role": "Evaluator"
+        "role": "Evaluator",
+        "linkedin": "https://www.linkedin.com/in/stephen-butcher"
       },
       {
         "name": "Naseem I Khan",
         "title": "Sr. Solutions Architect",
         "linkedin_url": "https://www.linkedin.com/in/naseemk",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/naseemk"
       },
       {
         "name": "Joshua Horn",
         "title": "SVP, Cybersecurity Governance, Risk, and Compliance Division Manager",
         "linkedin_url": "https://www.linkedin.com/in/joshua-horn-crisc-cism-cisa-cgeit-2b818ab",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/joshua-horn-crisc-cism-cisa-cgeit-2b818ab"
       },
       {
         "name": "Troy Fultz",
         "title": "Compliance Manager",
         "linkedin_url": "https://www.linkedin.com/in/troy-fultz-65824166",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/troy-fultz-3276412a"
       }
     ]
   },
@@ -1934,49 +2014,57 @@ const FINDINGS = [
         "name": "Stephany Rochon",
         "title": "Director, Internal Communications",
         "linkedin_url": "https://www.linkedin.com/in/srochon",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/srochon"
       },
       {
         "name": "Veronica Toney",
         "title": "Editor In Chief, Internal Corporate Communications",
         "linkedin_url": "https://www.linkedin.com/in/veronicatoney",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/veronicatoney"
       },
       {
         "name": "James Pemberton",
         "title": "Global Director Of Amazon Corporate IT - Engineering, Infrastructure Operations",
         "linkedin_url": "https://www.linkedin.com/in/jimpem",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/jimpem"
       },
       {
         "name": "Arindam Chakraborty",
         "title": "Product Leader",
         "linkedin_url": "https://www.linkedin.com/in/arindamc1",
-        "role": "Evaluator"
+        "role": "Evaluator",
+        "linkedin": "https://www.linkedin.com/in/arindamc1"
       },
       {
         "name": "Aarthi Janakiraman",
         "title": "Senior Manager Information Security",
         "linkedin_url": "https://www.linkedin.com/in/aarthi-janakiraman-58a95bb",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/aarthi-janakiraman-58a95bb"
       },
       {
         "name": "Shirin Bhambhani",
         "title": "Sr. Specialist Solutions Architect - Networking",
         "linkedin_url": "https://www.linkedin.com/in/shirinbhambhani",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/shirinbhambhani"
       },
       {
         "name": "Monica Li",
         "title": "Senior Manager Security Compliance",
         "linkedin_url": "https://www.linkedin.com/in/monica-li-8862451",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/monica-li-8862451"
       },
       {
         "name": "Ashraf Altalleh",
         "title": "Sr. Solutions Architect",
         "linkedin_url": "https://www.linkedin.com/in/ashrafaltalleh",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/ashrafaltalleh"
       }
     ]
   },
@@ -2177,17 +2265,17 @@ const FINDINGS = [
       {
         "name": "Joseph Hoyt",
         "title": "Acting Chief Information Security Officer (CISO)",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/joseph-hoyt-gsa"
       },
       {
         "name": "Lawrence Hale",
         "title": "Acting Assistant Commissioner, Information Technology Category",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/lawrence-hale-b336323"
       },
       {
         "name": "Lesley Briante",
         "title": "Associate CIO of Digital Management",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/lesley-briante-4730294"
       },
       {
         "name": "Cara Battaglini Schatz",
@@ -2974,7 +3062,7 @@ const FINDINGS = [
       {
         "name": "Suresh Kumar",
         "title": "Executive VP, Global CTO & Chief Development Officer",
-        "linkedin": "https://digitaldefynd.com/IQ/meet-the-executive-csuite-team-of-walmart/"
+        "linkedin": "https://www.linkedin.com/in/suresh-kumar-cto"
       },
       {
         "name": "Hari Vasudev",
@@ -3039,55 +3127,64 @@ const FINDINGS = [
         "name": "Craig Cuyar",
         "title": "SVP Global Chief Information Officer, Global CIO",
         "linkedin_url": "https://www.linkedin.com/in/cuyar",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/cuyar"
       },
       {
         "name": "Gerri Dyrek",
         "title": "VP, Director Corporate Communications",
         "linkedin_url": "https://www.linkedin.com/in/gerridyrek",
-        "role": "Decision Maker"
+        "role": "Decision Maker",
+        "linkedin": "https://www.linkedin.com/in/gerridyrek"
       },
       {
         "name": "Marco Maria Gerlach",
         "title": "Regional Director Infrastructure Operations EMEA",
         "linkedin_url": "https://www.linkedin.com/in/marcomgerlach",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/marcomgerlach"
       },
       {
         "name": "Kelley Vickroy",
         "title": "Director, Global Learning & Development",
         "linkedin_url": "https://www.linkedin.com/in/kelleyvickroy",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/kelleyvickroy"
       },
       {
         "name": "Chiranjit Chowdhury",
         "title": "Country IT Director – Omnicom Group India",
         "linkedin_url": "https://www.linkedin.com/in/chiranjit-chowdhury-a590b530",
-        "role": "Influencer"
+        "role": "Influencer",
+        "linkedin": "https://www.linkedin.com/in/chiranjit-chowdhury-a590b530"
       },
       {
         "name": "Leticia Sobrado",
         "title": "Regional Information Security Officer For North America",
         "linkedin_url": "https://www.linkedin.com/in/leticia-sobrado-8080555",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/leticia-sobrado-8080555"
       },
       {
         "name": "Brian Russo",
         "title": "Lead Business Information Security Compliance",
         "linkedin_url": "https://www.linkedin.com/in/brian-russo-8659328",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/brian-russo-8659328"
       },
       {
         "name": "Christa Domroes",
         "title": "Global Business Information Security Officer",
         "linkedin_url": "https://www.linkedin.com/in/christa-domroes",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/christa-domroes"
       },
       {
         "name": "Shaun Belders",
         "title": "Deputy CISO",
         "linkedin_url": "https://www.linkedin.com/in/sbelders",
-        "role": "Technical Evaluator"
+        "role": "Technical Evaluator",
+        "linkedin": "https://www.linkedin.com/in/sbelders"
       }
     ]
   },
@@ -3192,7 +3289,7 @@ const FINDINGS = [
       {
         "name": "Julissa Marenco",
         "title": "Assistant Secretary for Communications and External Affairs and Chief Marketing Officer",
-        "linkedin": "https://www.si.edu/about/bios/julissa-marenco"
+        "linkedin": "https://www.linkedin.com/in/julissamarenco"
       },
       {
         "name": "Jenny Sue Ross",
@@ -3207,12 +3304,12 @@ const FINDINGS = [
       {
         "name": "Monique M. Chism",
         "title": "Under Secretary for Education",
-        "linkedin": "https://www.si.edu/about/ouse"
+        "linkedin": "https://www.linkedin.com/in/monique-chism"
       },
       {
         "name": "Toby Dodds",
         "title": "Director of Web and IT",
-        "linkedin": "https://folklife.si.edu/staff/smithsonian"
+        "linkedin": "https://www.linkedin.com/in/toby-dodds-07283183"
       },
       {
         "name": "David Perkins",
@@ -3350,7 +3447,7 @@ const FINDINGS = [
       {
         "name": "Jenna McMullin",
         "title": "Senior Vice President, Chief Communications Officer",
-        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/jenna-mcmullin.html"
+        "linkedin": "https://www.linkedin.com/in/jennamcmullin"
       },
       {
         "name": "Kristopher Singer",
@@ -3365,17 +3462,17 @@ const FINDINGS = [
       {
         "name": "Chris Wronsky",
         "title": "Senior Vice President and Chief Human Resources Officer",
-        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html"
+        "linkedin": "https://www.linkedin.com/in/chriswronsky"
       },
       {
         "name": "Leo Mackay",
         "title": "Senior Vice President, Ethics and Enterprise Assurance",
-        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html"
+        "linkedin": "https://www.linkedin.com/in/leo-s-mackay-jr-18ba167"
       },
       {
         "name": "Stuart Holliday",
         "title": "Senior Vice President, Chief Public Affairs Officer",
-        "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html"
+        "linkedin": "https://www.linkedin.com/in/stuart-holliday-452943b6"
       }
     ]
   },
