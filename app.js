@@ -448,107 +448,227 @@
     return whyVbrick || "VBRICK's enterprise video platform with eCDN, FedRAMP authorization, and real-time analytics";
   }
 
+  // Normalize finding_type to a canonical category for matching
+  // Handles snake_case, verbose, and mixed formats from different research agents
+  function classifyType(finding) {
+    var t = (finding.finding_type || '').toLowerCase();
+    var cat = (finding.category || '').toLowerCase();
+    var sum = (finding.summary || '').toLowerCase();
+    var comp = (finding.competitor || '').toLowerCase();
+
+    // Competitor displacement / migration / churn / acquisition layoffs
+    if (t.match(/migrat|churn|retir|deprecat|discontinu|displacement|layoff|acqui|workforce.?reduc|mass.?lay|engineering.?elim|sunset/)
+        || cat.includes('competitor') || comp) return 'competitor_displacement';
+    // RTO / return to office
+    if (t.match(/rto|return.?to.?office|return_to_office|hybrid|mandate/) || sum.includes('return-to-office') || sum.includes('rto')) return 'rto';
+    // Compliance / regulatory
+    if (t.match(/regulat|complian|enforce|fedramp|finra|hipaa|gdpr|section.?508|ada|cmmc|ccpa|privacy|audit|archiv/)
+        || cat.includes('compliance') || cat.includes('regulatory')) return 'compliance';
+    // Security
+    if (t.match(/security|breach|vulnerability|fips|soc.?ii|drm|encryption/) && !t.match(/complian/)) return 'security';
+    // Leadership change
+    if (t.match(/leader|cio|cto|cdo|new.?role|executive|appoint/) || t === 'leadership_change') return 'leadership';
+    // M&A
+    if (t.match(/m&a|merger|acqui|consolid/) || t === 'ma_consolidation') return 'ma';
+    // Workforce restructuring
+    if (t.match(/workforce|restructur|layoff|reduction.?in.?force/) || t === 'workforce_restructuring') return 'workforce';
+    // Job postings
+    if (t.match(/job.?post|hiring|recruit|open.?role/) || t === 'job_posting') return 'job_posting';
+    // Digital transformation / tech investment / AI
+    if (t.match(/digital|transform|moderniz|ai.?video|ai_video|tech.?stack|tech.?invest|technology/)
+        || t === 'digital_transformation' || t === 'ai_video_initiative' || t === 'technology_investment'
+        || t === 'tech_stack_change') return 'digital_transformation';
+    // Internal comms / events
+    if (t.match(/internal.?comm|comms|event|broadcast|town.?hall|all.?hands/) || t === 'internal_comms_investment'
+        || t === 'large_event_technology') return 'internal_comms';
+    // Federal / government contracts
+    if (t.match(/federal|government|contract|procurement|rfp|fedramp/) || t === 'federal_contract') return 'federal_contract';
+    // eCDN / scale / architecture
+    if (t.match(/ecdn|scale|architect|bandwidth|network|streaming|delivery/)) return 'ecdn_scale';
+    // Pricing
+    if (t.match(/pric|cost|licens|upgrade/)) return 'pricing';
+    // Outage
+    if (t.match(/outage|incident|downtime|disruption/)) return 'outage';
+    return 'general';
+  }
+
   function getDomainWord(finding) {
-    var type = finding.finding_type || "";
-    if (type.includes("Compliance") || type.includes("Regulatory")) return "compliance";
-    if (type.includes("Migration") || type.includes("Churn")) return "video platform strategy";
-    if (type.includes("RTO") || type.includes("Mandate")) return "internal communications strategy";
-    if (type.includes("Security")) return "video security strategy";
-    if (type.includes("Integration")) return "video infrastructure";
-    if (type.includes("Job Posting")) return "enterprise video strategy";
-    if (type.includes("eCDN")) return "video delivery strategy";
-    return "enterprise video strategy";
+    var cls = classifyType(finding);
+    var map = {
+      compliance: 'compliance', security: 'video security strategy',
+      competitor_displacement: 'video platform strategy', rto: 'internal communications strategy',
+      job_posting: 'enterprise video strategy', ecdn_scale: 'video delivery strategy',
+      digital_transformation: 'video modernization', federal_contract: 'video infrastructure',
+      ma: 'video infrastructure', leadership: 'enterprise video strategy',
+      internal_comms: 'internal communications', workforce: 'enterprise communications',
+      pricing: 'video platform strategy', outage: 'video reliability'
+    };
+    return map[cls] || 'enterprise video strategy';
   }
 
   // Build a natural trigger phrase from the finding for use in scripts
   function buildTriggerPhrase(finding, company, isMulti) {
-    var type = finding.finding_type || "";
-    var competitor = finding.competitor || "";
-    if (type.includes("Migration") || type.includes("Churn")) {
-      return competitor ? competitor + "'s recent changes" : "your video vendor's recent shake-up";
+    var cls = classifyType(finding);
+    var competitor = finding.competitor || '';
+    switch (cls) {
+      case 'competitor_displacement':
+        return competitor ? competitor + "'s recent changes" : "your video vendor's recent shake-up";
+      case 'rto':
+        return isMulti ? 'the return-to-office push' : company + "'s return-to-office mandate";
+      case 'compliance':
+        return 'the upcoming compliance deadlines affecting video';
+      case 'security':
+        return 'the recent security concerns in enterprise video';
+      case 'leadership':
+        return 'the recent leadership change at ' + company;
+      case 'ma':
+        return 'the merger integration at ' + company;
+      case 'workforce':
+        return 'the workforce restructuring at ' + company;
+      case 'digital_transformation':
+        return company + "'s digital transformation initiative";
+      case 'ecdn_scale':
+        return 'the video delivery challenges at scale';
+      case 'job_posting':
+        return company + "'s video infrastructure build-out";
+      case 'federal_contract':
+        return 'the federal video modernization requirements';
+      case 'internal_comms':
+        return company + "'s internal communications overhaul";
+      case 'pricing':
+        return 'the recent pricing changes in enterprise video';
+      case 'outage':
+        return 'the recent video platform outages';
+      default:
+        // Use the summary's first sentence as a natural trigger
+        var sum = (finding.summary || '').split('.')[0];
+        return sum.length > 10 && sum.length < 80 ? sum.toLowerCase() : company + "'s video infrastructure challenges";
     }
-    if (type.includes("RTO")) return isMulti ? "the return-to-office push" : company + "'s return-to-office mandate";
-    if (type.includes("Compliance") || type.includes("Regulatory")) return "the upcoming compliance deadlines affecting video";
-    if (type.includes("Security")) return "the recent security concerns in enterprise video";
-    if (type.includes("Leadership")) return "the recent leadership change";
-    if (type.includes("M&A")) return "the merger integration";
-    if (type.includes("Workforce")) return "the workforce restructuring";
-    if (type.includes("Digital")) return "the digital transformation initiative";
-    if (type.includes("eCDN") || type.includes("Network")) return "the video delivery challenges at scale";
-    return "something I came across about " + company;
   }
 
   function generateSubject(finding) {
-    var company = finding.company || "";
-    var type = finding.finding_type || "";
-    if (type.includes("Migration") || type.includes("Churn")) return "video risk";
-    if (type.includes("RTO")) return company !== "Multiple" && company !== "Unknown" ? company.toLowerCase().split(" ")[0] + " + video" : "rto + video";
-    if (type.includes("Compliance") || type.includes("Regulatory")) return "compliance gap";
-    if (type.includes("Security")) return "video security";
-    if (type.includes("Integration")) return "integration";
-    if (type.includes("Leadership")) return "new direction";
-    if (type.includes("M&A")) return "integration challenge";
-    if (type.includes("eCDN")) return "video delivery";
-    if (type.includes("Job Posting")) return "video platform";
-    if (type.includes("Workforce")) return "comms challenge";
-    if (type.includes("Digital")) return "video modernization";
-    return "enterprise video";
+    var company = finding.company || '';
+    var cls = classifyType(finding);
+    var subjectMap = {
+      competitor_displacement: 'video risk',
+      rto: company !== 'Multiple' && company !== 'Unknown' ? company.toLowerCase().split(' ')[0] + ' + video' : 'rto + video',
+      compliance: 'compliance gap',
+      security: 'video security',
+      leadership: 'new direction',
+      ma: 'integration challenge',
+      workforce: 'comms challenge',
+      job_posting: 'video platform',
+      digital_transformation: 'video modernization',
+      ecdn_scale: 'video delivery',
+      federal_contract: 'video compliance',
+      internal_comms: 'internal video',
+      pricing: 'video costs',
+      outage: 'video reliability'
+    };
+    return subjectMap[cls] || 'enterprise video';
   }
 
   // --- EMAIL: Maniac Method Spear — under 50 words, no pleasantries, conversational ---
   function generateEmail(company, pain, proof, isMulti, finding, trigger) {
     var subject = generateSubject(finding);
-    var type = finding.finding_type || "";
-    var competitor = finding.competitor || "";
+    var cls = classifyType(finding);
+    var competitor = finding.competitor || '';
 
-    var body = "{{First Name}},\n\n";
-    if (type.includes("Migration") || type.includes("Churn")) {
-      body += isMulti
-        ? trigger + ". When your video vendor implodes mid-town-hall, it's your problem. We kept similar orgs live through theirs."
-        : trigger + ". " + company + "'s video stack is exposed. We kept orgs like yours live when their vendor cratered.";
-    } else if (type.includes("RTO")) {
-      body += isMulti
-        ? "RTO mandates. 10K people, one all-hands, network melts. We prevent that with eCDN."
-        : company + " RTO. 10K people, one all-hands, network melts. We prevent that with eCDN.";
-    } else if (type.includes("Compliance") || type.includes("Regulatory")) {
-      body += "New compliance deadlines hit video archiving. Most orgs aren't ready. We got similar companies audit-proof in 6 weeks.";
-    } else if (type.includes("Leadership")) {
-      body += "New role, inherited video stack. The gaps show up fast when the CEO town hall crashes. We fix that.";
-    } else if (type.includes("M&A")) {
-      body += "Two orgs merge, two video platforms collide. It breaks. We've unified video infrastructure through 3 major integrations this year.";
-    } else if (type.includes("Security")) {
-      body += trigger + ". Most enterprise video platforms have security gaps your CISO doesn't know about yet. We close them.";
-    } else if (type.includes("Job Posting") || type.includes("eCDN")) {
-      body += "Saw " + company + " is building out " + getDomainWord(finding) + ". We do this for F500s with eCDN, FedRAMP, real-time analytics.";
-    } else {
-      body += trigger + ". Directly impacts your video infrastructure. We handle this for similar orgs.";
+    var body = '{{First Name}},\n\n';
+    switch (cls) {
+      case 'competitor_displacement':
+        if (competitor) {
+          body += competitor + ' is in trouble. When your video vendor implodes mid-town-hall, it\'s your problem. We kept similar orgs live through theirs.';
+        } else {
+          body += trigger + '. ' + company + '\'s video stack is exposed. We kept orgs like yours live when their vendor cratered.';
+        }
+        break;
+      case 'rto':
+        body += (isMulti ? 'RTO mandates' : company + ' RTO') + '. 10K people, one all-hands, network melts. We prevent that with eCDN.';
+        break;
+      case 'compliance':
+        body += 'New compliance deadlines hit video archiving. Most orgs aren\'t ready. We got similar companies audit-proof in 6 weeks.';
+        break;
+      case 'security':
+        body += trigger + '. Most enterprise video platforms have security gaps your CISO doesn\'t know about yet. We close them.';
+        break;
+      case 'leadership':
+        body += 'New role, inherited video stack. The gaps show up fast when the CEO town hall crashes. We fix that.';
+        break;
+      case 'ma':
+        body += 'Two orgs merge, two video platforms collide. It breaks. We\'ve unified video infrastructure through 3 major integrations this year.';
+        break;
+      case 'workforce':
+        body += 'Major restructuring = mass communications to tens of thousands. Most video platforms buckle. Ours doesn\'t.';
+        break;
+      case 'job_posting':
+        body += 'Saw ' + company + ' is building out ' + getDomainWord(finding) + '. We do this for F500s with eCDN, FedRAMP, real-time analytics.';
+        break;
+      case 'digital_transformation':
+        body += company + ' is modernizing. Video infrastructure is the piece most orgs get wrong. We\'ve helped similar companies get it right the first time.';
+        break;
+      case 'federal_contract':
+        body += 'Federal video requirements are tightening. FedRAMP + FIPS 140-2 + Section 508 are table stakes now. We check every box.';
+        break;
+      case 'internal_comms':
+        body += 'Scaling internal video across ' + company + ' without crushing the network is the hard part. That\'s exactly what our eCDN solves.';
+        break;
+      case 'ecdn_scale':
+        body += 'Video at scale breaks networks. ' + company + ' is big enough for that to matter. We prevent it with eCDN for orgs your size.';
+        break;
+      case 'pricing':
+        body += 'Video platform costs are spiking across the industry. We\'re hearing from orgs re-evaluating right now. Worth comparing?';
+        break;
+      case 'outage':
+        body += 'Video outages during leadership broadcasts are career-ending. We built the platform so that doesn\'t happen.';
+        break;
+      default:
+        // Use the finding summary to create a specific message
+        var shortSum = (finding.summary || '').split('.')[0];
+        if (shortSum.length > 15 && shortSum.length < 70) {
+          body += shortSum + '. This directly impacts your video infrastructure. We handle this for similar orgs.';
+        } else {
+          body += company + '\'s video infrastructure is at a decision point. We work with similar orgs on exactly this. Worth comparing notes?';
+        }
     }
-    body += "\n\nRelevant?\n\n{{Your First Name}}";
+    body += '\n\nRelevant?\n\n{{Your First Name}}';
 
     return { subject: subject, body: body };
   }
 
   // --- LINKEDIN DM: after blank connection request, under 40 words, no pitch ---
   function generateLinkedInDM(company, pain, proof, isMulti, finding, trigger) {
-    var type = finding.finding_type || "";
+    var cls = classifyType(finding);
+    var competitor = finding.competitor || '';
 
-    var msg = "";
-    if (type.includes("Migration") || type.includes("Churn")) {
-      msg = "{{First Name}} -- " + trigger + ". Seeing a pattern with orgs dealing with this. Curious if it's on your radar too.";
-    } else if (type.includes("RTO")) {
-      msg = isMulti
-        ? "{{First Name}} -- RTO is exposing video infrastructure gaps everywhere. Figured you might be in the thick of it."
-        : "{{First Name}} -- saw " + company + "'s RTO news. Scaling video for all-hands at that size is brutal. Worth comparing notes?";
-    } else if (type.includes("Compliance") || type.includes("Regulatory")) {
-      msg = "{{First Name}} -- new compliance deadlines are catching video teams off guard. Thought this might be relevant to what you're working on.";
-    } else if (type.includes("Leadership")) {
-      msg = "{{First Name}} -- saw the move. When you start poking at the video stack, I think there's something worth discussing.";
-    } else if (type.includes("Security")) {
-      msg = "{{First Name}} -- " + trigger + ". Most enterprise video has security gaps nobody's looking at. Worth a quick exchange?";
-    } else {
-      msg = "{{First Name}} -- came across " + trigger + ". Thought it might connect to what you're working on. Open to comparing notes?";
+    switch (cls) {
+      case 'competitor_displacement':
+        return '{{First Name}} -- ' + (competitor ? competitor + ' is making waves' : trigger) + '. Seeing a pattern with orgs dealing with this. Curious if it\'s on your radar too.';
+      case 'rto':
+        return isMulti
+          ? '{{First Name}} -- RTO is exposing video infrastructure gaps everywhere. Figured you might be in the thick of it.'
+          : '{{First Name}} -- saw ' + company + '\'s RTO news. Scaling video for all-hands at that size is brutal. Worth comparing notes?';
+      case 'compliance':
+        return '{{First Name}} -- new compliance deadlines are catching video teams off guard. Thought this might be relevant to what you\'re working on.';
+      case 'security':
+        return '{{First Name}} -- ' + trigger + '. Most enterprise video has security gaps nobody\'s looking at. Worth a quick exchange?';
+      case 'leadership':
+        return '{{First Name}} -- saw the move. When you start poking at the video stack, I think there\'s something worth discussing.';
+      case 'ma':
+        return '{{First Name}} -- mergers always expose video infrastructure gaps. Curious how ' + company + ' is handling the consolidation.';
+      case 'workforce':
+        return '{{First Name}} -- restructuring creates massive internal comms challenges. Video at that scale is the hard part. Figured this might resonate.';
+      case 'job_posting':
+        return '{{First Name}} -- saw ' + company + ' is building out the video team. We work with similar orgs on exactly this. Worth connecting?';
+      case 'digital_transformation':
+        return '{{First Name}} -- ' + company + '\'s modernization effort caught my eye. Video infrastructure is usually the piece that gets overlooked. Worth comparing notes?';
+      case 'federal_contract':
+        return '{{First Name}} -- federal video requirements are tightening. FedRAMP + FIPS are now table stakes. Thought this might be relevant.';
+      case 'internal_comms':
+        return '{{First Name}} -- scaling internal video without crushing the network is the challenge I keep hearing about. Figured it might resonate with what you\'re working on.';
+      default:
+        return '{{First Name}} -- ' + trigger + '. Thought it might connect to what you\'re working on. Open to comparing notes?';
     }
-    return msg;
   }
 
   // --- COLD CALL: Maniac Method — name-pause, pattern interrupt, eCDN question, silence ---
