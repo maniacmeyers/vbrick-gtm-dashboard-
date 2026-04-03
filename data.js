@@ -2,14 +2,14 @@ const FINDINGS = [
   {
     "id": 1,
     "category": "Competitor Intelligence",
-    "company": "Enterprise organizations currently on Brightcove",
-    "summary": "Bending Spoons acquired Brightcove in February 2025 for $233M and immediately laid off approximately 85% of staff (450 of ~530 employees), gutting engineering, product, and customer support teams. The company now operates with a skeleton crew of roughly 80 employees. Aragon Research explicitly named Vbrick as an alternative enterprise video platform, recommending enterprises 'move quickly to determine if a leaner, cost-focused video provider still fits their strategic needs.'",
-    "source_url": "https://aragonresearch.com/bending-spoons-cuts-at-vimeo-and-brightcove/",
-    "why_vbrick": "Brightcove's engineering and support decimation creates immediate displacement risk. Enterprise customers facing contract renewals will question long-term product roadmap viability, support SLAs, and innovation pace. Vbrick's FedRAMP authorization, eCDN, FINRA-ready archiving, and dedicated enterprise video focus position it as a stable, compliance-ready alternative with a committed engineering team.",
-    "outreach_angle": "Reference Aragon Research's explicit warning that enterprises relying on Brightcove must 'conduct a market scan of alternative providers like... Vbrick' now. Offer a risk assessment call and migration roadmap before their next renewal window.",
-    "target_persona": "VP of Digital Communications, IT Director, Head of Corporate Video",
-    "industry": "Enterprise (Financial Services, Healthcare, Media, Manufacturing)",
-    "urgency_score": 3,
+    "company": "Microsoft Teams Enterprise Customers (Broad)",
+    "summary": "Microsoft announced on February 3, 2026 that Teams Live Events will be fully retired on June 30, 2026. Starting February 3, customers cannot schedule any Live Events past June 30. Existing events scheduled before the retirement date will run through February 28, 2027. The Viva Engage integration for Live Events ends April 15, 2026. Organizations heavily using Live Events for internal broadcasts must migrate to Teams Town Hall or find an alternative.",
+    "source_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/retiring-teams-live-events-the-next-chapter-for-events-at-scale-in-microsoft-tea/4486465",
+    "why_vbrick": "VBRICK's Teams integration is an additive layer — not a replacement workflow — that provides eCDN-powered large-scale streaming, FINRA-ready archiving, real-time analytics, and FedRAMP compliance that Teams Town Hall does not natively provide. This is the optimal window to approach Microsoft shop IT teams.",
+    "outreach_angle": "Time-sensitive displacement: 'June 30 is the deadline — your Teams Live Events workflow ends. VBRICK integrates with Teams to provide enterprise-grade streaming, compliance archiving, and eCDN without abandoning your M365 investment.'",
+    "target_persona": "IT Director / Director of Internal Communications / M365 Administrators",
+    "industry": "Enterprise (Cross-industry) / Federal Government",
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "High",
     "confidence_rationale": "",
@@ -18,57 +18,7 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Acquisition/Mass Layoffs",
-    "finding_id": "",
-    "competitor": "Brightcove",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 2,
-    "category": "Competitor Intelligence",
-    "company": "Enterprise organizations currently on Vimeo Enterprise",
-    "summary": "Bending Spoons acquired Vimeo for $1.38B in November 2025 and on January 20, 2026, eliminated 'almost everyone' at the company — reportedly over 1,000 employees globally, including the entire video engineering team. Former VP confirmed 'a large portion of the company' was impacted. The platform's self-serve subscriber base had already collapsed from 1.5M (2022) to ~53,500 by Q3 2024. Aragon Research issued an enterprise advisory warning that Vimeo is now in 'maintenance-mode era.'",
-    "source_url": "https://techcrunch.com/2026/01/22/vimeo-starts-layoffs-after-acquisition-by-bending-spoons/",
-    "why_vbrick": "Vimeo Enterprise customers face the immediate risk of degraded support, frozen product development, and pricing changes as Bending Spoons seeks to recoup $1.38B. Vimeo lacks FedRAMP, FIPS 140-2, and FINRA-ready archiving — gaps Vbrick fills natively. The entire Vimeo video engineering team being gone means no innovation roadmap. Vbrick provides enterprise-grade security, eCDN for bandwidth management, and SOC II Type 2 in a platform purpose-built for enterprise.",
-    "outreach_angle": "Lead with the Aragon Research advisory: enterprises relying on Vimeo should 'immediately evaluate their service level agreements.' Offer a complimentary platform stability audit — ask if their video team has received a renewal quote yet, and whether SLA terms have changed since the acquisition.",
-    "target_persona": "CIO, VP of Corporate Communications, IT Security Director",
-    "industry": "Enterprise (All Verticals — especially Financial Services, Healthcare, Government)",
-    "urgency_score": 3,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Acquisition/Mass Layoffs — Engineering Team Eliminated",
-    "finding_id": "",
-    "competitor": "Vimeo Enterprise",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 3,
-    "category": "Competitor Intelligence",
-    "company": "Microsoft 365 enterprise organizations using Teams Live Events",
-    "summary": "Microsoft officially confirmed Teams Live Events will retire on June 30, 2026. Scheduling for events beyond June 30 was blocked starting February 3, 2026. Existing events run through February 28, 2027 only. Organizations must migrate to Teams Town Hall, but Town Hall is limited to 20,000 attendees (standard), lacks enterprise eCDN outside Teams Premium, has no native FINRA archiving, and does not support organizations needing external broadcast infrastructure. The retirement also impacts Microsoft Graph API integrations used by enterprises for automated event workflows.",
-    "source_url": "https://app.cloudscout.one/evergreen-item/mc1226495/",
-    "why_vbrick": "Vbrick's deep Microsoft 365/Teams integration means organizations can retain the Teams workflow they know while gaining enterprise-grade eCDN (critical for large-scale concurrent streaming without bandwidth overload), FedRAMP/FIPS compliance, FINRA-ready archiving, AI search/transcription, and real-time analytics — capabilities Teams Town Hall cannot provide natively. This is a forced migration that creates a natural evaluation window.",
-    "outreach_angle": "Target M365 admins now: 'Teams Live Events retires June 30, 2026 — have you evaluated what replaces it for large-scale broadcasts?' Lead with Vbrick's native Teams integration and eCDN capability to make the transition seamless rather than disruptive.",
-    "target_persona": "M365/Teams Administrator, IT Director, Head of Internal Communications",
-    "industry": "Enterprise (All Verticals — especially Government, Financial Services, Healthcare)",
-    "urgency_score": 3,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Product Retirement/Migration Deadline",
+    "finding_type": "Product Discontinuation",
     "finding_id": "",
     "competitor": "Microsoft Stream/Teams Live Events",
     "stakeholders": [
@@ -108,19 +58,69 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/geoffbelknap"
       }
     ],
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": 2,
+    "category": "Competitor Intelligence",
+    "company": "Federal Government / Defense Contractors",
+    "summary": "Microsoft 365 Teams Town Hall in the commercial cloud is not FedRAMP authorized for CUI-level data. GCC High (required for DoD/CUI) is authorized but costs 2–3x commercial Microsoft 365 pricing. Stream on SharePoint (the Classic Stream replacement) eliminated the dedicated video portal experience, forcing video management back into SharePoint folders. Federal agencies and defense contractors evaluating Town Hall for enterprise video must separately address eCDN, FIPS 140-2, and video-specific compliance controls not native to Teams.",
+    "source_url": "https://secureframe.com/blog/microsoft-gcc-high",
+    "why_vbrick": "VBRICK holds FedRAMP authorization, FIPS 140-2, SOC II Type 2, Section 508, and HIPAA compliance natively. It integrates with Teams/M365 GCC/GCC High environments to provide the dedicated enterprise video portal, eCDN, and compliance archiving that Microsoft's own infrastructure does not address.",
+    "outreach_angle": "Lead with FedRAMP + FIPS 140-2 credentials. Position as the secure video layer for GCC/GCC High M365 environments where Teams alone cannot satisfy CUI compliance requirements.",
+    "target_persona": "CISO / IT Security Manager / Compliance Officer",
+    "industry": "Federal Government / Defense",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Compliance Gap",
+    "finding_id": "",
+    "competitor": "Microsoft Stream/Teams Live Events",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 3,
+    "category": "Competitor Intelligence",
+    "company": "Brightcove Enterprise Customers (Broad)",
+    "summary": "In March 2025, following its $233M acquisition by Italian tech company Bending Spoons (completed February 2025), Brightcove laid off approximately 198 employees — representing roughly two-thirds of its US workforce and ~33% of its global 600+ headcount. Engineering, sales, and customer support teams were hardest hit. Regional offices in Europe and Asia-Pacific are expected to close. Analysis from FastPix and Gumlet note the 'engineering talent exodus' raises serious questions about platform evolution velocity. Bending Spoons is known for aggressive post-acquisition cost restructuring (also owner of Evernote, Vimeo).",
+    "source_url": "https://www.boston.com/news/business/2025/03/19/boston-based-streaming-company-brightcove-to-lay-off-198-workers/",
+    "why_vbrick": "Brightcove enterprise customers face real risk: degraded support response, slower platform development, and loss of institutional knowledge. VBRICK can offer a stability narrative — stable ownership, purpose-built enterprise video, full compliance stack — and target accounts facing Brightcove contract renewals.",
+    "outreach_angle": "Directly reference the acquisition and layoffs at renewal time. 'Your Brightcove contract is up — the team that supported you has largely left. VBRICK offers enterprise video with a dedicated support model and compliance-first architecture.'",
+    "target_persona": "VP of Marketing Technology / Director of Digital Media / CTO",
+    "industry": "Media / Financial Services / Enterprise",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Workforce Reduction / Support Risk",
+    "finding_id": "",
+    "competitor": "Brightcove",
+    "stakeholders": [],
+    "is_new": true
   },
   {
     "id": 4,
     "category": "Competitor Intelligence",
-    "company": "Large enterprise organizations on Brightcove facing support degradation",
-    "summary": "Following the March 2025 layoffs that eliminated 85% of Brightcove staff (450 employees), independent analyst Aragon Research warned that 'with a skeleton crew reportedly tasked to remain only through April 2026, organizations must assess whether custom integrations or advanced features will remain supported.' G2 enterprise reviews cite 'system reliability with unexplained downtime incidents,' 'charging scheme not flexible,' 'business support team keep changing,' and 'lack of live streaming metrics.' Brightcove's July 2025 'strategic vision' announcement relied on AI automation promises rather than committed engineering timelines.",
-    "source_url": "https://www.interviewpal.com/layoffs/brightcove",
-    "why_vbrick": "Brightcove customers are paying enterprise pricing for a platform with no active engineering team and a skeleton support staff. Custom integrations, API-driven workflows, and live streaming reliability are all at risk. Vbrick offers enterprise-grade SLAs, active platform development, eCDN for bandwidth-efficient large-scale streaming, and full compliance certifications that Brightcove's hollowed-out organization cannot reliably maintain.",
-    "outreach_angle": "Use Aragon Research advisory directly: 'Aragon Research issued a formal advisory that Brightcove enterprise customers must immediately evaluate alternatives. You have an upcoming renewal — let's do a platform risk assessment against Vbrick before you commit to another term.'",
-    "target_persona": "VP of Digital Media, CTO, IT Director",
-    "industry": "Media, Enterprise (Financial Services, Healthcare, Retail)",
-    "urgency_score": 3,
+    "company": "Vimeo Enterprise Customers (Broad)",
+    "summary": "Vimeo was acquired by Bending Spoons (also Brightcove's acquirer) for $1.38 billion in November 2025. By January 2026, the company had initiated its second (and third, per some reports) round of layoffs since the acquisition, cutting staff globally across support, engineering, and operations. Bending Spoons is known for aggressive post-acquisition cost efficiency programs. A Gumlet analysis notes the layoffs indicate 'structural under-capacity' and that 'support is structurally the easiest place to cut' — leading to slower ticket queues, thinner incident coverage, and loss of institutional knowledge.",
+    "source_url": "https://www.businessinsider.com/vimeo-laying-off-staff-after-billion-sale-to-bending-spoons-2026-1",
+    "why_vbrick": "Enterprise customers with Vimeo — particularly those relying on it for internal comms, HR, or compliance video — face real risk of support degradation and feature freeze as Bending Spoons rationalizes the acquisition. VBRICK's stable ownership and enterprise-grade support model is a compelling alternative.",
+    "outreach_angle": "Timing play: 'Bending Spoons just laid off Vimeo teams for the second time since acquiring them in November. If you rely on Vimeo for enterprise video, the support team supporting you may not exist anymore. VBRICK has a stable roadmap and dedicated enterprise support.'",
+    "target_persona": "Director of Corporate Communications / VP of Digital Workplace / CTO",
+    "industry": "Enterprise (Cross-industry)",
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "High",
     "confidence_rationale": "",
@@ -129,23 +129,23 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Support Degradation / Innovation Freeze",
+    "finding_type": "Workforce Reduction / Support Risk",
     "finding_id": "",
-    "competitor": "Brightcove",
+    "competitor": "Vimeo Enterprise",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 5,
-    "category": "Competitor Intelligence",
-    "company": "Enterprise organizations preparing for Teams Live Events API deprecation",
-    "summary": "The Microsoft Graph APIs used to create Teams Live Events retire on June 30, 2026, simultaneously with the Teams Live Events feature itself. Organizations with custom integrations — CRM-triggered event creation (Dynamics 365), automated broadcast workflows via Microsoft Graph, or Viva Engage-integrated events (blocked April 15, 2026) — must rebuild these integrations entirely. The isBroadcast property within the onlineMeeting Graph resource will no longer be available. This affects organizations with automated event workflows embedded in their enterprise systems.",
-    "source_url": "https://app.cloudscout.one/evergreen-item/mc1226495/",
-    "why_vbrick": "Vbrick offers native API integration with Microsoft 365/Teams and provides an enterprise video management layer that persists beyond Microsoft's product lifecycle changes. Organizations rebuilding their event automation workflows can use Vbrick's API to create a stable, long-term architecture rather than chasing Microsoft's product retirement cycle.",
-    "outreach_angle": "Ask enterprise IT teams: 'Do you have automated workflows that use the Microsoft Graph API to create or manage Teams Live Events? These APIs retire June 30, 2026 — you need to rebuild those integrations now. Vbrick's M365-integrated architecture gives you a stable API that won't be deprecated on a Microsoft product timeline.'",
-    "target_persona": "M365 Developer/Architect, IT Director, Head of Enterprise Applications",
-    "industry": "Enterprise (All Verticals with Microsoft 365)",
-    "urgency_score": 3,
+    "category": "Market Triggers",
+    "company": "Amazon",
+    "summary": "Amazon executed two major corporate workforce reductions within a single fiscal quarter: ~14,000 roles cut in October 2025 and ~16,000 additional roles under 'Project Dawn' in January 2026, totaling ~30,000 corporate job cuts. Simultaneously, Amazon enforced a strict 5-day return-to-office mandate effective January 2025. The combination of mass hybrid-to-onsite transitions and rapid workforce realignment has created acute enterprise-wide communication infrastructure pressure, including companywide all-hands, restructuring announcements, and leadership town halls at unprecedented scale.",
+    "source_url": "https://www.techtimes.com/articles/314327/20260128/amazon-job-cuts-loom-project-dawn-email-sparks-internal-panic-among-employees.htm",
+    "why_vbrick": "Vbrick's scalable eCDN offloads bandwidth during simultaneous high-viewership town halls and all-hands events across Amazon's massive distributed workforce. AI transcription and search enable employees to find archived restructuring communications on demand. Microsoft 365/Teams integration ensures seamless deployment within Amazon's existing collaboration stack.",
+    "outreach_angle": "Amazon's dual-wave restructuring and 5-day RTO have made reliable, large-scale video delivery mission-critical. Vbrick's eCDN can prevent network saturation during mass town halls, while AI-powered archiving ensures compliance-ready records of all restructuring communications.",
+    "target_persona": "CIO / VP of Internal Communications / Head of Workplace Technology",
+    "industry": "E-Commerce / Technology",
+    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "High",
     "confidence_rationale": "",
@@ -154,177 +154,84 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "API Deprecation / Integration Breaking Change",
+    "finding_type": "Workforce Restructuring + RTO Mandate",
     "finding_id": "",
-    "competitor": "Microsoft Stream/Teams Live Events",
-    "stakeholders": [],
-    "is_new": false
+    "employee_count": "~350,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Stephany Rochon",
+        "title": "Director, Internal Communications",
+        "linkedin_url": "https://www.linkedin.com/in/srochon",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Veronica Toney",
+        "title": "Editor In Chief, Internal Corporate Communications",
+        "linkedin_url": "https://www.linkedin.com/in/veronicatoney",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "James Pemberton",
+        "title": "Global Director Of Amazon Corporate IT - Engineering, Infrastructure Operations",
+        "linkedin_url": "https://www.linkedin.com/in/jimpem",
+        "role": "Influencer"
+      },
+      {
+        "name": "Arindam Chakraborty",
+        "title": "Product Leader",
+        "linkedin_url": "https://www.linkedin.com/in/arindamc1",
+        "role": "Evaluator"
+      },
+      {
+        "name": "Aarthi Janakiraman",
+        "title": "Senior Manager Information Security",
+        "linkedin_url": "https://www.linkedin.com/in/aarthi-janakiraman-58a95bb",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Shirin Bhambhani",
+        "title": "Sr. Specialist Solutions Architect - Networking",
+        "linkedin_url": "https://www.linkedin.com/in/shirinbhambhani",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Monica Li",
+        "title": "Senior Manager Security Compliance",
+        "linkedin_url": "https://www.linkedin.com/in/monica-li-8862451",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Ashraf Altalleh",
+        "title": "Sr. Solutions Architect",
+        "linkedin_url": "https://www.linkedin.com/in/ashrafaltalleh",
+        "role": "Technical Evaluator"
+      }
+    ],
+    "is_new": true
   },
   {
     "id": 6,
     "category": "Market Triggers",
-    "company": "JPMorgan Chase",
-    "summary": "JPMorgan Chase mandated full-time 5-day office return for all ~310,000 global employees effective March 2025, making it one of the largest RTO policies in corporate history. CEO Jamie Dimon publicly doubled down at a town hall, stating he would not give managers discretion. The firm opened its new 60-story New York headquarters and is actively managing large-scale in-person operations across global campuses.",
-    "source_url": "https://commercialobserver.com/2025/01/jp-morgan-return-to-offices-five-days-a-week/",
-    "why_vbrick": "310,000 employees returning to offices across dozens of global campuses creates immediate demand for live-streamed executive town halls, all-hands meetings, and hybrid broadcast infrastructure. Vbrick's eCDN prevents network saturation during simultaneous high-viewership events; FINRA-ready archiving meets financial services compliance; Microsoft 365/Teams integration fits JPMorgan's existing stack.",
-    "outreach_angle": "With 310,000 employees back five days a week across global campuses, your town halls and all-hands broadcasts are under more load than ever. Vbrick's eCDN + Microsoft Teams integration scales live events without saturating WAN links—and our FINRA-ready archiving keeps compliance teams happy.",
-    "target_persona": "CIO / Head of Internal Communications / VP Employee Experience",
-    "industry": "Financial Services",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "return_to_office",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Heather Barbakoff",
-        "title": "Executive Director, Senior Communications Manager, Global Technology",
-        "linkedin": "https://www.linkedin.com/in/heatherbarbakoff"
-      },
-      {
-        "name": "Kanti S",
-        "title": "Executive Director, Head Of Enterprise Technology Communications",
-        "linkedin": "https://www.linkedin.com/in/kantishrestha"
-      },
-      {
-        "name": "Pallavi J",
-        "title": "Vice President - IT Infrastructure",
-        "linkedin": "https://www.linkedin.com/in/pallavi-j-21532614"
-      },
-      {
-        "name": "Lee Wilson",
-        "title": "JPMC VP Infrastructure",
-        "linkedin": "https://www.linkedin.com/in/lee-wilson-8a67302"
-      },
-      {
-        "name": "Ruby Murray",
-        "title": "Executive Director, Global Head Of Learning - Legal And Internal Audit",
-        "linkedin": "https://www.linkedin.com/in/ruby-murray-b6976a4"
-      },
-      {
-        "name": "Matthew Davis",
-        "title": "Learning Lead - Firmwide Talent Development Education, Vice President",
-        "linkedin": "https://www.linkedin.com/in/dvgpro"
-      },
-      {
-        "name": "Karthik Viswanathan",
-        "title": "Senior Vice President, Infrastructure Engineering",
-        "linkedin": "https://www.linkedin.com/in/itskarthik1983"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 7,
-    "category": "Market Triggers",
-    "company": "Truist Financial",
-    "summary": "Truist Financial (40,000+ employees, $544B in assets) ended hybrid work and required all employees to return to office 5 days per week starting January 5, 2026. The Charlotte-based bank cited strengthening collaboration, and the move followed ongoing restructuring of its corporate and commercial banking divisions.",
-    "source_url": "https://finance.yahoo.com/news/truist-require-employees-office-5-110632836.html",
-    "why_vbrick": "A sudden shift to 100% in-office at 40,000-person scale requires robust live video infrastructure for leadership communications, training, and town halls across dozens of branches and offices. Vbrick's eCDN handles the bandwidth spike, SOC II Type 2 and FINRA-ready archiving satisfies financial services compliance, and AI search/transcription enables on-demand access to recorded sessions.",
-    "outreach_angle": "Truist just moved 40,000 employees back to 5-day in-office as of January 2026—a complete overhaul of your communications model. Vbrick can modernize your live executive broadcast and town hall infrastructure with enterprise-grade eCDN, FINRA-compliant archiving, and real-time analytics to measure engagement across your entire workforce.",
-    "target_persona": "CIO / Chief Communications Officer",
-    "industry": "Financial Services",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "return_to_office",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Jeff Taylor",
-        "title": "SVP - IT Infrastructure Group Manager",
-        "linkedin_url": "https://www.linkedin.com/in/jeff1taylor",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Paul Brant",
-        "title": "SVP - Infrastructure Services Division Manager",
-        "linkedin_url": "https://www.linkedin.com/in/paulbrant",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Brad Kozak",
-        "title": "SVP Head Of Employee And Business Function Communication",
-        "linkedin_url": "https://www.linkedin.com/in/bradleykozak",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Rajesh Ramasamy",
-        "title": "SVP Group Head Of Software Engineering, Enterprise Functions",
-        "linkedin_url": "https://www.linkedin.com/in/rajesh-ramasamy-4529592",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Rochelle Ramos",
-        "title": "Senior Director (SVP), Talent Management - Enterprise Learning",
-        "linkedin_url": "https://www.linkedin.com/in/rochelleramostds",
-        "role": "Influencer"
-      },
-      {
-        "name": "Stephen Butcher",
-        "title": "Audio Visual Collaboration Lead",
-        "linkedin_url": "https://www.linkedin.com/in/stephen-butcher",
-        "role": "Evaluator"
-      },
-      {
-        "name": "Naseem I Khan",
-        "title": "Sr. Solutions Architect",
-        "linkedin_url": "https://www.linkedin.com/in/naseemk",
-        "role": "Technical Evaluator"
-      },
-      {
-        "name": "Joshua Horn",
-        "title": "SVP, Cybersecurity Governance, Risk, and Compliance Division Manager",
-        "linkedin_url": "https://www.linkedin.com/in/joshua-horn-crisc-cism-cisa-cgeit-2b818ab",
-        "role": "Technical Evaluator"
-      },
-      {
-        "name": "Troy Fultz",
-        "title": "Compliance Manager",
-        "linkedin_url": "https://www.linkedin.com/in/troy-fultz-65824166",
-        "role": "Technical Evaluator"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 8,
-    "category": "Market Triggers",
     "company": "Verizon Communications",
-    "summary": "New Verizon CEO Dan Schulman (appointed October 6, 2025) announced the largest single layoff in company history on November 20, 2025—13,000 jobs cut (approximately 13% of workforce). Simultaneously, Verizon is integrating Frontier Communications following the $20B acquisition that closed January 2026. The restructuring reorients the entire company around AI and customer value, requiring extensive mass communications to ~86,000 remaining employees across a newly merged entity.",
+    "summary": "Dan Schulman became CEO in October 2025 after replacing Hans Vestberg, immediately announcing a 13,000+ employee reduction (largest single layoff in company history) in November 2025. Schulman has framed the restructuring as a fundamental reset, promising to 'aggressively transform culture, cost structure, and financial profile.' This represents a trifecta trigger: new CEO with transformation mandate, massive workforce restructuring requiring broad employee communications, and a culture-change initiative demanding reliable video delivery.",
     "source_url": "https://www.cnbc.com/2025/11/20/verizon-cutting-more-than-13000-jobs-as-it-restructures-.html",
-    "why_vbrick": "A triple trigger: new CEO, massive layoff requiring transparent mass communications, and a major acquisition integration. Verizon must communicate continuously to a combined workforce of Verizon + Frontier (~100,000+ combined) across geographically dispersed locations. Vbrick's live streaming, on-demand video, AI search/transcription, and eCDN scale town halls globally while FINRA-ready archiving supports regulatory requirements.",
-    "outreach_angle": "Verizon's new CEO, the largest-ever layoffs, and the Frontier integration create one of the most demanding internal communications environments in telecom history. Vbrick scales mass video communications to 100,000+ employees—with eCDN for WAN protection, AI transcription for on-demand access, and real-time analytics to confirm your message reached every level of the new combined organization.",
-    "target_persona": "CIO / Chief Communications Officer / SVP Internal Communications",
+    "why_vbrick": "A new CEO with an aggressive transformation mandate will need to reach 99,000+ employees at global scale. Vbrick's enterprise video platform with eCDN, real-time analytics, and Microsoft Teams integration enables Schulman to hold high-quality all-hands without network degradation. FINRA-ready archiving supports regulatory compliance for a regulated telecommunications entity.",
+    "outreach_angle": "Dan Schulman's first 90 days as CEO have centered on mass workforce changes requiring high-frequency, large-audience video communications. Position Vbrick as the enterprise video backbone enabling the 'culture reset' Schulman is driving—with the analytics to prove employee engagement.",
+    "target_persona": "New CEO / CIO / Head of Internal Communications",
     "industry": "Telecommunications",
-    "urgency_score": 0,
+    "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "workforce_restructuring",
+    "finding_type": "New CEO + Workforce Restructuring + Digital Transformation",
     "finding_id": "",
-    "employee_count": "Unknown",
+    "employee_count": "~99,600",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
@@ -363,30 +270,92 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/franz-paasche"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 9,
+    "id": 7,
     "category": "Market Triggers",
-    "company": "Intel Corporation",
-    "summary": "Intel appointed Cindy Stoddard (formerly SVP/CIO at Adobe) as its new CIO in November 2025, reporting directly to CEO Lip-Bu Tan. This follows Intel's largest-ever restructuring—cutting approximately 24,000 jobs (reducing the workforce from ~109,000 to ~75,000) and a $10B cost-cutting program. Stoddard is tasked with 'the next phase of Intel's digital transformation,' focusing on modernizing core IT systems and elevating the company's AI capabilities.",
-    "source_url": "https://newsroom.intel.com/corporate/intel-appoints-cindy-stoddard-as-senior-vice-president-and-chief-information-officer",
-    "why_vbrick": "A new external CIO with a mandate for full IT modernization at a restructured company is a high-value entry point. With 75,000 employees across semiconductor fabs, R&D campuses, and global offices, Intel needs enterprise video that scales across complex network environments. Vbrick's eCDN, AI search/transcription, Microsoft Teams integration, and FedRAMP-aligned security fit Intel's needs for both corporate and government-adjacent communications.",
-    "outreach_angle": "Cindy Stoddard just stepped in as Intel CIO with a mandate to modernize core systems across a leaner, restructured organization. Vbrick's enterprise video platform—with eCDN for campus networks, AI transcription, and deep Microsoft 365 integration—is built for the kind of IT transformation Intel is executing right now.",
-    "target_persona": "Cindy Stoddard, SVP & CIO / VP Internal Communications",
-    "industry": "Semiconductors / Technology",
-    "urgency_score": 0,
+    "company": "The Coca-Cola Company",
+    "summary": "On January 14, 2026, Coca-Cola announced a sweeping leadership restructuring coinciding with its CEO transition (Henrique Braun takes over March 31, 2026). The company created a brand-new Chief Digital Officer role—the first in company history—appointing Sedef Salingan Sahin, who reports directly to the incoming CEO. Her mandate is to 'unify digital, data and operational excellence' across 200+ country operations. The CDO will assess and reorganize all digital teams enterprise-wide in her first months, representing an active platform evaluation window.",
+    "source_url": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1150/the-coca-cola-company-announces-changes-in-operational-leadership-and-creation-of-new-enterprise-role-to-accelerate-digital-transformation",
+    "why_vbrick": "A brand-new CDO assessing digital tools enterprise-wide is the ideal buying window. Vbrick's Microsoft 365/Teams integration aligns with Coca-Cola's deep Microsoft investment (including its $1.1B Microsoft partnership). AI search and transcription enables the CDO's stated goal of 'delivering for consumers with greater precision and speed' while ensuring employee-facing video is searchable and measurable.",
+    "outreach_angle": "Coca-Cola's newly appointed CDO has a mandate to unify digital tools across 200+ countries. Vbrick is the enterprise video platform built for that scale—with native Microsoft 365 integration, real-time analytics, and global eCDN to make every town hall, training, and executive communication land consistently worldwide.",
+    "target_persona": "Chief Digital Officer (Sedef Salingan Sahin) / CIO (Neeraj Tolmare)",
+    "industry": "Consumer Packaged Goods",
+    "urgency_score": 3,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "leadership_change",
+    "finding_type": "New CDO Appointment + CEO Transition + Digital Transformation Initiative",
     "finding_id": "",
-    "employee_count": "Unknown",
+    "employee_count": "~80,000+",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Venkat Subramanian",
+        "title": "Senior Vice President Information Technology",
+        "linkedin": "https://www.linkedin.com/in/subrama"
+      },
+      {
+        "name": "Braxton Washington",
+        "title": "VP, Digital & Technology | Regional CIO",
+        "linkedin": "https://www.linkedin.com/in/braxtonwashington"
+      },
+      {
+        "name": "Paul Huesken",
+        "title": "Chief Information Assurance Officer",
+        "linkedin": "https://www.linkedin.com/in/paul-huesken-29629a18"
+      },
+      {
+        "name": "Kurt Steckman",
+        "title": "Sr. Network Engineer",
+        "linkedin": "https://www.linkedin.com/in/kurt-steckman-0553b54a"
+      },
+      {
+        "name": "April Callahan",
+        "title": "Sr. Director, Leadership Communications",
+        "linkedin": "https://www.linkedin.com/in/april-callahan-b2520775"
+      },
+      {
+        "name": "Scott Leith",
+        "title": "Vice President, Global Strategic Communications",
+        "linkedin": "https://www.linkedin.com/in/scott-leith"
+      },
+      {
+        "name": "Charles Donnell",
+        "title": "Global Senior Director, Learning Innovation, Experience Strategy",
+        "linkedin": "https://www.linkedin.com/in/charles-donnell"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 8,
+    "category": "Market Triggers",
+    "company": "Intel Corporation",
+    "summary": "Intel appointed Cindy Stoddard (former SVP/CIO at Adobe) as its new CIO effective December 1, 2025, reporting directly to CEO Lip-Bu Tan. Stoddard's mandate includes enterprise system modernization, secure data architectures, and AI-enabled IT operations. This follows Intel's historic 24,000-person workforce reduction (from ~99,500 to ~75,000 employees) in 2025. Stoddard brings a transformation charter that will require comprehensive evaluation of enterprise communications platforms.",
+    "source_url": "https://www.forbes.com/sites/peterhigh/2025/11/22/intel-taps-cindy-stoddard-as-cio-for-next-phase-of-transformation/",
+    "why_vbrick": "A new CIO from Adobe—a company known for rigorous digital tool evaluation—will conduct a thorough enterprise technology audit. Intel's workforce reduction means communicating change to remaining employees at scale is paramount. Vbrick's AI-powered transcription and search, combined with Microsoft 365/Teams integration, aligns with Stoddard's stated focus on AI-enabled IT operations and data architecture modernization.",
+    "outreach_angle": "Intel's new CIO is conducting an enterprise technology reset. Vbrick's enterprise video platform—with AI search, Microsoft 365 integration, and analytics—aligns directly with Stoddard's mandate for AI-enabled IT operations. A workforce reduction of 24,000 makes scaled video communication for remaining employees more critical than ever.",
+    "target_persona": "CIO (Cindy Stoddard) / VP of IT Infrastructure",
+    "industry": "Semiconductor / Technology",
+    "urgency_score": 3,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "New CIO Appointment + Workforce Restructuring + Digital Transformation",
+    "finding_id": "",
+    "employee_count": "~75,000 (post-restructuring)",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
@@ -438,154 +407,478 @@ const FINDINGS = [
         "role": "Evaluator"
       }
     ],
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": 9,
+    "category": "Market Triggers",
+    "company": "Delta Air Lines",
+    "summary": "Delta Air Lines appointed Amala Duggirala as its new Chief Digital & Technology Officer (CDTO) in January 2026, following the retirement of long-serving CIO Rahul Samant. Duggirala's expanded role combines digital product development and enterprise technology infrastructure, with a stated focus on AI, data analytics, and enhancing both customer and employee experiences. Delta has explicitly positioned itself as a 'technology-driven consumer brand,' signaling active investment in enterprise digital tools.",
+    "source_url": "https://www.travelandtourworld.com/news/article/delta-air-lines-appoints-amala-duggirala-as-chief-digital-technology-officer/",
+    "why_vbrick": "Delta's incoming CDTO has a mandate to unify employee and customer digital experiences through technology. Vbrick supports large-scale employee communications for a workforce spread across hub airports globally. Section 508 compliance supports Delta's diverse workforce needs; Microsoft 365/Teams integration fits Delta's collaboration environment; real-time analytics gives the new CDTO measurable ROI on video investments.",
+    "outreach_angle": "Delta's new CDTO is actively evaluating the enterprise technology stack to deepen Delta's identity as a tech-driven brand. Vbrick's enterprise video capabilities—real-time analytics, AI transcription, and Microsoft 365 integration—enable Delta to transform employee communications at scale, from hub briefings to executive all-hands.",
+    "target_persona": "CDTO (Amala Duggirala) / VP Corporate Technology",
+    "industry": "Aviation / Transportation",
+    "urgency_score": 3,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "New CDTO Appointment + Digital Transformation",
+    "finding_id": "",
+    "employee_count": "~100,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Mahesh Sogal",
+        "title": "Vice President - IT Transformation And International Technology",
+        "linkedin_url": "https://www.linkedin.com/in/mahesh-sogal",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Narayanan Krishnakumar",
+        "title": "VP And CTO",
+        "linkedin_url": "https://www.linkedin.com/in/krishnakumarkk",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Trebor Banstetter",
+        "title": "Managing Director - Corporate & Executive Communications",
+        "linkedin_url": "https://www.linkedin.com/in/treborbanstetter",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Brian J Wright",
+        "title": "Director, Global Learning & Leadership Development",
+        "linkedin_url": "https://www.linkedin.com/in/bjwright1",
+        "role": "Influencer"
+      },
+      {
+        "name": "Michael Crownhart",
+        "title": "Director - IT, TechOps Technology",
+        "linkedin_url": "https://www.linkedin.com/in/michael-crownhart-115b536",
+        "role": "Influencer"
+      },
+      {
+        "name": "Jagat Kiran Gurugubelli",
+        "title": "Sr. Network Engineer",
+        "linkedin_url": "https://www.linkedin.com/in/jagat-kiran-gurugubelli-0a97971ba",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Geoff Kuchera",
+        "title": "Senior Network Engineer",
+        "linkedin_url": "https://www.linkedin.com/in/gkuchera",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Badie Naser",
+        "title": "Senior Network Architect",
+        "linkedin_url": "https://www.linkedin.com/in/badie-naser-35ab2734",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Dean Vanderkley",
+        "title": "Information Security Manager",
+        "linkedin_url": "https://www.linkedin.com/in/dean-vanderkley",
+        "role": "Technical Evaluator"
+      }
+    ],
+    "is_new": true
   },
   {
     "id": 10,
     "category": "Market Triggers",
-    "company": "Verizon Communications",
-    "summary": "Verizon completed its $20B acquisition of Frontier Communications in January 2026, after FCC approval in May 2025. The deal adds approximately 2.2 million fiber subscribers and 4,000+ Frontier employees to Verizon's workforce. New CEO Dan Schulman is simultaneously integrating Frontier while executing the 13,000-person restructuring, requiring video infrastructure that spans two legacy enterprise environments.",
-    "source_url": "https://www.linkedin.com/posts/verizonpartnersolutions_we-are-thrilled-to-announce-that-verizon-activity-7419489668334903296-iHgL",
-    "why_vbrick": "A major post-merger integration creates a classic video infrastructure consolidation trigger. Two organizations with separate video/collaboration stacks must be unified under a single enterprise video platform. Vbrick's ability to integrate with Microsoft Teams while supporting eCDN across the combined network footprint, plus its migration and onboarding tools, positions it as the consolidation solution for the combined Verizon-Frontier workforce.",
-    "outreach_angle": "Verizon just closed the Frontier acquisition while restructuring its own workforce—two massive IT environments that must be unified. Vbrick's enterprise video platform is built for post-merger consolidation: a single, scalable video layer that works across both Verizon and Frontier network infrastructure, with eCDN to protect bandwidth and Microsoft Teams integration to speed adoption.",
-    "target_persona": "CIO / SVP IT Integration / Head of Internal Communications",
-    "industry": "Telecommunications",
-    "urgency_score": 0,
+    "company": "Stellantis",
+    "summary": "Stellantis announced a mandatory full 5-day return-to-office policy for all US employees effective March 30, 2026, and directors and above starting February 16. The policy is framed as an 'enterprise-wide initiative' applying to all regions, with the tagline 'Back Together We Win.' This follows significant leadership turbulence at the automaker, including the departure of former CEO Carlos Tavares in late 2024 and ongoing cost-cutting pressures. The rollout requires coordinated internal video communications at scale to manage the cultural transition.",
+    "source_url": "https://www.businessinsider.com/stellantis-return-to-office-5-days-us-staff-rto-2026-1",
+    "why_vbrick": "Stellantis's global 5-day RTO initiative requires consistent executive video communications to a workforce spanning manufacturing plants across the US, Europe, and globally. Vbrick's eCDN handles simultaneous delivery across bandwidth-constrained plant environments; GDPR compliance addresses Stellantis's EU operations; real-time analytics measures adoption of the messaging.",
+    "outreach_angle": "Stellantis is executing an enterprise-wide cultural reset via a global 5-day RTO. Vbrick enables leadership to communicate the 'Back Together We Win' message consistently to 300,000+ employees across manufacturing sites—with eCDN delivery that works even on plant-floor networks.",
+    "target_persona": "CHRO / CIO / Head of Internal Communications",
+    "industry": "Automotive Manufacturing",
+    "urgency_score": 3,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "ma_consolidation",
+    "finding_type": "5-Day RTO Mandate + Leadership Transition",
     "finding_id": "",
-    "employee_count": "Unknown",
+    "employee_count": "~300,000+",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
-        "name": "Wael Faheem",
-        "title": "SVP and Chief Information Officer - Network Systems",
-        "linkedin": "https://www.linkedin.com/in/waelfaheem"
+        "name": "Kaynaz Behdin",
+        "title": "Senior Vice President Global Digital Platforms, Data And AI",
+        "linkedin_url": "https://www.linkedin.com/in/kaynaz-behdin-170725a6",
+        "role": "Decision Maker"
       },
       {
-        "name": "Jim McCarthy",
-        "title": "Sr Director - IT Network & Unified Communications",
-        "linkedin": "https://www.linkedin.com/in/jim-mccarthy-2b4a183b"
+        "name": "Daria Colvett",
+        "title": "SVP & Chief Information Officer",
+        "linkedin_url": "https://www.linkedin.com/in/daria-colvett-2238377",
+        "role": "Decision Maker"
       },
       {
-        "name": "Lynn Cox",
-        "title": "SVP and Chief Network Officer, Fiber",
-        "linkedin": "https://www.linkedin.com/in/lynn-cox-03610063"
+        "name": "Fernão Silveira",
+        "title": "Sr. Vice President, Global Corporate Communications",
+        "linkedin_url": "https://www.linkedin.com/in/fernaosilveira",
+        "role": "Decision Maker"
       },
       {
-        "name": "Nasrin Rezai",
-        "title": "SVP, Chief Information Security Officer",
-        "linkedin": "https://www.linkedin.com/in/nasrin-rezai-b3a85629"
+        "name": "Kaileen Connelly",
+        "title": "Senior Vice President, North America Communications",
+        "linkedin_url": "https://www.linkedin.com/in/kcconnelly",
+        "role": "Decision Maker"
       },
       {
-        "name": "Samantha Hammock",
-        "title": "Executive Vice President and Chief Human Resources Officer",
-        "linkedin": "https://www.linkedin.com/in/samanthahammock"
+        "name": "Tracie Stoltenburg",
+        "title": "Director, Corporate Communications",
+        "linkedin_url": "https://www.linkedin.com/in/traciestoltenburg",
+        "role": "Decision Maker"
       },
       {
-        "name": "Lou Tedrick",
-        "title": "Vice President, Global Learning and Development",
-        "linkedin": "https://www.linkedin.com/in/lou-tedrick-31290510"
+        "name": "Jayakanthan Venugopal",
+        "title": "IT Director, Head Of IT Infrastructure, India And Asia Pacific",
+        "linkedin_url": "https://www.linkedin.com/in/jayakanthan-venugopal-3ab37927",
+        "role": "Influencer"
       },
       {
-        "name": "Franz Paasche",
-        "title": "Executive Vice President, Corporate Affairs",
-        "linkedin": "https://www.linkedin.com/in/franz-paasche"
+        "name": "Arnaud Bardet",
+        "title": "Network Solution Architect",
+        "linkedin_url": "https://www.linkedin.com/in/arnaud-bardet-230b1720",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Claudio Frencia",
+        "title": "Head Of Cybersecurity",
+        "linkedin_url": "https://www.linkedin.com/in/claudiofrencia",
+        "role": "Technical Evaluator"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 11,
     "category": "Market Triggers",
-    "company": "U.S. Department of Defense (DoD)",
-    "summary": "The DoD, with approximately 780,000 civilian employees, issued a January 2025 directive requiring all civilian employees to return to full-time in-person duty. By July 2025, ~62,000 employees (8%) had not yet returned. GAO flagged major data gaps in DoD telework compliance tracking. The Department is also pursuing a Mission Network-as-a-Service program to consolidate ~17 classified networks into a single unified environment with AI integration by FY2027.",
-    "source_url": "https://www.meritalk.com/articles/gao-flags-gaps-in-dod-telework-data/",
-    "why_vbrick": "A 780,000-person federal civilian workforce returning to offices across hundreds of bases and installations globally, combined with a major network consolidation program, creates an urgent need for FedRAMP-authorized enterprise video. Vbrick's FedRAMP, FIPS 140-2, Section 508, and DISA STIG compliance makes it uniquely qualified. The Mission Network-as-a-Service consolidation is a direct entry point to embed Vbrick as the video layer in the unified DoD network.",
-    "outreach_angle": "DoD is managing RTO compliance for 780,000 civilian employees while consolidating 17 classified networks into a unified Mission Network-as-a-Service. Vbrick is the only enterprise video platform with FedRAMP, FIPS 140-2, Section 508, and DISA STIG compliance—purpose-built to serve as the secure video broadcast layer in DoD's unified network architecture.",
-    "target_persona": "DoD CIO / Program Executive Officer / Defense Media Activity leadership",
-    "industry": "Federal Government / Defense",
-    "urgency_score": 0,
+    "company": "Home Depot",
+    "summary": "In January 2026, Home Depot announced that corporate employees must return to the office five days per week starting April 6, 2026—alongside cuts to some remote corporate roles. CEO Ted Decker cited the need for 'in-person engagement to facilitate deeper support for store and field associates' and to reinforce 'people-first culture.' The mandate directly affects Home Depot's large corporate and regional office workforce, requiring coordinated multi-site communications.",
+    "source_url": "https://archieapp.co/blog/rto-companies-tracker/",
+    "why_vbrick": "Home Depot's retail corporate structure—with a large Atlanta HQ and dozens of regional offices—benefits directly from Vbrick's eCDN-based delivery ensuring quality video communications across locations. The RTO creates an immediate need to communicate cultural messaging at scale. Microsoft 365/Teams integration supports Home Depot's enterprise collaboration environment.",
+    "outreach_angle": "Home Depot's April 6 5-day RTO creates an immediate need for reliable, broadcast-quality executive video to reach its dispersed corporate workforce. Vbrick delivers CEO town halls and regional briefings across Home Depot's network without IT strain—turning the RTO into a cultural alignment opportunity.",
+    "target_persona": "CIO / VP of Corporate Technology / Head of Internal Communications",
+    "industry": "Retail",
+    "urgency_score": 3,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "return_to_office",
+    "finding_type": "5-Day RTO Mandate + Corporate Restructuring",
     "finding_id": "",
-    "employee_count": "Unknown",
+    "employee_count": "~475,000",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
-        "name": "Richard Keller",
-        "title": "VP, IT Solution Delivery And Engagement Supervisory Program Manager",
-        "linkedin": "https://www.linkedin.com/in/richard-a-keller"
+        "name": "Daniel Grider",
+        "title": "Vice President of Technology, Head of Infrastructure Operations",
+        "linkedin_url": "https://www.linkedin.com/in/danielgrider",
+        "role": "Decision Maker"
       },
       {
-        "name": "Cliff Sweney",
-        "title": "Director, Enterprise Portfolio",
-        "linkedin": "https://www.linkedin.com/in/cliff-sweney-474a2473"
+        "name": "Josh Kruck",
+        "title": "VP Technology",
+        "linkedin_url": "https://www.linkedin.com/in/joshkruck",
+        "role": "Decision Maker"
       },
       {
-        "name": "Donald Sanders",
-        "title": "Executive Portfolio Director, Corporate Portfolio (A), Office Of Information And Technology (OIT)",
-        "linkedin": "https://www.linkedin.com/in/dr-donald-sanders"
+        "name": "Paul Antony",
+        "title": "SVP of Technology",
+        "linkedin_url": "https://www.linkedin.com/in/paulkantony",
+        "role": "Decision Maker"
       },
       {
-        "name": "Ron Haskell",
-        "title": "Director of Broadcast and Video, Veterans Health Administration",
-        "linkedin": "https://www.linkedin.com/in/ron-haskell-1b72b788"
+        "name": "Ann Mitchell Caren",
+        "title": "Corporate Communications Manager",
+        "linkedin_url": "https://www.linkedin.com/in/annpcaren",
+        "role": "Decision Maker"
       },
       {
-        "name": "John D Oswalt",
-        "title": "DCIO - FOIA, Records, Assessment, Compliance, & Privacy /Chief Privacy Officer",
-        "linkedin": "https://www.linkedin.com/in/john-d-oswalt-0242117"
+        "name": "Franck Meier",
+        "title": "IT Director",
+        "linkedin_url": "https://www.linkedin.com/in/franckmeier",
+        "role": "Influencer"
       },
       {
-        "name": "Jack Galvin",
-        "title": "Deputy Chief Information Officer, End User Services",
-        "linkedin": "https://www.linkedin.com/in/jack-galvin-1866a386"
+        "name": "Stacie Heim",
+        "title": "Director Contact Center Learning & Development",
+        "linkedin_url": "https://www.linkedin.com/in/stacie-heim-6b357594",
+        "role": "Influencer"
       },
       {
-        "name": "Paul Tibbits",
-        "title": "Executive Director, Workforce And Organization Development",
-        "linkedin": "https://www.linkedin.com/in/paul-tibbits-md-579ab39"
+        "name": "Christy Duncan",
+        "title": "Manager - Visual Communications",
+        "linkedin_url": "https://www.linkedin.com/in/christy-duncan-1140794",
+        "role": "Evaluator"
+      },
+      {
+        "name": "Ilona Garland",
+        "title": "Sr. Manager Cybersecurity",
+        "linkedin_url": "https://www.linkedin.com/in/ilonagarland",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Christine White",
+        "title": "Manager - Cybersecurity Governance",
+        "linkedin_url": "https://www.linkedin.com/in/christine-white-a6a3ab7",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Alberto Luna",
+        "title": "Sr. Network Engineer",
+        "linkedin_url": "https://www.linkedin.com/in/alberto-luna-a4778973",
+        "role": "Technical Evaluator"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 12,
     "category": "Market Triggers",
-    "company": "U.S. Department of Veterans Affairs (VA)",
-    "summary": "The VA, with approximately 480,000 employees (one of the largest federal employers), announced in February 2025 a phased return to full-time in-person work, with all political appointees and senior executives required back by February 24, 2025, and all non-union staff within 50 miles of a facility by April 28, 2025. The agency is simultaneously executing a major Electronic Health Record Modernization (EHRM) rollout targeting deployment across 170+ hospitals and 1,400+ sites of care by 2031.",
-    "source_url": "https://wfa.team/blog/us-federal-government-remote-work-from-anywhere-policy/",
-    "why_vbrick": "The VA's size (480,000 employees), the RTO requirement, and the ongoing EHRM digital transformation create a compound trigger. With hospitals, clinics, and administrative offices nationwide, the VA needs FedRAMP-authorized, HIPAA-compliant enterprise video for training (critical as EHR deployment expands), executive communications, and Section 508-accessible broadcasts for employees with disabilities. Vbrick's full federal compliance stack is a direct match.",
-    "outreach_angle": "With 480,000 employees returning to duty stations and an EHR rollout expanding across 170+ hospitals, the VA's need for compliant, scalable video training and communications has never been greater. Vbrick's FedRAMP, HIPAA, and Section 508-compliant platform is purpose-built for exactly this environment—delivering secure video to every care site and administrative office nationwide.",
-    "target_persona": "VA CIO / EHRM Program Office / Chief Communications Officer",
-    "industry": "Federal Government / Healthcare",
-    "urgency_score": 0,
+    "company": "Paramount (Skydance Corporation)",
+    "summary": "The Skydance-Paramount merger completed August 7, 2025, creating a new media entity. CEO David Ellison announced on March 31, 2026 that the company will consolidate Paramount+, BET+, and Pluto TV onto a single tech stack by end of Q2 2026, expecting >$2.5B in savings by year-end. The company also laid off ~2,000 employees (~10% of workforce) in October 2025 as part of merger integration. A potential Warner Bros. Discovery deal targeting Q3 2026 close would further complicate the IT landscape.",
+    "source_url": "https://letsdatascience.com/news/paramount-pursues-merger-savings-through-tech-consolidation-04ffb228",
+    "why_vbrick": "Post-merger IT consolidation at a major media company is a textbook platform replacement moment. Paramount's internal video infrastructure—previously fragmented across legacy CBS, Viacom, and BET systems—needs unification. Vbrick's enterprise video platform unifies internal communications under one platform with Microsoft 365/Teams integration, while real-time analytics proves engagement ROI for the new leadership team.",
+    "outreach_angle": "Paramount is consolidating three streaming tech stacks under one platform by Q2 2026—a once-in-a-decade integration event. Vbrick is the enterprise video layer that unifies internal communications across legacy CBS, Viacom, and Skydance employee bases under a single, Microsoft-integrated platform.",
+    "target_persona": "CIO / CTO / Head of Workplace Technology / Internal Communications Lead",
+    "industry": "Media & Entertainment",
+    "urgency_score": 3,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "return_to_office",
+    "finding_type": "Post-M&A IT Consolidation + Workforce Restructuring",
     "finding_id": "",
-    "employee_count": "Unknown",
+    "employee_count": "~25,000+",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Shiva P",
+        "title": "SVP of Infrastructure and Cloud Advancement",
+        "linkedin": "https://www.linkedin.com/in/shivaparanandi"
+      },
+      {
+        "name": "Marcin Kiełek",
+        "title": "Senior Director, Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/marcinkielek"
+      },
+      {
+        "name": "Linda C Davidoff",
+        "title": "Executive Vice President, Chief Compliance Officer",
+        "linkedin": "https://www.linkedin.com/in/lindacdavidoff"
+      },
+      {
+        "name": "David Bittler",
+        "title": "Executive Vice President, Communications",
+        "linkedin": "https://www.linkedin.com/in/davidbittler"
+      },
+      {
+        "name": "Phil Wiser",
+        "title": "Chief Technology Officer and Head, Multiplatform Operations",
+        "linkedin": "https://www.linkedin.com/in/phil-wiser-b8533"
+      },
+      {
+        "name": "Ankur Patel",
+        "title": "Director, Live Video Systems and Technology",
+        "linkedin": "https://www.linkedin.com/in/ankur-patel-9223b645"
+      },
+      {
+        "name": "Todd Rowen",
+        "title": "Vice President Global Compliance",
+        "linkedin": "https://www.linkedin.com/in/toddrowen"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 13,
+    "category": "Market Triggers",
+    "company": "S&P Global",
+    "summary": "S&P Global appointed Firdaus Bhathena (former Global CTO at FIS Global and former Enterprise CDO at CVS Health) as its new Chief Technology and Transformation Officer (CTTO) effective early 2026. The newly created role combines CTO duties with an explicit transformation charter to unify architecture, cloud spending, and security controls across divisions. CEO Martina Cheung cited 'productivity gains and faster product delivery' as immediate goals, with AWS and Anthropic partnerships expected to expand AI capabilities.",
+    "source_url": "https://www.aicerts.ai/news/sp-globals-enterprise-strategic-transformation-gets-new-cto/",
+    "why_vbrick": "S&P Global's new CTTO is creating unified technology governance across all divisions—an active platform consolidation opportunity. Vbrick's Microsoft 365/Teams integration and SOC II Type 2 compliance align with S&P's financial data security requirements. Real-time analytics provides the measurable ROI that the transformation-focused CTTO is chartered to deliver.",
+    "outreach_angle": "S&P Global's new CTTO is consolidating enterprise tech under a single governance model. Vbrick's enterprise video platform—SOC II Type 2 certified, Microsoft-integrated, and analytics-rich—fits directly into the unified architecture Bhathena is building, turning enterprise video from a cost center into a measurable productivity lever.",
+    "target_persona": "CTTO (Firdaus Bhathena) / CIO",
+    "industry": "Financial Data / Information Services",
+    "urgency_score": 3,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "New CTTO Appointment + Enterprise Strategic Transformation",
+    "finding_id": "",
+    "employee_count": "~35,000+",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Guruprasad Ramamoorthy",
+        "title": "VP, Global Head of Cloud & Infrastructure",
+        "linkedin": "https://www.linkedin.com/in/guruprasadramamoorthy"
+      },
+      {
+        "name": "Joshua F",
+        "title": "VP, Global Head of Digital Workplace",
+        "linkedin": "https://www.linkedin.com/in/joshuafeliciano"
+      },
+      {
+        "name": "Simon May",
+        "title": "IT Director",
+        "linkedin": "https://www.linkedin.com/in/simon-may-ab41832"
+      },
+      {
+        "name": "Andre Lenzi",
+        "title": "Associate Director AV and Unified Communications",
+        "linkedin": "https://www.linkedin.com/in/andre-lenzi-73346a117"
+      },
+      {
+        "name": "Swati Anuj Arya",
+        "title": "Vice President - Global BISO",
+        "linkedin": "https://www.linkedin.com/in/swatisharmainformationsecurity"
+      },
+      {
+        "name": "Christina Twomey",
+        "title": "Chief Communications Officer",
+        "linkedin": "https://www.linkedin.com/in/christinatwomey"
+      },
+      {
+        "name": "Bronwyn Kelly",
+        "title": "Chief Learning Officer and VP, Global Talent Management",
+        "linkedin": "https://www.linkedin.com/in/bronwynkelly"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 14,
+    "category": "Market Triggers",
+    "company": "Starbucks",
+    "summary": "Starbucks appointed Anand Varadarajan as EVP and CTO effective January 19, 2026 (succeeding interim CTO Ningyu Chen, who had held the role since Deb Hall Lefevre's retirement in September 2025). Varadarajan joins from Amazon (VP, Worldwide Grocery Technology and Supply Chain). CEO Brian Niccol, who joined from Chipotle in 2024, has been executing a 'Back to Starbucks' turnaround strategy requiring corporate staff to be in-office four days per week—creating consistent demand for broadcast-quality executive video communications.",
+    "source_url": "https://fortune.com/2026/01/09/fortune-500-power-moves-2025-review-jan-9-2026/",
+    "why_vbrick": "Starbucks's new CTO from Amazon brings enterprise-scale expectations. The company's 'Back to Starbucks' cultural transformation requires high-frequency CEO and leadership communications to 380,000 employees globally—from store partners to corporate staff. Vbrick's eCDN ensures smooth delivery across retail and corporate environments; Microsoft 365/Teams integration fits Starbucks's enterprise stack.",
+    "outreach_angle": "Starbucks's new CTO from Amazon joins a company mid-turnaround, with a CEO running frequent all-hands to drive cultural change. Vbrick delivers Brian Niccol's vision reliably to 380,000 store partners and corporate employees—globally, at scale, and with the analytics to measure engagement.",
+    "target_persona": "CTO (Anand Varadarajan) / CIO / VP of Internal Technology",
+    "industry": "Food & Beverage / Retail",
+    "urgency_score": 3,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "New CTO Appointment + RTO Mandate + Leadership Transformation",
+    "finding_id": "",
+    "employee_count": "~380,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Anand Varadarajan",
+        "title": "Executive Vice President, Chief Technology Officer",
+        "linkedin_url": "https://www.linkedin.com/in/anandvaradarajan",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Rohit Kapoor",
+        "title": "EVP - Chief Digital And Technology Transformation Officer",
+        "linkedin_url": "https://www.linkedin.com/in/rohit-kapoor-1578238",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Lori Torgerson",
+        "title": "Director Of Corporate Communications",
+        "linkedin_url": "https://www.linkedin.com/in/lori206",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Emily Albright",
+        "title": "Corporate Communications",
+        "linkedin_url": "https://www.linkedin.com/in/emily-albright-a5117983",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Scott Bockheim",
+        "title": "Director Of Data And Enterprise Architecture",
+        "linkedin_url": "https://www.linkedin.com/in/scottbockheim",
+        "role": "Influencer"
+      },
+      {
+        "name": "Imran Ali",
+        "title": "Director, Infrastructure Services And Cloud Engineering",
+        "linkedin_url": "https://www.linkedin.com/in/imranali2",
+        "role": "Influencer"
+      },
+      {
+        "name": "Howard Koh",
+        "title": "Director, Infrastructure Services And Cloud Engineering",
+        "linkedin_url": "https://www.linkedin.com/in/howard-koh-b96a1a230",
+        "role": "Influencer"
+      },
+      {
+        "name": "Suzie Haberland",
+        "title": "Director HR Technology And Analytics",
+        "linkedin_url": "https://www.linkedin.com/in/shaberland",
+        "role": "Influencer"
+      },
+      {
+        "name": "Guinevere Maxwell",
+        "title": "HR Director - Starbucks Technology",
+        "linkedin_url": "https://www.linkedin.com/in/guinevere-maxwell-mhrod-shrm-scp-975767",
+        "role": "Influencer"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 15,
+    "category": "Market Triggers",
+    "company": "U.S. Department of Transportation (DOT)",
+    "summary": "The Department of Transportation completed a major IT transformation, migrating all 55,000 employees from Microsoft's collaboration suite to Google Workspace (Gmail, Docs, Meet, Gemini) under a $89M five-year contract signed September 2025. The agency's '1DOT IT' strategy aims to unify 425+ information systems, establish four 'digital factories,' and modernize IT infrastructure. The switch away from Microsoft creates an active evaluation window for enterprise video solutions that are platform-agnostic or Google Workspace-compatible.",
+    "source_url": "https://www.meritalk.com/articles/dot-to-complete-google-workspace-rollout-in-coming-weeks/",
+    "why_vbrick": "DOT's departure from Microsoft creates a specific opportunity: Vbrick's enterprise video platform integrates with both Microsoft Teams and Google Workspace environments, making it the neutral enterprise video layer during and after the transition. Vbrick's FedRAMP authorization is mandatory for federal cloud deployments; Section 508 compliance meets federal accessibility requirements. The 55,000-employee scale and multi-agency structure (including FAA) is purpose-built for Vbrick's eCDN architecture.",
+    "outreach_angle": "DOT is completing a historic Microsoft-to-Google migration across 55,000 employees. Vbrick is the enterprise video platform that bridges both ecosystems—FedRAMP authorized, Section 508 compliant, and deployable across Microsoft and Google Workspace—giving DOT a unified video layer as it modernizes under '1DOT IT.'",
+    "target_persona": "Chief Digital and Information Officer (Pavan Pidugu) / Deputy CIO",
+    "industry": "Federal Government",
+    "urgency_score": 3,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Major Cloud Migration + Digital Transformation Initiative",
+    "finding_id": "",
+    "employee_count": "~55,000",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
@@ -624,17 +917,79 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/paul-tibbits-md-579ab39"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 13,
+    "id": 16,
+    "category": "Market Triggers",
+    "company": "State Farm",
+    "summary": "State Farm appointed Joe Park as CDIO in October 2025, followed by Jon Francis being promoted to Chief Data and Analytics Officer and Head of Digital Channel Performance in March 2026. In February 2026, State Farm announced it is an OpenAI Frontier platform launch partner—one of the first organizations using OpenAI for complex enterprise AI work. The company is actively building a 'culture centered on speed, agility, and innovation,' with explicit commitments to deploy AI capabilities across its 96 million policies and accounts.",
+    "source_url": "https://newsroom.statefarm.com/state-farm-advances-ai-vision-through-collaboration-with-openai/",
+    "why_vbrick": "State Farm's dual leadership appointments (CDIO + CDAO) and OpenAI launch partnership signal active enterprise tech evaluation. Insurance regulation requires FINRA-equivalent communications archiving. Vbrick's AI search/transcription aligns with State Farm's AI-first strategy; SOC II Type 2 meets the insurer's security requirements; Microsoft 365/Teams integration fits the collaboration environment. The new CDIO is in his first-year technology evaluation window.",
+    "outreach_angle": "State Farm just became an OpenAI launch partner and has two new technology leaders in seat. Vbrick's AI-powered enterprise video platform—with AI search, transcription, and analytics—speaks directly to State Farm's AI-first mandate. SOC II Type 2 and compliance archiving meet the regulated insurance environment's non-negotiable security requirements.",
+    "target_persona": "CDIO (Joe Park) / CDAO (Jon Francis) / VP of Enterprise Technology",
+    "industry": "Insurance / Financial Services",
+    "urgency_score": 3,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "New CDIO Appointment + AI Digital Transformation + OpenAI Partnership",
+    "finding_id": "",
+    "employee_count": "~54,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Joe Park",
+        "title": "Executive Vice President and Chief Digital & Information Officer",
+        "linkedin": "https://www.linkedin.com/in/josephrpark"
+      },
+      {
+        "name": "Margo Hodges",
+        "title": "Vice President Information Technology",
+        "linkedin": "https://www.linkedin.com/in/margo-hodges-191408140"
+      },
+      {
+        "name": "Brett Weber",
+        "title": "Vice President Enterprise Technology",
+        "linkedin": "https://www.linkedin.com/in/brett-weber-8a94926"
+      },
+      {
+        "name": "Mike Fletcher",
+        "title": "VP - Information Technology, Strategy And Business Alignment",
+        "linkedin": "https://www.linkedin.com/in/mike-fletcher-0a53b9151"
+      },
+      {
+        "name": "Sara Taulbee",
+        "title": "Vice President Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/sarataulbee"
+      },
+      {
+        "name": "Brad House",
+        "title": "Architecture Director - Technology",
+        "linkedin": "https://www.linkedin.com/in/brad-house-4222162b"
+      },
+      {
+        "name": "Sarah Beck",
+        "title": "Information Security Director",
+        "linkedin": "https://www.linkedin.com/in/sarah-beck-12a9a210"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 17,
     "category": "Compliance & Regulatory",
-    "company": "Regulation: FedRAMP 20x Modernization",
-    "summary": "FedRAMP launched its 20x modernization program in March 2025, replacing static documentation with continuous, machine-readable Key Security Indicators (KSIs). Phase 2 pilots (Moderate baseline) wrapped in early 2026; wide-scale adoption of Low and Moderate authorizations is projected for Q3–Q4 2026. FedRAMP 20x eliminates agency sponsorship requirements under some pathways, dramatically lowering barriers for CSPs. Six new RFCs (0019–0024) were released in January 2026 proposing consolidated certification rules by June 2026, retirement of FedRAMP Ready on July 28, 2026, and machine-readable OSCAL package requirements for all Rev5 providers by September 30, 2026 (with certification revocation risk by September 30, 2027 for non-compliance).",
+    "company": "Regulation: FedRAMP 20x",
+    "summary": "FedRAMP 20x is restructuring cloud authorization for federal agencies with a phased rollout culminating in wide-scale Low and Moderate adoption in FY26 Q3–Q4. As of January 2026, six new RFCs (0019–0024) were released, including RFC-0024 mandating machine-readable authorization packages with an initial compliance deadline of September 30, 2026. FedRAMP Consolidated Rules for 2026 (CR26) are scheduled for publication by June 2026 and will be valid through December 31, 2028. Phase 2 Moderate pilot participants were announced in November 2025, and Rev5 providers now face mandatory vulnerability transparency requirements under CA-7 updates — agencies cannot maintain an ATO without complete, timely vulnerability data from cloud providers.",
     "source_url": "https://www.fedramp.gov/20x/",
-    "why_vbrick": "Vbrick's existing FedRAMP authorization positions it as immediately compliant under the transition framework. As agencies evaluate or re-evaluate video platforms under the new 20x pathway, Vbrick's proven FedRAMP posture—combined with FIPS 140-2 and SOC II Type 2—makes it the clear incumbent choice versus non-FedRAMP competitors. The June 2026 consolidated rules release creates a natural procurement review window for federal agencies. Vbrick should proactively message readiness for OSCAL machine-readable packages and 20x compliance to federal IT and procurement leaders.",
+    "why_vbrick": "Vbrick's existing FedRAMP authorization positions it as a compliant-by-default video platform for federal agencies navigating the 20x transition. As agencies audit cloud services against the new machine-readable package requirements and tightened continuous monitoring standards, vendors without FedRAMP coverage face disqualification. Vbrick's FedRAMP status, combined with FIPS 140-2 encryption and real-time analytics, directly satisfies new CA-7 continuous monitoring obligations and gives federal IT procurement teams a lower-risk path to enterprise video deployment.",
     "outreach_angle": "",
-    "target_persona": "Federal IT Director, CISO, Procurement Officer",
+    "target_persona": "Federal CIO, CISO, Cloud Architect",
     "industry": "Federal Government",
     "urgency_score": 0,
     "urgency_rationale": "",
@@ -649,154 +1004,18 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 14,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: CMMC 2.0 Phase 1 Active – DoD Contracts Now Require Cybersecurity Certification",
-    "summary": "CMMC 2.0 formally launched Phase 1 on November 10, 2025, via the 48 CFR Final Rule published September 10, 2025. All new DoD solicitations and contracts now include CMMC Level 1 or Level 2 requirements as a condition of award. CMMC Level 2 requires all 110 NIST SP 800-171 controls and covers any contractor handling Controlled Unclassified Information (CUI). Phase 2 begins November 10, 2026, when C3PAO third-party assessments become mandatory for Level 2. By February 2026, hundreds of active DoD solicitations across Navy, Army, and Air Force were already embedding CMMC Level 2 requirements. Cloud service providers used for CUI must meet FedRAMP Moderate equivalency (per DFARS 252.204-7012).",
-    "source_url": "https://www.visioneerit.com/blog/cmmc-contracts-in-2026-the-complete-list-of-dod-solicitations-requiring-certification",
-    "why_vbrick": "Defense contractors handling CUI via video platforms—including briefings, training, and collaboration—must use platforms that meet FedRAMP Moderate equivalency. Vbrick's FedRAMP authorization, FIPS 140-2 encryption, and SOC II Type 2 satisfy CMMC Level 2 cloud hosting requirements. As CMMC Phase 2 deadline of November 2026 approaches, defense contractors are auditing their entire communications stack, creating urgent sales opportunities. Vbrick should target DIB (Defense Industrial Base) IT buyers whose current video platforms lack FedRAMP or FIPS compliance.",
-    "outreach_angle": "",
-    "target_persona": "DoD IT Director, DIB Compliance Officer, CIO",
-    "industry": "Defense / Government Contracting",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 15,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: FINRA 2026 Annual Regulatory Oversight Report – Video Content Supervision",
-    "summary": "FINRA's 2026 Annual Regulatory Oversight Report (published December 2025) explicitly identifies 'Video Content Protocols' as a required element of Written Supervisory Procedures (WSPs). Firms must develop controls for live-streamed public appearances, scripted presentations, and video blogs. The report flags electronic communication retention failures—including failure to capture and archive all business-related communications—as a top examination finding, with specific concern about off-channel video and collaboration tools. FINRA 2025 exam findings cited firms failing to supervise digital channels, including video, with all communications required to be captured in formats suitable for eDiscovery. FINRA Rule 4511 mandates accurate, complete, tamper-proof retention for up to 6 years.",
-    "source_url": "https://www.finra.org/rules-guidance/guidance/reports/2025-finra-annual-regulatory-oversight-report/communication-with-public",
-    "why_vbrick": "FINRA's explicit call-out of video content protocols creates a direct procurement trigger for broker-dealers seeking compliant archiving solutions. Vbrick's FINRA-ready archiving capabilities—combined with immutable storage, audit trails, and eDiscovery-ready search—directly address WSP requirements for video communications. The Microsoft 365/Teams integration allows firms to capture internally produced video content within their existing compliance workflow. Financial services firms that conduct investor communications, training, or executive broadcasts via video now face heightened FINRA scrutiny.",
-    "outreach_angle": "",
-    "target_persona": "Chief Compliance Officer, IT Director, Legal Counsel",
-    "industry": "Financial Services / Broker-Dealer",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 16,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: SEC Off-Channel Communications Enforcement – $63M Wave (January 2025)",
-    "summary": "On January 13, 2025, the SEC fined 12 financial firms (9 investment advisers, 3 broker-dealers) a combined $63.1 million for failures to maintain and preserve electronic communications under SEC Rule 17a-4 and Investment Advisers Act Rule 204-2. Firms including Blackstone, KKR, Charles Schwab, Apollo, Carlyle, and TPG admitted violations involving widespread off-channel communications at senior management levels. This followed a 2025 enforcement sweep that has now totaled over $2 billion in fines against 100+ firms since 2021. While the new SEC administration has paused standalone off-channel enforcement, FINRA independently fined Velox Clearing $1.3M in June 2025 for WeChat messaging failures, and FINRA's 2026 oversight report confirms off-channel capture remains an active examination priority. Rule 17a-4 requires retention of all business-related communications—including video call transcripts and recordings.",
-    "source_url": "https://www.sec.gov/newsroom/press-releases/2025-6",
-    "why_vbrick": "The $2B+ enforcement wave has put every financial firm on notice that all communications—including video—must be captured, archived, and searchable. Firms replacing non-compliant video platforms are actively seeking solutions that natively integrate archiving. Vbrick's FINRA-ready archiving with WORM-compliant storage, audit logging, and Microsoft Teams integration provides the compliance infrastructure these firms require. With FINRA now holding individuals personally liable for off-channel failures, CCOs are actively auditing video communication capture.",
-    "outreach_angle": "",
-    "target_persona": "Chief Compliance Officer, General Counsel, CTO",
-    "industry": "Financial Services",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "enforcement_action",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [
-      {
-        "name": "Mark Murphy",
-        "title": "Executive Vice President and Chief Information and Digital Officer",
-        "linkedin": "https://www.linkedin.com/in/markwmurphyii"
-      },
-      {
-        "name": "Zoe Dickson",
-        "title": "Executive Vice President and Chief Human Resources Officer",
-        "linkedin": "https://www.linkedin.com/in/zoedickson"
-      },
-      {
-        "name": "Sam Sventek",
-        "title": "Vice President, Global External Brand and Communications",
-        "linkedin": "https://www.linkedin.com/in/sam-sventek-688b9ba"
-      },
-      {
-        "name": "Vinod George",
-        "title": "VP - Global Network and Digital Communication Services",
-        "linkedin": "https://www.linkedin.com/in/vinod-george-a6b67717"
-      },
-      {
-        "name": "Jason Corum",
-        "title": "Director Security Engineering & Architecture",
-        "linkedin": "https://www.linkedin.com/in/jason-corum-7140212a"
-      },
-      {
-        "name": "Michelle Donovan",
-        "title": "Global Communications Sr. Manager - 3M Consumer Business Group",
-        "linkedin": "https://www.linkedin.com/in/michelledonovanmba"
-      },
-      {
-        "name": "Holly Coleman",
-        "title": "Vice President, Marketing Technologies & Digital Experience",
-        "linkedin": "https://www.linkedin.com/in/holly-coleman-a6740421"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 17,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: HIPAA Security Rule Update & Active OCR Enforcement (2025)",
-    "summary": "HHS OCR conducted 13 HIPAA enforcement settlements in 2025 through December, totaling over $4 million in civil penalties. Key actions include: Warby Parker ($1.5M CMP for Security Rule violations), BayCare Health System ($800K for access control failures including impermissible video recording/sharing of patient records), PIH Health ($600K), and Cadia Healthcare ($182K for posting patient video testimonials/photos without HIPAA authorization—OCR explicitly prohibited use of 'websites, affiliated web domains, social media' and 'photographs and videos' containing PHI). HHS has signaled active enforcement through its 2025 audit program restart and proposed Security Rule updates mandating MFA, encryption, and audit trails. Full HIPAA compliance now applies to all telehealth video platforms after COVID enforcement discretion expired in 2023.",
-    "source_url": "https://natlawreview.com/article/beyond-clinical-setting-ocrs-settlement-cadia-further-demonstrates-ocrs-focus-hipaa",
-    "why_vbrick": "The BayCare and Cadia settlements establish that video content containing PHI—whether recordings, testimonials, or streamed sessions—is a high-risk HIPAA enforcement vector. Healthcare organizations using video platforms that lack BAAs, audit logging, access controls, and MFA face direct liability exposure. Vbrick's HIPAA-compliant platform with Business Associate Agreement support, FIPS 140-2 encryption, role-based access, and comprehensive audit trails positions it as the defensible choice for healthcare video communications. The OCR's renewed enforcement focus on video-related PHI disclosures creates urgency among hospital CISOs and Privacy Officers.",
-    "outreach_angle": "",
-    "target_persona": "Healthcare CISO, Privacy Officer, Chief Compliance Officer",
-    "industry": "Healthcare",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 18,
     "category": "Compliance & Regulatory",
-    "company": "Regulation: ADA Title II Web Accessibility Rule – April 2026 Compliance Deadline",
-    "summary": "The DOJ's final rule under Title II of the ADA (effective June 24, 2024) requires state and local government entities to conform to WCAG 2.1 Level AA for all web content and mobile applications, with compliance deadlines of April 24, 2026 (entities serving populations 50,000+) and April 26, 2027 (smaller entities). Video-specific requirements include: synchronized captions for all pre-recorded videos (WCAG 1.2.2), live captions for all live-streamed content (WCAG 1.2.4), audio descriptions for pre-recorded video (WCAG 1.2.5), and keyboard-accessible video players. Password-protected content is not exempt. In October 2025, DOJ announced it will re-examine all ADA Title II and III regulations, potentially extending WCAG obligations to private sector entities under Title III.",
-    "source_url": "https://www.3playmedia.com/blog/ada-video-requirements/",
-    "why_vbrick": "The April 2026 compliance deadline creates an imminent, legally mandated buying event for state and local governments—a primary Vbrick market. Governments that use non-compliant video platforms for public communications, employee training, or council meeting broadcasts face litigation and DOJ enforcement risk. Vbrick's Section 508-compliant platform with native captioning, audio description, and accessible media players directly satisfies WCAG 2.1 Level AA video requirements. The potential extension to private sector under Title III would broaden this buying trigger to thousands of additional enterprise accounts.",
+    "company": "Regulation: FedRAMP Rev5 Machine-Readable Packages (RFC-0024)",
+    "summary": "RFC-0024, published January 2026, proposes mandatory machine-readable authorization packages for all FedRAMP Rev5 providers by September 30, 2026 (initial deadline) and September 30, 2027 (final deadline). Non-compliant providers risk revocation of their FedRAMP Certification. This is combined with RFC-0022 allowing temporary FedRAMP Validated status for services with existing SOC 2 Type II, ISO 27001, HITRUST, StateRAMP/GovRAMP, or CMMC Level 2 assessments — opening a faster federal market entry pathway for qualifying vendors.",
+    "source_url": "https://www.governmentcontractslegalforum.com/2026/01/articles/government-contracts/fedramp-proposes-updates-to-authorization-process-six-new-rfcs-released-for-public-comment/",
+    "why_vbrick": "Vbrick's FedRAMP authorization with SOC II Type 2 provides dual-path eligibility under both the legacy Rev5 track and the new 20x temporary validation path via RFC-0022. Federal agencies evaluating video platforms under the new acquisition criteria will prioritize vendors with existing certifications that satisfy multiple RFC requirements simultaneously. This creates a direct competitive moat for Vbrick against non-FedRAMP video competitors in federal procurements.",
     "outreach_angle": "",
-    "target_persona": "State/Local Government IT Director, Chief Digital Officer, Accessibility Officer",
-    "industry": "State & Local Government / Higher Education",
+    "target_persona": "Federal Procurement Officer, Agency CISO",
+    "industry": "Federal Government",
     "urgency_score": 0,
     "urgency_rationale": "",
     "confidence": "high",
@@ -810,67 +1029,17 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 19,
     "category": "Compliance & Regulatory",
-    "company": "Regulation: HIPAA – Telehealth Video Platform Enforcement (Post-COVID Discretion Expiry)",
-    "summary": "OCR's COVID-era HIPAA enforcement discretion for telehealth expired May 11, 2023 (with 90-day transition to August 9, 2023). Since then, all telehealth video platforms must maintain full HIPAA compliance: signed Business Associate Agreements (BAAs), encryption at rest and in transit, MFA, audit log generation, and proper breach notification procedures. In 2025, OCR continued active enforcement—including settlements with BayCare Health System ($800K) for impermissible video/photo capture of patient records, and Cadia Healthcare ($182K) for posting patient video testimonials without authorization. The FTC's updated Health Breach Notification Rule (effective July 2024) extends breach notification requirements to telehealth apps and direct-to-consumer health video platforms not covered by HIPAA.",
-    "source_url": "https://www.accountablehq.com/post/telehealth-and-hipaa-compliance-for-providers-in-2025",
-    "why_vbrick": "Healthcare systems that adopted consumer-grade video platforms during COVID and never completed full HIPAA compliance transitions are now actively at risk of enforcement. Vbrick's HIPAA-capable platform with BAA support, FIPS 140-2 encryption, and comprehensive audit logging provides the technical controls OCR's current enforcement focus requires. The BayCare settlement's specific focus on video/photo data—and OCR's explicit prohibition on using videos containing PHI in marketing—makes healthcare video platform compliance a board-level priority. Vbrick should target health system CISOs, Privacy Officers, and telehealth platform administrators.",
+    "company": "Regulation: CMMC 2.0 Phase 2",
+    "summary": "CMMC 2.0 enforcement began November 10, 2025 with Phase 1 (self-assessment) now active across DoD solicitations. Phase 2 launches November 10, 2026, requiring mandatory C3PAO third-party assessments for Level 2 certification on contracts involving Controlled Unclassified Information (CUI). Approximately 80,000 defense contractors need Level 2 certification but only ~765 Certified CMMC Assessors are authorized — creating severe assessment bottlenecks. Contractors without a C3PAO assessment on record face award ineligibility and potential False Claims Act exposure for ongoing self-attestation. A February 2026 DFARS update eliminated the 7019/7020 framework, consolidating all obligations under DFARS 252.204-7021.",
+    "source_url": "https://defensescoop.com/2025/11/10/cmmc-compliance-dod-enforcement-defense-industry-readiness-gaps/",
+    "why_vbrick": "Defense contractors using video platforms to share, present, or collaborate on CUI must ensure those platforms meet NIST SP 800-171 controls. Vbrick's FedRAMP authorization and FIPS 140-2 encryption directly satisfy CMMC Level 2 technical requirements for secure communications infrastructure. As primes flow down CMMC requirements to subcontractors and the Phase 2 deadline approaches, procurement teams evaluating collaboration tools will prioritize platforms with existing DoD-aligned certifications. Vbrick's eCDN and on-premises deployment options also support air-gapped or restricted-network CUI environments.",
     "outreach_angle": "",
-    "target_persona": "Healthcare CISO, Privacy Officer, Telehealth Director",
-    "industry": "Healthcare",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 20,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: FINRA Rule 4511 / SEC Rule 17a-4 – Video and All-Format Communication Archiving",
-    "summary": "FINRA Rule 4511 and SEC Rule 17a-4(f) require broker-dealers to maintain complete, tamper-proof records of all business-related communications for up to 6 years, including video call recordings, webinar recordings, scripted video presentations, and video blogs. FINRA's 2025 and 2026 Annual Regulatory Oversight Reports both explicitly list video content as requiring dedicated WSPs. Records must be stored in WORM-compliant format with digital timestamps, duplicate geographic copies, and eDiscovery-ready indexes. FINRA's 2026 report flags recordkeeping lapses more than 50 times and recommends firms simulate regulatory examinations. The SEC's Rule 17a-4 now explicitly covers video call transcripts and recordings. Effective June 3, 2026, smaller firms must comply with Regulation S-P amendments requiring written programs to detect and respond to unauthorized access to customer information.",
-    "source_url": "https://www.ninjaone.com/blog/electronic-communication-recordkeeping-requirements/",
-    "why_vbrick": "Financial services firms face a hard regulatory deadline (June 3, 2026 for smaller firms) and ongoing FINRA examination risk for video communication archiving failures. Vbrick's FINRA-ready archiving with WORM-compliant storage, cryptographic integrity, eDiscovery search, and Microsoft Teams integration provides the complete compliance solution. The combination of FINRA's 2026 report explicitly naming video content protocols and the June 2026 Reg S-P deadline creates compounding urgency for broker-dealers and RIAs that have not yet implemented a compliant video capture solution.",
-    "outreach_angle": "",
-    "target_persona": "Chief Compliance Officer, CCO, IT Director",
-    "industry": "Financial Services / Broker-Dealer",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 21,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: CMMC Level 2 – FedRAMP Moderate Equivalency Required for Cloud Video with CUI",
-    "summary": "DFARS 252.204-7012 has since 2016 required that any cloud service processing Controlled Unclassified Information for DoD contractors must meet FedRAMP Moderate equivalency. A December 2023 DoD memo clarified that FedRAMP Moderate equivalency requirements are 'effective immediately' and contractors are directly liable for their CSP's compliance. With CMMC 2.0 Phase 1 active as of November 2025, defense contractors are now conducting active audits of every cloud tool in their environment—including video conferencing, training, and collaboration platforms—to verify FedRAMP Moderate equivalency. CUI that may flow through video platforms includes technical drawings, specifications, program information, and personnel data. CDW's Secure Enclave example (replacing standard video/voice/sharing tools with CMMC-compliant versions) illustrates the replacement opportunity.",
-    "source_url": "https://fedtechmagazine.com/article/2026/03/dod-finally-leaning-cmmc-20-requirements-cui",
-    "why_vbrick": "This creates a direct, compelled replacement cycle: defense contractors using non-FedRAMP video platforms (Zoom, standard Teams, consumer tools) must replace them with FedRAMP-authorized equivalents before contract award or face CMMC disqualification. Vbrick's FedRAMP authorization directly satisfies the DFARS cloud equivalency requirement. With CMMC Phase 2 (November 2026) mandating third-party assessment, the audit scrutiny of cloud tools will intensify, creating a 6-12 month buying window in 2026 for defense contractor video platform replacements.",
-    "outreach_angle": "",
-    "target_persona": "DoD Contractor CIO, IT Director, Compliance Officer",
+    "target_persona": "DoD Contractor CISO, IT Director, Compliance Officer",
     "industry": "Defense / Government Contracting",
     "urgency_score": 0,
     "urgency_rationale": "",
@@ -885,17 +1054,267 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
+  },
+  {
+    "id": 20,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: FINRA 2026 Annual Regulatory Oversight Report",
+    "summary": "FINRA's December 2025 Annual Regulatory Oversight Report (covering 2026 priorities) flags electronic communications capture failures, off-channel use, and inadequate supervision procedures as explicit examination findings. The report references recordkeeping lapses more than 50 times and recommends firms simulate regulatory examinations, monitor for unapproved channel use, and frequently refresh surveillance keywords. FINRA is increasingly holding individuals personally liable — barring individuals from association with any member firm for off-channel communications violations as recently as early 2026. A June 2025 action (Velox Clearing, $1.3M FINRA + $500K SEC) and an October 2025 former Wells Fargo broker fine demonstrate sustained enforcement focus at both institutional and individual levels.",
+    "source_url": "https://www.finra.org/sites/default/files/2025-12/2026-annual-regulatory-oversight-report.pdf",
+    "why_vbrick": "Financial services firms using video for client communications, earnings calls, training, or internal conferences must now demonstrate that those communications are captured, archived, and supervisable. Vbrick's FINRA-ready archiving capabilities — including immutable recording storage, searchable transcription, and audit trails — directly satisfy the recordkeeping obligations under FINRA Rule 4511 and Exchange Act Rule 17a-4(b)(4). The FINRA 2026 oversight report creates an immediate buying trigger for broker-dealers evaluating whether their video communication platforms meet the enhanced supervision and retention standards.",
+    "outreach_angle": "",
+    "target_persona": "Chief Compliance Officer, Head of Supervision, IT Director (Financial Services)",
+    "industry": "Financial Services / Broker-Dealer",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 21,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: FINRA Electronic Communications Recordkeeping — Enforcement Actions 2025",
+    "summary": "FINRA levied an $850,000 fine in October 2025 against a broker-dealer and robo-advisory firm for losing 22 million client messages over six years due to coding errors and system transitions. The firm's written supervisory procedures were found inadequate — failing to ensure all communication sources (group mailboxes, customer support platforms) were connected to the review system. Over 500,000 communications went unreviewed. Separately, a $1.3M action against Velox Clearing (June 2025) for WeChat use, and a $10,000 fine plus one-year suspension for an individual broker who deleted off-channel text messages in October 2025.",
+    "source_url": "https://www.questce.com/blog-recordkeeping-failures-lead-to-850k-finra-fine/",
+    "why_vbrick": "These enforcement actions expose a systemic gap: firms are often unaware their communication capture systems have technical failures until regulators discover the gaps. Vbrick's archiving infrastructure — with tamper-evident audit logs, verified connection monitoring, and FINRA-ready search and retrieval — provides the supervisory oversight that FINRA is explicitly requiring in written procedures. Financial services firms evaluating video platforms will require demonstrable proof that all recorded sessions, live streams, and video messages are captured, retained, and connected to archiving services continuously.",
+    "outreach_angle": "",
+    "target_persona": "Chief Compliance Officer, VP Compliance Technology",
+    "industry": "Financial Services / Broker-Dealer",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "enforcement_action",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
   },
   {
     "id": 22,
     "category": "Compliance & Regulatory",
-    "company": "Regulation: SEC / FINRA Off-Channel Communications – FINRA Now Holds Individuals Liable (2025–2026)",
-    "summary": "While the new SEC administration paused standalone off-channel enforcement after January 2025, FINRA independently continued enforcement throughout 2025–2026. In June 2025, FINRA fined Velox Clearing $1.3M for WeChat off-channel failures. In October 2025, a former Wells Fargo Advisors broker was fined and suspended for off-channel messaging and deleting evidence. In November 2025, FINRA fined a member firm $65K. In early 2026, FINRA barred an individual from associating with any FINRA member firm for off-channel communications use. FINRA's 2026 Oversight Report flags recordkeeping lapses 50+ times and explicitly recommends firms simulate regulatory examinations for off-channel capture failures. Video call recordings and collaboration platform content are within scope.",
-    "source_url": "https://www.mirrorweb.com/blog/how-finra-took-the-sec-baton-with-off-channel-penalties",
-    "why_vbrick": "FINRA's shift to individual liability (not just firm fines) creates personal stakes for CCOs, senior managers, and registered representatives. This elevates video communications compliance from an IT project to a personal career risk for financial services professionals. Vbrick's FINRA-ready archiving with automatic capture of Teams video calls, audit trails, and eDiscovery search directly addresses the individual accountability dimension. Sales conversations with CCOs should emphasize that FINRA is now holding individuals—not just institutions—accountable for off-channel and uncaptured video communications.",
+    "company": "Regulation: HIPAA — OCR Risk Analysis Initiative",
+    "summary": "HHS OCR's Risk Analysis Initiative has produced 11 enforcement actions as of February 2026, all targeting failures to conduct accurate and thorough ePHI risk analyses. February 2026: Top of the World Ranch Treatment Center settled for $103,000 following a phishing attack that exposed 1,980 patients' ePHI. September 2025: Cadia Healthcare paid $182,000 for posting patient PHI (including photos and recovery stories) on its public website without HIPAA authorization — demonstrating that video and multimedia content involving patient PHI is under scrutiny. June 2025: Three settlements (Vision Upright MRI $5K, BayCare Health System $800K, Comstar $75K) reinforced access controls and risk analysis obligations.",
+    "source_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/hhs-ocr-settles-hipaa-security-rule-investigation-with-top-of-the-world-ranch-treatment-center-for-103-000",
+    "why_vbrick": "Healthcare organizations using video for patient communications, telehealth sessions, employee training, or marketing content face HIPAA scrutiny on every recorded or streamed engagement involving PHI. Vbrick's HIPAA-compliant video platform — with encryption at rest and in transit, role-based access controls, audit logging, and BAA support — directly addresses the access control and risk management gaps OCR is citing in enforcement. The Cadia case specifically targets multimedia PHI disclosure without authorization, making compliant video content management a direct patient privacy risk vector for healthcare organizations.",
     "outreach_angle": "",
-    "target_persona": "Chief Compliance Officer, CCO, General Counsel",
+    "target_persona": "HIPAA Privacy Officer, CIO, CMO (Healthcare)",
+    "industry": "Healthcare",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "enforcement_action",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 23,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: GDPR — EDPB 2026 Coordinated Enforcement Framework",
+    "summary": "On March 19, 2026, the European Data Protection Board launched its Coordinated Enforcement Framework (CEF) action for 2026, targeting compliance with transparency and information obligations (GDPR Articles 12–14) across 25 DPAs in Europe. This follows the 2025 CEF focus on the right to erasure (Article 17). GDPR fines now exceed €7.1 billion cumulatively, with €1.2 billion imposed in 2025 alone. European DPAs receive 443 breach notifications per day — a 22% year-over-year increase. TikTok was fined €530 million in 2025 for cross-border data transfers. The EU-US Data Privacy Framework remains under challenge due to FISA Section 702 concerns.",
+    "source_url": "https://www.edpb.europa.eu/news/news/2026/cef-2026-edpb-launches-coordinated-enforcement-action-transparency-and-information_en",
+    "why_vbrick": "European enterprises using video platforms that route data through US infrastructure face direct exposure under the 2026 CEF transparency enforcement and ongoing cross-border transfer scrutiny. Vbrick's GDPR compliance posture — with data residency controls, encryption, consent management for recordings, and audit trails — addresses Articles 5, 25, 28, and 32 requirements that the EDPB is actively enforcing. Organizations with EU employee video communications (all-hands, training, executive town halls) need platforms that can demonstrate data processing transparency to DPAs participating in the 2026 CEF action.",
+    "outreach_angle": "",
+    "target_persona": "DPO, CISO, Head of Compliance (European Enterprises and US multinationals with EU operations)",
+    "industry": "Enterprise / Multinational",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 24,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: EU AI Act — August 2, 2026 Enforcement Deadline",
+    "summary": "The EU AI Act's full enforcement for high-risk AI systems activates August 2, 2026, with penalties reaching €35 million or 7% of global turnover — exceeding GDPR's 4% cap. General-Purpose AI obligations (transparency, technical documentation) have been in effect since August 2, 2025. Article 12 requires high-risk AI systems to maintain audit logs for at least six months with full query-to-result traceability. AI literacy obligations (Article 4) became mandatory in February 2025. AI systems used for profiling in employment, education, or workplace monitoring contexts are classified as high-risk. The EU Commission's Digital Omnibus proposal (November 2025) proposes simplifying some obligations but remains unsettled.",
+    "source_url": "https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-eu-ai-act-implementation-timeline-understanding-the-next-deadline-for-compliance/",
+    "why_vbrick": "Vbrick's AI search and transcription features — used across enterprise training, compliance recordings, and executive communications — will be evaluated against EU AI Act transparency and auditability requirements by European deployers. The August 2026 deadline creates an urgent procurement driver: enterprises using AI-enhanced video platforms that process EU employee or customer data must document AI system risk classifications, implement audit logging, and ensure human oversight mechanisms. Vbrick's ability to demonstrate AI transparency — showing how transcription and search outputs are generated and logged — differentiates it from black-box video AI competitors facing EU regulatory exposure.",
+    "outreach_angle": "",
+    "target_persona": "DPO, Chief AI Officer, General Counsel (European and US multinational enterprises)",
+    "industry": "Enterprise / Technology / Financial Services",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 25,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: Section 508 / ADA Title II — April 2026 Compliance Deadline",
+    "summary": "ADA Title II's web and mobile app accessibility rule (WCAG 2.1 Level AA) requires all state and local governments serving populations of 50,000+ to comply by April 24, 2026, with smaller jurisdictions following by April 26, 2027. Section 508 remains in full force for federal agencies following the CHCOC guidance clarifying that DEI executive orders do not affect accessibility programs. GSA's FY 2025 Governmentwide Section 508 Assessment found continued federal noncompliance with Section 508 legal obligations, particularly around video and multimedia captioning. The DOJ intervened in Alcazar v. Fashion Nova (February 2026) signaling heightened scrutiny of ADA settlement quality. Harvard University was required to caption all online videos following a DOJ investigation.",
+    "source_url": "https://www.section508.gov",
+    "why_vbrick": "Government agencies and contractors procuring video platforms face a hard April 2026 deadline for WCAG 2.1 Level AA compliance — covering video captions, audio descriptions, and accessible player controls. Vbrick's Section 508 certification directly satisfies federal and state procurement requirements, enabling agencies to avoid the compliance exposure flagged in GSA's FY 2025 assessment. As state and local governments conduct urgency procurements ahead of the April 2026 deadline, Vbrick's Section 508 compliance eliminates a critical RFP disqualification criterion that non-compliant video vendors cannot overcome.",
+    "outreach_angle": "",
+    "target_persona": "Section 508 Program Manager, IT Procurement Officer, Accessibility Coordinator",
+    "industry": "Federal Government / State & Local Government / Higher Education",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 26,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: SEC Regulation S-P — Cybersecurity Incident Response",
+    "summary": "Amendments to SEC Regulation S-P required larger broker-dealers to comply by December 3, 2025, with smaller entities required to comply by June 3, 2026. The amended rule requires firms to develop, implement, and maintain written policies and procedures for an incident response program reasonably designed to detect, respond to, and recover from unauthorized access to customer information. In November 2025, the SEC settled charges against a broker-dealer for Regulation S-P violations after branch offices experienced email account takeovers exposing ~8,500 individuals' PII. FINRA's 2026 report explicitly calls out Regulation S-P compliance as an examination priority for smaller entities ahead of the June 2026 deadline.",
+    "source_url": "https://www.finra.org/sites/default/files/2025-12/2026-annual-regulatory-oversight-report.pdf",
+    "why_vbrick": "Financial services firms using video platforms that store customer communications, advisory session recordings, or investor presentations must include those platforms in their Regulation S-P incident response programs. Vbrick's SOC II Type 2 certification, audit logging, role-based access controls, and documented breach notification procedures give financial services firms the evidence base required to demonstrate Regulation S-P technical controls during examinations. The June 2026 deadline for smaller broker-dealers creates an urgent compliance trigger for firms that have not yet audited their video infrastructure's security posture.",
+    "outreach_angle": "",
+    "target_persona": "CCO, CISO, IT Director (Financial Services)",
+    "industry": "Financial Services",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 27,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: ADA Title II — Video Captioning Enforcement",
+    "summary": "The DOJ successfully required UC Berkeley to caption all online videos following an investigation under ADA Title III. Harvard University faced a $1.6M settlement for MOOC videos lacking captions. Over 4,600 digital accessibility lawsuits were filed in 2023, with federal courts upholding that digital platforms are places of public accommodation. The April 2026 ADA Title II compliance deadline for state and local governments (WCAG 2.1 AA for web/mobile content including videos) is creating urgency among government entities. GSA's FY 2025 assessment found the federal government 'continues to fall short of its legal and statutory obligations' on Section 508 — signaling that video accessibility enforcement risk is real and ongoing.",
+    "source_url": "https://www.ada.gov/resources/2024-03-08-web-rule/",
+    "why_vbrick": "Government agencies, universities, and healthcare systems using video platforms for public-facing content face direct ADA enforcement exposure if videos lack accurate captions, audio descriptions, and accessible player controls. Vbrick's Section 508-compliant platform with AI-powered transcription and auto-captioning provides both the technical accessibility features and the documented compliance posture required in ADA enforcement proceedings. As the April 2026 state/local government deadline triggers procurement urgency, Vbrick's Section 508 certification functions as a go/no-go vendor qualification criterion.",
+    "outreach_angle": "",
+    "target_persona": "Section 508 Coordinator, IT Procurement Manager, Accessibility Director",
+    "industry": "Government / Higher Education / Healthcare",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "enforcement_action",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 28,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: EU AI Act — GPAI Obligations Active Since August 2025",
+    "summary": "General-Purpose AI (GPAI) obligations under the EU AI Act became effective August 2, 2025, requiring providers to maintain technical documentation ('black-box dossiers'), publish dataset summaries, and demonstrate EU copyright compliance. AI literacy requirements (Article 4) became mandatory in February 2025 for all EU organizations deploying AI systems. By August 2026, transparency obligations (Article 50) require AI-generated content to be labeled — including AI-generated transcriptions, summaries, and search results. Enterprises deploying AI-powered features in video platforms (noise cancellation, transcription, smart summaries, semantic search) must classify those systems under the risk tier framework and meet corresponding obligations.",
+    "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "why_vbrick": "Vbrick's AI transcription and search features are deployed across enterprise video libraries used by EU organizations. The EU AI Act creates a vendor qualification requirement: enterprises will require video platform vendors to provide AI system documentation, risk tier classifications, and transparency disclosures as part of procurement due diligence. Vbrick's ability to deliver AI feature documentation, implement labeling for AI-generated content (transcripts, summaries), and support human oversight of AI outputs positions it as an EU AI Act-compliant video platform ahead of the August 2026 enforcement deadline.",
+    "outreach_angle": "",
+    "target_persona": "Chief AI Officer, DPO, Procurement Lead (European Enterprises)",
+    "industry": "Enterprise / Financial Services / Healthcare",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 29,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: CMMC 2.0 — CUI Video Communications in the Defense Supply Chain",
+    "summary": "As CMMC Phase 2 approaches (November 10, 2026), 300,000+ Defense Industrial Base organizations must demonstrate that all systems handling CUI — including communications and collaboration platforms — meet NIST SP 800-171's 110 security controls. Prime contractors are already flowing CMMC requirements to subcontractors, creating a cascading compliance requirement throughout the defense supply chain. Video platforms used to present, discuss, or share technical data, program information, or controlled technical drawings during DoD-related work are in scope. A February 2026 DFARS update consolidated all assessment obligations, eliminating the 7019/7020 framework.",
+    "source_url": "https://theodosian.com/blog/cmmc-2-0-what-defense-contractors-must-complete-before-november-2026",
+    "why_vbrick": "Defense contractors and their subcontractors using video for technical program reviews, design discussions, or engineering collaboration that involves CUI must ensure their video platform meets NIST SP 800-171 controls. Vbrick's FedRAMP authorization (which encompasses NIST 800-53 controls, directly aligned with 800-171), FIPS 140-2 encryption, and on-premises deployment options address the CMMC control families for access management, audit and accountability, identification and authentication, and system and communications protection. With Phase 2's mandatory C3PAO assessment deadline approaching and contractor eligibility at stake, video platform compliance is a direct contract risk.",
+    "outreach_angle": "",
+    "target_persona": "CISO, Compliance Officer, IT Director (Defense Contractors)",
+    "industry": "Defense / Aerospace / Government Contracting",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 30,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: SEC / FINRA — Regulation S-P Email Account Takeover Enforcement",
+    "summary": "In November 2025, the SEC settled charges against a broker-dealer for Regulation S-P violations (Rule 30(a) and Rule 201 of Regulation S-ID) after several branch offices experienced email account takeovers by unauthorized third parties, exposing PII of approximately 8,500 individuals. The SEC also cited failures in cyber intrusion detection, prevention, and mitigation policies. FINRA's 2026 oversight report identified Regulation S-P compliance as an examination priority, with smaller entities facing a June 3, 2026 mandatory compliance deadline for the amended safeguards rule covering incident response programs for unauthorized access to customer information.",
+    "source_url": "https://www.jdsupra.com/legalnews/sec-and-finra-enforcement-trends-for-5067038/",
+    "why_vbrick": "Broker-dealers and investment advisers using video platforms that store customer-related communications — advisory session recordings, client meeting videos, earnings presentations — must include those platforms in Regulation S-P incident response and safeguards programs. Vbrick's SOC II Type 2 audit, role-based access controls, and documented security architecture provide the technical safeguard evidence that Regulation S-P examiners require. The June 2026 deadline for smaller broker-dealers creates an immediate procurement trigger for firms replacing non-compliant video infrastructure.",
+    "outreach_angle": "",
+    "target_persona": "CCO, CISO, Chief Risk Officer (Financial Services)",
     "industry": "Financial Services",
     "urgency_score": 0,
     "urgency_rationale": "",
@@ -910,18 +1329,74 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 23,
+    "id": 31,
     "category": "Fortune 500 Accounts",
-    "company": "Microsoft Corporation",
-    "summary": "Effective April 1, 2026, Microsoft restructured Teams licensing to bundle eCDN into all Teams Enterprise licenses, removing it from Teams Premium. This shifts how 220,000+ Microsoft employees and their enterprise customers procure eCDN. The change creates a significant displacement event: organizations relying on third-party eCDN solutions (Kollective, Hive) must re-evaluate their stack, while Microsoft's native eCDN may not meet the needs of highly regulated or complex multi-site deployments—opening a window for Vbrick's full EVP with purpose-built enterprise eCDN.",
-    "source_url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/MicrosoftTeamsBlog/15802/4/Microsoft%20Teams%20Licensing%20Updates%20-%20April%202026%20-%20Customer%20FAQ.pdf",
-    "why_vbrick": "The Microsoft eCDN license restructuring (April 1, 2026) creates a direct procurement moment for large enterprises evaluating whether Microsoft's peer-to-peer eCDN is sufficient for their multi-site, security-sensitive, or compliance-regulated environments. Vbrick's eCDN supports multicast, edge caching, and P2P in combination—capabilities that exceed Microsoft's native offering—and integrates natively with Teams for a full enterprise video platform.",
+    "company": "UC Davis Health",
+    "summary": "UC Davis Health (UCDH) issued a formal RFP (#09192025_Internal Communication & Employee Engagement Platform_UCDH) on September 19, 2025, for an Internal Communications & Employee Engagement Platform to serve 20,000+ employees and 1,000 students. The RFP explicitly requires: video publishing to mobile and web, video submission by employees, executive-to-all communications, push notifications, Microsoft SharePoint integration, AI/Generative AI support, and analytics dashboards. UCDH specified it is replacing its current intranet and requires compliance-grade access controls.",
+    "source_url": "https://health.ucdavis.edu/media-resources/supply-chain/documents/fy26/09192025_BJ_RFP_InternalCommEmployeeEngPlatform.pdf",
+    "why_vbrick": "This is a confirmed active procurement from a 20,000+ employee healthcare system. VBRICK's HIPAA compliance, Microsoft 365/SharePoint integration, AI transcription, role-based access, and video publishing (mobile and web) match every video-specific requirement in the RFP. The explicit requirement for AI/GenAI and 'support for communications/messaging between departments' maps to VBRICK's AI search and enterprise video management capabilities. While the RFP was issued in September 2025, the procurement is recent enough to be in implementation/vendor selection stage.",
     "outreach_angle": "",
-    "target_persona": "VP of IT Infrastructure / Collaboration Technology Lead",
-    "industry": "Technology",
+    "target_persona": "CISO / VP Information Technology / Chief Communications Officer",
+    "industry": "Healthcare / Higher Education",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "rfp_procurement",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 32,
+    "category": "Fortune 500 Accounts",
+    "company": "Defense Media Activity (DMA)",
+    "summary": "DMA's FY2026 budget request ($226.7M) includes a specific investment to transition American Forces Network (AFN) and Media Production to a 'cloud/hybrid production system.' The FY2026 justification states a '+$3,548 thousand increase due to provide funding for much needed FSRM projects' and identifies cloud migration of its media systems as a priority. DMA is the DoD's mass media organization, producing audio-visual content for military audiences worldwide across video, radio, and digital platforms.",
+    "source_url": "https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2026/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/DMA_OP-5.pdf",
+    "why_vbrick": "DMA's cloud/hybrid production migration is a direct video infrastructure procurement signal. VBRICK's FedRAMP authorization, FIPS 140-2 compliance, and military-grade security make it a natural candidate for DMA's cloud video platform. The agency's mission—distributing video content to authorized military audiences globally—maps precisely to VBRICK's enterprise video streaming and eCDN capabilities. A FY2026 budget line already exists for this transition, lowering procurement barriers.",
+    "outreach_angle": "",
+    "target_persona": "DMA Director / DoD Visual Information Program Manager",
+    "industry": "Federal Government / Defense Media",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "federal_contract",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 33,
+    "category": "Fortune 500 Accounts",
+    "company": "Microsoft",
+    "summary": "Microsoft announced in January 2026 that it will move advanced Teams town hall features—including Enterprise Content Delivery Network (eCDN) support—from Teams Premium to Teams core (effective April 1, 2026). This means all enterprise Teams users now have access to eCDN configuration for town halls, but must choose between Microsoft eCDN and certified third-party eCDN partners (VBRICK, Hive, Kollective, Ramp). The change expands the addressable market for partner eCDN providers to every Microsoft 365 enterprise customer running large-scale events without Teams Premium licenses.",
+    "source_url": "https://tomtalks.blog/microsoft-teams-april-2026-licensing-update-microsoft-places-and-advanced-town-hall-and-webinar-features-move-into-teams-core/",
+    "why_vbrick": "This policy change is the single most significant market driver for VBRICK's eCDN business in 2026. Every Microsoft 365 enterprise customer (10,000+ employee organizations) now has a decision to make: use Microsoft eCDN (limited analytics, basic features) or deploy VBRICK's enterprise-grade eCDN with real-time analytics, deeper compliance reporting, and advanced event management. Organizations running FINRA, HIPAA, FedRAMP, or GDPR workloads have strong incentives to choose VBRICK over the native Microsoft option. This creates a pipeline of every large Teams customer approaching their first town hall after April 2026.",
+    "outreach_angle": "",
+    "target_persona": "Microsoft 365 Admin / IT Infrastructure Lead / Enterprise Communications Director",
+    "industry": "Cross-Industry (Microsoft Teams Customers)",
     "urgency_score": 0,
     "urgency_rationale": "",
     "confidence": "high",
@@ -933,7 +1408,7 @@ const FINDINGS = [
     "date": "",
     "finding_type": "tech_stack_change",
     "finding_id": "",
-    "employee_count": "220,000+",
+    "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "current_platform": "Unknown",
     "corroborating_signals": 0,
@@ -974,452 +1449,46 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/geoffbelknap"
       }
     ],
-    "is_new": false
-  },
-  {
-    "id": 24,
-    "category": "Fortune 500 Accounts",
-    "company": "CrowdStrike Holdings, Inc.",
-    "summary": "CrowdStrike posted a remote A/V Architect role within its IT Network Engineering team (posted June 2025, within 90-day window). The role is specifically scoped to build and support audio/visual infrastructure at global scale, lead AV architecture for town halls and special events, design multi-region video delivery systems, and manage the AV technology lifecycle. The posting explicitly calls for experience with 'broadcast systems, video codecs, and streaming protocols' and oversight of multipurpose spaces for large-scale events.",
-    "source_url": "https://www.builtinnyc.com/job/av-architect-it-network-engineering-remote/4556611",
-    "why_vbrick": "CrowdStrike is actively building out enterprise-scale AV and video streaming infrastructure for a globally distributed workforce. Vbrick's eCDN, Teams integration, and enterprise video management capabilities are directly aligned with the AV Architect's mandate to eliminate buffering at scale, support town halls and executive events, and integrate with Zoom, Webex, and Slack. The hire signals a greenfield video platform RFP or upgrade evaluation cycle.",
-    "outreach_angle": "",
-    "target_persona": "A/V Architect / IT Network Engineering Lead",
-    "industry": "Cybersecurity / Technology",
-    "urgency_score": 3,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "job_posting",
-    "finding_id": "",
-    "employee_count": "10,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Greg Sly",
-        "title": "SVP Infrastructure",
-        "linkedin": "https://www.linkedin.com/in/greg-sly"
-      },
-      {
-        "name": "Jim Murphy",
-        "title": "Senior Director Information Technology",
-        "linkedin": "https://www.linkedin.com/in/jim-murphy-86b0a61"
-      },
-      {
-        "name": "Brian Davis",
-        "title": "Director, IT-Enterprise Network Services",
-        "linkedin": "https://www.linkedin.com/in/brian-davis-3b00a4a"
-      },
-      {
-        "name": "Justin Acquaro",
-        "title": "Chief Information Officer",
-        "linkedin": "https://www.linkedin.com/in/jacquaro"
-      },
-      {
-        "name": "Kerry Klein",
-        "title": "Vice President, Learning & Employee Experience",
-        "linkedin": "https://www.linkedin.com/in/kerryeklein"
-      },
-      {
-        "name": "Steve Lane",
-        "title": "Vice President Human Resources",
-        "linkedin": "https://www.linkedin.com/in/hrlane"
-      },
-      {
-        "name": "Brad Burns",
-        "title": "Chief Communications Officer",
-        "linkedin": "https://www.linkedin.com/in/brad-burns-6aa3696"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 25,
-    "category": "Fortune 500 Accounts",
-    "company": "U.S. Agency for Global Media (USAGM)",
-    "summary": "USAGM awarded a contract to LiveU Inc. in March 2026 ($58.9K) for video broadcast equipment (NAICS 334220), and issued multiple contracts in late 2025/early 2026 for media infrastructure including OCB Television Upgrade ($7.5K to B&H), fiber optic cabling for its new headquarters at 300 E Street SW ($4.1K to EN-NET), an AT&T VOIP/MPLS services contract ($361.5K), and an OCB tape library lease ($180K). These contracts collectively signal an active broadcast infrastructure modernization at USAGM's new headquarters.",
-    "source_url": "https://www.federalcompass.com/federal-government-awarded-contracts/by-gov/U.S.-Agency-for-Global-Media",
-    "why_vbrick": "USAGM's new headquarters build-out at 300 E Street SW and its concurrent OCB Television Upgrade and media infrastructure investments represent a live procurement window for enterprise video streaming. Vbrick's FedRAMP authorization, FIPS 140-2 compliance, and government-grade eCDN would directly address USAGM's need for secure, scalable video distribution to global broadcast operations. The agency's need to stream content to international bureau networks across classified and unclassified boundaries is a strong Vbrick use case.",
-    "outreach_angle": "",
-    "target_persona": "CTO / Head of Technology, Services and Innovation",
-    "industry": "Federal Government / Broadcasting",
-    "urgency_score": 3,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "federal_contract",
-    "finding_id": "",
-    "employee_count": "4,000+ (multiple global broadcast operations)",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Richard Keller",
-        "title": "VP, IT Solution Delivery And Engagement Supervisory Program Manager",
-        "linkedin": "https://www.linkedin.com/in/richard-a-keller"
-      },
-      {
-        "name": "Cliff Sweney",
-        "title": "Director, Enterprise Portfolio",
-        "linkedin": "https://www.linkedin.com/in/cliff-sweney-474a2473"
-      },
-      {
-        "name": "Donald Sanders",
-        "title": "Executive Portfolio Director, Corporate Portfolio (A), Office Of Information And Technology (OIT)",
-        "linkedin": "https://www.linkedin.com/in/dr-donald-sanders"
-      },
-      {
-        "name": "Ron Haskell",
-        "title": "Director of Broadcast and Video, Veterans Health Administration",
-        "linkedin": "https://www.linkedin.com/in/ron-haskell-1b72b788"
-      },
-      {
-        "name": "John D Oswalt",
-        "title": "DCIO - FOIA, Records, Assessment, Compliance, & Privacy /Chief Privacy Officer",
-        "linkedin": "https://www.linkedin.com/in/john-d-oswalt-0242117"
-      },
-      {
-        "name": "Jack Galvin",
-        "title": "Deputy Chief Information Officer, End User Services",
-        "linkedin": "https://www.linkedin.com/in/jack-galvin-1866a386"
-      },
-      {
-        "name": "Paul Tibbits",
-        "title": "Executive Director, Workforce And Organization Development",
-        "linkedin": "https://www.linkedin.com/in/paul-tibbits-md-579ab39"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 26,
-    "category": "Fortune 500 Accounts",
-    "company": "ServiceNow, Inc.",
-    "summary": "ServiceNow's VP of Learning Solutions Studio confirmed using AI video (Synthesia) for its Sales Onboarding Academy—reporting 50% reduction in production time and $5,500 in savings per 20-video batch. ServiceNow is scaling AI-generated video across its global learning programs. This active investment in video-at-scale signals a growing enterprise video library requiring professional management, distribution, and analytics infrastructure.",
-    "source_url": "https://vbrick.com/press-releases/vbrick-announces-next-wave-of-ai-advancements-unlocking-multimodal-intelligence-and-agentic-workflows-for-the-enterprise/",
-    "why_vbrick": "ServiceNow is a natural Vbrick integration partner and prospect: Vbrick's MCP server integration with 'ServiceNow Now Assist' was announced in March 2026, enabling AI agents to surface video content within ServiceNow workflows. This existing integration creates a direct land-and-expand opportunity. ServiceNow's growing AI video library for sales onboarding and L&D requires Vbrick's governance, search, and analytics capabilities to extract maximum value from those assets.",
-    "outreach_angle": "",
-    "target_persona": "VP of Learning Solutions / Head of Enterprise Technology",
-    "industry": "Enterprise Software / Technology",
-    "urgency_score": 3,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ai_video_initiative",
-    "finding_id": "",
-    "employee_count": "22,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Kellie Romack",
-        "title": "Chief Digital Information Officer",
-        "linkedin": "https://www.linkedin.com/in/kellieromack"
-      },
-      {
-        "name": "Ben de Bont",
-        "title": "SVP, Chief Information Security Officer",
-        "linkedin": ""
-      },
-      {
-        "name": "Pat Casey",
-        "title": "Chief Technology Officer and EVP, DevOps",
-        "linkedin": "https://www.linkedin.com/in/pat-casey-535a661"
-      },
-      {
-        "name": "Jayney Howson",
-        "title": "Chief Learning Officer",
-        "linkedin": "https://www.linkedin.com/in/jayney-howson-05677a23"
-      },
-      {
-        "name": "Heather Graubard",
-        "title": "Chief Communications Officer",
-        "linkedin": "https://www.linkedin.com/in/heathergraubard"
-      },
-      {
-        "name": "Jacqui Canney",
-        "title": "Chief People and AI Enablement Officer",
-        "linkedin": ""
-      },
-      {
-        "name": "Bill Burtis",
-        "title": "SVP, Chief Ethics and Compliance Officer",
-        "linkedin": ""
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 27,
-    "category": "Fortune 500 Accounts",
-    "company": "General Services Administration (GSA) / Federal Agencies on EIS",
-    "summary": "The GSA Enterprise Infrastructure Solutions (EIS) contract—with a $50B ceiling and ordering through July 2027—is the primary vehicle for federal agency IT and telecommunications services including video infrastructure. The final extended Continuity of Service period for legacy Networx/WITS 3 contracts expires May 31, 2026, forcing all remaining federal agencies to fully transition to EIS or an alternative vehicle. This transition deadline creates an active procurement window across all civilian federal agencies for modernized video infrastructure.",
-    "source_url": "https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/telecommunications-and-network-services/enterprise-infrastructure-solutions",
-    "why_vbrick": "The May 31, 2026 expiration of all Networx/WITS 3 telecom contracts forces every federal agency still on legacy contracts to procure new infrastructure solutions—including enterprise video streaming. Vbrick's FedRAMP authorization, FIPS 140-2 compliance, and Section 508 accessibility certifications make it uniquely positioned as a compliant enterprise video platform for federal agencies transitioning off legacy contracts through EIS. This is an immediate, time-bound procurement opportunity.",
-    "outreach_angle": "",
-    "target_persona": "CIO / IT Modernization Lead at Federal Civilian Agencies",
-    "industry": "Federal Government",
-    "urgency_score": 3,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "federal_contract",
-    "finding_id": "",
-    "employee_count": "Federal civilian workforce: 2,000,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "David A. Shive",
-        "title": "Chief Information Officer",
-        "linkedin": "https://www.linkedin.com/in/david-shive-4b4a1711"
-      },
-      {
-        "name": "Sid Sripada",
-        "title": "Division Director, Digital Infrastructure Technologies",
-        "linkedin": "https://www.linkedin.com/in/sidsripada"
-      },
-      {
-        "name": "Shannon Casucci",
-        "title": "Director, Office of Public Buildings Information Technology Services",
-        "linkedin": "https://www.linkedin.com/in/shannon-casucci-a05b89b"
-      },
-      {
-        "name": "Joseph Hoyt",
-        "title": "Acting Chief Information Security Officer (CISO)",
-        "linkedin": ""
-      },
-      {
-        "name": "Lawrence Hale",
-        "title": "Acting Assistant Commissioner, Information Technology Category",
-        "linkedin": ""
-      },
-      {
-        "name": "Lesley Briante",
-        "title": "Associate CIO of Digital Management",
-        "linkedin": ""
-      },
-      {
-        "name": "Cara Battaglini Schatz",
-        "title": "Director, Outreach Communications, Federal Acquisition Service IT Category",
-        "linkedin": "https://www.linkedin.com/in/cara-battaglini-schatz-718a3b3"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 28,
-    "category": "Fortune 500 Accounts",
-    "company": "Vimeo (enterprise pivot, Fortune 500 clients)",
-    "summary": "Vimeo was acquired by Bending Spoons for $1.38B in early 2026. Vimeo Enterprise—growing at 55% YoY in Q2 2024 and representing $100M+ in bookings—is now under new ownership. The acquisition creates organizational uncertainty and potential disruption for enterprise customers, as Bending Spoons is known for acquiring companies and restructuring them aggressively. At Wells Fargo's 8th Annual TMT Conference in February 2026, Vimeo positioned itself as a platform replacing multiple enterprise video tools.",
-    "source_url": "https://quartr.com/events/vimeo-inc-vmeo-wells-fargo-8th-annual-tmt-summit-conference_3YRFNHT3",
-    "why_vbrick": "The Bending Spoons acquisition of Vimeo creates a prime competitive displacement window: Vimeo Enterprise customers facing platform uncertainty, potential price increases, or reduced investment in enterprise features are natural Vbrick prospects. Specifically, Vimeo Enterprise customers in financial services (FINRA archiving), healthcare (HIPAA), and federal (FedRAMP) sectors will find Vimeo's compliance posture insufficient—and Vbrick's regulatory certifications a direct upgrade. This is an actionable competitive wedge for Vbrick's sales team to pursue now.",
-    "outreach_angle": "",
-    "target_persona": "Head of Enterprise Video / VP IT / Chief Communications Officer (at Vimeo Enterprise customers)",
-    "industry": "Technology / Enterprise Video",
-    "urgency_score": 3,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "tech_stack_change",
-    "finding_id": "",
-    "employee_count": "Vendor; client base includes Fortune 500",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 29,
-    "category": "Competitor Intelligence",
-    "company": "Large enterprise organizations using Vimeo for regulated content",
-    "summary": "Enterprise reviews consistently flag Vimeo as a 'creator-first platform that added enterprise features later.' Key gaps include: no FedRAMP authorization, no FIPS 140-2, insufficient DRM for IP-heavy industries, inadequate role-based access governance, opaque bandwidth limits ($6,000+ Enterprise plans with forced upgrades), and compliance failures for FINRA/HIPAA workflows. The 2TB monthly bandwidth cap has triggered forced Enterprise upgrades for numerous customers.",
-    "source_url": "https://www.gumlet.com/learn/vimeo-enterprise-complaints/",
-    "why_vbrick": "Vbrick is FedRAMP authorized with FIPS 140-2, SOC II Type 2, Section 508, GDPR, and HIPAA compliance — the complete compliance stack Vimeo cannot match. For regulated industries (finance, healthcare, government), this is a binary disqualifier for Vimeo. Vbrick's eCDN also solves the bandwidth cost escalation problem that drives Vimeo's forced upgrade complaints.",
-    "outreach_angle": "Ask: 'Does your current video platform carry FedRAMP, FIPS 140-2, and FINRA-ready archiving?' Frame Vbrick as the compliance-first alternative built for regulated industries, not an afterthought.",
-    "target_persona": "CISO, Compliance Officer, IT Security Director",
-    "industry": "Financial Services, Healthcare, Government, Legal",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Security/Compliance Gaps",
-    "finding_id": "",
-    "competitor": "Vimeo Enterprise",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 30,
-    "category": "Competitor Intelligence",
-    "company": "Enterprise organizations with 20,000+ concurrent viewer needs on Teams",
-    "summary": "Teams Town Hall (the Live Events replacement) caps standard attendees at 20,000 and requires Teams Premium for eCDN support. Events above 20,000 require the Live Events Assistance Program — an approval-gated process with no self-service option. Teams does not support external broadcast without third-party eCDN. Organizations running all-hands events, CEO broadcasts, or global training for 30,000–100,000 concurrent viewers face a structural gap that Town Hall cannot bridge without significant additional licensing cost.",
-    "source_url": "https://learn.microsoft.com/en-us/microsoftteams/limits-specifications-teams",
-    "why_vbrick": "Vbrick's eCDN natively handles unlimited concurrent viewers over existing network infrastructure, with no per-event approval process. For enterprise all-hands broadcasts and global training, Vbrick removes the hard ceiling that forces organizations into costly escalation paths or third-party add-ons.",
-    "outreach_angle": "Ask: 'When your CEO broadcasts to the entire company, what happens when Teams hits its attendee ceiling?' Demonstrate Vbrick's eCDN live streaming with no architectural ceiling and full Teams workflow integration.",
-    "target_persona": "Head of Internal Communications, CTO, IT Infrastructure Director",
-    "industry": "Enterprise (>10,000 employees — Retail, Manufacturing, Government, Financial Services)",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Scale/Architecture Limitation",
-    "finding_id": "",
-    "competitor": "Microsoft Stream/Teams Live Events",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 31,
-    "category": "Competitor Intelligence",
-    "company": "Kaltura enterprise and media customers",
-    "summary": "Kaltura executed its third round of layoffs in August 2025, cutting 10% of its 700-person workforce (approximately 70 employees), specifically impacting engineering, professional services, and administrative functions. Full-year 2025 ARR declined 3% YoY to $168.2M and net dollar retention fell to 97% (from 103% prior year). The company is pivoting away from video to 'agentic AI' and conversational automation, acquiring eSelf.ai and PathFactory — moving addressable market focus from video ($3B) to adjacent AI markets ($50B). Media & Telecom segment revenue fell 13% in Q4 2025.",
-    "source_url": "https://www.calcalistech.com/ctechnews/article/6a8duhohw",
-    "why_vbrick": "Kaltura's ARR decline, net retention below 100%, and strategic pivot signal customers are leaving and the company is deprioritizing pure-play enterprise video. Customers in financial services, healthcare, and government who chose Kaltura for enterprise video will face a platform transitioning toward AI chatbots and marketing automation — not their core use case. Vbrick remains purpose-built for enterprise video with active roadmap investment, FedRAMP/FIPS compliance, and no strategic distraction.",
-    "outreach_angle": "Lead with: 'Kaltura just cut engineering for the third time and is pivoting to chatbots. When your video platform vendor's CEO says they're expanding from a $3B video market to a $50B AI market — your enterprise video needs may no longer be their priority.' Offer a platform roadmap comparison call.",
-    "target_persona": "VP of Corporate Communications, CIO, Head of L&D",
-    "industry": "Financial Services, Healthcare, Manufacturing, Government",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Workforce Reduction / Strategic Pivot Away from Video",
-    "finding_id": "",
-    "competitor": "Kaltura",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 32,
-    "category": "Competitor Intelligence",
-    "company": "Kaltura enterprise customers with P1/P2 support incidents",
-    "summary": "Consistent patterns across G2, Capterra, and Alternatives.co: verified enterprise reviewers report (1) P1/P2 incidents where 'support team does not act with urgency'; (2) 'more than 3 months to identify an issue' even with Platinum support; (3) customer success managers who 'keep changing and do not understand particular business deal context'; (4) no responses to support emails for over a month. One reviewer from Utah Valley University: 'Kaltura is by far the worst at responding to emails and fulfilling customer requests.' Multiple enterprise users in Health, Wellness, and Financial Services flagged support failures during mission-critical cloud migration incidents.",
-    "source_url": "https://alternatives.co/software/kaltura/reviews/",
-    "why_vbrick": "Vbrick's support model is positioned as a differentiator — dedicated enterprise CSMs with institutional knowledge and SLA-backed response times. Kaltura's engineering cuts (10% in August 2025 impacting engineering and professional services) will further compress support capacity. Compliance-regulated industries cannot accept 3-month resolution timelines on P1 issues.",
-    "outreach_angle": "Lead with a support SLA benchmark question: 'What's your current average response time for a P1 video outage on Kaltura?' Then contrast Vbrick's SLA commitments with documented Kaltura support failure patterns.",
-    "target_persona": "IT Director, Head of Enterprise Applications, CISO",
-    "industry": "Healthcare, Financial Services, Higher Education",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Negative Enterprise Reviews — Support Quality",
-    "finding_id": "",
-    "competitor": "Kaltura",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 33,
-    "category": "Competitor Intelligence",
-    "company": "Government and regulated-sector organizations using Zoom Events/Webinars (commercial)",
-    "summary": "Zoom's commercial platform does NOT carry FIPS 140-2, FedRAMP (only the separate ZoomGov product does), or FINRA-ready archiving. Commercial Zoom Events lacks eCDN for internal broadcast distribution, creating bandwidth overload risks for large all-hands events. Large meeting capacity is capped at 5,000 attendees even with higher-tier licenses. Zoom's AI Companion data usage practices triggered scrutiny in 2023 for unclear consent on customer data, a persistent concern for regulated industries. For organizations needing HIPAA/FINRA/GDPR-compliant video archiving, commercial Zoom lacks the governance controls.",
-    "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063766",
-    "why_vbrick": "Vbrick is FedRAMP authorized, FIPS 140-2 certified, FINRA-ready with native archiving, HIPAA-compliant, and SOC II Type 2 — the full compliance stack for regulated industries. Vbrick's eCDN eliminates the bandwidth penalty of large-scale internal broadcasts that Zoom cannot address. The deep M365/Teams integration means Vbrick can replace the Zoom Events use case without disrupting existing collaboration workflows.",
-    "outreach_angle": "Ask: 'Does your organization use commercial Zoom for all-hands events that include executives discussing material non-public information or protected health data? Does Zoom's current setup meet your FINRA archiving or HIPAA audit requirements?' Use compliance gap as the wedge.",
-    "target_persona": "CISO, Compliance Officer, IT Security Director",
-    "industry": "Financial Services (FINRA), Healthcare (HIPAA), Government (FedRAMP), Legal",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Compliance/Integration Limitation",
-    "finding_id": "",
-    "competitor": "Zoom Events/Webinars",
-    "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 34,
-    "category": "Competitor Intelligence",
-    "company": "Enterprise organizations using Panopto for internal video",
-    "summary": "Microsoft's official M365 App Certification page for Panopto explicitly documents: 'Is the app FedRAMP compliant? No.' Panopto also does not comply with HITRUST CSF, ISO 27017, ISO 27002, or SOX. While Panopto holds SOC 2 Type 2, it lacks the full compliance stack required by federal agencies, DoD contractors, and regulated financial institutions. Organizations in government, defense contracting, or financial services cannot deploy Panopto without a compliance exception — a blocker for procurement in these verticals.",
-    "source_url": "https://learn.microsoft.com/en-us/microsoft-365-app-certification/teams/panopto",
-    "why_vbrick": "Vbrick is FedRAMP authorized with FIPS 140-2 — the mandatory requirements for federal agency video platforms and DoD contractors. For any organization where FedRAMP is a procurement requirement, Panopto is automatically disqualified. Vbrick also provides FINRA-ready archiving and HIPAA compliance that Panopto cannot match.",
-    "outreach_angle": "Lead directly: 'Your RFP or ATO process will fail Panopto on FedRAMP — it's officially documented as non-compliant. Vbrick is FedRAMP authorized and FIPS 140-2 certified. Let's schedule a compliance architecture review.'",
-    "target_persona": "IT Security Director, CISO, Federal IT Procurement Officer",
-    "industry": "Federal Government, Defense Contractors, Financial Services",
-    "urgency_score": 2,
+    "category": "Fortune 500 Accounts",
+    "company": "FedRAMP-Authorized Agency Customers (Broad Federal Signal)",
+    "summary": "FedRAMP 20x Phase 2 launched in early FY2026, with wide-scale adoption of 20x Low and Moderate authorizations targeted for FY26 Q3-Q4. FedRAMP director Pete Waterman confirmed at a January 2026 event that '2026 is when we deliver,' emphasizing expanded agency adoption and the retirement of the legacy Rev5 Low/Moderate authorization path by mid-FY2027. Agencies are actively re-evaluating cloud tool portfolios to ensure FedRAMP compliance ahead of these deadlines—creating procurement windows for FedRAMP-authorized video platforms across civilian and defense agencies.",
+    "source_url": "https://www.fedramp.gov/2025-09-30-fedramp-built-a-modern-foundation-in-fy25-to-deliver-massive-improvements-in-fy26/",
+    "why_vbrick": "VBRICK's existing FedRAMP authorization positions it as a day-one compliant solution for agencies accelerating their FedRAMP 20x portfolio reviews. As agencies audit and rationalize legacy video tools (many of which are not FedRAMP-authorized), VBRICK is a natural replacement candidate. The September 30, 2026 deadline for initial Rev5 machine-readable package compliance creates urgency for agencies to lock in FedRAMP-authorized tools before the audit window. VBRICK should proactively target agency CISO and IT modernization offices in Q2 2026.",
+    "outreach_angle": "",
+    "target_persona": "Federal Agency CISO / IT Modernization Officer",
+    "industry": "Federal Government (Broad)",
+    "urgency_score": 0,
     "urgency_rationale": "",
-    "confidence": "High",
+    "confidence": "high",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Compliance Gap — FedRAMP/FIPS Not Supported",
+    "finding_type": "federal_contract",
     "finding_id": "",
-    "competitor": "Panopto",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 35,
     "category": "Competitor Intelligence",
-    "company": "Enterprise organizations using Vimeo for GDPR/HIPAA-regulated video",
-    "summary": "Enterprise Vimeo reviews consistently flag: 'For highly regulated or IP-heavy enterprises, Vimeo often feels like a creator-first platform that added enterprise features later.' Specific gaps: limited DRM on standard plans (DRM only available on Enterprise at $6,000+/year), no FIPS 140-2, inadequate forensic watermarking, basic geo-restrictions that don't meet enterprise compliance needs, and 'lack of deeper access governance for internal departments and role-based visibility.' Post-Bending Spoons, Vimeo's compliance and security team was part of the mass layoffs, leaving future certification renewals uncertain.",
-    "source_url": "https://www.gumlet.com/learn/vimeo-enterprise-complaints/",
-    "why_vbrick": "Vbrick provides enterprise-grade DRM, role-based access controls, GDPR compliance, HIPAA compliance, FIPS 140-2, and SOC II Type 2 out of the box — without forcing customers into opaque 'contact sales' Enterprise tier pricing. The full compliance stack is available as a purpose-built enterprise solution, not an afterthought add-on.",
-    "outreach_angle": "Frame the conversation around the Bending Spoons acquisition risk: 'Vimeo's compliance team was likely part of the January 2026 mass layoffs. Who is maintaining your GDPR and HIPAA compliance posture on Vimeo Enterprise today?' Escalate to CISO and legal as the decision-makers.",
-    "target_persona": "CISO, Compliance Officer, General Counsel",
-    "industry": "Healthcare, Financial Services, Legal, Government",
+    "company": "Utah Valley University",
+    "summary": "Enterprise Kaltura customer at Utah Valley University reports Kaltura customer service as 'horrendous' — over a month without response to a support email even after CC'ing their dedicated customer success manager and technical rep. The reviewer states it is 'by far the worst' technology managed at the university for support responsiveness.",
+    "source_url": "https://www.capterra.com/p/121484/Kaltura-Video-Platform/reviews/",
+    "why_vbrick": "VBRICK offers dedicated enterprise support with guaranteed SLA response times and a named CSM model. Kaltura's chronic support failures at higher education institutions open the door for VBRICK's campus-wide video management play, especially for institutions also needing ADA/Section 508 compliance.",
+    "outreach_angle": "Lead with support SLA comparison — 'What does a month without a support response cost your institution?' Position VBRICK's named support and Section 508 compliance as a direct upgrade path.",
+    "target_persona": "VP of Information Technology / Director of EdTech",
+    "industry": "Higher Education",
     "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "High",
@@ -1429,22 +1498,22 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Security/DRM/Compliance Gaps",
+    "finding_type": "Support Failure",
     "finding_id": "",
-    "competitor": "Vimeo Enterprise",
+    "competitor": "Kaltura",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 36,
     "category": "Competitor Intelligence",
-    "company": "Enterprise organizations evaluating video platforms after Kaltura AI pivot announcements",
-    "summary": "Kaltura's Q4 2025 earnings call and investor presentations confirm a fundamental mission change: the company now calls itself 'a rich, agentic digital experience platform' and acquired eSelf.ai (AI avatars) and PathFactory (marketing automation/intent data) — non-video assets. The CEO stated they are 'expanding from a $3B video market to a $50B market.' In the Q4 2025 earnings transcript, management acknowledged 'recent consolidation activity in the video market may create additional displacement opportunities' — signaling they expect customers to leave traditional video competitors. Kaltura itself is exiting the pure-play enterprise video space.",
-    "source_url": "https://intellectia.ai/stock/KLTR/earnings/transcript-FY2025Q4-2026-03-16",
-    "why_vbrick": "Kaltura is telling investors — and implicitly telling their customers — that enterprise video is not their growth engine. Organizations that purchased Kaltura for enterprise video management, compliance training, and internal communications are now funding a company whose strategic direction is AI chatbots and marketing journey automation. Vbrick remains solely focused on enterprise video, providing the platform stability and roadmap clarity that Kaltura is explicitly abandoning.",
-    "outreach_angle": "Quote Kaltura's CEO directly: 'They told Wall Street they're pivoting from a $3B video market to a $50B AI market. What does that mean for your enterprise video platform roadmap?' Challenge whether the customer is funding an enterprise video vendor or an AI chatbot company.",
-    "target_persona": "CIO, VP of Corporate Communications, Head of Enterprise Applications",
-    "industry": "Financial Services, Healthcare, Manufacturing, Government",
+    "company": "Enterprise Health/Wellness Company (Anonymous G2 Reviewer)",
+    "summary": "A verified enterprise customer in health/wellness (>1,000 employees) reports that during P1 and P2 incidents caused by Kaltura's cloud migration, the support team did not act with urgency. The customer had to repeatedly chase the account manager and support team for updates on critical outages. Multiple P1 issues stemming from the migration were reported.",
+    "source_url": "https://alternatives.co/software/kaltura/reviews/",
+    "why_vbrick": "VBRICK's platform is FedRAMP authorized and SOC II Type 2 certified — both signals of rigorous uptime and incident management standards. VBRICK's eCDN also reduces reliance on cloud delivery paths that caused Kaltura's migration-era instability.",
+    "outreach_angle": "Reference Kaltura's cloud migration P1 handling failures. Offer a risk-free VBRICK proof-of-concept with measured uptime SLA and escalation path documentation.",
+    "target_persona": "CIO / CISO / VP of IT Operations",
+    "industry": "Healthcare",
     "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "High",
@@ -1454,22 +1523,22 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Strategic Pivot — Video De-prioritization",
+    "finding_type": "Service Outage / P1 Incident Handling",
     "finding_id": "",
     "competitor": "Kaltura",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 37,
     "category": "Competitor Intelligence",
-    "company": "Organizations on Vimeo Enterprise experiencing pricing escalation",
-    "summary": "Vimeo restructured its plan tiers (eliminating Plus/Pro/Business) and implemented a hard 2TB monthly bandwidth cap — exceeding this twice in 12 months triggers a mandatory Enterprise upgrade. Enterprise plans reportedly start at $6,000+/year. Post-Bending Spoons acquisition, industry observers expect further pricing increases as the acquirer seeks to recoup $1.38B at 50%+ profit margins. Vimeo's self-serve subscriber base collapsed from 1.5M (2022) to ~53,500 by Q3 2024 — suggesting the forced upgrade pricing strategy has already driven significant customer attrition.",
-    "source_url": "https://swarmify.com/blog/vimeo-pricing-bandwidth-limits/",
-    "why_vbrick": "For organizations being pushed into Vimeo's Enterprise tier by bandwidth triggers, Vbrick's eCDN directly solves the bandwidth cost problem — distributing video across existing network infrastructure rather than external CDN consumption. Vbrick's enterprise pricing is contract-based with predictable costs, not tied to bandwidth consumption triggers. The compliance and security stack included at no additional tier cost provides additional value Vimeo cannot match.",
-    "outreach_angle": "Ask: 'Has Vimeo contacted you about exceeding your bandwidth allocation? Or have you seen a pricing change since the Bending Spoons acquisition?' Lead with eCDN as the answer to bandwidth cost problems, plus the security compliance stack at no extra tier premium.",
-    "target_persona": "VP of Digital, Head of Marketing Operations, CFO",
-    "industry": "Enterprise (All Verticals)",
+    "company": "Kaltura Enterprise Customers (Broad)",
+    "summary": "Kaltura's FY2025 10-K filing reports ARR declined 3% year-over-year to $168.2M, Net Dollar Retention fell to 97%, and the number of large customers ($1M+ ARR) declined slightly. Revenue in the Media & Telecom segment dropped 7% in 2025. The company is pivoting sharply toward 'agentic AI' and acquiring PathFactory — signaling a strategic shift away from core video platform investment.",
+    "source_url": "https://www.investing.com/news/company-news/kaltura-q4-2025-slides-profitability-soars-amid-ai-pivot-93CH-4564200",
+    "why_vbrick": "Customers who purchased Kaltura for enterprise video management may find that Kaltura's roadmap is drifting toward conversational AI and content marketing, deprioritizing the video security, eCDN, and compliance features that regulated enterprises need. VBRICK is purpose-built for enterprise video with no strategic distraction.",
+    "outreach_angle": "Ask prospects: 'Is your video platform vendor's roadmap still focused on enterprise video, or are they pivoting away?' Position VBRICK as the purpose-built alternative with a stable, compliance-first roadmap.",
+    "target_persona": "CTO / VP of Digital Workplace",
+    "industry": "Financial Services / Government / Healthcare",
     "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "High",
@@ -1479,22 +1548,22 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Pricing Changes / Forced Upgrades",
+    "finding_type": "Financial Health / Retention Risk",
     "finding_id": "",
-    "competitor": "Vimeo Enterprise",
+    "competitor": "Kaltura",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 38,
     "category": "Competitor Intelligence",
-    "company": "Financial services firms on Zoom Events subject to FINRA Rule 4511",
-    "summary": "FINRA Rule 4511 and SEC Rule 17a-4 require broker-dealers to retain electronic communications — including video recordings of client-facing events, webinars, and internal meetings — for a minimum of 3-6 years with WORM (Write Once Read Many) storage. Commercial Zoom's cloud recording retention is not FINRA-ready without third-party archiving integrations. Zoom's AI Companion data collection practices raised concerns in 2023 about whether recorded content could be used by Zoom for model training — a potential FINRA/SEC compliance violation for regulated communications.",
-    "source_url": "https://www.reco.ai/hub/zoom-compliance",
-    "why_vbrick": "Vbrick is explicitly positioned as FINRA-ready with native archiving that satisfies Rule 4511/SEC 17a-4 requirements without third-party integration complexity. This is a direct compliance capability differentiator against Zoom for broker-dealers, investment advisers, and wealth management firms.",
-    "outreach_angle": "Ask the CCO directly: 'Is your current Zoom setup documented and approved as FINRA Rule 4511 compliant for video communications? What's your retention architecture for recorded webinars and client presentations?' Lead with Vbrick's FINRA-ready archiving as a compliance-critical differentiator.",
-    "target_persona": "Chief Compliance Officer, Legal/Regulatory Affairs, CTO",
-    "industry": "Financial Services (Broker-Dealers, Wealth Management, Investment Banking)",
+    "company": "Microsoft Teams Enterprise Customers (Broad)",
+    "summary": "Teams Town Hall (the replacement for Live Events) has documented feature gaps that organizations with complex event workflows are encountering: no ability to see presenter names for attendees, no attendee promotion mid-event, re-inviting attendees causes cancellation/re-invitation to all, panelists/hosts cannot see attendee names, and presenters must be manually moved 'on stage.' Town Hall Premium features (100K capacity, custom branding) require an additional $10/user/month Teams Premium license.",
+    "source_url": "https://www.reddit.com/r/MicrosoftTeams/comments/1ba6gsy/teams_town_hall_feature_gaps/",
+    "why_vbrick": "VBRICK provides a complementary enterprise video layer on top of Teams that preserves the meeting interface while adding production-grade event management, eCDN bandwidth management, and compliance recording — without the feature gaps of Town Hall or the extra cost of Teams Premium.",
+    "outreach_angle": "Target event owners frustrated by Town Hall limitations. Position VBRICK as the professional production layer that fills the capability gap without requiring Teams Premium.",
+    "target_persona": "Director of Corporate Communications / Event Technology Manager",
+    "industry": "Enterprise (Cross-industry)",
     "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "High",
@@ -1504,308 +1573,480 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Compliance Gap — FINRA Archiving",
+    "finding_type": "Integration/Scale Limitation",
     "finding_id": "",
-    "competitor": "Zoom Events/Webinars",
-    "stakeholders": [],
-    "is_new": false
+    "competitor": "Microsoft Stream/Teams Live Events",
+    "stakeholders": [
+      {
+        "name": "Noelle Walsh",
+        "title": "Corporate Vice President, Microsoft Cloud Operations + Innovation",
+        "linkedin": "https://www.linkedin.com/in/noelle-walsh-b29356108"
+      },
+      {
+        "name": "Keith Boyd",
+        "title": "Senior Director Microsoft Digital",
+        "linkedin": "https://www.linkedin.com/in/keithalanboyd"
+      },
+      {
+        "name": "Melanie Simpson",
+        "title": "CVP Human Resources E+D T&R",
+        "linkedin": "https://www.linkedin.com/in/melanie-simpson-ms"
+      },
+      {
+        "name": "Britt Aylor",
+        "title": "Director, Leadership Development",
+        "linkedin": "https://www.linkedin.com/in/brittaylor"
+      },
+      {
+        "name": "Jeff Tyler",
+        "title": "Director of Media Experience",
+        "linkedin": "https://www.linkedin.com/in/jeff-tyler-65827089"
+      },
+      {
+        "name": "Raymond Linz",
+        "title": "Service Reliability Engineer Networking",
+        "linkedin": "https://www.linkedin.com/in/raylinz"
+      },
+      {
+        "name": "Geoff Belknap",
+        "title": "CVP, Deputy CISO (Core and M&A)",
+        "linkedin": "https://www.linkedin.com/in/geoffbelknap"
+      }
+    ],
+    "is_new": true
   },
   {
     "id": 39,
     "category": "Competitor Intelligence",
-    "company": "Large enterprises using Kaltura for high-attendance virtual events",
-    "summary": "Kaltura's Q1 2026 guidance explicitly cited 'a major client reallocating budget from large virtual events to smaller, distributed engagements' as a headwind, signaling that enterprise event use cases are being deprioritized by customers. Combined with ARR declining 3% and the company's pivot toward 'agentic AI' (eSelf.ai acquisition), Kaltura is visibly de-emphasizing the enterprise video management and live events capabilities that drove its original enterprise wins. The M&T segment (media and telecom) declined 13% in Q4 2025 with further year-over-year declines expected in 2026.",
-    "source_url": "https://finance.yahoo.com/news/kaltura-inc-q4-2025-earnings-123000413.html",
-    "why_vbrick": "Customers who purchased Kaltura for large-scale virtual events and enterprise video distribution will find the platform's roadmap increasingly misaligned. Vbrick's eCDN, real-time analytics, AI search/transcription, and deep M365 integration offer a more focused enterprise video management alternative with active platform investment.",
-    "outreach_angle": "Engage with: 'Kaltura's CEO confirmed on the Q4 earnings call that a major enterprise client just moved budget away from large virtual events — is your organization reviewing its virtual event strategy too? Let's discuss what Vbrick offers for scalable, compliant enterprise broadcasts.'",
-    "target_persona": "VP of Corporate Events, Head of Internal Communications",
-    "industry": "Financial Services, Manufacturing, Healthcare, Technology",
+    "company": "Zoom Enterprise Customers (Security-Sensitive)",
+    "summary": "CVE-2025-49457 (CVSS 9.6, Critical) — an untrusted search path vulnerability in Zoom Clients for Windows — was disclosed in August 2025, allowing unauthenticated remote privilege escalation. CVE-2025-49464 (buffer overflow, DoS) was also published July 2025. In January 2026, CVE-2026-22844 (CVSS 9.9, Critical RCE) was disclosed affecting Zoom Node Multimedia Routers. These are the third and fourth critical Windows client vulnerabilities in a recurring pattern, with Zoom's ZeroPath analysis noting 'ongoing challenges in secure Windows application development.'",
+    "source_url": "https://securityaffairs.com/181140/security/zoom-patches-critical-windows-flaw-allowing-privilege-escalation.html",
+    "why_vbrick": "For regulated enterprises — particularly in financial services, healthcare, and federal government — VBRICK's FedRAMP, FIPS 140-2, and SOC II Type 2 posture represent a fundamentally more rigorous security architecture than Zoom's history of critical CVEs. VBRICK's CISO-level compliance stack can be presented as the standard Zoom cannot meet.",
+    "outreach_angle": "Security-first: 'Three critical Windows client CVEs in 12 months — two allowing privilege escalation, one RCE. For HIPAA/FINRA-regulated video, VBRICK's FIPS 140-2 and FedRAMP posture provides the audit-defensible security standard Zoom cannot.'",
+    "target_persona": "CISO / VP of Information Security",
+    "industry": "Financial Services / Healthcare / Federal Government",
     "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "Medium",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Product/Strategic Pivot Creating Customer Displacement",
+    "finding_type": "Security Vulnerability",
     "finding_id": "",
-    "competitor": "Kaltura",
+    "competitor": "Zoom Events/Webinars",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 40,
     "category": "Competitor Intelligence",
-    "company": "Financial services and insurance firms using Qumu",
-    "summary": "Enghouse Qumu markets to financial services and insurance firms for compliance training and internal communications, yet the platform's compliance certifications lag behind what regulated institutions require for enterprise video. While Qumu carries SOC 2, it has no FedRAMP authorization and its FY2023 acquisition for $18M signals constrained investment capacity for costly compliance certifications. Regulated financial institutions increasingly need FINRA-ready archiving and FIPS 140-2 — certifications Qumu has not achieved.",
-    "source_url": "https://www.enghousevideo.com/enterprise-video-management/qumu",
-    "why_vbrick": "Vbrick's FINRA-ready archiving, FIPS 140-2, SOC II Type 2, and FedRAMP authorization make it the compliance-differentiated choice for broker-dealers, investment advisers, and banks. As FINRA and SEC recordkeeping rules tighten in 2025-2026, financial services firms on Qumu face a compliance gap that Vbrick directly resolves.",
-    "outreach_angle": "Ask: 'With FINRA's updated recordkeeping rules for video communications, can your current Qumu platform provide a compliant, auditable archive of all recorded content? Vbrick is FINRA-ready with native archiving.' Target CCOs and compliance teams specifically.",
-    "target_persona": "Chief Compliance Officer, CISO, Head of IT Infrastructure",
-    "industry": "Financial Services (Broker-Dealers, Investment Advisers, Insurance)",
+    "company": "Financial Services Firms (Zoom Users)",
+    "summary": "Zoom's FINRA/SEC compliance requires organizations to configure archiving, audit logs, and recording controls manually — there is no native FINRA-ready archiving infrastructure. Experts identify the biggest Zoom compliance gaps in regulated environments as 'unmanaged recordings, overprivileged admins, and unmonitored third-party apps.' Zoom's AI features introduce additional data governance risk requiring separate tooling. The FTC settled deceptive security practice charges against Zoom (finalized January 2021), creating a documented history that is cited in regulated industry compliance audits.",
+    "source_url": "https://www.reco.ai/hub/zoom-compliance",
+    "why_vbrick": "VBRICK offers FINRA-ready archiving natively, with immutable retention policies, chain-of-custody audit trails, and SEC 17a-4 compatible storage. This eliminates the compliance gap that Zoom creates and removes the need for third-party archiving overlays.",
+    "outreach_angle": "Compliance displacement: 'Your Zoom instance creates FINRA audit risk. VBRICK's built-in FINRA-ready archiving eliminates the compliance gap and reduces the third-party tooling burden on your IT team.'",
+    "target_persona": "Chief Compliance Officer / Head of Technology Risk / IT Director",
+    "industry": "Financial Services",
     "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "Medium",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Compliance/FedRAMP Gap vs. Peer Competition",
+    "finding_type": "Compliance Gap",
     "finding_id": "",
-    "competitor": "Qumu",
+    "competitor": "Zoom Events/Webinars",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 41,
     "category": "Competitor Intelligence",
-    "company": "Media and OTT companies on Brightcove facing migration pressure",
-    "summary": "FastPix's 2026 Brightcove alternatives analysis documents: 'Brightcove does not publish its pricing publicly, requiring conversations with sales before costs become clear. This often leads to teams paying different rates for the same services.' G2 reviewers also flag 'difficult interface,' 'hard to search for and organize content,' and 'lack of live streaming metrics.' Brightcove's 'engineering talent exodus in 2025 raises real questions about how quickly the platform can evolve at the infrastructure level' — a concern even before the 85% layoff.",
-    "source_url": "https://www.fastpix.io/blog/the-best-brightcove-alternatives-in-2026",
-    "why_vbrick": "Brightcove's opaque pricing, poor analytics transparency, and post-acquisition engineering freeze create a compelling case for migration. Vbrick's transparent enterprise pricing, real-time analytics, AI search/transcription capabilities, and active roadmap address each documented Brightcove weakness.",
-    "outreach_angle": "Lead with the analytics gap: 'Brightcove reviewers consistently cite lack of live streaming metrics and inconsistent reporting. Show me your last month's video engagement data.' Then contrast Vbrick's real-time analytics and AI-powered insights.",
-    "target_persona": "Head of Digital Media Operations, VP of Technology",
-    "industry": "Media, Technology, Enterprise",
+    "company": "Healthcare Organizations (Zoom Users)",
+    "summary": "While Zoom offers HIPAA-capable configurations, compliance requires specific paid business plans, a signed BAA, and significant manual security configuration by the customer. The 2025 HIPAA rule updates — including mandatory Zero Trust frameworks, required MFA for all ePHI access points, and 30-day breach notification windows — raise the configuration burden for Zoom significantly. Zoom's recurring CVEs increase the risk surface for PHI exposure during video sessions.",
+    "source_url": "https://www.hipaavault.com/resources/2025-hipaa-new-regulations/",
+    "why_vbrick": "VBRICK's HIPAA-ready platform provides out-of-the-box compliance posture with documented controls, reducing the configuration burden on healthcare IT teams already stretched by 2025 HIPAA rule changes. Combined with AI transcription and search, VBRICK adds clinical communication value beyond basic video hosting.",
+    "outreach_angle": "HIPAA update angle: 'The 2025 HIPAA Zero Trust and MFA mandates just got harder to meet on Zoom. VBRICK's HIPAA-ready architecture includes the controls you'd have to manually configure and audit on Zoom.'",
+    "target_persona": "CISO / IT Security Manager / Compliance Officer",
+    "industry": "Healthcare",
     "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "Medium",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Pricing Opacity / Developer Experience Complaints",
+    "finding_type": "Compliance Gap",
     "finding_id": "",
-    "competitor": "Brightcove",
+    "competitor": "Zoom Events/Webinars",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 42,
     "category": "Competitor Intelligence",
-    "company": "Organizations on Kaltura experiencing post-migration cloud instability",
-    "summary": "Verified enterprise G2 reviewer in Health, Wellness & Fitness: 'When we're experiencing P1 or P2 issues the support team does not act with urgency. There have been many issues lately that were P1 caused by the recent cloud migration and we had to chase our account manager and support team for updates.' AWS outage on October 20, 2025 brought down Kaltura alongside Canvas and Zoom, affecting multiple universities simultaneously. Combined with Kaltura's workforce cuts to engineering (August 2025), the risk of cloud infrastructure instability without adequate support is elevated.",
-    "source_url": "https://uwm.edu/outages/list/canvas-kaltura-and-zoom-degradation/",
-    "why_vbrick": "Enterprise-grade availability with SLA-backed uptime, redundant CDN architecture, and dedicated technical support with documented escalation paths. For organizations in highly regulated verticals where P1 outages have compliance, legal, or operational consequences, Vbrick's support model and infrastructure reliability are differentiators.",
-    "outreach_angle": "Ask: 'When Kaltura has a P1 outage, what's your average time to resolution? Have you experienced unexplained downtime since their cloud migration?' Lead with Vbrick's SLA commitments and dedicated enterprise support model.",
-    "target_persona": "IT Director, Enterprise Applications Head, CISO",
-    "industry": "Healthcare, Financial Services, Higher Education",
+    "company": "Qumu Enterprise Customers",
+    "summary": "Qumu was acquired by Enghouse Systems in February 2023 for just $18 million — a steep decline from its peak valuation. Post-acquisition, Qumu operates as a subsidiary of Enghouse's video portfolio alongside Vidyo. Enghouse has a history of acquiring and maintaining (but not aggressively developing) niche software. There is minimal public evidence of significant Qumu product investment or R&D output since 2023. The platform's innovation trajectory has effectively stalled.",
+    "source_url": "https://futurumgroup.com/insights/enghouse-systems-to-acquire-qumu-for-18-million-in-an-all-cash-deal/",
+    "why_vbrick": "VBRICK is the purpose-built, actively invested enterprise video platform for large organizations. Qumu accounts with multi-year contracts expiring in 2025–2026 are now evaluating a platform that has seen minimal development for two years under Enghouse. VBRICK's FedRAMP, FIPS 140-2, and AI search/transcription features represent a generational leap over a stagnant Qumu build.",
+    "outreach_angle": "Account displacement: 'Qumu has had no meaningful platform investment since the Enghouse acquisition at $18M. If your contract is up, this is the right time to evaluate a platform that's actively built for the next generation of enterprise video.'",
+    "target_persona": "CTO / VP of IT / Director of Corporate Communications",
+    "industry": "Enterprise (Cross-industry) / Financial Services",
     "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "Medium",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Service Outage / Cloud Migration Instability",
+    "finding_type": "Product Discontinuation / Acquisition",
     "finding_id": "",
-    "competitor": "Kaltura",
+    "competitor": "Qumu",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 43,
     "category": "Competitor Intelligence",
-    "company": "Organizations migrating away from Brightcove Live to Brightcove Live 2.0",
-    "summary": "Brightcove mandated a Live 2.0 migration for all existing live streaming customers (announced November 2024, migration through early 2025). The migration requires updating the Brightcove Live API to a new version with breaking changes. Customers using custom live workflows via API must 'update to the latest version of the Live API' with 'some changes to the API and new endpoints' — meaning manual engineering work. This migration occurred just before Brightcove's 85% staff reduction, leaving the customers who haven't migrated with minimal support capacity.",
-    "source_url": "https://community.brightcove.com/transition-to-brightcove-nextgen-live-80/brightcove-live-2-0-migration-faqs-362",
-    "why_vbrick": "Customers forced through a breaking API migration with a skeleton-crew support organization face exactly the displacement window Vbrick should target. Organizations currently in the Brightcove Live 2.0 migration — or who delayed it — are actively re-evaluating their live streaming stack with no incumbent loyalty. Vbrick's eCDN-powered live streaming, native M365 integration, and compliance certifications are a compelling alternative.",
-    "outreach_angle": "Ask: 'Where are you in the Brightcove Live 2.0 migration? Did your engineering team complete the API update before the layoffs eliminated most of Brightcove's support staff?' Position Vbrick's stable live streaming API and dedicated migration support as the lower-risk path forward.",
-    "target_persona": "VP of Digital Media, Head of Technology, IT Director",
-    "industry": "Media, Enterprise, Financial Services",
+    "company": "Vimeo Enterprise Customers (Bandwidth-Heavy)",
+    "summary": "Vimeo enforces a hard 2TB/month bandwidth cap on all plans below Enterprise. Exceeding this threshold in two separate months or hitting 10TB in one month triggers mandatory Enterprise upgrade discussions, with users consistently reporting quotes starting at $6,000–$10,000+/year. Vimeo does not publish Enterprise pricing, and security features like DRM, watermarking, geo-blocking, and domain restrictions are exclusively bundled into Enterprise — creating a significant pricing cliff for growing video operations.",
+    "source_url": "https://swarmify.com/blog/vimeo-pricing-bandwidth-limits/",
+    "why_vbrick": "VBRICK's eCDN architecture is purpose-built to handle high-bandwidth enterprise video without per-GB cost penalties. For organizations facing Vimeo's bandwidth cliff, VBRICK's eCDN reduces egress costs while improving delivery performance at scale.",
+    "outreach_angle": "Pricing displacement: 'Getting a surprise email from Vimeo about bandwidth overages and a $10K Enterprise quote? VBRICK's eCDN-first architecture is built for high-volume enterprise video without the bandwidth cliff.'",
+    "target_persona": "VP of Marketing / Director of Digital Experience / CFO",
+    "industry": "Enterprise (Cross-industry)",
     "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "Medium",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Forced Platform Migration / API Breaking Changes",
+    "finding_type": "Pricing Concern",
     "finding_id": "",
-    "competitor": "Brightcove",
+    "competitor": "Vimeo Enterprise",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 44,
     "category": "Competitor Intelligence",
-    "company": "Healthcare and life sciences organizations using Kaltura or Panopto for training",
-    "summary": "Healthcare and life sciences enterprises using Kaltura for compliance training face increasing scrutiny as Kaltura's engineering workforce has been cut three times since 2022, reducing capacity for compliance certification maintenance and security patch response. Multiple enterprise healthcare reviewers on G2 flagged slow P1/P2 response during cloud migration incidents specifically in the 'Health, Wellness and Fitness' category. As HIPAA audit enforcement intensifies in 2025-2026 under OCR, video platforms carrying protected health information must maintain documented security controls — an area requiring active engineering investment that Kaltura's cost-cutting may undermine.",
-    "source_url": "https://alternatives.co/software/kaltura/reviews/",
-    "why_vbrick": "Vbrick's HIPAA compliance, FedRAMP authorization, FIPS 140-2, and SOC II Type 2 provide the complete security and compliance documentation stack for healthcare organizations. Active engineering investment ensures continuous compliance maintenance. Vbrick's AI transcription with compliance-grade archiving addresses the dual need for accessible training content and auditable records.",
-    "outreach_angle": "Lead with HIPAA: 'Your video platform carries PHI. Can Kaltura demonstrate active SOC II Type 2 maintenance, HIPAA BAA enforcement, and a certified incident response process — with a support team that answers P1 tickets in under 4 hours?' Compare directly to Vbrick's compliance documentation.",
-    "target_persona": "Chief Compliance Officer, CISO, Head of L&D, IT Director",
-    "industry": "Healthcare, Life Sciences, Pharmaceutical",
+    "company": "Panopto Enterprise/Higher Education Customers",
+    "summary": "Panopto's NA Cloud experienced an 'Elevated Archive Restoration Error Rates' incident from January 6–12, 2026 (6+ days). During this period, archived content restoration was significantly delayed or failed. The Panopto community forum confirms the maximum restoration window was extended from 48 hours to 72 hours as a policy change in late 2025, with one community member noting archive restores can exceed the 72-hour estimate. The January 2026 incident left institutions unable to access archived lecture and training content during exam periods.",
+    "source_url": "https://cit.ua.edu/known-issue-restoring-panopto-archives-issue/",
+    "why_vbrick": "VBRICK's content management architecture provides enterprise-grade retention and reliable on-demand access with audit-backed SLAs. For institutions requiring always-available compliance archives (FINRA, HIPAA, legal hold), VBRICK's dependable archiving is a significant differentiator over Panopto's recurring archive restoration issues.",
+    "outreach_angle": "Reliability case: 'A 6-day archive restoration outage during January exams is unacceptable. VBRICK's enterprise archiving includes SLA guarantees and is backed by FedRAMP-level operational controls.'",
+    "target_persona": "CIO / Director of EdTech / VP of Learning & Development",
+    "industry": "Higher Education / Enterprise L&D",
     "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "Medium",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "Compliance Gap — HIPAA/FINRA",
+    "finding_type": "Service Outage",
     "finding_id": "",
-    "competitor": "Kaltura",
+    "competitor": "Panopto",
     "stakeholders": [],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 45,
-    "category": "Market Triggers",
-    "company": "3M",
-    "summary": "3M CEO Bill Brown announced in July 2025 that corporate employees must return to the office 4 days per week starting September 1, 2025, up from a voluntary 3-day collaboration model. The policy affects 3M's global corporate workforce (approximately 85,000 employees). Office renovations are ongoing with some sites not ready until late 2026, creating a phased, hybrid workforce scenario.",
-    "source_url": "https://www.axios.com/local/twin-cities/2025/07/08/3m-calls-office-workers-back-four-days-a-week",
-    "why_vbrick": "A phased, global RTO across 85,000 employees in multiple countries creates demand for reliable hybrid broadcast infrastructure. Employees in renovation-delayed offices will remain partially remote, requiring enterprise video that scales across distributed locations. Vbrick's eCDN, Section 508 accessibility compliance, and Microsoft Teams integration address 3M's multi-geography hybrid communications needs.",
-    "outreach_angle": "3M's phased 4-day RTO is creating a complex hybrid environment—some employees back in offices, others still remote while renovations finish. Vbrick's eCDN + Microsoft Teams integration ensures your CEO town halls and training broadcasts scale reliably whether employees are in Maplewood or Manila.",
-    "target_persona": "CIO / VP Internal Communications",
-    "industry": "Industrial / Manufacturing",
-    "urgency_score": 0,
+    "category": "Competitor Intelligence",
+    "company": "Kaltura Education Customers (LMS-Integrated)",
+    "summary": "A verified Kaltura customer in Program Development (small business) reports on G2 that 'even paying the platinum assistance' plan, it took more than 3 months to identify a support issue, with problems that are 'never corrected/solved' and a 'lack of information regarding technical issues.' A second enterprise review (Health/Wellness) describes Kaltura's P1 cloud migration issues requiring the customer to chase both account manager and support team repeatedly for updates.",
+    "source_url": "https://alternatives.co/software/kaltura/reviews/",
+    "why_vbrick": "VBRICK's named enterprise support model with defined escalation paths and compliance-grade incident management (SOC II Type 2) provides a materially different support experience than Kaltura's documented failures. This is an active wedge opportunity in accounts with upcoming Kaltura renewals.",
+    "outreach_angle": "Support-led displacement at Kaltura renewals: 'Three months to identify a P1 on your premium support plan? VBRICK's enterprise support includes a named CSM, defined escalation SLAs, and SOC II audited incident management.'",
+    "target_persona": "VP of IT / Director of Learning Systems / CIO",
+    "industry": "Higher Education / Healthcare",
+    "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "return_to_office",
+    "finding_type": "Support Failure",
     "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Mark Murphy",
-        "title": "Executive Vice President and Chief Information and Digital Officer",
-        "linkedin": "https://www.linkedin.com/in/markwmurphyii"
-      },
-      {
-        "name": "Zoe Dickson",
-        "title": "Executive Vice President and Chief Human Resources Officer",
-        "linkedin": "https://www.linkedin.com/in/zoedickson"
-      },
-      {
-        "name": "Sam Sventek",
-        "title": "Vice President, Global External Brand and Communications",
-        "linkedin": "https://www.linkedin.com/in/sam-sventek-688b9ba"
-      },
-      {
-        "name": "Vinod George",
-        "title": "VP - Global Network and Digital Communication Services",
-        "linkedin": "https://www.linkedin.com/in/vinod-george-a6b67717"
-      },
-      {
-        "name": "Jason Corum",
-        "title": "Director Security Engineering & Architecture",
-        "linkedin": "https://www.linkedin.com/in/jason-corum-7140212a"
-      },
-      {
-        "name": "Michelle Donovan",
-        "title": "Global Communications Sr. Manager - 3M Consumer Business Group",
-        "linkedin": "https://www.linkedin.com/in/michelledonovanmba"
-      },
-      {
-        "name": "Holly Coleman",
-        "title": "Vice President, Marketing Technologies & Digital Experience",
-        "linkedin": "https://www.linkedin.com/in/holly-coleman-a6740421"
-      }
-    ],
-    "is_new": false
+    "competitor": "Kaltura",
+    "stakeholders": [],
+    "is_new": true
   },
   {
     "id": 46,
-    "category": "Market Triggers",
-    "company": "Dell Technologies",
-    "summary": "Dell CEO Michael Dell announced in March 2025 the retirement of all hybrid and remote policies, requiring employees who live near a Dell office to work on-site 5 days per week. This affects approximately 120,000+ global employees. Nearly 50% of Dell's workforce had been working remotely, making this a dramatic shift requiring scaled internal communications.",
-    "source_url": "https://founderreports.com/return-to-office-statistics/",
-    "why_vbrick": "Bringing 120,000+ employees back full-time after a predominantly remote period creates an urgent need to re-establish live executive video communications at scale. Dell's distributed global workforce requires eCDN to avoid network congestion during simultaneous town hall broadcasts. Vbrick's Microsoft 365/Teams integration aligns with Dell's enterprise stack, and its real-time analytics enable internal comms teams to measure reach.",
-    "outreach_angle": "Dell just brought 120,000+ employees back to 5-day in-office after years of remote work. Your internal comms team now needs to broadcast to a fully reconstituted global workforce. Vbrick delivers enterprise-grade live video with eCDN bandwidth optimization and real-time engagement analytics—without overtaxing corporate networks.",
-    "target_persona": "CIO / VP Employee Communications",
-    "industry": "Technology",
-    "urgency_score": 0,
+    "category": "Competitor Intelligence",
+    "company": "Microsoft Teams Enterprise Customers (Large-Scale Events)",
+    "summary": "Microsoft Teams Town Hall default capacity is 10,000 attendees; reaching 100,000 requires Teams Premium ($10/user/month add-on) AND a two-week advance request to Microsoft's LEAP team. Concurrent event limit is 15 (50 with Premium). Town Hall lacks native eCDN capabilities — organizations with distributed corporate networks will experience bandwidth congestion when streaming large all-hands events without a third-party eCDN layer. Microsoft's own documentation does not provide a native eCDN solution within Town Hall.",
+    "source_url": "https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72",
+    "why_vbrick": "VBRICK's eCDN is the direct solution for enterprises facing Teams Town Hall bandwidth constraints. Rather than paying for Teams Premium to reach higher attendee limits, VBRICK's eCDN dramatically reduces WAN bandwidth consumption for internal streams while keeping the familiar Teams interface.",
+    "outreach_angle": "eCDN value prop: 'Teams Town Hall bandwidth will crush your corporate WAN during all-hands meetings. VBRICK's eCDN works alongside Teams to deliver 50,000-seat all-hands events without buying Teams Premium or upgrading your network.'",
+    "target_persona": "IT Infrastructure Director / VP of Internal Communications / M365 Admin",
+    "industry": "Enterprise (Cross-industry)",
+    "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "return_to_office",
+    "finding_type": "Integration/Scale Limitation",
     "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
+    "competitor": "Microsoft Stream/Teams Live Events",
     "stakeholders": [
       {
-        "name": "Douglas Schmitt",
-        "title": "Chief Information Officer & President, Dell Technologies Services",
-        "linkedin": "https://www.linkedin.com/in/douglas-schmitt-99830b4"
+        "name": "Noelle Walsh",
+        "title": "Corporate Vice President, Microsoft Cloud Operations + Innovation",
+        "linkedin": "https://www.linkedin.com/in/noelle-walsh-b29356108"
       },
       {
-        "name": "John Scimone",
-        "title": "President, Chief Security Officer",
-        "linkedin": "https://www.linkedin.com/in/john-scimone-0b2041a1"
+        "name": "Keith Boyd",
+        "title": "Senior Director Microsoft Digital",
+        "linkedin": "https://www.linkedin.com/in/keithalanboyd"
       },
       {
-        "name": "Kristi J Kevern",
-        "title": "Senior Managing Director, Global Ethics & Compliance",
-        "linkedin": "https://www.linkedin.com/in/kristikevern"
+        "name": "Melanie Simpson",
+        "title": "CVP Human Resources E+D T&R",
+        "linkedin": "https://www.linkedin.com/in/melanie-simpson-ms"
       },
       {
-        "name": "Jennifer Saavedra",
-        "title": "Chief Human Resources Officer",
-        "linkedin": "https://www.linkedin.com/in/jennifersaavedra"
+        "name": "Britt Aylor",
+        "title": "Director, Leadership Development",
+        "linkedin": "https://www.linkedin.com/in/brittaylor"
       },
       {
-        "name": "Ashley Blake",
-        "title": "Director, Global Corporate Executive Communications Strategy And CFO Communications",
-        "linkedin": "https://www.linkedin.com/in/ashley-blake-51546547"
+        "name": "Jeff Tyler",
+        "title": "Director of Media Experience",
+        "linkedin": "https://www.linkedin.com/in/jeff-tyler-65827089"
       },
       {
-        "name": "Jeremy Kappes",
-        "title": "Federal CISO",
-        "linkedin": "https://www.linkedin.com/in/jeremy-kappes-6ab2451"
+        "name": "Raymond Linz",
+        "title": "Service Reliability Engineer Networking",
+        "linkedin": "https://www.linkedin.com/in/raylinz"
       },
       {
-        "name": "Daniel Medina",
-        "title": "Sr Advisor, IT Architecture",
-        "linkedin": "https://www.linkedin.com/in/daniel-medina-46154b9"
+        "name": "Geoff Belknap",
+        "title": "CVP, Deputy CISO (Core and M&A)",
+        "linkedin": "https://www.linkedin.com/in/geoffbelknap"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
     "id": 47,
-    "category": "Market Triggers",
-    "company": "UPS",
-    "summary": "UPS executed its largest-ever workforce reduction in 2025—approximately 48,000 jobs eliminated (10% of its 490,000-person workforce), including 34,000 operational roles and 14,000 management positions, alongside closure of 93 facilities. CEO Carol Tomé described this as 'the most substantial strategic transformation in UPS history.' An additional ~20,000 job cuts are projected for 2026 as the Network Reconfiguration and Efficiency Reimagined program continues.",
-    "source_url": "https://www.nytimes.com/2025/10/28/business/ups-layoffs-48000-workers-this-year.html",
-    "why_vbrick": "Communicating major workforce restructuring to hundreds of thousands of employees across hundreds of facilities requires secure, scalable video infrastructure. With Teamsters union involvement and legally sensitive announcements, compliant archiving and controlled distribution are critical. Vbrick's FINRA-adjacent archiving, access controls, and Microsoft Teams integration enable transparent, auditable mass communications for UPS's ongoing transformation.",
-    "outreach_angle": "UPS is mid-way through its most complex restructuring—48,000 jobs cut in 2025 with 20,000 more planned in 2026 across hundreds of facilities. Vbrick delivers the secure, compliant mass communication platform to keep your remaining workforce aligned, with recorded town halls, AI-searchable video archives, and real-time analytics to measure employee engagement during the transition.",
-    "target_persona": "SVP HR Communications / Chief Communications Officer / CIO",
-    "industry": "Logistics / Transportation",
-    "urgency_score": 0,
+    "category": "Competitor Intelligence",
+    "company": "Brightcove Media/Enterprise Customers (Post-Acquisition)",
+    "summary": "Bending Spoons (Brightcove's acquirer since February 2025) announced an 18-feature platform improvement backlog for late 2025 and a 2026 roadmap focused on AI Suite expansion and a 'complete overhaul of Video Cloud UI.' However, with only ~80 employees remaining post-layoff (from 600+), the execution capacity for this roadmap is in serious question. FastPix analysis notes Brightcove's 'engineering talent exodus raises real questions about how quickly the platform can evolve.' Enterprise customers are being asked to commit to multi-year contracts under significant product delivery uncertainty.",
+    "source_url": "https://tvnewscheck.com/tech/article/brightcove-unveils-2026-roadmap-focusing-on-ai-innovation-user-experience/",
+    "why_vbrick": "VBRICK's stable engineering team and active roadmap — including AI search, transcription, and compliance features — offers Brightcove customers a proven path forward without betting on a post-acquisition rebuild. VBRICK's 20+ years of enterprise video focus, rather than an app portfolio company's diversification, provides a more credible product trajectory.",
+    "outreach_angle": "Roadmap credibility: 'Brightcove has 80 employees delivering an ambitious 2026 roadmap after losing 85% of their staff. VBRICK's proven engineering team has been delivering enterprise video for 20+ years — let's show you what's on our roadmap.'",
+    "target_persona": "VP of Digital Strategy / CTO / Director of Media Technology",
+    "industry": "Media / Financial Services / Enterprise",
+    "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "workforce_restructuring",
+    "finding_type": "Product Roadmap Uncertainty",
     "finding_id": "",
-    "employee_count": "Unknown",
+    "competitor": "Brightcove",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 48,
+    "category": "Market Triggers",
+    "company": "JPMorgan Chase",
+    "summary": "JPMorgan Chase enforced a full 5-day-per-week return-to-office mandate for all 316,000+ employees starting March 2025, which remained in force through 2026. Employees filed petitions against the policy (rejected by leadership), creating sustained workforce tension that elevates the need for high-quality all-hands, town halls, and executive video communications. The bank simultaneously accelerated its technology-driven transformation, with CEO Jamie Dimon communicating frequently via video to the full workforce.",
+    "source_url": "https://hubblehq.com/blog/famous-companies-workplace-strategies",
+    "why_vbrick": "With 316,000 employees back in offices globally, JPMorgan requires enterprise video infrastructure that handles simultaneous large-audience delivery without saturating corporate networks. Vbrick's FINRA-ready archiving is purpose-built for the bank's compliance obligations; SOC II Type 2 and FIPS 140-2 certifications meet JPMorgan's security posture requirements.",
+    "outreach_angle": "JPMorgan's full RTO creates enormous demand for reliable, compliant video delivery at 316,000-person scale. Vbrick's FINRA-ready archiving and eCDN are built for exactly this regulated, high-volume environment—enabling leadership to communicate at scale without compliance risk or network strain.",
+    "target_persona": "CIO / Head of Corporate Technology / Internal Communications Lead",
+    "industry": "Financial Services / Banking",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Full 5-Day RTO Mandate",
+    "finding_id": "",
+    "employee_count": "~316,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Heather Barbakoff",
+        "title": "Executive Director, Senior Communications Manager, Global Technology",
+        "linkedin": "https://www.linkedin.com/in/heatherbarbakoff"
+      },
+      {
+        "name": "Kanti S",
+        "title": "Executive Director, Head Of Enterprise Technology Communications",
+        "linkedin": "https://www.linkedin.com/in/kantishrestha"
+      },
+      {
+        "name": "Pallavi J",
+        "title": "Vice President - IT Infrastructure",
+        "linkedin": "https://www.linkedin.com/in/pallavi-j-21532614"
+      },
+      {
+        "name": "Lee Wilson",
+        "title": "JPMC VP Infrastructure",
+        "linkedin": "https://www.linkedin.com/in/lee-wilson-8a67302"
+      },
+      {
+        "name": "Ruby Murray",
+        "title": "Executive Director, Global Head Of Learning - Legal And Internal Audit",
+        "linkedin": "https://www.linkedin.com/in/ruby-murray-b6976a4"
+      },
+      {
+        "name": "Matthew Davis",
+        "title": "Learning Lead - Firmwide Talent Development Education, Vice President",
+        "linkedin": "https://www.linkedin.com/in/dvgpro"
+      },
+      {
+        "name": "Karthik Viswanathan",
+        "title": "Senior Vice President, Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/itskarthik1983"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 49,
+    "category": "Market Triggers",
+    "company": "Citigroup",
+    "summary": "Citigroup is executing the most aggressive Wall Street restructuring in recent memory: a multi-year plan to eliminate 20,000 roles by end of 2026, reducing the workforce from ~227,000 to ~180,000 employees. CEO Jane Fraser's transformation program explicitly cites 'efficiency gains from technology' as a driver of the cuts. January 2026 saw the latest wave of ~1,000 cuts with more scheduled for March. This sustained transformation requires persistent enterprise-wide video communications to maintain employee engagement and culture amid constant change.",
+    "source_url": "https://www.marketing-interactive.com/citigroup-to-cut-around-1-000-roles-as-restructuring-continues",
+    "why_vbrick": "Citi's 3-year transformation program requires continuous, compliant video communications at global banking scale. Vbrick's FINRA-ready archiving is a natural fit for Citi's regulatory obligations; SOC II Type 2 and FIPS 140-2 meet the bank's security standards. Real-time analytics enables HR and comms teams to measure employee engagement during the transformation—a key metric for Fraser's leadership team.",
+    "outreach_angle": "Citigroup's multi-year workforce reset requires reliable, compliant video infrastructure to sustain employee trust. Vbrick's FINRA-ready archiving and enterprise-grade security mean every CEO town hall and transformation update is stored, searchable, and audit-ready—exactly what a bank managing a 50,000-person reduction needs.",
+    "target_persona": "CIO / Head of Corporate Technology / Chief Communications Officer",
+    "industry": "Financial Services / Banking",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Workforce Restructuring + Digital Transformation",
+    "finding_id": "",
+    "employee_count": "~227,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "James Lewchuk",
+        "title": "Senior Vice President @ Citi | Global Corporate Communications - Internal/External",
+        "linkedin_url": "https://www.linkedin.com/in/jlewchuk",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Emily Ruderman",
+        "title": "Vice President Of Corporate Communications",
+        "linkedin_url": "https://www.linkedin.com/in/eruderman",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Pramod Panhalkar",
+        "title": "SVP - Global Technology Infrastructure, Shared Services | Digital Transformation",
+        "linkedin_url": "https://www.linkedin.com/in/pramodpanhalkar",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Jose Lopez",
+        "title": "SVP Infrastructure Senior Group Manager",
+        "linkedin_url": "https://www.linkedin.com/in/jose-lopez-8923289",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Robert Trapani",
+        "title": "Director / Sr. Group Manager - IT Infrastructure at Citigroup",
+        "linkedin_url": "https://www.linkedin.com/in/robert-trapani-1a9a8112",
+        "role": "Influencer"
+      },
+      {
+        "name": "Laine Joelson Cohen",
+        "title": "Global Head Of Learning - HR",
+        "linkedin_url": "https://www.linkedin.com/in/lainejoelsoncohen",
+        "role": "Influencer"
+      },
+      {
+        "name": "Peter Fox",
+        "title": "Managing Director, Global Head of Learning (aka Chief Learning Officer) at Citi",
+        "linkedin_url": "https://www.linkedin.com/in/peter-fox-65124440",
+        "role": "Influencer"
+      },
+      {
+        "name": "Jimmy Yan",
+        "title": "Manager, SaaS Unified Communications Collaborations Telecom",
+        "linkedin_url": "https://www.linkedin.com/in/jimmyyan1",
+        "role": "Evaluator"
+      },
+      {
+        "name": "Lorie Crawford",
+        "title": "Solution Architect Sr. Programmer Analyst",
+        "linkedin_url": "https://www.linkedin.com/in/lorie-crawford-7a12798",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Krithika Shankar",
+        "title": "Director - Head Of Engineering And Architecture - USPB Digital",
+        "linkedin_url": "https://www.linkedin.com/in/krithika-shankar-993a909b",
+        "role": "Technical Evaluator"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 50,
+    "category": "Market Triggers",
+    "company": "UPS (United Parcel Service)",
+    "summary": "UPS executed the 'largest network reconfiguration in UPS history' in 2025, cutting ~48,000 jobs and closing 93 facilities. In January 2026, CEO Carol Tomé announced an additional ~30,000 job cuts through 2026 as part of its 'Network Reconfiguration and Efficiency Reimagined' program with expected $3B in 2026 savings. The company is simultaneously reorienting its entire business model away from Amazon volume toward SMB and healthcare logistics—a transformation that demands sustained leadership communications to a workforce of 490,000 across hundreds of global facilities.",
+    "source_url": "https://about.ups.com/mx/en/newsroom/press-releases/financials/ups-releases-4q-2025-earnings-and-provides-2026-guidance.html",
+    "why_vbrick": "UPS's global logistics workforce—spread across distribution hubs, airports, and facilities in every timezone—creates a textbook eCDN use case. Vbrick's bandwidth optimization prevents network strain during companywide announcements. AI-powered search enables employees to locate archived policy communications. Section 508 ensures accessibility compliance for a large, diverse hourly workforce.",
+    "outreach_angle": "UPS is restructuring 490,000 employees across thousands of global locations while simultaneously reorienting its business strategy. Vbrick's eCDN-powered delivery ensures Carol Tomé's transformation communications reach every facility without bandwidth failures—and analytics prove the message is landing.",
+    "target_persona": "CIO / VP of Technology / Head of Internal Communications",
+    "industry": "Logistics / Supply Chain",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Workforce Restructuring + Major Strategic Pivot",
+    "finding_id": "",
+    "employee_count": "~490,000",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
@@ -1844,30 +2085,192 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/norman-m-brothers-jr-0a89b63a"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 48,
+    "id": 51,
     "category": "Market Triggers",
-    "company": "New York Life Insurance",
-    "summary": "New York Life (Fortune 69, largest mutual life insurer in the US with ~12,000+ employees) appointed Deepa Soni as EVP and CIO in October 2025. Soni reports directly to the CEO and oversees enterprise technology, cyber, data, AI, and New York Life Ventures. The company is actively accelerating AI adoption and announced a collaboration with OpenAI in February 2026.",
-    "source_url": "https://www.newyorklife.com/newsroom/2025/deepa-soni-appointed-as-cio",
-    "why_vbrick": "A new CIO with a mandate to advance technology and AI capabilities at one of the country's largest insurers creates an immediate vendor evaluation window. New York Life's distributed agent/advisor network and employee base needs secure, compliant video for training, town halls, and communications. Vbrick's SOC II Type 2, FINRA-ready archiving, and AI search/transcription align with Soni's AI-forward mandate.",
-    "outreach_angle": "Deepa Soni's appointment as CIO comes with a clear mandate to advance technology and AI at New York Life. Vbrick's enterprise video platform delivers AI-powered search, transcription, and analytics alongside FINRA-ready archiving—purpose-built for the kind of compliant, intelligent internal communications a Fortune 69 insurer requires.",
-    "target_persona": "Deepa Soni, EVP & CIO / VP Enterprise Communications",
-    "industry": "Financial Services / Insurance",
-    "urgency_score": 0,
+    "company": "Kroger",
+    "summary": "Kroger confirmed in November 2025 that ~4,800 remote corporate employees must return to the office five days per week starting January 2026—a complete reversal of its prior hybrid model. EVP Tim Massa framed the change as necessary to 'simplify how the company works and help teams move faster.' Kroger continues to navigate post-merger pressures following the collapse of its attempted $24.6B Albertsons acquisition, which required significant workforce adjustment communications.",
+    "source_url": "https://allwork.space/2025/11/kroger-ends-remote-work-orders-thousands-back-to-offices-in-2026/",
+    "why_vbrick": "Kroger's transition from hybrid to full-time in-office requires sustained executive video communications to 4,800+ corporate employees, plus its broader workforce across hundreds of store locations. Vbrick's eCDN handles the distributed delivery; AI transcription ensures all hands recordings are searchable and accessible for employees who miss live sessions.",
+    "outreach_angle": "Kroger's full 5-day RTO for 4,800 corporate employees creates immediate demand for executive video communications at scale. Vbrick's platform ensures every town hall, store leadership briefing, and culture update reaches the right audience—reliably and measurably.",
+    "target_persona": "CIO / VP of Technology / Head of Internal Communications",
+    "industry": "Retail / Grocery",
+    "urgency_score": 2,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "High",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "leadership_change",
+    "finding_type": "Full 5-Day RTO Mandate + Post-Merger Integration Pressure",
     "finding_id": "",
-    "employee_count": "Unknown",
+    "employee_count": "~420,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Stephanie Jenkins",
+        "title": "Vice President, Strategic Planning, Partnerships & Operations for Technology & Digital",
+        "linkedin_url": "https://www.linkedin.com/in/stephanie-jenkins-5166596",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Suresh Karupakula",
+        "title": "Vice President - Merchandising Technologies",
+        "linkedin_url": "https://www.linkedin.com/in/sureshkarupakula",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Nick Hamilton",
+        "title": "SVP, Head of Technology",
+        "linkedin_url": "https://www.linkedin.com/in/nick-hamilton-08a1b664",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Erin Rolfes",
+        "title": "Vice President, Communications",
+        "linkedin_url": "https://www.linkedin.com/in/erinrolfes",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Hans Broder",
+        "title": "Senior Director of Platform Engineering",
+        "linkedin_url": "https://www.linkedin.com/in/hans-broder-216169b4",
+        "role": "Influencer"
+      },
+      {
+        "name": "Manuel Arakkal",
+        "title": "Director, Human Resource Systems Engineering",
+        "linkedin_url": "https://www.linkedin.com/in/manuel",
+        "role": "Influencer"
+      },
+      {
+        "name": "Bob Hodgeman",
+        "title": "Solutions Architect",
+        "linkedin_url": "https://www.linkedin.com/in/bobhodgeman",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Joseph Rudnicki",
+        "title": "Solutions Architect",
+        "linkedin_url": "https://www.linkedin.com/in/bluefox-solutions",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Scott Stanko",
+        "title": "Advanced Solutions Architect",
+        "linkedin_url": "https://www.linkedin.com/in/scottstanko",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Jason Guyler",
+        "title": "Sr. Compliance Manager - Privacy",
+        "linkedin_url": "https://www.linkedin.com/in/jasonguyler",
+        "role": "Technical Evaluator"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 52,
+    "category": "Competitor Intelligence",
+    "company": "Brightcove Enterprise Customers (Broad)",
+    "summary": "Post-acquisition, Brightcove does not publish pricing publicly, requiring sales engagement before costs are disclosed. G2 reviewers cite the 'charging scheme is not flexible and reasonable' and 'cost competitiveness' as top complaints. Third-party analysis cites average enterprise contract pricing at $8,000–$8,450/month. The engineering talent loss post-acquisition raises questions about whether pricing remains justified.",
+    "source_url": "https://www.fastpix.io/blog/the-best-brightcove-alternatives-in-2026",
+    "why_vbrick": "VBRICK's transparent pricing model and compliance-centric feature set (FedRAMP, FIPS, FINRA-archiving) provide quantifiable value that Brightcove's opaque, media-focused pricing structure does not. For regulated industries, VBRICK eliminates the need for expensive add-on compliance tooling.",
+    "outreach_angle": "ROI-focused conversation: 'What does $8K/month buy you from a post-acquisition Brightcove? VBRICK includes compliance, eCDN, and archiving in the base platform.'",
+    "target_persona": "CFO / VP of Procurement / Director of Digital Strategy",
+    "industry": "Media / Enterprise",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Pricing Concern",
+    "finding_id": "",
+    "competitor": "Brightcove",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 53,
+    "category": "Competitor Intelligence",
+    "company": "Vimeo Enterprise Customers (Security-Sensitive)",
+    "summary": "Following the January 2026 Bending Spoons-driven engineering layoffs, third-party analysis from Gumlet notes that Vimeo's DRM implementation on Enterprise plans 'is no longer in active development' — the existing DRM functionality will not receive security updates, patches, or improvements going forward. For content that requires continuous DRM protection, this creates documented platform risk. SCIM provisioning on Vimeo is gated behind Enterprise plans and requires manual coordination with Vimeo's success team — a team that has been significantly reduced.",
+    "source_url": "https://www.gumlet.com/learn/safest-private-video-hosting-platforms/",
+    "why_vbrick": "VBRICK provides enterprise-grade DRM, access control, and identity management as part of its core platform, backed by active development and security patching processes attested by SOC II Type 2 and FedRAMP audits. For content-sensitive enterprises, VBRICK is the defensible choice post-Vimeo layoffs.",
+    "outreach_angle": "Security continuity: 'Vimeo's DRM is no longer being patched since the January 2026 layoffs. If you're using Vimeo for content protection, your security posture is degrading with each month that passes. VBRICK's actively maintained security stack gives you a clear upgrade path.'",
+    "target_persona": "CISO / VP of Digital Content / Head of Legal & Compliance",
+    "industry": "Media / Financial Services / Legal",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Security / Platform Stability Risk",
+    "finding_id": "",
+    "competitor": "Vimeo Enterprise",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 54,
+    "category": "Competitor Intelligence",
+    "company": "Qumu Enterprise Customers (Contract Expiry)",
+    "summary": "Qumu has not released any notable product updates or feature announcements since being absorbed into Enghouse Systems in February 2023. Enghouse's acquisition strategy for niche software is to maintain existing customer bases and extract value — not to invest in competitive platform development. Qumu's enterprise video platform remains technically functional but has been in effective product stasis for over two years, while competitors have advanced AI search, eCDN, and compliance capabilities significantly.",
+    "source_url": "https://www.prnewswire.com/news-releases/enghouse-acquires-qumu-corporation-301742540.html",
+    "why_vbrick": "VBRICK is the natural upgrade path for Qumu customers who need continued investment in enterprise video. VBRICK's FedRAMP, FIPS 140-2, AI transcription, and Teams integration represent 2+ years of innovation that Qumu customers have missed. The displacement conversation is easy: 'What has your Qumu vendor shipped in the last two years?'",
+    "outreach_angle": "Innovation gap: 'Qumu has been in product stasis since Enghouse acquired it for $18M in 2023. Your team deserves an enterprise video platform that's actually investing in AI, compliance, and eCDN. Let's talk.'",
+    "target_persona": "VP of Enterprise Technology / Director of IT / CTO",
+    "industry": "Financial Services / Healthcare / Government",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Product Discontinuation",
+    "finding_id": "",
+    "competitor": "Qumu",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 55,
+    "category": "Market Triggers",
+    "company": "New York Life Insurance",
+    "summary": "New York Life appointed Deepa Soni as EVP and CIO in November 2025. Soni previously served as Chief Information and Operations Officer at The Hartford Insurance Group. As a new external CIO hire, Soni is expected to conduct a thorough technology stack evaluation in her first 90-180 days, including enterprise communications platforms. Insurance firms face heightened regulatory scrutiny on communications archiving.",
+    "source_url": "https://www.cio.com/article/230613/new-cio-appointments.html",
+    "why_vbrick": "A new CIO from Hartford—one of the most technologically progressive insurers—brings high standards for enterprise video. Vbrick's FINRA-ready archiving and SOC II Type 2 compliance directly address New York Life's insurance regulatory obligations. The Microsoft 365/Teams integration accelerates deployment within the likely existing collaboration environment.",
+    "outreach_angle": "New York Life's new CIO is in her technology stack evaluation window. Vbrick's compliance-first enterprise video platform—with FINRA-ready archiving, SOC II Type 2, and Microsoft 365 integration—is purpose-built for the regulated insurance environment she's stepping into.",
+    "target_persona": "CIO (Deepa Soni) / VP of Technology",
+    "industry": "Insurance / Financial Services",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "New CIO Appointment",
+    "finding_id": "",
+    "employee_count": "~19,000+",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
@@ -1931,421 +2334,30 @@ const FINDINGS = [
         "role": "Technical Evaluator"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 49,
+    "id": 56,
     "category": "Market Triggers",
-    "company": "State Farm",
-    "summary": "State Farm appointed Joe Park as Executive Vice President and Chief Digital & Information Officer in September/October 2025. In February 2026, State Farm announced an AI collaboration with OpenAI, with Park quoted as the executive driving the initiative. State Farm employs approximately 54,000 people and is the largest property and casualty insurer in the US.",
-    "source_url": "https://newsroom.statefarm.com/state-farm-advances-ai-vision-through-collaboration-with-openai/",
-    "why_vbrick": "A new CDIO with a dual digital and IT mandate, actively executing an OpenAI partnership, signals an aggressive technology modernization agenda at a 54,000-person insurer. Vbrick fits the profile: enterprise video with AI capabilities (search, transcription, analytics), SOC II Type 2 security, and Microsoft 365 integration to support State Farm's digital employee communications at scale.",
-    "outreach_angle": "Joe Park is executing a bold AI-forward digital transformation at State Farm. Vbrick's AI-powered enterprise video—with semantic search, automated transcription, real-time analytics, and SOC II Type 2 security—is the natural video layer for the kind of intelligent, data-driven employee communications State Farm needs as it scales its digital capabilities.",
-    "target_persona": "Joe Park, EVP & Chief Digital Information Officer / VP Internal Communications",
-    "industry": "Financial Services / Insurance",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "leadership_change",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Joe Park",
-        "title": "Executive Vice President and Chief Digital & Information Officer",
-        "linkedin": "https://www.linkedin.com/in/josephrpark"
-      },
-      {
-        "name": "Margo Hodges",
-        "title": "Vice President Information Technology",
-        "linkedin": "https://www.linkedin.com/in/margo-hodges-191408140"
-      },
-      {
-        "name": "Brett Weber",
-        "title": "Vice President Enterprise Technology",
-        "linkedin": "https://www.linkedin.com/in/brett-weber-8a94926"
-      },
-      {
-        "name": "Mike Fletcher",
-        "title": "VP - Information Technology, Strategy And Business Alignment",
-        "linkedin": "https://www.linkedin.com/in/mike-fletcher-0a53b9151"
-      },
-      {
-        "name": "Sara Taulbee",
-        "title": "Vice President Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/sarataulbee"
-      },
-      {
-        "name": "Brad House",
-        "title": "Architecture Director - Technology",
-        "linkedin": "https://www.linkedin.com/in/brad-house-4222162b"
-      },
-      {
-        "name": "Sarah Beck",
-        "title": "Information Security Director",
-        "linkedin": "https://www.linkedin.com/in/sarah-beck-12a9a210"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 50,
-    "category": "Market Triggers",
-    "company": "The Coca-Cola Company",
-    "summary": "Coca-Cola created the company's first-ever Chief Digital Officer (CDO) role in January 2026, appointing Sedef Salingan Sahin, effective March 31, 2026—timed to coincide with new CEO Henrique Braun taking over. The CDO is mandated to unify digital, data, and operational excellence across a global enterprise with approximately 80,000 employees and operations in 200+ countries. Coca-Cola also has a $1.1B Microsoft partnership underway.",
-    "source_url": "https://www.coca-colacompany.com/media-center/the-coca-cola-company-announces-changes-in-operational-leadership-and-creation-of-new-enterprise-role",
-    "why_vbrick": "A newly minted CDO with a mandate to unify digital strategy enterprise-wide—and a $1.1B Microsoft partnership—creates an ideal environment to introduce Vbrick's Microsoft 365/Teams-integrated enterprise video platform. With 80,000 employees globally, live town halls and training at scale need eCDN to prevent network degradation. The CDO's explicit goal of 'enabling faster technology adoption' aligns directly with Vbrick's deployment model.",
-    "outreach_angle": "Sedef Salingan Sahin steps into the CDO role March 31 with a mandate to unify Coca-Cola's digital stack enterprise-wide and leverage its $1.1B Microsoft partnership. Vbrick's Teams-native enterprise video—with eCDN for 200+ country global broadcasts, AI search, and real-time analytics—is the internal video layer that completes Coca-Cola's unified Microsoft digital workplace.",
-    "target_persona": "Sedef Salingan Sahin, CDO / CIO Neeraj Tolmare",
-    "industry": "Consumer Packaged Goods",
-    "urgency_score": 0,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "leadership_change",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Venkat Subramanian",
-        "title": "Senior Vice President Information Technology",
-        "linkedin": "https://www.linkedin.com/in/subrama"
-      },
-      {
-        "name": "Braxton Washington",
-        "title": "VP, Digital & Technology | Regional CIO",
-        "linkedin": "https://www.linkedin.com/in/braxtonwashington"
-      },
-      {
-        "name": "Paul Huesken",
-        "title": "Chief Information Assurance Officer",
-        "linkedin": "https://www.linkedin.com/in/paul-huesken-29629a18"
-      },
-      {
-        "name": "Kurt Steckman",
-        "title": "Sr. Network Engineer",
-        "linkedin": "https://www.linkedin.com/in/kurt-steckman-0553b54a"
-      },
-      {
-        "name": "April Callahan",
-        "title": "Sr. Director, Leadership Communications",
-        "linkedin": "https://www.linkedin.com/in/april-callahan-b2520775"
-      },
-      {
-        "name": "Scott Leith",
-        "title": "Vice President, Global Strategic Communications",
-        "linkedin": "https://www.linkedin.com/in/scott-leith"
-      },
-      {
-        "name": "Charles Donnell",
-        "title": "Global Senior Director, Learning Innovation, Experience Strategy",
-        "linkedin": "https://www.linkedin.com/in/charles-donnell"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 51,
-    "category": "Market Triggers",
-    "company": "Unilever",
-    "summary": "Unilever appointed Reema Jain as Chief Information Officer in February/March 2026, charged with accelerating AI-led transformation across its global operations. Jain reports to Chief Digital and Technology Officer Sam Kini and joins Unilever with 20+ years of enterprise technology leadership. Unilever employs approximately 127,000 people globally.",
-    "source_url": "https://www.ciodive.com/news/unilever-cio-reema-jain-transformation/813424/",
-    "why_vbrick": "A new CIO with an explicit AI-led transformation mandate at a 127,000-person CPG giant presents a high-value technology evaluation window. Unilever's global distributed workforce—operating across manufacturing, sales, and corporate in dozens of countries—requires robust enterprise video for training, change communications, and executive town halls. Vbrick's eCDN, AI transcription, GDPR compliance, and Microsoft integration match Unilever's global and regulatory footprint.",
-    "outreach_angle": "Reema Jain joins Unilever as CIO with a mandate to accelerate AI-led transformation across 127,000 employees in dozens of countries. Vbrick's enterprise video platform—GDPR-compliant, eCDN-optimized for global delivery, and AI-powered for searchable on-demand content—is purpose-built for the kind of workforce transformation Unilever is undertaking.",
-    "target_persona": "Reema Jain, CIO / Sam Kini, CDTO",
-    "industry": "Consumer Packaged Goods",
+    "company": "U.S. Department of Defense (DoD)",
+    "summary": "The DoD faces a FY2027 Zero Trust deadline mandating agency consolidation from purchasing new tools to unifying infrastructure under a 'One Platform' approach. The JWCC Next cloud initiative (launched April 2025) expands cloud flexibility for DoD. Additionally, the Senate confirmed Kirsten Davies as Pentagon CIO in December 2025, who has prioritized cybersecurity modernization and industry partnerships. FedRAMP 20x (Phase 2 completed March 2026) is accelerating cloud authorization timelines, opening new procurement windows.",
+    "source_url": "https://news.broadcom.com/government/getting-2026-right-federal-it-modernization-progress-opportunity",
+    "why_vbrick": "Vbrick holds FedRAMP authorization, FIPS 140-2, and Section 508 compliance—the full compliance trifecta required for DoD video deployments. As DoD consolidates toward One Platform architectures before FY2027, Vbrick's enterprise video platform offers a FedRAMP-authorized, Zero Trust-compatible solution for large-scale DoD internal communications, training, and mission briefings. The new Pentagon CIO's focus on modernization and industry partnerships creates an active engagement window.",
+    "outreach_angle": "The DoD's FY2027 Zero Trust consolidation deadline is driving agencies to evaluate unified video platforms before the window closes. Vbrick's FedRAMP authorization, FIPS 140-2, and Section 508 compliance make it the only enterprise video solution pre-positioned for DoD's One Platform consolidation.",
+    "target_persona": "Pentagon CIO (Kirsten Davies) / Defense Agency CIOs / DISA",
+    "industry": "Federal Government / Defense",
     "urgency_score": 1,
     "urgency_rationale": "",
-    "confidence": "high",
+    "confidence": "Medium",
     "confidence_rationale": "",
     "evidence_quote": null,
     "source_verified": false,
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "leadership_change",
+    "finding_type": "FedRAMP 20x Reform + Zero Trust Mandate + IT Modernization",
     "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Reema Jain",
-        "title": "Chief Information Officer",
-        "linkedin": "https://www.linkedin.com/in/reemajain"
-      },
-      {
-        "name": "Aaron Rajan",
-        "title": "Global VP Digital Technology",
-        "linkedin": "https://www.linkedin.com/in/aaronrajan"
-      },
-      {
-        "name": "Jen Starkey",
-        "title": "Global Head of Employee Technology Services",
-        "linkedin": "https://www.linkedin.com/in/jens83"
-      },
-      {
-        "name": "Nithya Viswanathan",
-        "title": "Business Information Security Officer - Asia Pacific",
-        "linkedin": "https://www.linkedin.com/in/nithyavis"
-      },
-      {
-        "name": "Jowinx P Augustine",
-        "title": "Global Security - Controls Risk Manager",
-        "linkedin": "https://www.linkedin.com/in/jowinx-p-augustine-a82b4846"
-      },
-      {
-        "name": "Mayara Tavares",
-        "title": "Senior Cyber Security Manager - Information Security Lead",
-        "linkedin": "https://www.linkedin.com/in/mayara-tavares-"
-      },
-      {
-        "name": "Ruma Kishore",
-        "title": "Director Global Digital Transformation Customer Experience",
-        "linkedin": "https://www.linkedin.com/in/rumakishore"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 52,
-    "category": "Market Triggers",
-    "company": "Starbucks",
-    "summary": "Starbucks named Anand Varadarajan (formerly Amazon 19-year veteran) as Executive Vice President and Chief Technology Officer, effective January 19, 2026, reporting to CEO Brian Niccol. Varadarajan is tasked with modernizing in-store systems, digital platforms, and global technology operations across approximately 460,000 employees and 36,000 locations worldwide.",
-    "source_url": "https://www.digitalcommerce360.com/2025/12/23/starbucks-amazon-cto-varadarajan/",
-    "why_vbrick": "A new CTO from Amazon, replacing a retired executive, brings a fresh technology evaluation lens at global scale. With 460,000 employees across 36,000 locations, Starbucks needs scalable video for training, compliance content, and executive communications reaching store partners worldwide. Vbrick's eCDN, AI search/transcription for training on-demand, and Microsoft Teams integration support Starbucks's digital workplace vision.",
-    "outreach_angle": "Anand Varadarajan steps into the Starbucks CTO role with a mandate to scale world-class technology across 36,000 locations. Vbrick delivers the enterprise video infrastructure to reach 460,000 store partners with training, town halls, and leadership communications—eCDN-optimized for distributed retail networks, with AI transcription for on-demand access in any language.",
-    "target_persona": "Anand Varadarajan, EVP & CTO / VP People Technology",
-    "industry": "Food & Beverage / Retail",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "leadership_change",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Anand Varadarajan",
-        "title": "Executive Vice President, Chief Technology Officer",
-        "linkedin_url": "https://www.linkedin.com/in/anandvaradarajan",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Rohit Kapoor",
-        "title": "EVP - Chief Digital And Technology Transformation Officer",
-        "linkedin_url": "https://www.linkedin.com/in/rohit-kapoor-1578238",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Lori Torgerson",
-        "title": "Director Of Corporate Communications",
-        "linkedin_url": "https://www.linkedin.com/in/lori206",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Emily Albright",
-        "title": "Corporate Communications",
-        "linkedin_url": "https://www.linkedin.com/in/emily-albright-a5117983",
-        "role": "Decision Maker"
-      },
-      {
-        "name": "Scott Bockheim",
-        "title": "Director Of Data And Enterprise Architecture",
-        "linkedin_url": "https://www.linkedin.com/in/scottbockheim",
-        "role": "Influencer"
-      },
-      {
-        "name": "Imran Ali",
-        "title": "Director, Infrastructure Services And Cloud Engineering",
-        "linkedin_url": "https://www.linkedin.com/in/imranali2",
-        "role": "Influencer"
-      },
-      {
-        "name": "Howard Koh",
-        "title": "Director, Infrastructure Services And Cloud Engineering",
-        "linkedin_url": "https://www.linkedin.com/in/howard-koh-b96a1a230",
-        "role": "Influencer"
-      },
-      {
-        "name": "Suzie Haberland",
-        "title": "Director HR Technology And Analytics",
-        "linkedin_url": "https://www.linkedin.com/in/shaberland",
-        "role": "Influencer"
-      },
-      {
-        "name": "Guinevere Maxwell",
-        "title": "HR Director - Starbucks Technology",
-        "linkedin_url": "https://www.linkedin.com/in/guinevere-maxwell-mhrod-shrm-scp-975767",
-        "role": "Influencer"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 53,
-    "category": "Market Triggers",
-    "company": "IBM",
-    "summary": "IBM completed its $11B acquisition of Confluent (data streaming platform) in March 2026, following deal announcement in December 2025. The acquisition integrates Confluent's ~3,500 employees into IBM's ~250,000-person global workforce, creating a combined AI data platform. IBM is simultaneously executing its own ongoing restructuring (cutting ~1,500+ roles in 2025) while integrating a major data infrastructure vendor.",
-    "source_url": "https://finance.yahoo.com/news/ibm-completes-11bn-confluent-acquisition-101728540.html",
-    "why_vbrick": "Post-merger integration of a Silicon Valley tech company into a large enterprise IT firm requires unified video communications across the combined workforce. IBM and Confluent will need to bridge different corporate communication cultures, tools, and geographies. IBM's existing enterprise footprint, combined with Confluent's developer-centric workforce, makes Vbrick's Microsoft 365/Teams integration and AI-powered search compelling for unifying communications.",
-    "outreach_angle": "IBM just closed its $11B Confluent acquisition, adding 3,500 developer-centric employees who need to be onboarded into IBM's enterprise communications ecosystem. Vbrick's AI-powered video platform—with searchable content, automated transcription, and Microsoft Teams integration—bridges the communication gap between IBM's global enterprise and Confluent's engineering culture.",
-    "target_persona": "CIO / SVP Enterprise Technology / VP Internal Communications",
-    "industry": "Technology / IT Services",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ma_consolidation",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Barry Baker",
-        "title": "Vice President of Product Management, zSystems and LinuxONE",
-        "linkedin": "https://www.linkedin.com/in/barrymbaker"
-      },
-      {
-        "name": "Louis Lazarus",
-        "title": "VP, Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/louislazarus"
-      },
-      {
-        "name": "Larry Traola",
-        "title": "Practice Manager, Streaming Media / IT Specialist",
-        "linkedin": "https://www.linkedin.com/in/larry-traola-05284211"
-      },
-      {
-        "name": "Frederic Surand",
-        "title": "Global Voice&Video Leader - CIO Organization, Senior Managing Consultant",
-        "linkedin": "https://www.linkedin.com/in/frederic-surand-b5778334"
-      },
-      {
-        "name": "Sukhvir Saini",
-        "title": "Sr. Network Architect Hybrid Cloud",
-        "linkedin": "https://www.linkedin.com/in/sukhvir-saini-6a9a843b"
-      },
-      {
-        "name": "Nilam Bhatt",
-        "title": "Data Privacy And Regulatory Compliance Lead - IBM Consulting, CISO",
-        "linkedin": "https://www.linkedin.com/in/nilam-bhatt-12a5005"
-      },
-      {
-        "name": "Brittany Forgione",
-        "title": "Director, Marketing Communications, IBM Research",
-        "linkedin": "https://www.linkedin.com/in/brittanyforgione"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 54,
-    "category": "Market Triggers",
-    "company": "Paramount Global / Warner Bros. Discovery",
-    "summary": "Paramount (Skydance) announced a $110–111B acquisition of Warner Bros. Discovery in late February/early March 2026, following a bidding war with Netflix. The combined entity would unite HBO, CNN, Paramount+, CBS, MTV, and Warner Bros. into one of the world's largest media conglomerates, with a combined employee base of approximately 35,000+. Pending regulatory approval with a vote planned for early spring 2026.",
-    "source_url": "https://www.cbsnews.com/video/new-developments-in-warner-bros-discovery-merger-talks/",
-    "why_vbrick": "The potential merger of two major media companies creates one of the largest video infrastructure consolidation opportunities in recent history. Both organizations rely heavily on live video for internal communications, training, and executive broadcasts. Vbrick can position as the unified enterprise video platform for the combined entity, leveraging its eCDN, compliance (SOC II Type 2), and Microsoft Teams integration capabilities.",
-    "outreach_angle": "A Paramount-Warner Bros. merger combining HBO, CBS, CNN, and Paramount+ creates one of the most complex enterprise video integration challenges in media. Vbrick's enterprise platform—with eCDN, Microsoft Teams integration, and real-time analytics—can serve as the unified internal video infrastructure for the combined organization from Day 1.",
-    "target_persona": "CIO / Chief People Officer / Head of Corporate Communications",
-    "industry": "Media / Entertainment",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ma_consolidation",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Shiva P",
-        "title": "SVP of Infrastructure and Cloud Advancement",
-        "linkedin": "https://www.linkedin.com/in/shivaparanandi"
-      },
-      {
-        "name": "Marcin Kiełek",
-        "title": "Senior Director, Infrastructure Engineering",
-        "linkedin": "https://www.linkedin.com/in/marcinkielek"
-      },
-      {
-        "name": "Linda C Davidoff",
-        "title": "Executive Vice President, Chief Compliance Officer",
-        "linkedin": "https://www.linkedin.com/in/lindacdavidoff"
-      },
-      {
-        "name": "David Bittler",
-        "title": "Executive Vice President, Communications",
-        "linkedin": "https://www.linkedin.com/in/davidbittler"
-      },
-      {
-        "name": "Phil Wiser",
-        "title": "Chief Technology Officer and Head, Multiplatform Operations",
-        "linkedin": "https://www.linkedin.com/in/phil-wiser-b8533"
-      },
-      {
-        "name": "Ankur Patel",
-        "title": "Director, Live Video Systems and Technology",
-        "linkedin": "https://www.linkedin.com/in/ankur-patel-9223b645"
-      },
-      {
-        "name": "Todd Rowen",
-        "title": "Vice President Global Compliance",
-        "linkedin": "https://www.linkedin.com/in/toddrowen"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 55,
-    "category": "Market Triggers",
-    "company": "U.S. Department of Transportation (DOT)",
-    "summary": "DOT announced in December 2025 that it is migrating its entire workforce of 50,000+ employees from Microsoft to Google Workspace, including Google Meet for meetings and collaboration. The migration achieved global go-live for 12,500 employees in February 2026 and is completing full rollout to all 50,000 employees through Q2 2026. The department is also establishing four 'digital factories' for software product development.",
-    "source_url": "https://www.executivegov.com/articles/google-workspace-gemini-ai-transportation-dept",
-    "why_vbrick": "A major productivity suite migration creates a critical video infrastructure re-evaluation window. As DOT moves from Microsoft to Google Workspace, its existing enterprise video arrangements need to be reassessed. Vbrick's platform-agnostic eCDN and video management layer—which integrates with both Microsoft and Google ecosystems—positions as the neutral enterprise video infrastructure that survives and complements any productivity suite migration.",
-    "outreach_angle": "DOT is mid-way through migrating 50,000 employees to Google Workspace—and that creates an inflection point for your enterprise video stack. Vbrick's platform-agnostic video management and eCDN works with both Microsoft and Google environments, ensuring your broadcast infrastructure survives the migration and scales with your new digital factory model.",
-    "target_persona": "Pavan Pidugu, Chief Digital and Information Officer / IT Modernization leadership",
-    "industry": "Federal Government",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "digital_transformation",
-    "finding_id": "",
-    "employee_count": "Unknown",
+    "employee_count": "~900,000+ civilian",
     "is_fortune500": "Unverified",
     "stakeholders": [
       {
@@ -2384,19 +2396,286 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/paul-tibbits-md-579ab39"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 56,
+    "id": 57,
     "category": "Market Triggers",
-    "company": "AT&T",
-    "summary": "AT&T required all workers to be in the office 5 days per week starting January 2025, affecting approximately 150,000 US-based employees. AT&T is also integrating spectrum and network assets from its $23B EchoStar/Starry acquisitions in 2025, expanding its enterprise customer base. The company has been reducing its workforce as part of ongoing cost restructuring.",
-    "source_url": "https://founderreports.com/return-to-office-statistics/",
-    "why_vbrick": "A 150,000-person telco with a full 5-day RTO mandate, ongoing M&A integration, and enterprise customer expansion creates strong demand for scalable internal communications. AT&T's enterprise customers (banks, hospitals, government agencies) look to AT&T as a technology leader—a Vbrick deployment at AT&T could also create resale/partnership opportunities in AT&T's enterprise channel.",
-    "outreach_angle": "AT&T brought 150,000 employees back to the office full-time while simultaneously integrating major spectrum acquisitions. Vbrick's enterprise video platform can handle AT&T's scale—with eCDN for distributed offices, FINRA-adjacent archiving for financial communications, and Microsoft Teams integration to minimize friction across your existing collaboration stack.",
-    "target_persona": "CIO / Chief People and HR Technology Officer / VP Enterprise Communications",
-    "industry": "Telecommunications",
-    "urgency_score": 1,
+    "company": "Target Corporation",
+    "summary": "Target executed a two-wave corporate restructuring: ~1,800 corporate positions cut in October 2025 (8% of corporate workforce, primarily at Minneapolis HQ) and another ~500 positions eliminated in February 2026 focused on regional offices and distribution centers. CEO Brian Cornell has consistently used video communications to address workforce changes. The restructuring is coupled with a strategic push to redirect investment toward frontline store employees—requiring new approaches to employee communications that reach both corporate and store-level workers.",
+    "source_url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
+    "why_vbrick": "Target's dual-audience communication challenge—corporate employees at Minneapolis HQ and frontline store workers across 1,900+ locations—is exactly where Vbrick's eCDN and mobile-optimized delivery shine. Vbrick ensures store-level associates can access executive communications without straining store network bandwidth. Real-time analytics proves message penetration across the dispersed workforce.",
+    "outreach_angle": "Target is rebuilding trust with 450,000 employees after two rounds of corporate layoffs. Vbrick's enterprise video platform delivers CEO and leadership communications to 1,900+ store locations without network strain—turning a difficult restructuring period into an opportunity to demonstrate authentic leadership.",
+    "target_persona": "CIO / VP of Technology / Head of Internal Communications",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Workforce Restructuring + Operational Streamlining",
+    "finding_id": "",
+    "employee_count": "~450,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Rich Agostino",
+        "title": "SVP, Chief Information Security Officer & Infrastructure",
+        "linkedin": "https://www.linkedin.com/in/rich-agostino"
+      },
+      {
+        "name": "Gustavo Pospischel",
+        "title": "Senior Vice President Of Technology",
+        "linkedin": "https://www.linkedin.com/in/pospischel"
+      },
+      {
+        "name": "Rachel Whitcomb",
+        "title": "Senior Vice President of Technology",
+        "linkedin": "https://www.linkedin.com/in/rachel-whitcomb-943520"
+      },
+      {
+        "name": "Visagan Subburayalu",
+        "title": "VP Infrastructure And Cybersecurity",
+        "linkedin": "https://www.linkedin.com/in/visagan-subburayalu-86047348"
+      },
+      {
+        "name": "Indu Rajaram",
+        "title": "Director of Engineering- Streaming Platform",
+        "linkedin": "https://www.linkedin.com/in/indu-rajaram-7a492b4"
+      },
+      {
+        "name": "Jacqueline Debuse",
+        "title": "VP Communications",
+        "linkedin": "https://www.linkedin.com/in/jacquemueller"
+      },
+      {
+        "name": "Andi Marston",
+        "title": "Senior Vice President Talent & Team Member Experience",
+        "linkedin": "https://www.linkedin.com/in/andi-marston-0440655"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 58,
+    "category": "Market Triggers",
+    "company": "Procter & Gamble (P&G)",
+    "summary": "P&G announced in June 2025 that it will cut ~7,000 non-manufacturing positions (6% of global workforce, 15% of white-collar workforce) over two fiscal years. Incoming CEO Shailesh Jejurikar cited the need to 'shift spending toward new product innovation.' The cuts primarily target senior, higher-paid employees in non-manufacturing roles—exactly the audience most likely to engage with enterprise video platforms for town halls, strategy communications, and leadership updates.",
+    "source_url": "https://fortune.com/2025/11/26/layoffs-economy-how-many-what-companies-fortune-500/",
+    "why_vbrick": "P&G's white-collar workforce reduction, combined with a new CEO driving strategic reorientation, creates high-frequency executive communication demands. Vbrick's GDPR compliance addresses P&G's extensive European operations; AI transcription enables multilingual accessibility across global markets; Microsoft 365/Teams integration fits P&G's enterprise collaboration environment.",
+    "outreach_angle": "P&G's new CEO is reducing 7,000 roles while repositioning the company for innovation-led growth—a communications-intensive transformation. Vbrick's enterprise video platform with GDPR compliance and AI transcription enables P&G to communicate that vision convincingly to a global workforce across 180+ markets.",
+    "target_persona": "CIO / VP of Digital Technology / Head of Internal Communications",
+    "industry": "Consumer Packaged Goods",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Workforce Restructuring + Leadership Transition",
+    "finding_id": "",
+    "employee_count": "~107,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Markus Hofmann",
+        "title": "Senior Director Infrastructure & Cloud Platform Architecture",
+        "linkedin": "https://www.linkedin.com/in/markus-hofmann-5437741"
+      },
+      {
+        "name": "Chris Halbert",
+        "title": "IT Application Manager - Video Collaboration",
+        "linkedin": "https://www.linkedin.com/in/chris-halbert-8460134"
+      },
+      {
+        "name": "Jennifer Shields",
+        "title": "Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/jennifer-shields-3244802"
+      },
+      {
+        "name": "Damon Jones",
+        "title": "Chief Communications Officer",
+        "linkedin": "https://www.linkedin.com/in/damondjones"
+      },
+      {
+        "name": "Sanjay Singh",
+        "title": "Senior Vice President - CIO Asia Pacific, India, Middle East, Africa",
+        "linkedin": "https://www.linkedin.com/in/sanjay-singh-a350b02"
+      },
+      {
+        "name": "Kristy Anne Abello",
+        "title": "IT Director",
+        "linkedin": "https://www.linkedin.com/in/kristyabello"
+      },
+      {
+        "name": "Kari Wethington",
+        "title": "Director, Communications, North America",
+        "linkedin": "https://www.linkedin.com/in/kariwethington"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 59,
+    "category": "Market Triggers",
+    "company": "Accenture",
+    "summary": "Accenture announced in October 2025 that it is laying off at least 11,000 employees as part of a large-scale AI-focused restructuring—specifically parting ways with employees who cannot be retrained with AI skills. This transformation is particularly notable given Accenture's position as a professional services firm that advises clients on digital transformation; its own internal transformation serves as a proof-of-concept for AI adoption strategies. The company employs ~750,000 globally, requiring massive internal communications infrastructure.",
+    "source_url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
+    "why_vbrick": "Accenture's AI-restructuring affects 750,000 employees globally—one of the largest workforces in professional services. Vbrick's AI search and transcription capabilities align directly with Accenture's own AI transformation narrative; the platform's GDPR compliance addresses Accenture's EU operations. Microsoft 365/Teams integration (Accenture is a Microsoft Gold Partner) ensures seamless deployment.",
+    "outreach_angle": "Accenture is restructuring 750,000 employees around AI capabilities—and Vbrick's AI-powered enterprise video platform demonstrates exactly the kind of AI-augmented tool Accenture is investing in. Native Microsoft 365 integration and global eCDN delivery make Vbrick the natural choice for Accenture's own enterprise video transformation.",
+    "target_persona": "CIO / Chief AI Officer / Head of Workplace Technology",
+    "industry": "Technology / Professional Services",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "AI-Driven Workforce Restructuring",
+    "finding_id": "",
+    "employee_count": "~750,000",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Raju Yadav",
+        "title": "Vice President - Cloud and Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/raju-yadav-809b6113"
+      },
+      {
+        "name": "Kapil Khanna",
+        "title": "VP - Accenture Intelligent Cloud and Infrastructure Operations Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/kapil-khanna-941a35a4"
+      },
+      {
+        "name": "Carlo La Grotta",
+        "title": "Manager-Digital Video Operation",
+        "linkedin": "https://www.linkedin.com/in/carlolagrotta"
+      },
+      {
+        "name": "Brittany Piano",
+        "title": "Video and Collaboration Architect",
+        "linkedin": "https://www.linkedin.com/in/brittany-piano-156611102"
+      },
+      {
+        "name": "Patrick Rowe",
+        "title": "Chief Compliance Officer and Deputy General Counsel",
+        "linkedin": "https://www.linkedin.com/in/patrickroweuk"
+      },
+      {
+        "name": "Rachel Frey",
+        "title": "Chief Communications Officer",
+        "linkedin": "https://www.linkedin.com/in/rachelfreyaccenture"
+      },
+      {
+        "name": "Humera Siddique",
+        "title": "VP, Global Talent Supply Chain",
+        "linkedin": "https://www.linkedin.com/in/humera-siddique-05aaa0185"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 60,
+    "category": "Market Triggers",
+    "company": "Novo Nordisk",
+    "summary": "Novo Nordisk announced in September 2025 the largest layoff in Denmark's history: ~9,000 roles (~11.5% of its 77,000 workforce) under new CEO Mike Doustdar. The restructuring targets education, manufacturing, HR, and overhead roles as Novo battles competition from Eli Lilly in the obesity/diabetes market and redirects investment into core R&D. The new CEO is executing a rapid strategic transformation that requires consistent employee communications across a global pharma workforce.",
+    "source_url": "https://intellizence.com/insights/layoff-downsizing/major-companies-that-announced-mass-layoffs/",
+    "why_vbrick": "Pharmaceutical companies require HIPAA-ready and GDPR-compliant video infrastructure for employee communications. Novo Nordisk's multinational structure (Denmark HQ, US operations, global manufacturing) demands GDPR-compliant video with eCDN delivery. New CEO Doustdar's need to communicate a transformational vision to 68,000 global employees after Denmark's largest-ever layoff makes enterprise video mission-critical.",
+    "outreach_angle": "Novo Nordisk's new CEO needs to rebuild trust with 68,000 employees following Denmark's largest-ever corporate layoff. Vbrick provides the secure, GDPR-compliant, globally-delivered enterprise video platform to communicate Doustdar's strategic vision consistently across Novo's multinational workforce—with analytics to measure employee engagement.",
+    "target_persona": "CIO / Head of Digital / Internal Communications Lead",
+    "industry": "Pharmaceutical / Life Sciences",
+    "urgency_score": 2,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Workforce Restructuring + New CEO + Strategic Reorientation",
+    "finding_id": "",
+    "employee_count": "~68,000 (post-restructuring)",
+    "is_fortune500": "Unverified",
+    "stakeholders": [
+      {
+        "name": "Michael Brandt Lassen",
+        "title": "Vice President of Cloud and Corporate Infrastructure",
+        "linkedin_url": "https://www.linkedin.com/in/michael-brandt-lassen",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Lars Bækkelund",
+        "title": "Corporate Vice President - Cross Digital, Data & IT",
+        "linkedin_url": "https://www.linkedin.com/in/lars-baekkelund",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Jakob Lilholt",
+        "title": "Director - Infrastructure Platforms in Enterprise IT",
+        "linkedin_url": "https://www.linkedin.com/in/lilholt",
+        "role": "Influencer"
+      },
+      {
+        "name": "Brian Terp Sørensen",
+        "title": "Product Manager & AV Specialist (Video Conferencing)",
+        "linkedin_url": "https://www.linkedin.com/in/brian-terp-sørensen-b23b307",
+        "role": "Evaluator"
+      },
+      {
+        "name": "Rahail Rana",
+        "title": "Sr. IT Network Architect",
+        "linkedin_url": "https://www.linkedin.com/in/rahail-rana-a7697144",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Kristian Dehn",
+        "title": "Senior Network Architect",
+        "linkedin_url": "https://www.linkedin.com/in/kristiandehn",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Morten Barfoed",
+        "title": "IT Compliance Manager",
+        "linkedin_url": "https://www.linkedin.com/in/morten-barfoed-74203a83",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Peter Fiurendal",
+        "title": "IT Compliance Manager/Validation Lead",
+        "linkedin_url": "https://www.linkedin.com/in/peterfiurendal",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Elgert Pina",
+        "title": "Solutions Architect",
+        "linkedin_url": "https://www.linkedin.com/in/elgertpina",
+        "role": "Technical Evaluator"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 61,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: SEC Off-Channel Communications Enforcement",
+    "summary": "On January 13, 2025, the SEC charged 12 firms (9 investment advisers + 3 broker-dealers) with recordkeeping failures for off-channel communications, resulting in $63.1 million in combined penalties. Firms included Blackstone ($12M), KKR ($11M), Charles Schwab ($10M), Apollo ($8.5M), and others. Since 2021, the SEC has charged 100+ firms totaling over $2.2 billion in fines. While the new administration has signaled less interest in standalone recordkeeping actions under Chairman Atkins, FINRA has continued active enforcement, and off-channel violations are now being bundled into broader securities law enforcement actions that include other violations.",
+    "source_url": "https://www.sec.gov/newsroom/press-releases/2025-6",
+    "why_vbrick": "Investment advisers and broker-dealers under pressure to remediate off-channel communication failures need a compliant video platform with built-in archiving and supervisory controls. Vbrick's FINRA-ready archiving, with full audit trails and integration into compliance review workflows, addresses the SEC's core finding that firms failed to preserve electronic communications. The January 2025 enforcement wave — potentially the last standalone sweep — is accelerating compliance program reviews at affected firms and their peers, creating pipeline opportunities for a compliant video infrastructure replacement.",
+    "outreach_angle": "",
+    "target_persona": "CCO, Head of Compliance Technology, COO (Financial Services)",
+    "industry": "Financial Services / Investment Management",
+    "urgency_score": 0,
     "urgency_rationale": "",
     "confidence": "high",
     "confidence_rationale": "",
@@ -2405,59 +2684,122 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "return_to_office",
+    "finding_type": "enforcement_action",
     "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Amy Abert",
-        "title": "Assistant Vice President Technology",
-        "linkedin": "https://www.linkedin.com/in/amy-abert-0a4664103"
-      },
-      {
-        "name": "Kim Hart",
-        "title": "Vice President Consumer Communications",
-        "linkedin": "https://www.linkedin.com/in/kihart"
-      },
-      {
-        "name": "Victoria Decarmine",
-        "title": "Director, Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/victoria-decarmine-79636118"
-      },
-      {
-        "name": "Darcie Henry",
-        "title": "SEVP & CHRO",
-        "linkedin": "https://www.linkedin.com/in/darcie-henry-cakaric"
-      },
-      {
-        "name": "Jeff Wilson",
-        "title": "Vice President, Streaming Video Engineering",
-        "linkedin": "https://www.linkedin.com/in/jeff-wilson-7996b051"
-      },
-      {
-        "name": "Jason Wallace",
-        "title": "Director - Media Technology",
-        "linkedin": "https://www.linkedin.com/in/jason-wallace-8806a09"
-      },
-      {
-        "name": "Ashley Hoptay",
-        "title": "AVP, Communications & PR",
-        "linkedin": "https://www.linkedin.com/in/ahoptay"
-      }
-    ],
-    "is_new": false
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
   },
   {
-    "id": 57,
-    "category": "Market Triggers",
-    "company": "Amazon",
-    "summary": "Amazon mandated 5-day in-office return for all 350,000 corporate employees starting January 2, 2025. In late October 2025, Amazon announced an additional ~14,000 corporate layoffs (~4% of corporate staff) as part of CEO Andy Jassy's AI-driven organizational restructuring. Amazon's internal communications team overhauled its town hall strategy in 2025—increasing cadence to quarterly, shifting to hybrid global formats, and producing 'show-quality' broadcasts for global viewing parties.",
-    "source_url": "https://www.ragan.com/ragan-insider-amazon-town-halls-2025/",
-    "why_vbrick": "Amazon's documented internal communications transformation—scaling quarterly town halls to 350,000 employees in multiple time zones, with on-demand replay within 24 hours—is a direct enterprise video use case. Amazon's own comms team cited geographic scale and on-demand access as critical requirements. Vbrick's eCDN, AI-powered on-demand access, and real-time analytics align precisely with the broadcast model Amazon is publicly executing.",
-    "outreach_angle": "Amazon's internal comms team is publicly producing quarterly broadcast-quality town halls for 350,000 employees across global time zones—with on-demand replay within 24 hours. Vbrick's eCDN delivers those live broadcasts without saturating your campus networks, while AI-powered search and transcription makes every town hall instantly accessible to any employee, anywhere.",
-    "target_persona": "VP Internal Communications / Director Employee Experience Technology / CIO",
-    "industry": "Technology / E-Commerce",
+    "id": 62,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: HIPAA Telehealth Video Platform Compliance",
+    "summary": "HIPAA enforcement discretion for telehealth ended in May 2023, with full HIPAA compliance now applying to all remote care video platforms. OIG identified telehealth as a significant enforcement priority for 2025–2026, with the Work Plan including reviews of billing patterns, audiovisual communication standards, medical necessity documentation, and practitioner credentials. Healthcare providers must ensure all video platforms sign BAAs, provide encryption in transit, restrict access with MFA, log/audit remote sessions, and update security risk analyses to reflect telehealth workflows. OIG noted behavioral health telehealth creates unique fraud and abuse risks.",
+    "source_url": "https://www.doctorsmanagement.com/blog/oig-compliance-for-telehealth-rpm-and-virtual-care-new-rules-of-the-road-for-2025-to-2026/",
+    "why_vbrick": "As HIPAA enforcement for telehealth moves from theoretical to operational, healthcare systems evaluating video infrastructure face procurement requirements that explicitly include HIPAA compliance documentation. Vbrick's BAA capability, FIPS 140-2 encryption, role-based access controls, audit logging, and Section 508 accessibility features satisfy the complete OIG telehealth compliance checklist. Hospitals and health systems adding virtual care at scale — and facing OIG audit scrutiny — represent high-value enterprise accounts where Vbrick's compliance posture is a procurement differentiator.",
+    "outreach_angle": "",
+    "target_persona": "Chief Privacy Officer, Telehealth Director, CIO (Healthcare)",
+    "industry": "Healthcare",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 63,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: GDPR — Video Conferencing & Recording Compliance",
+    "summary": "GDPR enforcement is intensifying specifically around video conferencing as the EDPB's 2026 CEF targets transparency obligations and the EU AI Act adds AI-feature obligations for video platforms using transcription, noise cancellation, and smart summaries. DLA Piper's January 2026 GDPR survey confirmed €7.1B in cumulative fines. Regulators are now actively testing websites rather than waiting for complaints. The 2026 GDPR video compliance framework requires: EU data residency, Data Processing Agreements, participant consent for recordings, role-based access to archived recordings, retention policies, and audit trails for recording access — all of which are active examination criteria.",
+    "source_url": "https://www.digitalsamba.com/blog/gdpr-compliant-video-conferencing",
+    "why_vbrick": "Vbrick's enterprise video platform — with configurable data residency, DPA-ready contract terms, recording consent workflows, encrypted storage, and tamper-evident audit logs — addresses the complete GDPR video conferencing compliance framework that DPAs are now actively auditing. European and multinational enterprises running Vbrick for all-company meetings, training delivery, and leadership communications need exactly the documentation chain (who recorded what, who accessed it, when was it deleted) that GDPR Article 5(2) accountability requires.",
+    "outreach_angle": "",
+    "target_persona": "DPO, Legal Counsel, IT Director",
+    "industry": "Enterprise / Financial Services / Healthcare",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 64,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: California CCPA/CPRA — 2026 Expanded Enforcement",
+    "summary": "As of January 1, 2026, new CPRA regulations took effect requiring: mandatory risk assessments for 'significant risk' processing, automated decision-making technology (ADMT) pre-use notices and opt-out rights, and cybersecurity audit requirements. California CPPA increased civil penalties to $2,663 per unintentional violation and $7,988 per intentional violation as of January 1, 2025 — with no aggregate cap. In February 2026, Disney received the largest CCPA settlement to date ($2.75M) for failing to honor opt-out requests across streaming services and devices. The CPPA's active enforcement removed the mandatory 30-day cure period, shifting to a direct enforcement model. The 2026 ADMT regulations require businesses to document logic and likely outcomes of automated processes used for significant consumer decisions.",
+    "source_url": "https://www.jacksonlewis.com/insights/navigating-california-consumer-privacy-act-30-essential-faqs-covered-businesses-including-clarifying-regulations-effective-1126",
+    "why_vbrick": "Enterprise video platforms that use AI-driven features (smart search, auto-transcription, viewer analytics, recommendation engines) are subject to California's new ADMT regulations when those features process California residents' data. Organizations using Vbrick for internal training, corporate communications, or customer-facing video events in California must assess ADMT obligations for AI-powered features. Vbrick's transparent AI architecture and documented processing workflows support the pre-use notice, opt-out, and access request obligations that CPPA is actively enforcing against platforms with AI personalization.",
+    "outreach_angle": "",
+    "target_persona": "DPO, Privacy Counsel, VP Technology (Enterprise)",
+    "industry": "Technology / Retail / Media / Financial Services",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 65,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: State Privacy Law Expansion — 19 States Now Active",
+    "summary": "As of January 1, 2026, 19 U.S. states have comprehensive consumer privacy laws in effect, with Indiana, Kentucky, and Rhode Island joining in January 2026. Connecticut's July 2026 amendment drops the applicability threshold from 100,000 to 35,000 consumers and adds neural data and government-issued IDs as sensitive data categories. Rhode Island's law omits standard size thresholds, meaning small businesses must comply. The Video Privacy Protection Act (VPPA) continues to generate federal litigation around enterprise video platforms and third-party analytics integrations. Minnesota (effective July 31, 2025) became the first state requiring a live personal data inventory — which directly applies to video platform data.",
+    "source_url": "https://www.kiteworks.com/gdpr-compliance/gdpr-fines-data-privacy-enforcement-2026/",
+    "why_vbrick": "Enterprise video platforms collecting viewer data, engagement analytics, or behavioral data on employees and customers across multiple states face compounding compliance obligations under the state privacy patchwork. Vbrick's data minimization architecture, configurable data retention, and documented processing agreements help multi-state enterprises satisfy parallel privacy obligations without deploying 19 separate compliance programs. The VPPA's continued application to enterprise video creates specific liability for organizations that share viewer identification data with third-party analytics — a risk that Vbrick's privacy-first architecture avoids.",
+    "outreach_angle": "",
+    "target_persona": "DPO, General Counsel, CISO",
+    "industry": "Enterprise / Media / Healthcare",
+    "urgency_score": 0,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 66,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: HIPAA — HHS Information Blocking Enforcement",
+    "summary": "In September 2025, HHS-OIG and ASTP/ONC issued an enforcement alert stating that information blocking enforcement is now active, coordinated, and resourced. HHS is encouraging patients, providers, and innovators to report suspected information blocking through dedicated portals and hotlines. HIPAA settlements in 2025 reached up to $600,000 for failures to conduct proper risk assessments. The OCR's Risk Analysis Initiative (11 enforcement actions through February 2026) demonstrates that OCR is treating proactive risk analysis as a core enforcement priority — not a paper requirement.",
+    "source_url": "https://www.healthcarelawinsights.com/2026/03/hhs-crackdown-on-information-blocking-new-era-of-enforcement-fines-and-compliance-risks-for-healthcare-entities/",
+    "why_vbrick": "Healthcare organizations that restrict access to clinical video recordings, telehealth session records, or patient-facing video content may face information blocking liability under ONC rules. Vbrick's platform supports secure, auditable access to recorded clinical content with patient rights controls — enabling healthcare organizations to share video-format clinical information compliantly rather than withholding it. The active HHS enforcement posture creates urgency for healthcare IT teams to evaluate whether their video infrastructure enables or impedes compliant information sharing.",
+    "outreach_angle": "",
+    "target_persona": "HIPAA Privacy Officer, Health IT Director, CIO (Healthcare)",
+    "industry": "Healthcare",
     "urgency_score": 1,
     "urgency_rationale": "",
     "confidence": "medium",
@@ -2467,10 +2809,993 @@ const FINDINGS = [
     "source_type": "Other",
     "additional_sources": [],
     "date": "",
-    "finding_type": "workforce_restructuring",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 67,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: GDPR — TikTok €530M Cross-Border Transfer Fine",
+    "summary": "In 2025, the Irish Data Protection Commission fined TikTok €530 million for illegally transferring European Economic Area user data to China — the second-largest GDPR fine on record after Meta's €1.2B penalty. This confirmed that cross-border data transfer enforcement is a durable, high-value enforcement category, not a one-time event. The DLA Piper 2025 GDPR survey documented growing enforcement focus on Article 5(1)(a) (lawfulness, fairness, transparency) and Article 5(1)(f) (integrity and confidentiality). European DPAs received 443 breach notifications per day in 2025 — a 22% increase year-over-year.",
+    "source_url": "https://www.kiteworks.com/gdpr-compliance/gdpr-fines-data-privacy-enforcement-2026/",
+    "why_vbrick": "Multinational enterprises using US-headquartered video platforms that route EU employee data to American servers face the same CLOUD Act / FISA Section 702 exposure that triggered TikTok's €530M fine. Vbrick's GDPR-compliant architecture with configurable EU data residency options provides multinationals with a defensible transfer mechanism that avoids the cross-border transfer violations DPAs are actively pursuing. Compliance teams at European and US multinational firms reviewing video vendor risk classifications will prioritize platforms with documented GDPR transfer mechanism compliance.",
+    "outreach_angle": "",
+    "target_persona": "DPO, General Counsel, CISO (Multinational Enterprises)",
+    "industry": "Enterprise / Technology / Financial Services",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "enforcement_action",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 68,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: FedRAMP — Continuous Monitoring & Vulnerability Transparency",
+    "summary": "FedRAMP's March 2026 RFC-0026 and the CA-7 continuous monitoring update require cloud providers to share full vulnerability information with every agency customer — monthly scans, updated POA&Ms, or adoption of the new Vulnerability Detection and Response Balance Improvement Release. Gaps in vulnerability reporting are now treated as high-impact findings. Starting in 2027, repeated failures lead to corrective action, Marketplace remediation status, and ultimately revocation of FedRAMP Certification. The FedRAMP Consolidated Rules for 2026 (CR26) will be published by June 2026 and will govern through December 31, 2028.",
+    "source_url": "https://www.fedramp.gov/rfcs/0030/",
+    "why_vbrick": "Federal agencies procuring video platforms must now confirm that their cloud video provider meets FedRAMP's enhanced continuous monitoring requirements, including mandatory vulnerability transparency. Vbrick's FedRAMP authorization and ongoing continuous monitoring compliance gives federal IT teams the evidence documentation — monthly scans, POA&M status, vulnerability reports — required to satisfy agency ATO maintenance requirements under the new CA-7 standards. Non-FedRAMP video platforms cannot provide this documentation chain, making Vbrick the default compliant option for agencies executing video infrastructure procurement under CR26.",
+    "outreach_angle": "",
+    "target_persona": "Agency CISO, FedRAMP Program Manager, Cloud Architect (Federal Government)",
+    "industry": "Federal Government",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 69,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: HIPAA — Cadia Healthcare Multimedia PHI Enforcement",
+    "summary": "On September 30, 2025, HHS OCR settled with Cadia Healthcare Facilities ($182,000 + 2-year CAP) for posting patient success stories including photographs and recovery videos to its public website without valid HIPAA authorization. OCR found violations of impermissible PHI disclosure, failure to have safeguards for PHI, and failure to notify affected individuals. The settlement covered 150 patients whose PHI appeared in multimedia content. OCR specifically cited that HIPAA compliance extends beyond clinical care settings — marketing and public communications personnel must be trained on HIPAA requirements for any multimedia content involving patient information.",
+    "source_url": "https://www.mintz.com/insights-center/viewpoints/2146/2025-10-06-beyond-clinical-setting-ocrs-settlement-cadia-further",
+    "why_vbrick": "Healthcare organizations using video for marketing, patient testimonials, or public-facing content face HIPAA exposure if those videos contain PHI without proper authorization. Vbrick's platform — with access-controlled publishing workflows, permission-gated video distribution, and audit trails documenting who authorized which content for public vs. internal access — directly prevents the unauthorized PHI disclosure pattern OCR penalized Cadia for. Healthcare marketing teams and communications departments managing video content through Vbrick can demonstrate the documented authorization workflow that OCR requires.",
+    "outreach_angle": "",
+    "target_persona": "HIPAA Privacy Officer, Healthcare Marketing Director, CIO",
+    "industry": "Healthcare",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "enforcement_action",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 70,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: Section 508 — FY 2025 GSA Governmentwide Assessment",
+    "summary": "GSA's third annual FY 2025 Governmentwide Section 508 Assessment found the federal government continues to fall short of its legal obligations to ensure equal access for persons with disabilities, despite strengthened acquisition and procurement practices. The assessment specifically highlighted gaps in video and multimedia accessibility — including missing captions, absent audio descriptions, and inaccessible video players. Federal agencies are legally required to purchase ICT that is Section 508 accessible, and using non-compliant video platforms in federal procurements creates direct legal exposure. CHCOC guidance confirmed Section 508 requirements are unaffected by DEI executive orders and remain fully mandatory.",
+    "source_url": "https://www.section508.gov",
+    "why_vbrick": "The GSA assessment creates an auditable compliance gap that federal IT procurement teams must address in their next acquisition cycle. Vbrick's Section 508 certification, with auto-captioning, audio description support, keyboard navigation, and screen-reader-compatible player controls, directly satisfies the accessibility gaps identified in the GSA assessment. Federal agencies that cannot document Section 508 compliance for their video infrastructure face both legal exposure and audit findings — making Vbrick's certification a procurement qualifier, not just a feature.",
+    "outreach_angle": "",
+    "target_persona": "Section 508 Program Manager, Agency CIO, Procurement Officer",
+    "industry": "Federal Government",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [
+      {
+        "name": "David A. Shive",
+        "title": "Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/david-shive-4b4a1711"
+      },
+      {
+        "name": "Sid Sripada",
+        "title": "Division Director, Digital Infrastructure Technologies",
+        "linkedin": "https://www.linkedin.com/in/sidsripada"
+      },
+      {
+        "name": "Shannon Casucci",
+        "title": "Director, Office of Public Buildings Information Technology Services",
+        "linkedin": "https://www.linkedin.com/in/shannon-casucci-a05b89b"
+      },
+      {
+        "name": "Joseph Hoyt",
+        "title": "Acting Chief Information Security Officer (CISO)",
+        "linkedin": ""
+      },
+      {
+        "name": "Lawrence Hale",
+        "title": "Acting Assistant Commissioner, Information Technology Category",
+        "linkedin": ""
+      },
+      {
+        "name": "Lesley Briante",
+        "title": "Associate CIO of Digital Management",
+        "linkedin": ""
+      },
+      {
+        "name": "Cara Battaglini Schatz",
+        "title": "Director, Outreach Communications, Federal Acquisition Service IT Category",
+        "linkedin": "https://www.linkedin.com/in/cara-battaglini-schatz-718a3b3"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 71,
+    "category": "Fortune 500 Accounts",
+    "company": "JPMorgan Chase",
+    "summary": "JPMorgan Chase posted a Video Production Specialist role within its Corporate and Firmwide Employee Communications team (January 2026, now filled). The role covered internal communications video, digital signage, broadcast news, informational video, and event activations across the firm. Separately, the bank posted an Internal Communications Associate role for the Chief Information Office, referencing large-scale events including town halls, tech center site visits, and an annual Global Technology Senior Leadership Conference for tens of thousands of employees. JPMorgan Chase's $19.8B FY2025 tech spend—70%+ of applications in public or private cloud—signals an IT organization actively scaling collaboration infrastructure.",
+    "source_url": "https://www.builtinnyc.com/job/video-production-specialist/8236384",
+    "why_vbrick": "With 300,000+ employees globally and a hybrid cloud infrastructure, JPMorgan Chase requires enterprise-grade eCDN for firm-wide town halls and compliance-regulated video archiving. VBRICK's FINRA-ready archiving, SOC II Type 2, real-time analytics, and Microsoft 365/Teams integration directly address the financial services security and records-management requirements visible in these postings. The firm's active investment in AI and GenAI (AI solutions in production doubled in 2025) makes VBRICK's AI search and transcription capabilities additionally compelling.",
+    "outreach_angle": "",
+    "target_persona": "Head of Employee Communications / CIO Infrastructure",
+    "industry": "Financial Services",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "job_posting",
     "finding_id": "",
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Heather Barbakoff",
+        "title": "Executive Director, Senior Communications Manager, Global Technology",
+        "linkedin": "https://www.linkedin.com/in/heatherbarbakoff"
+      },
+      {
+        "name": "Kanti S",
+        "title": "Executive Director, Head Of Enterprise Technology Communications",
+        "linkedin": "https://www.linkedin.com/in/kantishrestha"
+      },
+      {
+        "name": "Pallavi J",
+        "title": "Vice President - IT Infrastructure",
+        "linkedin": "https://www.linkedin.com/in/pallavi-j-21532614"
+      },
+      {
+        "name": "Lee Wilson",
+        "title": "JPMC VP Infrastructure",
+        "linkedin": "https://www.linkedin.com/in/lee-wilson-8a67302"
+      },
+      {
+        "name": "Ruby Murray",
+        "title": "Executive Director, Global Head Of Learning - Legal And Internal Audit",
+        "linkedin": "https://www.linkedin.com/in/ruby-murray-b6976a4"
+      },
+      {
+        "name": "Matthew Davis",
+        "title": "Learning Lead - Firmwide Talent Development Education, Vice President",
+        "linkedin": "https://www.linkedin.com/in/dvgpro"
+      },
+      {
+        "name": "Karthik Viswanathan",
+        "title": "Senior Vice President, Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/itskarthik1983"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 72,
+    "category": "Fortune 500 Accounts",
+    "company": "Walmart",
+    "summary": "Walmart posted multiple senior communications leadership roles in Q1 2026, including a Director of Communications for Owned Website & Email (March 2026, $110K–$220K) and a Senior Director, Communications ($130K–$260K). Both roles explicitly reference managing enterprise-wide internal communications channels including intranet, digital signage, and video messages for Walmart's 1.6 million U.S. associates. The Director role specifically calls out 'AI adoption across owned-channel ecosystem' and 'video messages' as key responsibilities, signaling a modernization of internal video infrastructure at scale.",
+    "source_url": "https://careers.walmart.com/us/en/jobs/R-2448483",
+    "why_vbrick": "Walmart's scale (1.6M associates, 10,000+ store locations) creates a massive eCDN distribution challenge for live and on-demand video. VBRICK's eCDN can reduce bandwidth load up to 98% across distributed retail locations, while its AI search and transcription capabilities align with the company's explicit requirement for AI-enabled content operations. GDPR compliance is relevant for Walmart's international operations. The Director role's call for AI-governed content workflows maps directly to VBRICK's automated transcription and AI search.",
+    "outreach_angle": "",
+    "target_persona": "SVP Global Communications / VP Employee Experience",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "job_posting",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Suresh Kumar",
+        "title": "Executive VP, Global CTO & Chief Development Officer",
+        "linkedin": "https://digitaldefynd.com/IQ/meet-the-executive-csuite-team-of-walmart/"
+      },
+      {
+        "name": "Hari Vasudev",
+        "title": "EVP and Tech Operating Partner, Walmart U.S.",
+        "linkedin": "https://www.linkedin.com/in/harivasudev"
+      },
+      {
+        "name": "Jerry R. Geisler III",
+        "title": "EVP and Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/jerry-geisler-289824b0"
+      },
+      {
+        "name": "Mischa Dunton",
+        "title": "Group Director, Global Communications, Head of Walmart Global Tech Communications",
+        "linkedin": "https://www.linkedin.com/in/mischa-dunton-3314bb"
+      },
+      {
+        "name": "Jessica Smith",
+        "title": "Director of Communications, Emerging Technologies, Walmart Global Tech",
+        "linkedin": "https://www.linkedin.com/in/jmsmith438"
+      },
+      {
+        "name": "Mandy McDonald-Brashear",
+        "title": "SVP and Chief People Officer, Global Corporate Functions",
+        "linkedin": "https://www.linkedin.com/in/mandy-mcdonald-brashear"
+      },
+      {
+        "name": "Sherin Sunny",
+        "title": "Sr Software Engineering Manager Architect, Vizio (Walmart)",
+        "linkedin": "https://www.linkedin.com/in/sunnysherin"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 73,
+    "category": "Fortune 500 Accounts",
+    "company": "Comcast",
+    "summary": "Comcast posted a Sr. Manager, Internal Communications role in March 2026 (Philadelphia, PA) supporting Finance, Legal, Strategic Development, and Enterprise Business Intelligence teams—covering employee populations of 200 to 2,400 per business unit. The posting explicitly calls for experience executing deliverables across 'videos, social platforms, digital content,' and graphic design/video production proficiency. Comcast also recently ran a Digital Internal Comms Co-op that referenced enterprise communications channels, intranet innovation, and analytics dashboards, signaling active investment in its internal video and digital communications infrastructure for its 186,000+ employee workforce.",
+    "source_url": "https://jobs.comcast.com/job/philadelphia/sr-manager-internal-communications/45483/93005900368",
+    "why_vbrick": "Comcast operates a complex, multi-site media and technology enterprise with 186,000+ employees. Scaling video across its headquarters, regional offices, and broadcast facilities requires enterprise eCDN capabilities. VBRICK's Microsoft 365/Teams integration, real-time analytics, and Section 508 compliance (applicable for public-facing communications) are differentiators. Comcast's active upgrade of internal digital channels signals a buyer ready to evaluate enterprise video platform modernization.",
+    "outreach_angle": "",
+    "target_persona": "Director, Internal Communications / VP Employee Engagement",
+    "industry": "Media & Technology",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "job_posting",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Michael Crisafulli",
+        "title": "SVP, Chief Information Officer, Comcast Cable",
+        "linkedin": "https://www.linkedin.com/in/michael-crisafulli-2056905"
+      },
+      {
+        "name": "Rick Rioboli",
+        "title": "EVP, CTO, Comcast",
+        "linkedin": "https://www.linkedin.com/in/rickrioboli"
+      },
+      {
+        "name": "Belal Hamzeh",
+        "title": "VP, Technology and Systems Engineering, Comcast",
+        "linkedin": "https://www.linkedin.com/in/belal-hamzeh-55232210"
+      },
+      {
+        "name": "Brooke Zane",
+        "title": "Chief Compliance Officer, VP & Senior Deputy General Counsel, Comcast Cable",
+        "linkedin": "https://www.linkedin.com/in/brooke-zane-37481910"
+      },
+      {
+        "name": "Sudhanshu Kairab",
+        "title": "Deputy Global CISO, SVP Cybersecurity Governance Risk & Compliance, Comcast",
+        "linkedin": "https://www.linkedin.com/in/sudhanshukairab"
+      },
+      {
+        "name": "Dave Brophy",
+        "title": "Director, Security & Compliance, Comcast",
+        "linkedin": "https://www.linkedin.com/in/dave-brophy-a471b833"
+      },
+      {
+        "name": "Lewis Mcpherson",
+        "title": "Senior Manager, Video Infrastructure Engineering, Comcast",
+        "linkedin": "https://www.linkedin.com/in/lewis-mcpherson-315b383"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 74,
+    "category": "Fortune 500 Accounts",
+    "company": "Goodyear Tire & Rubber Company",
+    "summary": "Goodyear posted two roles in Q1 2026: Director, Global Internal Communications (December 2025, LinkedIn) and Global Internal Communications Specialist (March 2026). The Director role explicitly requires building global internal communications strategy across 72,000+ employees in 50+ countries, executive communications, enterprise change management, and managing video and multimedia content. The Goodyear Forward strategic plan—a major business transformation program—is generating high demand for internal communications infrastructure to keep a globally distributed workforce aligned.",
+    "source_url": "https://www.linkedin.com/jobs/view/director-global-internal-communications-at-the-goodyear-tire-rubber-company-4326874241",
+    "why_vbrick": "A 72,000-employee global manufacturer undergoing business transformation (Goodyear Forward) is a classic VBRICK use case: live all-hands streaming, on-demand video libraries for training and change management, multi-language content, and eCDN for distributed plant/facility locations with constrained bandwidth. VBRICK's GDPR compliance and multi-site eCDN are directly relevant. The Director role's emphasis on 'international experience' and 'global organization' underscores the need for a platform that handles international distribution with analytics.",
+    "outreach_angle": "",
+    "target_persona": "Director, Global Internal Communications / CHRO",
+    "industry": "Manufacturing",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "high",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "job_posting",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Dave Pellegrini",
+        "title": "Vice President Information Technology, Americas",
+        "linkedin_url": "https://www.linkedin.com/in/dpellegrini",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Christy Bykowski",
+        "title": "Senior Director, Global Communications",
+        "linkedin_url": "https://www.linkedin.com/in/christybykowski",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Christian Malkmus",
+        "title": "Senior Director IT, Enterprise Architecture",
+        "linkedin_url": "https://www.linkedin.com/in/christian-malkmus-3532177",
+        "role": "Influencer"
+      },
+      {
+        "name": "Judson Pitt",
+        "title": "Director Of Information Technology",
+        "linkedin_url": "https://www.linkedin.com/in/judsonpitt",
+        "role": "Influencer"
+      },
+      {
+        "name": "Amy Weller",
+        "title": "Director Of Learning And Development",
+        "linkedin_url": "https://www.linkedin.com/in/amy-weller",
+        "role": "Influencer"
+      },
+      {
+        "name": "Aaron Gibbons",
+        "title": "Cloud Solutions Architect",
+        "linkedin_url": "https://www.linkedin.com/in/aaron-gibbons",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Thierry Mamer",
+        "title": "Solutions Architect",
+        "linkedin_url": "https://www.linkedin.com/in/thierry-mamer",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Gloria Rangel",
+        "title": "Director Compliance And Ethics",
+        "linkedin_url": "https://www.linkedin.com/in/gloria-rangel-776ba16a",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Matt Clokey",
+        "title": "Director, Global Facility Security Investigations",
+        "linkedin_url": "https://www.linkedin.com/in/matt-clokey-cpp-667417b1",
+        "role": "Technical Evaluator"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 75,
+    "category": "Fortune 500 Accounts",
+    "company": "Capital One Financial",
+    "summary": "Capital One posted an Internal Communications Business Partner role in Q1 2026 (Nottingham, UK) and a Sr. Manager, Corporate Communications role in McLean, VA and Richmond, VA. Capital One has historically relied on Zoom Rooms for hybrid video collaboration (documented 2022 deployment). As Microsoft Teams continues expanding its town hall and eCDN capabilities (April 2026 licensing update adding eCDN to all Teams Enterprise users), Capital One—a Microsoft Teams customer operating in a highly regulated financial environment—is a prime candidate for eCDN partner evaluation.",
+    "source_url": "https://www.strictlyinternal.com/p/internal-communications-jobs-jan-5-2026",
+    "why_vbrick": "Capital One (~55,000 employees) operates under strict FINRA and financial services compliance. With Microsoft's April 2026 update moving eCDN into Teams core (previously Teams Premium-only), Capital One IT and communications teams will face new configuration decisions on whether to use Microsoft eCDN or a certified partner like VBRICK. VBRICK's FINRA-ready archiving and real-time analytics create a compelling case for a third-party eCDN that provides deeper compliance reporting than Microsoft's native solution.",
+    "outreach_angle": "",
+    "target_persona": "IT Infrastructure Lead / Head of Internal Communications",
+    "industry": "Financial Services",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "tech_stack_change",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Srini Uppalapati",
+        "title": "Managing Vice President, Digital at CapitalOne",
+        "linkedin_url": "https://www.linkedin.com/in/srini-uppalapati-b24221bb",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Carlisle Campbell",
+        "title": "Managing Vice President, Head Of Corporate Communications",
+        "linkedin_url": "https://www.linkedin.com/in/carlisle-campbell-01b58114",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Ashley Richardson",
+        "title": "Director Internal Communications",
+        "linkedin_url": "https://www.linkedin.com/in/ashley-richardson-5b872a58",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Indu Jain",
+        "title": "Chief Technology Officer, Vice President",
+        "linkedin_url": "https://www.linkedin.com/in/indujain",
+        "role": "Decision Maker"
+      },
+      {
+        "name": "Dylan Croslin",
+        "title": "Director, Enterprise HR Learning And Development",
+        "linkedin_url": "https://www.linkedin.com/in/dylancroslin",
+        "role": "Influencer"
+      },
+      {
+        "name": "David Wolf",
+        "title": "Sr. Manager UC Engineering Lead",
+        "linkedin_url": "https://www.linkedin.com/in/wolfnbro",
+        "role": "Evaluator"
+      },
+      {
+        "name": "Sampada Korumilli",
+        "title": "Sr Network Security Engineer",
+        "linkedin_url": "https://www.linkedin.com/in/sampada-korumilli-01a78929",
+        "role": "Technical Evaluator"
+      },
+      {
+        "name": "Alex Lane",
+        "title": "Senior Manager, Information Security Office",
+        "linkedin_url": "https://www.linkedin.com/in/aslirl",
+        "role": "Technical Evaluator"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 76,
+    "category": "Fortune 500 Accounts",
+    "company": "HCA Healthcare",
+    "summary": "HCA Healthcare (260,000+ employees, 180+ hospitals) revealed in a HIMSS webinar (December 2025) the results of its enterprise-wide clinical communication platform implementation: ED to floor admissions 32 minutes faster, broadcast messaging saving 33 hours/day, and nurse call response times improved 40%. HCA also operates its HCA Inspire social platform for employee communications (mobile app). HCA's Q3 2025 earnings call referenced ongoing investments in 'digital transformation,' 'shared service platforms,' and 'new capabilities.' The company posted a Senior Communications Specialist role in Nashville (Q1 2026).",
+    "source_url": "https://www.linkedin.com/posts/kellyelliotchallenger_clinicalcommunication-activity-7407455772013379586-GzER",
+    "why_vbrick": "HCA Healthcare is a HIPAA-regulated enterprise with 260,000+ employees across distributed hospital and outpatient locations. VBRICK's HIPAA compliance and FedRAMP-ready deployment are directly relevant for clinical and administrative video communications. Real-time analytics would support HCA's documented focus on measuring communication effectiveness. An enterprise video platform would complement the HCA Inspire social comms layer with secure, scalable video for all-hands town halls, clinical training, and compliance content.",
+    "outreach_angle": "",
+    "target_persona": "Chief Digital Officer / VP Employee Communications",
+    "industry": "Healthcare",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "internal_comms_investment",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Chad Wasserman",
+        "title": "Senior Vice President & Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/chad-wasserman-7640178"
+      },
+      {
+        "name": "Shahzad Fakhar",
+        "title": "Vice President - IT Field Operations",
+        "linkedin": "https://www.linkedin.com/in/shahzad-fakhar-27669349"
+      },
+      {
+        "name": "Luis Navas",
+        "title": "AVP, IT Infrastructure Engineering Operations",
+        "linkedin": "https://www.linkedin.com/in/luisrnavas"
+      },
+      {
+        "name": "Sarah Fry",
+        "title": "Video Strategy Manager, Creative Services",
+        "linkedin": "https://www.linkedin.com/in/sarah-fry-2441ab25"
+      },
+      {
+        "name": "Matt Nahay",
+        "title": "Manager, Video Content",
+        "linkedin": "https://www.linkedin.com/in/matt-nahay-8131578"
+      },
+      {
+        "name": "Sara Sweitzer",
+        "title": "Senior Director Clinical Communications",
+        "linkedin": "https://www.linkedin.com/in/sara-sweitzer-2696664"
+      },
+      {
+        "name": "Laura Grams",
+        "title": "Vice President, Leadership And Organizational Development",
+        "linkedin": "https://www.linkedin.com/in/laura-grams-3b178bb"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 77,
+    "category": "Fortune 500 Accounts",
+    "company": "Defense Information Systems Agency (DISA)",
+    "summary": "DISA's Global Content Delivery Services II (GCDS-II, contract HC108421D0002) remains active through at least 2026, providing on-demand, dynamically scalable content delivery services—including streaming—for DISA and DISA-approved DoD locations globally. Amentum separately won a $120M DISA Computer Processing contract in December 2025. DISA's FY2025 Contracts Guide confirms ongoing IDIQ procurement for content delivery services encompassing web application availability, secure content delivery, and streaming. A new DISA contract for cloud browser isolation infrastructure ($201M) was released in February 2026, signaling active procurement modernization.",
+    "source_url": "https://www.afcea.org/signal/resources/content/_DISA_Guide_FY2025.pdf",
+    "why_vbrick": "DISA supports DoD's enterprise video and streaming requirements across CONUS and OCONUS. VBRICK's FedRAMP authorization, FIPS 140-2 compliance, and SOC II Type 2 certification position it directly for DoD/DISA video platform acquisitions. As GCDS-II approaches recompete and DISA modernizes its content delivery infrastructure, VBRICK's government-grade video streaming—available through GSA Schedule, SEWP, and NITAC—is well-positioned for task order opportunities. Urgency is elevated by active DISA procurement cycles.",
+    "outreach_angle": "",
+    "target_persona": "DISA Program Manager / DoD IT Procurement Officer",
+    "industry": "Federal Government / Defense",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "federal_contract",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Paul T. Stanton",
+        "title": "Director",
+        "linkedin": "https://www.linkedin.com/in/paul-stanton6"
+      },
+      {
+        "name": "Jeff Marshall",
+        "title": "Director, DISA J-9 Hosting and Compute",
+        "linkedin": "https://www.linkedin.com/in/jeff-marshall-bb2189a7"
+      },
+      {
+        "name": "Steve Wallace",
+        "title": "Chief Technology Officer, DISA Emerging Technology Directorate",
+        "linkedin": "https://www.linkedin.com/in/steve-wallace-1771645"
+      },
+      {
+        "name": "Byron Stephenson",
+        "title": "J-9 Vice Director",
+        "linkedin": "https://www.linkedin.com/in/byron-stephenson-ab7045241"
+      },
+      {
+        "name": "Marcus Walker",
+        "title": "Deputy Chief of Enterprise Operations",
+        "linkedin": "https://www.linkedin.com/in/marcus-walker-36b8024b"
+      },
+      {
+        "name": "Sharon Mcmillon",
+        "title": "Vice Director for Programs / Deputy Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/sharonmcmillon"
+      },
+      {
+        "name": "Katrina Logan",
+        "title": "Director, Manpower and Personnel Directorate (J1)",
+        "linkedin": "https://www.linkedin.com/in/katrina-logan-758a5a4"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 78,
+    "category": "Fortune 500 Accounts",
+    "company": "Department of Veterans Affairs (VA)",
+    "summary": "The VA's FY2026 IT budget (Volume 5) targets accelerated investments in infrastructure readiness, cybersecurity, and AI within constrained fiscal limits. The VA is deploying its Electronic Health Record (EHR) to 13 new sites in 2026, expanding 6,000+ EPS scheduling integrations, and modernizing Oracle Cerner deployments. With 400,000+ employees across 170 VA Medical Centers and 1,200+ outpatient facilities, the VA's internal communications and training video requirements are among the largest in federal government. The agency's FY2026 IT budget emphasis on AI and digital modernization signals openness to video platform upgrades.",
+    "source_url": "https://department.va.gov/wp-content/uploads/2025/06/2026-Volume-5-Information-Technology-Programs-and-Electronic-Health-Record-Modernization.pdf",
+    "why_vbrick": "The VA is a massive federal employer with both healthcare (HIPAA) and government (FedRAMP) compliance requirements—both of which VBRICK satisfies. The agency's ongoing EHR modernization and site expansions create urgent training and change management video needs. VBRICK's Section 508 accessibility compliance is a federal mandate for all VA communications. VBRICK's government contract vehicles (GSA Schedule, SEWP) reduce acquisition friction for VA procurement officers.",
+    "outreach_angle": "",
+    "target_persona": "VA CIO / Deputy Secretary for IT / Chief Communications Officer",
+    "industry": "Federal Government / Healthcare",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "federal_contract",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Hemant Baidwan",
+        "title": "Chief Information Security Officer (DHS CISO)",
+        "linkedin": "https://www.linkedin.com/in/hbaidwan"
+      },
+      {
+        "name": "Peyton Rollins",
+        "title": "Digital Communications Director",
+        "linkedin": "https://www.linkedin.com/in/peyton-rollins-"
+      },
+      {
+        "name": "Matthew T Harmon",
+        "title": "Director of Web Communications",
+        "linkedin": "https://www.linkedin.com/in/mtharmon"
+      },
+      {
+        "name": "Erica Pitts Dyson",
+        "title": "Director Internal Communications",
+        "linkedin": "https://www.linkedin.com/in/erica-pitts-dyson-89308121"
+      },
+      {
+        "name": "Lisa Boothe",
+        "title": "Director of Workforce Development",
+        "linkedin": "https://www.linkedin.com/in/lisa-boothe-b5147596"
+      },
+      {
+        "name": "Michelle Hoffman",
+        "title": "Director of Learning And Development",
+        "linkedin": "https://www.linkedin.com/in/michelle-hoffman-5823181b2"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 79,
+    "category": "Fortune 500 Accounts",
+    "company": "Leidos",
+    "summary": "Leidos (47,000+ employees, $17.2B FY2025 revenue) is expanding its DODNet modernization contract to eight additional DoD agencies, covering 100,000+ additional users, under its $11.5B, 10-year digital modernization agreement. The company posted a Communications and Outreach Manager role for a DHS program in Washington DC (Q1 2026). Leidos also secured a $561M MAC contract from Washington Headquarters Services alongside Booz Allen Hamilton and Deloitte (February 2026). As Leidos modernizes DoD networks for 300,000+ users, internal communications video platforms for its own workforce and for DoD client deployments are a procurement priority.",
+    "source_url": "https://finance.yahoo.com/news/leidos-expands-dodnet-contract-long-031456103.html",
+    "why_vbrick": "Leidos operates in cleared, high-security environments where FedRAMP, FIPS 140-2, and SOC II Type 2 are procurement prerequisites—exactly VBRICK's government compliance stack. The DODNet expansion to 100,000+ new users creates demand for secure video communication tools at those agencies. VBRICK can be procured through the same GWAC vehicles (SEWP, Alliant 3) that Leidos uses, enabling teaming or end-customer engagement. Leidos's own 47,000-employee enterprise also requires an internal video platform for training and executive communications.",
+    "outreach_angle": "",
+    "target_persona": "Leidos CIO / DoD IT Program Manager",
+    "industry": "Defense / Federal IT Services",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "tech_stack_change",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Alexandra Guenther",
+        "title": "SVP & Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/lexyguenther"
+      },
+      {
+        "name": "Blake Nelson",
+        "title": "Vice President Cloud Practice, Digital Modernization Sector",
+        "linkedin": "https://www.linkedin.com/in/blakenelson"
+      },
+      {
+        "name": "Thomas Downey",
+        "title": "EVP, Communications, Marketing, and Government Affairs",
+        "linkedin": "https://www.linkedin.com/in/thomas-downey-506562342"
+      },
+      {
+        "name": "Leslie Fautsch",
+        "title": "Chief Human Resources Officer",
+        "linkedin": "https://www.linkedin.com/in/leslie-fautsch-jd-5355201"
+      },
+      {
+        "name": "Erin Carey",
+        "title": "Director, Tech & Innovation",
+        "linkedin": "https://www.linkedin.com/in/3rincarey"
+      },
+      {
+        "name": "Adam Frederick",
+        "title": "Voice and Video Network Engineer",
+        "linkedin": "https://www.linkedin.com/in/adam-frederick-b6a07472"
+      },
+      {
+        "name": "Jonathan Jowers",
+        "title": "Senior Principal Cybersecurity Compliance",
+        "linkedin": "https://www.linkedin.com/in/jonathan-jowers-595676b"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 80,
+    "category": "Fortune 500 Accounts",
+    "company": "Accenture",
+    "summary": "Accenture (730,000+ employees) announced in December 2025 it is rolling out ChatGPT Enterprise to tens of thousands of employees for internal workflows and client-facing products. This large-scale AI deployment, combined with Accenture's recent push into agentic AI, signals a broader digital workplace modernization program. Accenture's global scale—730,000 employees in 50+ countries—and its heavy use of Microsoft 365 make its enterprise video infrastructure a significant decision area.",
+    "source_url": "https://www.emarketer.com/content/accenture--deloitte-push-agentic-ai-enterprise-territory-shift",
+    "why_vbrick": "At 730,000 employees, Accenture is one of the world's largest Microsoft 365 deployments. The April 2026 Teams licensing change (eCDN included in Teams core) triggers an immediate eCDN partner evaluation for Accenture's IT team. VBRICK's GDPR compliance and global content delivery capabilities are essential for Accenture's European and APAC operations. The firm's AI-first workplace strategy aligns with VBRICK's AI search, transcription, and video analytics. Accenture's own client service delivery also creates a channel partner opportunity.",
+    "outreach_angle": "",
+    "target_persona": "Global CIO / Head of Digital Workplace / IT Infrastructure Lead",
+    "industry": "Professional Services / Technology",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "tech_stack_change",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Raju Yadav",
+        "title": "Vice President - Cloud and Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/raju-yadav-809b6113"
+      },
+      {
+        "name": "Kapil Khanna",
+        "title": "VP - Accenture Intelligent Cloud and Infrastructure Operations Infrastructure Engineering",
+        "linkedin": "https://www.linkedin.com/in/kapil-khanna-941a35a4"
+      },
+      {
+        "name": "Carlo La Grotta",
+        "title": "Manager-Digital Video Operation",
+        "linkedin": "https://www.linkedin.com/in/carlolagrotta"
+      },
+      {
+        "name": "Brittany Piano",
+        "title": "Video and Collaboration Architect",
+        "linkedin": "https://www.linkedin.com/in/brittany-piano-156611102"
+      },
+      {
+        "name": "Patrick Rowe",
+        "title": "Chief Compliance Officer and Deputy General Counsel",
+        "linkedin": "https://www.linkedin.com/in/patrickroweuk"
+      },
+      {
+        "name": "Rachel Frey",
+        "title": "Chief Communications Officer",
+        "linkedin": "https://www.linkedin.com/in/rachelfreyaccenture"
+      },
+      {
+        "name": "Humera Siddique",
+        "title": "VP, Global Talent Supply Chain",
+        "linkedin": "https://www.linkedin.com/in/humera-siddique-05aaa0185"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 81,
+    "category": "Competitor Intelligence",
+    "company": "Kaltura Enterprise Customers (Broad)",
+    "summary": "Kaltura's analytics service experienced a 9.6-hour degradation on March 3, 2026, causing users to encounter slowness or complete failure when retrieving analytics data. IsDown monitoring shows Kaltura averaged 2.2 incidents/month over the past 5 years, with incidents in August 2025 (13 hours), July 2025 (6 hours), October 2025 (1 day AWS-wide), and December 2025. A Zoom integration outage also affected Kaltura in January 2025.",
+    "source_url": "https://isdown.app/status/kaltura/incidents/546998-analytics-degradation",
+    "why_vbrick": "VBRICK's real-time analytics architecture is core to its platform, not an afterthought. Persistent Kaltura analytics degradations undermine executives' ability to measure video ROI. VBRICK's SOC II Type 2 certification reflects the operational controls needed for consistent uptime.",
+    "outreach_angle": "Lead with analytics reliability — 'Can you trust your video engagement data when your platform goes dark for 9+ hours?' Demonstrate VBRICK's always-on analytics with live demo.",
+    "target_persona": "Director of Corporate Communications / VP of Learning & Development",
+    "industry": "Enterprise (Cross-industry)",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Service Outage",
+    "finding_id": "",
+    "competitor": "Kaltura",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 82,
+    "category": "Competitor Intelligence",
+    "company": "Panopto Enterprise Customers",
+    "summary": "Panopto's iOS/Android app carries a 1.7/5 rating on the Apple App Store with 240 ratings. Recurring complaints include: video/audio desynchronization, blank video with working audio, no audio with working screen, speed control failures, offline video requiring internet access, and a UI that 'shouldn't partner with schools because the app is not properly built.' G2 enterprise reviewers note the platform 'feels slow and clunky,' upload/processing times are longer than expected, and editing tools are 'not as smooth or intuitive.' SSO migration is described as 'challenging and difficult' for admins. Pricing is repeatedly flagged as 'expensive and keeps increasing.'",
+    "source_url": "https://www.g2.com/products/panopto/reviews",
+    "why_vbrick": "VBRICK's modern platform is built for enterprise reliability across devices, with a well-maintained mobile experience and SSO that integrates natively with enterprise identity providers. For organizations with mobile-first workforces or field operations, VBRICK eliminates the friction that drives Panopto user abandonment.",
+    "outreach_angle": "UX-led displacement: 'When your video platform has a 1.7-star mobile app and audio syncs are broken in lecture capture, learner adoption suffers. VBRICK's enterprise video experience is built for reliability across every device your workforce uses.'",
+    "target_persona": "VP of Learning & Development / Director of Training / IT Director",
+    "industry": "Higher Education / Healthcare / Enterprise L&D",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "High",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Negative Review / User Experience",
+    "finding_id": "",
+    "competitor": "Panopto",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 83,
+    "category": "Competitor Intelligence",
+    "company": "Panopto Enterprise Customers (Pricing-Sensitive)",
+    "summary": "Panopto's enterprise pricing starts at $7,500/year minimum according to multiple verified sources, with actual enterprise contracts typically running $10,000+/year (Vendr market data). Panopto does not publish pricing publicly. G2 reviewers specifically call out that pricing 'keeps increasing' and that enhanced features are 'behind a paid wall.' Panopto changed its pricing model to charge for stored hours — whether played or not — forcing institutions to implement archiving policies to manage costs.",
+    "source_url": "https://www.vendr.com/marketplace/panopto",
+    "why_vbrick": "VBRICK's pricing includes native compliance archiving, eCDN, AI transcription, and search — capabilities that typically require Panopto add-ons or separate vendor purchases. VBRICK's total cost of ownership is competitive against Panopto's rising base + add-on cost structure.",
+    "outreach_angle": "TCO comparison: 'Panopto charges for stored hours whether watched or not, and keeps adding paid walls on features. VBRICK's platform includes compliance archiving, AI search, and eCDN in the base package — let's do a TCO comparison at your renewal.'",
+    "target_persona": "CFO / VP of IT / Director of Procurement",
+    "industry": "Higher Education / Enterprise",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Pricing Concern",
+    "finding_id": "",
+    "competitor": "Panopto",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 84,
+    "category": "Competitor Intelligence",
+    "company": "Vimeo Enterprise Customers (GDPR/EU Regulated)",
+    "summary": "Vimeo defaults to US-based data hosting with EU hosting available only as an optional add-on on Enterprise plans. GDPR compliance requires explicit configuration and a custom Data Processing Addendum (DPA) — it is not GDPR-compliant by default. SSO (SAML 2.0) and SCIM provisioning are gated behind Enterprise plans and require sales-assisted activation. SCIM only supports Okta and Azure AD — leaving Google Workspace users without native automation. Real-time analytics are only available for live events; VOD analytics are delayed.",
+    "source_url": "https://www.stitchflow.com/scim/vimeo",
+    "why_vbrick": "VBRICK's enterprise platform provides SOC II Type 2, GDPR, and HIPAA compliance natively without requiring Enterprise plan upgrades or manual DPA configuration. For EU-operating enterprises, VBRICK's compliance-by-default posture removes the liability that Vimeo's opt-in model creates.",
+    "outreach_angle": "Compliance-led: 'Vimeo's GDPR compliance requires manual DPA activation, and SCIM only works if you pay for Enterprise. VBRICK ships with GDPR compliance built in — no friction, no surprise add-ons.'",
+    "target_persona": "Chief Compliance Officer / DPO / VP of IT",
+    "industry": "Financial Services / Healthcare / EU Enterprise",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "Medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "Compliance Gap",
+    "finding_id": "",
+    "competitor": "Vimeo Enterprise",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 85,
+    "category": "Compliance & Regulatory",
+    "company": "Regulation: Video Privacy Protection Act (VPPA) — Enterprise Litigation Risk",
+    "summary": "VPPA litigation continues to generate significant enterprise exposure as courts apply the 1988 law to modern enterprise video platforms sharing viewer data with third-party analytics services. In 2025, federal appellate courts issued mixed decisions on what constitutes 'personally identifiable information' under the VPPA — with some circuits allowing claims to proceed when logged-in status or contact information is shared with viewing data. The NFL filed an amicus brief asking the Supreme Court to address the VPPA circuit split involving the NBA, and depending on the outcome, it could either expand or constrain enterprise liability. California's SB 690 would carve out commercial tracking that complies with CCPA but will not take effect until at least 2027.",
+    "source_url": "https://pandectes.io/blog/digital-consent-in-2025-the-ongoing-influence-of-the-vppa-on-privacy/",
+    "why_vbrick": "Enterprises embedding video content on public websites or internal portals that share viewer identification data with third-party analytics (Google Analytics, advertising pixels) face VPPA class action exposure. Vbrick's closed enterprise architecture — without third-party tracker integrations or advertising data sharing — avoids the specific data disclosure pattern that triggers VPPA claims. Legal and compliance teams evaluating video platform risk will prioritize platforms that cannot generate VPPA liability by design, particularly as the Supreme Court may expand the law's application.",
+    "outreach_angle": "",
+    "target_persona": "General Counsel, DPO, VP Technology",
+    "industry": "Enterprise / Media / Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "regulatory_change",
+    "finding_id": "",
+    "compliance_standard": "",
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 86,
+    "category": "Fortune 500 Accounts",
+    "company": "UniFirst Corporation",
+    "summary": "UniFirst (16,000 employees, $2B revenue, uniform/facility services) posted an Associate Director, Internal Communications & Employee Experience in Wilmington, MA (Q1 2026, $138K–$184K). The role explicitly requires 'compelling content for internal and business communications channels, including intranet, newsletters, digital signage, and video messages' and states the company is 'growing and transforming fast.' The posting calls for experience with 'technology platforms and analytics to enhance communications and measure impact,' confirming investment intent in video-capable communications infrastructure.",
+    "source_url": "https://www.indeed.com/q-internal-communications-content-manager-jobs.html",
+    "why_vbrick": "UniFirst's 16,000 associates across multi-location service operations represent a distributed workforce model that benefits from eCDN-optimized video delivery. The explicit mention of digital signage and video messages alongside analytics signals an intent to invest in a video platform. VBRICK's real-time analytics and Microsoft 365 integration would satisfy the measurement KPI requirement. This is a net-new buyer showing first-time investment signals.",
+    "outreach_angle": "",
+    "target_persona": "Associate Director, Internal Communications / CHRO",
+    "industry": "Business Services",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "job_posting",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [],
+    "is_new": true
+  },
+  {
+    "id": 87,
+    "category": "Fortune 500 Accounts",
+    "company": "Amazon",
+    "summary": "Amazon posted multiple multimedia storyteller and content creator roles within its Operations Internal Communications team, serving 1.5+ million Operations employees globally. Roles reference producing 'video storytelling,' coordinating film crews, publishing to 'owned internal channels,' and delivering content to frontline employees. A separate Amazon Devices & Services Internal Communications Specialist role references 'large- and small-scale internal events.' Amazon's scale—with 1.5M+ Operations employees—creates a massive requirement for scalable video distribution infrastructure that consumer-grade tools cannot support.",
+    "source_url": "https://amazon.jobs/en/jobs/3199525/multimedia-storyteller-operations-internal-communications",
+    "why_vbrick": "Amazon's 1.5M+ employee internal communications operation is one of the largest in the world. Scaling video for all-hands events, operational briefings, and executive messages across warehouse, logistics, and corporate facilities globally requires purpose-built enterprise eCDN. VBRICK's AI transcription and search would address the accessibility and multilingual workforce requirements implicit in Amazon's global frontline population. Microsoft 365 integration is relevant given Amazon's hybrid toolset.",
+    "outreach_angle": "",
+    "target_persona": "VP, Operations Internal Communications / Head of Employee Technology",
+    "industry": "E-Commerce / Technology",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "job_posting",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
     "stakeholders": [
       {
         "name": "Stephany Rochon",
@@ -2521,850 +3846,19 @@ const FINDINGS = [
         "role": "Technical Evaluator"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 58,
-    "category": "Market Triggers",
-    "company": "Charter Communications / Cox Communications",
-    "summary": "Charter Communications received shareholder approval (99% of votes) in July 2025 for its $34.5–35.4B acquisition of Cox Communications. The combined entity, which will adopt the Cox name while retaining Spectrum as the consumer brand, expects to close mid-2026 pending regulatory approval. The merger will unite approximately 100,000 Charter employees with Cox's 22,000+ employees, creating one of the largest US broadband operators.",
-    "source_url": "https://tecknexus.com/telecom-and-tech-merger-and-acquisition-tracker-2025/",
-    "why_vbrick": "A $35B cable-broadband merger combining two large enterprise IT environments is a classic video infrastructure consolidation trigger. The combined ~122,000-employee entity will need to rationalize duplicate collaboration and video platforms. Vbrick's position as the enterprise video platform that works across existing Microsoft/Google ecosystems, with eCDN for distributed cable/telecom office networks, makes it a strong candidate for the unified post-merger environment.",
-    "outreach_angle": "The Charter-Cox merger—closing mid-2026—creates a 122,000-person combined enterprise that will need to rationalize duplicate video and collaboration platforms. Position Vbrick now as the unified enterprise video layer: eCDN-optimized for cable/telecom network architectures, Microsoft Teams-integrated, and scalable across both Charter and Cox legacy infrastructure from Day 1 post-close.",
-    "target_persona": "Post-merger CIO / SVP IT Integration / Chief Communications Officer",
-    "industry": "Telecommunications / Cable",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ma_consolidation",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "Gretchen L Kelly",
-        "title": "Group Vice President Corporate IT",
-        "linkedin": "https://www.linkedin.com/in/gretchenlkelly"
-      },
-      {
-        "name": "Mary Jo Moehle",
-        "title": "Group Vice President, Digital & Multimedia Communications",
-        "linkedin": "https://www.linkedin.com/in/mary-jo-moehle-5896818"
-      },
-      {
-        "name": "Vipul Patel",
-        "title": "Vice President, Advanced Video Engineering",
-        "linkedin": "https://www.linkedin.com/in/vipul-patel-4ba0761"
-      },
-      {
-        "name": "Chris Loes",
-        "title": "Senior Manager - Core Video Operations -Switched Digital Video And Linear Edge",
-        "linkedin": "https://www.linkedin.com/in/chrisloes"
-      },
-      {
-        "name": "Larry Christopher",
-        "title": "Vice President, Associate General Counsel, Litigation Chief Compliance Officer",
-        "linkedin": "https://www.linkedin.com/in/larry-christopher-32b99a34"
-      },
-      {
-        "name": "Greg Temm",
-        "title": "Chief Information Security Officer",
-        "linkedin": "https://www.linkedin.com/in/gregtemm"
-      },
-      {
-        "name": "Douglas Miller",
-        "title": "Group Vice President of Human Resources",
-        "linkedin": "https://www.linkedin.com/in/douglas-miller-9104281"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 59,
-    "category": "Market Triggers",
-    "company": "Freddie Mac",
-    "summary": "Freddie Mac announced in March 2025 that all employees would be required to work in the office 5 days per week starting May 2025, ending remote flexibility entirely. The mandate came alongside compensation reviews and broader organizational restructuring under new FHFA-appointed leadership. Freddie Mac employs approximately 7,000+ employees and is subject to federal housing finance regulatory oversight, with potential privatization discussions ongoing.",
-    "source_url": "https://commonwealthjoe.com/blogs/blog/return-to-office-2025-corporate-mandates-federal-policies",
-    "why_vbrick": "A full 5-day RTO at a government-sponsored enterprise with federal regulatory oversight creates dual compliance requirements: enterprise video must satisfy both corporate broadcast needs and federal security standards. Vbrick's FedRAMP-aligned security, FINRA-ready archiving, and SOC II Type 2 compliance serve Freddie Mac's unique position as a quasi-governmental financial institution. The potential privatization discussions add urgency to technology modernization.",
-    "outreach_angle": "Freddie Mac's full RTO mandate and potential privatization trajectory mean your internal communications infrastructure needs to work at both federal-security and enterprise scale. Vbrick's FedRAMP-aligned, FINRA-ready enterprise video platform is the only solution that meets Freddie Mac's unique compliance posture while delivering the broadcast-quality town halls and training video a modernizing GSE requires.",
-    "target_persona": "CIO / Chief Human Resources Officer / VP Internal Communications",
-    "industry": "Financial Services / Government-Sponsored Enterprise",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "return_to_office",
-    "finding_id": "",
-    "employee_count": "Unknown",
-    "is_fortune500": "Unverified",
-    "stakeholders": [
-      {
-        "name": "David Wilson",
-        "title": "Vice President, Servicing Technology",
-        "linkedin": "https://www.linkedin.com/in/david-wilson-986620"
-      },
-      {
-        "name": "Alison Tam",
-        "title": "Vice President - End User and Mobility Services",
-        "linkedin": "https://www.linkedin.com/in/alison-chiu-tam-8596305"
-      },
-      {
-        "name": "Rom Sarpand",
-        "title": "Cyber Security Director",
-        "linkedin": "https://www.linkedin.com/in/rsarpand"
-      },
-      {
-        "name": "Rick Coleman",
-        "title": "Chief Operating Officer, Service Management And Ops",
-        "linkedin": "https://www.linkedin.com/in/rickcoleman1"
-      },
-      {
-        "name": "Mike Ryan",
-        "title": "Vice President Corporate Technology Strategy",
-        "linkedin": "https://www.linkedin.com/in/mikeryan4"
-      },
-      {
-        "name": "Cindy Hallinan",
-        "title": "SVP, Enterprise Operations and Technology CFO & Financial Transformation",
-        "linkedin": "https://www.linkedin.com/in/cindy-hallinan-1480784"
-      },
-      {
-        "name": "Ashley Santiago",
-        "title": "Vice President, Digital Product Owner",
-        "linkedin": "https://www.linkedin.com/in/ashleysantiago"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 60,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: FedRAMP RFC-0027 / NIST SP 800-53 Rev 5.2.0 Controls Update",
-    "summary": "NIST released SP 800-53 Rev 5.2.0 in August 2025, triggering a mandatory FedRAMP controls baseline update. RFC-0027 (and RFC-0029) propose updates to multiple control families (AC, AT, AU, CA, CM, PE, PL, PM, PS, PT). FedRAMP's Consolidated Rules for 2026 will be valid through December 31, 2028, with transition plans enabling CSPs to incorporate new guidance during annual assessments. Controls updates now include revised continuous monitoring expectations tied to new Balance Improvement Releases (BIRs), including Collaborative Continuous Monitoring and Vulnerability Detection and Response pathways.",
-    "source_url": "https://www.fedramp.gov/rfcs/0027/",
-    "why_vbrick": "Vbrick's compliance with NIST SP 800-53 Rev 5 controls—including audit logging, access control, and continuous monitoring—maps directly to updated requirements. Federal agencies procuring video platforms must now verify vendor alignment with Rev 5.2.0 controls. Vbrick's FedRAMP authorization maintenance through annual assessments and its FIPS 140-2 encryption satisfy updated AU (audit) and SC (system/communications protection) control families that are directly relevant to video platform security.",
-    "outreach_angle": "",
-    "target_persona": "Federal CISO, Compliance Officer",
-    "industry": "Federal Government",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 61,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: CFTC Rule 1.31/1.35 – $650K Fine for Missing Audio/Video Call Recordings",
-    "summary": "In late 2024, the CFTC fined a registered futures commission merchant $650,000 for recordkeeping failures under Section 4g(a) of the Commodity Exchange Act and CFTC Regulations 1.31 and 1.35, including approximately 3,000 missing audio/video call recordings. The failures arose from platform fragmentation—calls lost when switching between legacy telephony and enterprise collaboration tools (including Microsoft Teams), software patching issues, and call forwarding to personal mobile devices that bypassed recording. CFTC Regulation 1.35(a)(1)(iii) requires FCMs and swap dealers to record and retain all oral communications leading to commodity transactions, including electronic voice communications, for at least one year.",
-    "source_url": "https://argusarchive.com/2025/12/02/how-poor-voice-recording-controls-led-to-a-650000-cftc-penalty-and-how-regulated-firms-can-avoid-the-same-mistake/",
-    "why_vbrick": "This CFTC enforcement action is a direct use case for Vbrick's enterprise video archiving capabilities. The specific failure mode—calls slipping through gaps when using multiple platforms including Teams—is exactly the integration gap Vbrick's Microsoft Teams-native integration and centralized archiving solves. Commodity trading firms, FCMs, and swap dealers using fragmented video/voice solutions need a single compliant archiving platform. Vbrick's real-time analytics and audit trail capabilities provide the 'proof of capture' that regulators now demand.",
-    "outreach_angle": "",
-    "target_persona": "Chief Compliance Officer, CTO, Head of Trading Technology",
-    "industry": "Financial Services / Commodity Trading",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "enforcement_action",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 62,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: HIPAA Security Rule Proposed Update – MFA and Encryption Mandates",
-    "summary": "In December 2024, HHS OCR proposed a major update to the HIPAA Security Rule—the first substantive update since 2013. The proposed rule would make Multi-Factor Authentication (MFA) mandatory for ePHI access, require encryption at rest and in transit, and mandate audit log monitoring for all systems handling electronic protected health information. HHS expects to finalize the rule in 2026. Additionally, HHS has encouraged voluntary adoption of the HICP Essential Cybersecurity Practices (CPGs) with anticipation of future mandatory rulemaking. The HIPAA audit program restarted in early 2025 targeting enterprise-wide risk analysis failures. These changes would directly apply to any video platform where clinical staff access or share patient health information.",
-    "source_url": "https://www.hipaajournal.com/hipaa-updates-hipaa-changes/",
-    "why_vbrick": "The proposed HIPAA Security Rule update's explicit MFA and encryption requirements align directly with Vbrick's FIPS 140-2 certified encryption and security architecture. Healthcare organizations evaluating video platforms ahead of the final rule will prioritize vendors that can demonstrate both BAA capability and technical security controls. Vbrick's position as a HIPAA-ready platform with documented encryption and access controls accelerates vendor risk assessments. The rule's finalization in 2026 creates a decisive buying trigger for healthcare systems that have deferred video platform modernization.",
-    "outreach_angle": "",
-    "target_persona": "Healthcare CIO, CISO, IT Director",
-    "industry": "Healthcare",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 63,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: GDPR Enforcement – €7.1B Cumulative, €1.2B in 2025 Alone",
-    "summary": "GDPR cumulative fines since 2018 have exceeded €7.1 billion, with approximately €1.2 billion issued in 2025—matching 2024's total and reversing a briefly observed downward trend. European DPAs now receive 443 breach notifications per day (up 22% year-over-year). Key 2025 enforcement: TikTok fined €530M for illegal EEA-to-China data transfers. The top three fine triggers in 2025 were: (1) insufficient technical/organizational security measures, (2) non-compliance with general data processing principles, and (3) insufficient legal basis. Video data—including conference recordings, surveillance footage, and AI-generated transcripts—explicitly qualifies as personal data under GDPR Articles 4, 5, and 6. GDPR's EDPB guidelines require explicit consent before recording video conferences, data minimization, defined retention periods, and deletion procedures.",
-    "source_url": "https://www.kiteworks.com/gdpr-compliance/gdpr-fines-data-privacy-enforcement-2026/",
-    "why_vbrick": "Multi-national enterprises using video platforms for EU employees or customers face direct GDPR exposure if platforms lack consent management, data minimization, defined retention/deletion policies, and geographic data residency controls. Vbrick's GDPR-compliant platform—with configurable data retention, consent workflows, access controls, and data sovereignty options—is a differentiator for European headquarters and US companies with EU operations. The €530M TikTok fine and accelerating enforcement pace elevate video data compliance as a board-level priority across financial services, healthcare, and technology sectors.",
-    "outreach_angle": "",
-    "target_persona": "Chief Privacy Officer, DPO, CISO, Legal Counsel",
-    "industry": "Multi-Industry (EU Operations)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 64,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: EU AI Act – Full Enforcement for High-Risk AI Systems (August 2026)",
-    "summary": "The EU AI Act entered into force August 1, 2024, with a phased implementation: prohibited AI practices and AI literacy obligations became effective February 2, 2025; GPAI model obligations effective August 2, 2025; transparency rules (including AI-generated content labeling) effective August 2026; and full enforcement for high-risk AI systems effective August 2, 2026. Key obligations for enterprise AI video platforms: (1) AI systems using biometric identification or emotion recognition are prohibited in workplaces; (2) AI-generated content—including AI transcriptions, AI search results, and AI-generated video summaries—must be machine-readable labeled and disclosed; (3) GPAI providers must publish training data summaries and comply with EU copyright law; (4) transparency obligations for AI-generated video content apply from August 2026. Penalties reach €35M or 7% of global turnover for prohibited practices.",
-    "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
-    "why_vbrick": "Vbrick's AI search and transcription features fall under the EU AI Act's 'limited risk' category, requiring transparency disclosures about AI-generated content rather than the full high-risk compliance regime. This is a competitive advantage versus AI platforms that deploy higher-risk biometric or behavioral profiling. Vbrick should proactively document its AI Act compliance posture—specifically that its AI features are transparency-obligation-level (not high-risk) and that AI-generated transcripts and search results are appropriately labeled. For European enterprise customers, Vbrick's demonstrable AI Act compliance readiness before August 2026 is a procurement differentiator.",
-    "outreach_angle": "",
-    "target_persona": "Chief Privacy Officer, DPO, CISO, Legal Counsel",
-    "industry": "Multi-Industry (EU / Global)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 65,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: Section 508 Video Accessibility – Federal Agency Compliance",
-    "summary": "Section 508 of the Rehabilitation Act mandates that all ICT—including video and synchronized media—developed, procured, or used by federal agencies meet WCAG 2.1 Level AA accessibility standards. Revised 508 Standards require user controls for closed captions and audio descriptions at the same menu level as volume controls (Standard 503.4). Federal agencies must also ensure vendor-provided video platforms meet these standards when procured. NIST 800-53 Rev 5.2.0's integration of privacy controls now intersects with Section 508 accessibility obligations, creating a combined security-accessibility compliance requirement for federal video platforms. Any federal agency video platform procurement must include accessibility conformance verification.",
-    "source_url": "https://www.section508.gov/create/synchronized-media/",
-    "why_vbrick": "Vbrick's Section 508 compliance is a hard-gate requirement for federal procurement—non-compliant competitors are disqualified by default. The intersection of FedRAMP authorization and Section 508 compliance represents a combined requirement that significantly narrows the competitive field. Federal agencies conducting video platform evaluations in 2025–2026 (driven by the FedRAMP 20x transition) will simultaneously validate Section 508 conformance. Vbrick's documentation of Section 508 compliance should be proactively provided in all federal RFP responses.",
-    "outreach_angle": "",
-    "target_persona": "Federal Agency IT Director, Section 508 Coordinator, Procurement Officer",
-    "industry": "Federal Government",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 66,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: State Privacy Laws – Multi-State Wave (19 States Effective, 3 New in Jan 2026)",
-    "summary": "As of January 2026, 19 U.S. states have comprehensive data privacy laws in effect, with Indiana, Kentucky, and Rhode Island joining on January 1, 2026. California's CPPA imposed record CCPA fines in 2025 ($632K Honda, $345K Todd Snyder, $530K Sling TV, $1.4M Jam City) with new ADMT, cybersecurity audit, and risk assessment requirements effective January 2026. State laws apply to enterprise video platforms that process personal data of state residents through recordings, analytics, or behavioral profiling. The Video Privacy Protection Act (VPPA) is being actively litigated against platforms that share viewing data with third-party analytics tools. Florida's AG brought enforcement against Roku for collecting and selling children's data without consent. Texas AG sued TV manufacturers for Automated Content Recognition data collection without user consent.",
-    "source_url": "https://www.kiteworks.com/gdpr-compliance/gdpr-fines-data-privacy-enforcement-2026/",
-    "why_vbrick": "Enterprise video platforms that enable behavioral analytics, AI-powered viewer tracking, or third-party integrations face exposure under state privacy laws—particularly CCPA, TDPSA, and emerging state laws. Vbrick's privacy-by-design architecture, configurable data retention, GDPR compliance, and absence of third-party ad-tracking differentiates it from consumer-grade platforms. Enterprises in California, Texas, and other enforcement-active states that use video platforms processing employee or viewer data must conduct vendor risk assessments—a direct sales entry point. The Disney FTC settlement ($10M for COPPA violations via YouTube video labeling failures) also highlights the risk of enterprise video platforms used for child-directed content.",
-    "outreach_angle": "",
-    "target_persona": "Chief Privacy Officer, Legal Counsel, IT Director",
-    "industry": "Multi-Industry",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 67,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: GDPR Video Conference Recording – Explicit Consent and Data Minimization Requirements",
-    "summary": "Under GDPR Article 5 and EDPB guidelines, video conference recordings are considered personal data requiring: (1) explicit opt-in consent from all participants before recording starts—'implied consent' is insufficient; (2) documented, revocable consent records; (3) purpose limitation (recordings can only be used for the stated purpose); (4) defined retention periods with automatic deletion; (5) Data Protection Impact Assessments (DPIAs) for large-scale processing. The UK ICO updated its video surveillance guidance in November 2024, triggered by the Data (Use and Access) Act becoming law June 19, 2025. Organizations using AI-powered transcription on recorded video conferences must also satisfy GDPR's automated processing and profiling rules under Article 22.",
-    "source_url": "https://www.bliro.io/en/blog/gdpr-compliant-video-conferences-the-practical-guide-for-data-protection-2025",
-    "why_vbrick": "Multi-national enterprises running video platforms across EU operations must demonstrate GDPR-compliant consent workflows, configurable retention/deletion, and geographic data residency for all recorded content. Vbrick's GDPR-compliant platform—with configurable data residency, retention schedules, consent management, and audit trails—addresses these requirements. AI transcription features must be disclosed and operate under documented legal basis; Vbrick's approach to AI transparency aligns with both GDPR Article 22 and the incoming EU AI Act transparency obligations.",
-    "outreach_angle": "",
-    "target_persona": "DPO, Chief Privacy Officer, CISO",
-    "industry": "Multi-Industry (EU Operations)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 68,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: EU AI Act – Prohibited AI Practices Including Emotion Recognition in Workplaces (Feb 2025)",
-    "summary": "The EU AI Act's prohibition on eight practices became effective February 2, 2025. Among the prohibited uses: AI systems that detect emotions in workplaces and education institutions (Article 5(1)(f)). This directly applies to enterprise video platforms that have added 'engagement analytics,' 'attention detection,' or emotion/sentiment analysis features. Organizations deploying such AI features for employee training, meeting analytics, or performance assessment in EU contexts face fines up to €35M or 7% of global turnover. GPAI obligations (including AI-generated content labeling and training data disclosure) became effective August 2, 2025.",
-    "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
-    "why_vbrick": "Vbrick's AI features (search, transcription, analytics) do not engage in biometric or emotion identification, placing Vbrick outside the prohibited zone and in the limited-risk/transparency tier. This creates a direct competitive differentiation message: Vbrick's AI is EU AI Act-compliant by design, while competitors that offer emotion analytics or engagement sentiment tracking face regulatory prohibition in EU markets. Vbrick should proactively document its AI Act compliance position in European sales materials and RFP responses.",
-    "outreach_angle": "",
-    "target_persona": "DPO, Chief Privacy Officer, CTO, Legal Counsel",
-    "industry": "Multi-Industry (EU Operations)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 69,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: HHS Information Blocking Enforcement – Active Crackdown (September 2025)",
-    "summary": "In September 2025, HHS Secretary RFK Jr. directed HHS-OIG and ASTP/ONC to activate coordinated enforcement of information blocking rules under 21st Century Cures Act. Penalties for health IT developers and health information networks now reach $1 million per violation under the final Information Blocking Penalties Rule (42 CFR Parts 1003 and 1005). While no public enforcement actions were announced by December 2025, HHS described enforcement as 'imminent' and established patient portals and hotlines to facilitate reporting. Video-based patient education platforms, EHR-integrated video systems, and telehealth video platforms are directly in scope if they restrict patient access to electronic health information (EHI).",
-    "source_url": "https://www.healthcarelawinsights.com/2026/03/hhs-crackdown-on-information-blocking-new-era-of-enforcement-fines-and-compliance-risks-for-healthcare-entities/",
-    "why_vbrick": "Health IT vendors and health information networks that restrict patient access to recorded telehealth sessions or educational video content face $1M per-violation exposure. Vbrick's platform—integrated with Microsoft 365 and capable of HIPAA-compliant content sharing—can be positioned to support compliant patient access workflows. Healthcare systems evaluating video platform compliance ahead of the first enforcement actions should assess their current vendors' information blocking posture. This creates an adjacent opportunity for Vbrick in healthcare IT procurement driven by information blocking compliance pressure.",
-    "outreach_angle": "",
-    "target_persona": "Healthcare CIO, Health IT Compliance Officer, Privacy Officer",
-    "industry": "Healthcare",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [
-      {
-        "name": "Melanie Kalmar",
-        "title": "Corporate Vice President, Chief Information Officer & Chief Digital Officer",
-        "linkedin": "https://www.linkedin.com/in/melaniekalmar"
-      },
-      {
-        "name": "Donald Wright",
-        "title": "Global Director IT Services, Director Infrastructure and Operations",
-        "linkedin": "https://www.linkedin.com/in/donald-wright-2146056b"
-      },
-      {
-        "name": "Mario Ferket",
-        "title": "Chief Information Security Officer",
-        "linkedin": "https://www.linkedin.com/in/mario-ferket"
-      },
-      {
-        "name": "Lisa Brzozowski",
-        "title": "Enterprise Learning Director",
-        "linkedin": "https://www.linkedin.com/in/lisa-brzozowski-9808bbb"
-      },
-      {
-        "name": "Lisa Bryant",
-        "title": "Chief Human Resources Officer",
-        "linkedin": "https://www.linkedin.com/in/lisa-bryant-9b293a13"
-      },
-      {
-        "name": "Rebecca Bentley",
-        "title": "Vice President, Corporate Affairs",
-        "linkedin": "https://www.linkedin.com/in/rebecca-bentley-57113b9"
-      },
-      {
-        "name": "Jeremy Hyland",
-        "title": "Director of Cyber Defense",
-        "linkedin": "https://www.linkedin.com/in/hylandj"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 70,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: California CCPA/CPRA – Video Streaming and ADMT Regulations (Jan 2026)",
-    "summary": "California's new Automated Decision-Making Technology (ADMT) regulations and cybersecurity audit requirements took effect January 1, 2026. Any business using algorithmic profiling, personalization engines, or automated decision tools—including AI-powered video recommendation, viewer analytics, or engagement scoring—must now conduct data protection impact assessments (DPIAs) and provide opt-out rights for ADMT. The California AG imposed its largest CCPA fine to date ($1.55M settlement with an online health publisher) in July 2025. The Sling TV settlement ($530K, October 2025) was specifically tied to a video streaming service's failure to honor opt-out requests. Florida's AG sued Roku (video streaming platform) for collecting and selling children's data without consent—the first enforcement under Florida's digital privacy law.",
-    "source_url": "https://trustarc.com/resource/privacy-enforcement-surging-2026/",
-    "why_vbrick": "Enterprise video platforms with AI-powered analytics, viewer behavior tracking, or recommendation engines must now comply with ADMT rules in California and similar provisions in multiple states. Vbrick's enterprise-focused architecture—which does not engage in behavioral advertising or third-party data monetization—positions it as compliant by design. The Sling TV and Roku enforcement actions specifically targeting video streaming platforms serve as a direct cautionary signal to enterprise buyers using consumer-grade video tools. Vbrick's privacy-first design and configurable analytics are key differentiators for California-headquartered enterprises.",
-    "outreach_angle": "",
-    "target_persona": "Chief Privacy Officer, DPO, IT Director",
-    "industry": "Multi-Industry",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 71,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: FedRAMP Consolidated Rules – June 2026 Publication and July 2026 FedRAMP Ready Retirement",
-    "summary": "GSA has confirmed that consolidated FedRAMP certification rules will be published by end of June 2026, with the FedRAMP Ready designation retiring July 28, 2026. The new framework introduces 'Program Certification' and 'Agency Authorization' as dual pathways, with CSPs that have completed qualifying assessments between January 2025 and March 2026 eligible for Stage 2 of the new certification. These changes are applicable to all CSPs from December 31, 2026 through December 31, 2028. CSPs currently in the FedRAMP Ready queue who have lost agency sponsors—due to government-wide staffing and budget changes under the current administration—must now navigate the new consolidated rules framework.",
-    "source_url": "https://info.winvale.com/blog/gsa-plans-release-consolidated-fedramp-program-certification-rules-june-2026",
-    "why_vbrick": "Vbrick's existing FedRAMP authorization insulates it from the disruption affecting CSPs still in the FedRAMP Ready queue. As the July 2026 retirement of FedRAMP Ready creates urgency, federal agencies that had been relying on FedRAMP Ready-designated video platform vendors will need to rapidly replace them with fully authorized alternatives. This is a direct competitive displacement opportunity. Vbrick's sales team should actively monitor the FedRAMP Marketplace for video platform competitors losing or at risk of losing their authorization status.",
-    "outreach_angle": "",
-    "target_persona": "Federal Agency IT Director, Procurement Officer, CISO",
-    "industry": "Federal Government",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 72,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: GDPR EU AI Act Omnibus – Narrowing Personal Data Definition and AI Embedding (Nov 2025)",
-    "summary": "The EU's GDPR Omnibus proposals, introduced November 2025, represent two major policy shifts per the Future of Privacy Forum: (1) the end of technology-neutral data protection law, as AI is explicitly embedded in the regulatory framework; (2) a narrowing definition of 'personal data' informed by recent CJEU rulings. These proposals mean that AI systems processing video content—including AI transcription, search, and analytics—will be regulated simultaneously under GDPR and the EU AI Act, creating compound penalty exposure (GDPR: up to €20M / 4% turnover; EU AI Act: up to €35M / 7% turnover). Organizations with AI-powered video platforms deployed in the EU face dual compliance obligations beginning August 2026.",
-    "source_url": "https://www.kiteworks.com/gdpr-compliance/gdpr-fines-data-privacy-enforcement-2026/",
-    "why_vbrick": "The GDPR-AI Act regulatory convergence creates a compliance complexity that favors established enterprise video platform vendors with documented compliance postures over ad hoc AI tools. Vbrick's ability to present a unified compliance story across GDPR, EU AI Act, SOC II, and FIPS 140-2 is a key differentiator for European enterprise accounts and US multinationals. DPOs and CISOs at organizations with EU operations will prioritize vendors that can demonstrate readiness for both frameworks simultaneously.",
-    "outreach_angle": "",
-    "target_persona": "DPO, Chief Privacy Officer, CISO, Legal Counsel",
-    "industry": "Multi-Industry (EU Operations)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 73,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: FINRA GenAI Communications Compliance – 2026 Oversight Report Guidance",
-    "summary": "FINRA's 2026 Annual Regulatory Oversight Report—published December 2025—includes explicit guidance on GenAI use in member firm communications. When GenAI is used to generate or assist in creating communications to customers (including AI-generated video transcripts, summaries, or AI-written scripts for video presentations), FINRA expects full compliance with existing standards: communications must be fair, balanced, and not misleading; AI-generated content must be reviewed for compliance before delivery; AI chatbot communications must be properly supervised and retained. FINRA explicitly notes that existing communications rules apply regardless of whether AI was involved in creating the content.",
-    "source_url": "https://www.troutman.com/insights/key-takeaways-from-finras-2026-annual-regulatory-oversight-report/",
-    "why_vbrick": "Vbrick's AI search and transcription features are directly in scope for FINRA's GenAI guidance when used by broker-dealer firms. Vbrick's ability to provide audit trails of AI-generated transcripts, human review workflows, and retention of AI-assisted communications within its FINRA-ready archiving framework is a key differentiator. Financial services firms that use AI-powered video features (AI-generated summaries, auto-transcriptions, AI meeting notes) need to demonstrate these are captured, reviewable, and retained under their existing compliance programs.",
-    "outreach_angle": "",
-    "target_persona": "Chief Compliance Officer, CCO, Legal Counsel",
-    "industry": "Financial Services",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "high",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 74,
+    "id": 88,
     "category": "Fortune 500 Accounts",
-    "company": "JPMorgan Chase & Co.",
-    "summary": "JPMorgan Chase has committed $19.8B in technology spend for 2026, up from $18B in 2025, with $2B specifically designated for AI initiatives. The firm's infrastructure CIO confirmed a sustained hybrid cloud strategy with AWS, Azure, and Google Cloud. This scale of investment signals active procurement of enterprise-grade video infrastructure to support internal communications for 310,000+ employees across global operations—including analyst briefings, CEO town halls, and compliance training.",
-    "source_url": "https://www.datacenterdynamics.com/en/analysis/the-it-wingspan-of-jpmorgan-chase-co/",
-    "why_vbrick": "JPMC operates in a highly regulated environment requiring FINRA-ready archiving, SOC II Type 2 compliance, and strict role-based access for video content. Vbrick's FedRAMP-aligned security posture, FINRA-ready archiving, and Microsoft 365 integration directly address JPMC's regulatory obligations and Microsoft-centric stack. Real-time analytics and AI search would benefit their large-scale internal communications for 310K+ employees.",
+    "company": "Boeing",
+    "summary": "Boeing Defense, Space & Security posted an Audio Visual Technician role in Herndon, VA (early 2025) supporting Mission Systems Operations, with responsibilities including AV solution installation, video conferencing, streaming, and content distribution for proprietary programs. The role required experience with Cisco Hyperflex, Crestron, and video conferencing systems. Boeing (140,000+ employees) also posted a Commercial Manager role in its Digital business unit (March 2026) focused on digital business growth. Boeing's classified and unclassified programs span hundreds of facilities requiring secure video streaming.",
+    "source_url": "https://www.indeed.com/q-boeing-media-jobs.html",
+    "why_vbrick": "Boeing's defense programs require video platforms that meet DoD security standards—FedRAMP, FIPS 140-2, and ITAR-relevant security controls. VBRICK's government compliance credentials and its track record with defense contractors position it well. Boeing's scale (140,000+ employees, global facilities) creates demand for eCDN to distribute town halls and training content efficiently. The explicit AV/streaming role signals active infrastructure build-out at Boeing's classified program facilities.",
     "outreach_angle": "",
-    "target_persona": "CIO / Head of Enterprise Communications Technology",
-    "industry": "Financial Services",
+    "target_persona": "VP IT Infrastructure / Director, Enterprise Communications",
+    "industry": "Aerospace & Defense",
     "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "technology_investment",
-    "finding_id": "",
-    "employee_count": "310,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Heather Barbakoff",
-        "title": "Executive Director, Senior Communications Manager, Global Technology",
-        "linkedin": "https://www.linkedin.com/in/heatherbarbakoff"
-      },
-      {
-        "name": "Kanti S",
-        "title": "Executive Director, Head Of Enterprise Technology Communications",
-        "linkedin": "https://www.linkedin.com/in/kantishrestha"
-      },
-      {
-        "name": "Pallavi J",
-        "title": "Vice President - IT Infrastructure",
-        "linkedin": "https://www.linkedin.com/in/pallavi-j-21532614"
-      },
-      {
-        "name": "Lee Wilson",
-        "title": "JPMC VP Infrastructure",
-        "linkedin": "https://www.linkedin.com/in/lee-wilson-8a67302"
-      },
-      {
-        "name": "Ruby Murray",
-        "title": "Executive Director, Global Head Of Learning - Legal And Internal Audit",
-        "linkedin": "https://www.linkedin.com/in/ruby-murray-b6976a4"
-      },
-      {
-        "name": "Matthew Davis",
-        "title": "Learning Lead - Firmwide Talent Development Education, Vice President",
-        "linkedin": "https://www.linkedin.com/in/dvgpro"
-      },
-      {
-        "name": "Karthik Viswanathan",
-        "title": "Senior Vice President, Infrastructure Engineering",
-        "linkedin": "https://www.linkedin.com/in/itskarthik1983"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 75,
-    "category": "Fortune 500 Accounts",
-    "company": "Comcast Corporation / NBCUniversal",
-    "summary": "Comcast recently overhauled its internal communications architecture following an employee pulse survey. The audit revealed divergent channel preferences across generational cohorts, prompting a restructured strategy centered on email, Viva Engage, and an intranet platform ('Comcast Now'). The firm is actively aligning messaging across platforms, with a specific focus on video-first content for younger employees. NBCUniversal simultaneously announced new streaming partnerships and Universal Ads cross-publisher video advertising capability in Q1 2026.",
-    "source_url": "https://www.ragan.com/employee-comms-comcast-engagement-channels/",
-    "why_vbrick": "Comcast's internal comms overhaul—driven by employee engagement data—is a direct signal of video platform re-evaluation. As they unify their employee video experience, Vbrick's integration with Microsoft Viva Engage, SharePoint, and Teams provides a turnkey content management layer. The firm's media-sophistication also means they expect broadcast-quality delivery at scale, which aligns with Vbrick's eCDN-backed streaming capabilities.",
-    "outreach_angle": "",
-    "target_persona": "Head of Internal Communications / Collaboration Platform Manager",
-    "industry": "Telecommunications / Media",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "internal_comms_investment",
-    "finding_id": "",
-    "employee_count": "186,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Kevin Grimes",
-        "title": "Director, Platform Technology Global Operations",
-        "linkedin_url": "https://www.linkedin.com/in/kevin-grimes-62a2984",
-        "role": "Influencer"
-      },
-      {
-        "name": "John J Egan",
-        "title": "Director - IT Data Center Infrastructure Technology Services",
-        "linkedin_url": "https://www.linkedin.com/in/john-j-egan-b507764",
-        "role": "Influencer"
-      },
-      {
-        "name": "Ernesto Quiroz",
-        "title": "Manager Of AV And Media Experiences",
-        "linkedin_url": "https://www.linkedin.com/in/ernesto-quiroz-295a4b4",
-        "role": "Evaluator"
-      },
-      {
-        "name": "Randy Stainback",
-        "title": "Senior Unified Communications Collaborations Specialist",
-        "linkedin_url": "https://www.linkedin.com/in/randy-stainback-cts-dmc-e-4k-40533214",
-        "role": "Evaluator"
-      },
-      {
-        "name": "Sanket S",
-        "title": "Solutions Architect",
-        "linkedin_url": "https://www.linkedin.com/in/sanket-s-22b1013b",
-        "role": "Technical Evaluator"
-      },
-      {
-        "name": "Julie Jin",
-        "title": "Head Of Information Security Governance, Risk Compliance",
-        "linkedin_url": "https://www.linkedin.com/in/julieyoojin",
-        "role": "Technical Evaluator"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 76,
-    "category": "Fortune 500 Accounts",
-    "company": "Wells Fargo & Company",
-    "summary": "Wells Fargo signaled major AI and digital technology investments in 2026 as part of its efficiency initiatives, with AI expected to support cost reduction and workflow automation across its 226,000-employee organization. The firm plans to roll out AI incrementally throughout 2026. Additionally, Wells Fargo hosted its 8th Annual TMT Conference in February 2026, featuring Vimeo's enterprise video positioning—signaling active awareness and evaluation of enterprise video platforms.",
-    "source_url": "https://www.retailbankerinternational.com/news/wells-fargo-job-cuts-ai-rollout/",
-    "why_vbrick": "Wells Fargo's regulated financial services environment requires FINRA-ready video archiving, SOC II Type 2 compliance, and granular access controls for internal communications. Vbrick's AI-powered video search and transcription would directly support the firm's AI efficiency initiative by making recorded meetings and training content instantly searchable—reducing duplicate content creation and enabling knowledge retrieval at scale.",
-    "outreach_angle": "",
-    "target_persona": "CIO / Head of Workplace Technology",
-    "industry": "Financial Services",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "technology_investment",
-    "finding_id": "",
-    "employee_count": "226,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Jim Brzycki",
-        "title": "SVP & General Manager of Wells Fargo Video Network",
-        "linkedin": "https://www.linkedin.com/in/jim-brzycki-113bb3a"
-      },
-      {
-        "name": "Michael Petrosino",
-        "title": "SVP, Enterprise Video & Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/mpetrosino"
-      },
-      {
-        "name": "Beth Doughty",
-        "title": "Executive Director, Communications, Global Operations",
-        "linkedin": "https://www.linkedin.com/in/bethdoughty"
-      },
-      {
-        "name": "Lisa D Nielsen",
-        "title": "VP, Digital Product Manager - Corporate Communications Platforms",
-        "linkedin": "https://www.linkedin.com/in/lisa-d-nielsen-792a778"
-      },
-      {
-        "name": "Teri Beth Gooch",
-        "title": "Executive Director - Technical Program Leader, Digital Infrastructure",
-        "linkedin": "https://www.linkedin.com/in/teri-beth-gooch-23b0184"
-      },
-      {
-        "name": "Robert Santangelo",
-        "title": "VP Information Technology",
-        "linkedin": "https://www.linkedin.com/in/robertpsantangelo"
-      },
-      {
-        "name": "Seby Thomas",
-        "title": "Executive Director, Software Engineering Sr Manager",
-        "linkedin": "https://www.linkedin.com/in/seby-thomas-16843b71"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 77,
-    "category": "Fortune 500 Accounts",
-    "company": "Honeywell International Inc.",
-    "summary": "Honeywell senior communications leaders are presenting at Ragan's Employee Communications & Culture Conference (April 21-23, 2026 in Boston) alongside Cisco and M&T Bank. Their session focuses on video-first internal communications strategies, manager enablement, and measuring video engagement impact. This public participation signals an active internal investment in scalable video communications—a common precursor to enterprise video platform procurement.",
-    "source_url": "https://www.prdaily.com/how-fortune-500-communicators-are-rethinking-employee-communications-and-culture/",
-    "why_vbrick": "Honeywell's interest in scaling video communications across a 95,000-employee industrial workforce aligns directly with Vbrick's capability to deliver live and on-demand video to distributed manufacturing sites—including locations with limited bandwidth. Vbrick's eCDN ensures uniform delivery quality across office, plant, and field locations, while Section 508 compliance supports Honeywell's inclusive communications mandate.",
-    "outreach_angle": "",
-    "target_persona": "Director of Internal Communications / Head of Employee Experience",
-    "industry": "Industrial Conglomerate / Manufacturing",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "internal_comms_investment",
-    "finding_id": "",
-    "employee_count": "95,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Anil S Pallayil",
-        "title": "VP Of IT CIO - Digital Engineering, Enterprise Architecture And Cloud",
-        "linkedin": "https://www.linkedin.com/in/anilsubramanian"
-      },
-      {
-        "name": "Sheila Jordan",
-        "title": "Senior Vice President, Chief Digital Technology Officer",
-        "linkedin": "https://www.linkedin.com/in/sheila-jordan-8b3a3a3"
-      },
-      {
-        "name": "Karen Mattimore",
-        "title": "Senior Vice President and Chief Human Resources Officer",
-        "linkedin": "https://www.linkedin.com/in/karen-mattimore-9a1a5b1"
-      },
-      {
-        "name": "Katie Lackey",
-        "title": "Vice President of Global Learning and Talent Management",
-        "linkedin": "https://www.linkedin.com/in/katielackey"
-      },
-      {
-        "name": "James Solomon",
-        "title": "Sr IT Director - Global Network, Compute & Mfg Apps",
-        "linkedin": "https://www.linkedin.com/in/james-solomon-ii-809b6b88"
-      },
-      {
-        "name": "Praveen Singh",
-        "title": "CIO- Honeywell Process Automation",
-        "linkedin": "https://www.linkedin.com/in/praveenpsingh"
-      },
-      {
-        "name": "Danny Valentine",
-        "title": "Sr. Director of Communications",
-        "linkedin": "https://www.linkedin.com/in/danny-valentine-38246620"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 78,
-    "category": "Fortune 500 Accounts",
-    "company": "Cisco Systems, Inc.",
-    "summary": "Cisco's Director of Communications for Global Operations (a 10,000-person team) is presenting at Ragan's Employee Communications & Culture Conference on creating scalable, binge-worthy internal video—specifically addressing how to produce high-impact video content without large production teams or budgets. This signals an active internal video strategy evolution at Cisco for distributing content across a massive, globally distributed workforce.",
-    "source_url": "https://www.prdaily.com/how-fortune-500-communicators-are-rethinking-employee-communications-and-culture/",
-    "why_vbrick": "Cisco's initiative to scale video content across its global operations team—without large production overhead—is precisely the use case for Vbrick's AI-powered content management, automatic transcription, and search capabilities. Vbrick's Microsoft Teams and Webex integrations would fit directly into Cisco's existing collaboration stack, enabling internal comms to manage a library of leadership, training, and event videos from one enterprise platform.",
-    "outreach_angle": "",
-    "target_persona": "Director of Internal Communications / VP Employee Experience",
-    "industry": "Technology / Networking",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "internal_comms_investment",
-    "finding_id": "",
-    "employee_count": "84,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Fletcher Previn",
-        "title": "SVP Chief Information Officer",
-        "linkedin": "https://www.linkedin.com/in/fletcherprevin"
-      },
-      {
-        "name": "Tom Gillis",
-        "title": "SVP GM Security, Data Center, Internet Cloud Infrastructure Group",
-        "linkedin": "https://www.linkedin.com/in/tomgillis1"
-      },
-      {
-        "name": "Rik Cordero",
-        "title": "Senior Manager of Video Communications, CEO Employee Communications",
-        "linkedin": "https://www.linkedin.com/in/rikcordero321"
-      },
-      {
-        "name": "Rose-marie Holland",
-        "title": "Senior Director, Cisco Employee Communications",
-        "linkedin": "https://www.linkedin.com/in/rose-marie-holland-4b36a"
-      },
-      {
-        "name": "Eric Fox",
-        "title": "Director, CEO Communications Cisco Video",
-        "linkedin": "https://www.linkedin.com/in/eric-fox-3523504"
-      },
-      {
-        "name": "Lauren Sandelin",
-        "title": "Director, Social Digital Communications",
-        "linkedin": "https://www.linkedin.com/in/laurensandelin"
-      },
-      {
-        "name": "Will Eatherton",
-        "title": "SVP, Head of Cisco Networking Engineering",
-        "linkedin": "https://www.linkedin.com/in/willeatherton"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 79,
-    "category": "Fortune 500 Accounts",
-    "company": "Walmart Inc.",
-    "summary": "Walmart posted a Manager, Design and Production – Shows and Events role in Bentonville, AR (posted within 90-day window). The role specifically requires configuring and monitoring 'audio, video, intercom, and control systems for live events and studio productions' for Walmart's broadcast infrastructure. Separately, Walmart is actively hiring for shoppable video, social commerce, and live streaming operations roles through Walmart Connect and Walmart Global Tech.",
-    "source_url": "https://www.indeed.com/q-walmart-video-jobs.html",
-    "why_vbrick": "Walmart's scale (2.1M employees) and its active build-out of internal broadcast infrastructure for live events creates an exceptional eCDN opportunity. Simultaneously delivering live town halls and events to hundreds of thousands of associates across 4,700 US stores requires a purpose-built eCDN. Vbrick's multicast, edge caching, and P2P options are uniquely suited to Walmart's complex multi-site, bandwidth-constrained store network environment.",
-    "outreach_angle": "",
-    "target_persona": "VP of Technology / Head of Internal Media & Events",
-    "industry": "Retail",
-    "urgency_score": 2,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -3375,60 +3869,124 @@ const FINDINGS = [
     "date": "",
     "finding_type": "job_posting",
     "finding_id": "",
-    "employee_count": "2,100,000+",
+    "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [
       {
-        "name": "Suresh Kumar",
-        "title": "Executive VP, Global CTO & Chief Development Officer",
-        "linkedin": "https://digitaldefynd.com/IQ/meet-the-executive-csuite-team-of-walmart/"
+        "name": "Ken Wang",
+        "title": "Vice President of IT",
+        "linkedin": "https://www.linkedin.com/in/ken-wang-50851550"
       },
       {
-        "name": "Hari Vasudev",
-        "title": "EVP and Tech Operating Partner, Walmart U.S.",
-        "linkedin": "https://www.linkedin.com/in/harivasudev"
+        "name": "Richard Stewart",
+        "title": "Senior Director, Boeing IT Enterprise IT Operations",
+        "linkedin": "https://www.linkedin.com/in/richard-stewart-391341153"
       },
       {
-        "name": "Jerry R. Geisler III",
-        "title": "EVP and Chief Information Security Officer",
-        "linkedin": "https://www.linkedin.com/in/jerry-geisler-289824b0"
+        "name": "Dennis Pickett",
+        "title": "Visual Communications Architect",
+        "linkedin": "https://www.linkedin.com/in/dennis-pickett-97069416"
       },
       {
-        "name": "Mischa Dunton",
-        "title": "Group Director, Global Communications, Head of Walmart Global Tech Communications",
-        "linkedin": "https://www.linkedin.com/in/mischa-dunton-3314bb"
+        "name": "Joe Touey",
+        "title": "VP, Enterprise Business Systems CIO",
+        "linkedin": "https://www.linkedin.com/in/joetoueygsk"
       },
       {
-        "name": "Jessica Smith",
-        "title": "Director of Communications, Emerging Technologies, Walmart Global Tech",
-        "linkedin": "https://www.linkedin.com/in/jmsmith438"
+        "name": "Michele Denny",
+        "title": "Senior Director, IT Business Partner BGS Commercial Services",
+        "linkedin": "https://www.linkedin.com/in/michele-denny-31043315"
       },
       {
-        "name": "Mandy McDonald-Brashear",
-        "title": "SVP and Chief People Officer, Global Corporate Functions",
-        "linkedin": "https://www.linkedin.com/in/mandy-mcdonald-brashear"
+        "name": "Wilson Chow",
+        "title": "Vice President of Corporate And Employee Communications",
+        "linkedin": "https://www.linkedin.com/in/wilson-r-chow"
       },
       {
-        "name": "Sherin Sunny",
-        "title": "Sr Software Engineering Manager Architect, Vizio (Walmart)",
-        "linkedin": "https://www.linkedin.com/in/sunnysherin"
+        "name": "Kirsten Aranda Schwab",
+        "title": "Chief Human Resource Officer, Boeing Commercial Airplanes",
+        "linkedin": "https://www.linkedin.com/in/kirsten-aranda-schwab-60796684"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 80,
+    "id": 89,
     "category": "Fortune 500 Accounts",
-    "company": "CVS Health Corporation",
-    "summary": "CVS Health launched Health100 (March 2026)—an AI-native consumer engagement platform—in partnership with Google Cloud, using Gemini models, Cloud Healthcare API, and BigQuery. The platform is designed to deliver omnichannel, personalized health experiences across CVS's pharmacy, care provider, insurance, and PBM entities. This digital transformation signals deep infrastructure investment in secure, HIPAA-compliant video and AI content delivery as part of their patient and member engagement platform.",
-    "source_url": "https://investors.cvshealth.com/news/news-details/2026/CVS-Health-and-Google-Cloud-announce-new-strategic-partnership-to-reimagine-healthcare-consumer-engagement-and-experiences/default.aspx",
-    "why_vbrick": "CVS Health's HIPAA-regulated environment and their AI-first platform strategy create an immediate need for video infrastructure that is both HIPAA-compliant and AI-enriched. Vbrick's HIPAA-ready deployment options, AI transcription/search, and role-based access controls directly address CVS's requirements for secure clinical training, pharmacy associate onboarding, and executive communications across 300,000+ employees. The Google Cloud partnership also aligns with Vbrick's cloud-native architecture.",
+    "company": "Pfizer",
+    "summary": "Pfizer (88,000+ employees) is managing a major business transition in 2026, revising revenue guidance to $59.5–$62.5B and undertaking significant restructuring following COVID product revenue declines. The company hosted a live conference call and webcast in December 2025, and routinely delivers executive investor communications via live streaming. Pfizer's large, globally distributed pharmaceutical workforce requires secure video for regulatory training, R&D collaboration, and change management communications during its restructuring period.",
+    "source_url": "https://www.pfizer.com/print/pdf/node/562723",
+    "why_vbrick": "Pfizer's 88,000+ employees across global pharmaceutical operations require HIPAA-compliant, GDPR-compliant video communications. Active restructuring creates surge demand for change management video content. VBRICK's AI search and transcription capabilities would reduce production burden for Pfizer's compliance training libraries. The company's investor webcast infrastructure is a potential entry point to discuss enterprise-grade video management across the organization.",
     "outreach_angle": "",
-    "target_persona": "CTO / VP of Enterprise Technology / Head of Digital Health",
-    "industry": "Healthcare / Pharmacy",
-    "urgency_score": 2,
+    "target_persona": "Chief Communications Officer / VP HR Technology",
+    "industry": "Pharmaceuticals",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "low",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "internal_comms_investment",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Glenn Coulter",
+        "title": "VP Infrastructure And Operations, Global Network Services",
+        "linkedin": "https://www.linkedin.com/in/glenn-coulter-405827"
+      },
+      {
+        "name": "Chris Nardecchia",
+        "title": "Senior Vice President, Chief Digital Information Officer",
+        "linkedin": "https://www.linkedin.com/in/chrisnardecchia"
+      },
+      {
+        "name": "James Tarone",
+        "title": "Senior Director, Programmatic and Video",
+        "linkedin": "https://www.linkedin.com/in/james-tarone-09338a7"
+      },
+      {
+        "name": "Kurt Kimmel",
+        "title": "Engineer-In-Charge",
+        "linkedin": "https://www.linkedin.com/in/kurt-kimmel-b687628"
+      },
+      {
+        "name": "Frank Briamonte",
+        "title": "Vice President, Enterprise Employee Communications",
+        "linkedin": "https://www.linkedin.com/in/frank-briamonte-9656a227"
+      },
+      {
+        "name": "Sander De Beer",
+        "title": "Vice President Human Resources - Worldwide R&D",
+        "linkedin": "https://www.linkedin.com/in/sander-de-beer-3509873"
+      },
+      {
+        "name": "Steve Miller",
+        "title": "Senior Director, Digital for People Experience and Executive Operations & Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/steve-miller-867ba610"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 90,
+    "category": "Fortune 500 Accounts",
+    "company": "Deloitte",
+    "summary": "Deloitte (470,000+ employees, 150 countries) deployed Anthropic's Claude AI to its entire global workforce in late 2025, implementing custom Claude 'personas' for accountants, consultants, and developers. The firm also posted a Senior Manager, Head of Change and Communications, Real Estate role in London (Q1 2026) and runs a significant internal communications infrastructure. Deloitte's AI-first internal strategy signals appetite for AI-augmented video platforms. The firm's 470,000-person scale makes it one of the largest enterprise video distribution challenges in professional services.",
+    "source_url": "https://www.emarketer.com/content/accenture--deloitte-push-agentic-ai-enterprise-territory-shift",
+    "why_vbrick": "Deloitte's global AI deployment and its scale (470,000 employees across 150 countries) create a natural requirement for AI-augmented video. VBRICK's AI transcription, multi-language support, and AI-powered search align with Deloitte's AI-first approach to workforce enablement. GDPR compliance is essential for Deloitte's European operations. The firm's active internal communications investment (including the real estate comms role) signals openness to modernizing video infrastructure. VBRICK's SOC II Type 2 would satisfy Deloitte's own client-grade compliance standards.",
+    "outreach_angle": "",
+    "target_persona": "CIO / Global Head of Internal Communications / Chief People Officer",
+    "industry": "Professional Services",
+    "urgency_score": 1,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -3439,60 +3997,124 @@ const FINDINGS = [
     "date": "",
     "finding_type": "tech_stack_change",
     "finding_id": "",
-    "employee_count": "300,000+",
+    "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [
       {
-        "name": "Alan R",
-        "title": "CISO & SVP, Infrastructure",
-        "linkedin": "https://www.linkedin.com/in/yankeefan30"
+        "name": "Vivek Pandey",
+        "title": "Managing Director - IT Strategy and Cloud Leader",
+        "linkedin": "https://www.linkedin.com/in/vivek-pandey-04321a12"
       },
       {
-        "name": "Ana Tramont",
-        "title": "Lead Director, Chief of Staff to the CISO & SVP of Infrastructure and Operations",
-        "linkedin": "https://www.linkedin.com/in/ana-tramont-59142383"
+        "name": "Eugene O'callaghan",
+        "title": "Managing Director Technology Strategy, Engineering, CIO Program",
+        "linkedin": "https://www.linkedin.com/in/eugene-o-callaghan"
       },
       {
-        "name": "Ross Crawford",
-        "title": "Lead Director, Digital Workplace",
-        "linkedin": "https://www.linkedin.com/in/ross-crawford-46313b5b"
+        "name": "Sangeeta Neti",
+        "title": "Service Line Leader - Vice President, Deloitte Technology & Infrastructure",
+        "linkedin": "https://www.linkedin.com/in/sangeeta-neti-a541a64"
       },
       {
-        "name": "Kristen Sleboda",
-        "title": "Video Production Operations Manager",
-        "linkedin": "https://www.linkedin.com/in/kristen-sleboda-24003247"
+        "name": "Divyesh Jevtani",
+        "title": "Senior Manager, Global Multimedia Services",
+        "linkedin": "https://www.linkedin.com/in/divyeshjevtani"
       },
       {
-        "name": "Alex Link",
-        "title": "Executive Director, Learning and Development",
-        "linkedin": "https://www.linkedin.com/in/alex-link-25373018"
+        "name": "Jitender Arora",
+        "title": "Partner North South Europe (NSE) CISO",
+        "linkedin": "https://www.linkedin.com/in/jarora"
       },
       {
-        "name": "Leonard Byrne",
-        "title": "Associate Vice President IT Engineering",
-        "linkedin": "https://www.linkedin.com/in/leonardbyrne"
+        "name": "Kristi Tampio",
+        "title": "Global Director, People Advisory Leader For Deloitte Technology",
+        "linkedin": "https://www.linkedin.com/in/ktampio"
       },
       {
-        "name": "Heather Lapolt",
-        "title": "VP, Enterprise Compute Services",
-        "linkedin": "https://www.linkedin.com/in/heather-lapolt-34292420"
+        "name": "Sunil Simon",
+        "title": "Senior Manager - AV/VC Collaboration and Streaming Solutions Leader",
+        "linkedin": "https://www.linkedin.com/in/sunilsimon"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 81,
+    "id": 91,
     "category": "Fortune 500 Accounts",
-    "company": "Northrop Grumman Corporation",
-    "summary": "Northrop Grumman posted a Principal Communications Representative role supporting the Armament Systems division (October 2025, within 90-day window), with explicit responsibility for 'creating engaging and compelling content including videos' for both internal and external audiences. Separately, a Network Communications Associate role was posted for January 2026 to support restricted programs. The pattern of communications hiring signals active investment in enterprise video capabilities for a workforce requiring Top Secret-cleared communications infrastructure.",
-    "source_url": "https://www.linkedin.com/jobs/view/principal-communications-representative-r10221382-at-northrop-grumman-4369005988",
-    "why_vbrick": "Northrop Grumman's classified government defense work requires FedRAMP and FIPS 140-2 compliant video infrastructure—exact differentiators in Vbrick's platform. The firm's distributed, security-cleared workforce also requires granular RBAC and GDPR/ITAR-aligned data controls. Vbrick's government-grade security certifications and air-gap-capable deployment options make it a natural fit for Northrop's internal communications and training video requirements.",
+    "company": "UnitedHealth Group / Optum",
+    "summary": "UnitedHealth Group (440,000+ employees, $439B+ 2026 revenue guidance) is aggressively scaling AI across its Optum business, with AI solutions accelerating across Optum Health, Optum Insight, and Optum Rx. The Q3 2025 earnings call referenced 'accelerating investments' in AI applications and digital transformation. UnitedHealth is one of the largest employers in the U.S. healthcare sector, requiring HIPAA-compliant video communications for clinical training, regulatory compliance, and enterprise town halls.",
+    "source_url": "https://www.snsinsider.com/blogs/unitedhealth-group-strengthens-healthcare-platform",
+    "why_vbrick": "UnitedHealth Group's 440,000+ employee base spans clinical staff, health plan administrators, and technology workers—all requiring HIPAA-compliant video. VBRICK's HIPAA compliance, FedRAMP authorization (for government health programs), and real-time analytics address UHG's healthcare-specific requirements. The company's aggressive AI investment signals openness to AI-augmented video tools including VBRICK's AI transcription and search. The scale of all-hands communications for 440,000 employees demands eCDN for bandwidth management.",
     "outreach_angle": "",
-    "target_persona": "Director of Communications / IT Security Architecture Lead",
-    "industry": "Defense / Aerospace",
-    "urgency_score": 2,
+    "target_persona": "Chief Digital Officer / VP Health Services Technology",
+    "industry": "Healthcare / Insurance",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "medium",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "internal_comms_investment",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Darrell Brooks",
+        "title": "SVP, Infrastructure Services, UHG Information Technology",
+        "linkedin": "https://www.linkedin.com/in/darrell-brooks-3a537a10"
+      },
+      {
+        "name": "Jeremy Stern",
+        "title": "Vice President, Information Technology",
+        "linkedin": "https://www.linkedin.com/in/jeremy-stern-8442004"
+      },
+      {
+        "name": "Daniel Thorson",
+        "title": "IT Director, Datacenter Network Engineering",
+        "linkedin": "https://www.linkedin.com/in/dan-thorson"
+      },
+      {
+        "name": "Scott Moyer",
+        "title": "Senior Manager, Network Engineering",
+        "linkedin": "https://www.linkedin.com/in/scott-moyer-7819671"
+      },
+      {
+        "name": "Vicki Schultz",
+        "title": "Director, Provider Communications, UnitedHealthcare",
+        "linkedin": "https://www.linkedin.com/in/vicki-schultz"
+      },
+      {
+        "name": "Mark Archer",
+        "title": "SVP, Enterprise Security Office",
+        "linkedin": "https://www.linkedin.com/in/archerme"
+      },
+      {
+        "name": "Dennis Genkinger",
+        "title": "Sr. IS Architect",
+        "linkedin": "https://www.linkedin.com/in/dennis-genkinger-0b64067"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 92,
+    "category": "Fortune 500 Accounts",
+    "company": "Lockheed Martin",
+    "summary": "Lockheed Martin (116,000 employees) maintains active job postings on its careers site including roles in systems engineering, AV integration, and secure communications across its defense programs. The company operates classified and unclassified facilities across the U.S. requiring secure video streaming and content distribution. Lockheed Martin's defense programs require FedRAMP, FIPS 140-2, and ITAR-compliant technology for all enterprise video communications. The company's ongoing classified programs at Herndon, VA and other SCIF locations demand secure video infrastructure.",
+    "source_url": "https://www.lockheedmartinjobs.com/search-jobs/video/694/1/1&p=2",
+    "why_vbrick": "Lockheed Martin's classified and unclassified program environments require the exact compliance stack VBRICK offers: FedRAMP authorization, FIPS 140-2 compliance, and government-grade SOC II Type 2 security. With 116,000 employees across 40+ U.S. states and international locations, eCDN is essential for executive town halls and program communications. VBRICK's track record in defense and government positions it as a natural fit. Available through SEWP and GSA Schedule, reducing procurement friction.",
+    "outreach_angle": "",
+    "target_persona": "VP IT & Digital / Enterprise Communications Director",
+    "industry": "Aerospace & Defense",
+    "urgency_score": 1,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -3503,263 +4125,7 @@ const FINDINGS = [
     "date": "",
     "finding_type": "job_posting",
     "finding_id": "",
-    "employee_count": "95,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Travis Garriss",
-        "title": "Vice President and Chief Information and Digital Officer",
-        "linkedin": "https://www.linkedin.com/in/travisgarriss"
-      },
-      {
-        "name": "Melanie M Heitkamp",
-        "title": "Corporate Vice President and Chief Human Resources Officer",
-        "linkedin": "https://www.linkedin.com/in/melanie-m-heitkamp-514ba099"
-      },
-      {
-        "name": "Lucy Kennedy Ryan",
-        "title": "Corporate Vice President and Chief Communications Officer",
-        "linkedin": "https://www.linkedin.com/in/lucykennedyryan"
-      },
-      {
-        "name": "Michael Clothier",
-        "title": "Sector Chief Information Security Officer - Aeronautics",
-        "linkedin": "https://www.linkedin.com/in/michael-clothier-82b35416"
-      },
-      {
-        "name": "Paige Healey",
-        "title": "Chief of Staff and Director, Communications",
-        "linkedin": "https://www.linkedin.com/in/paigehealey"
-      },
-      {
-        "name": "Joann Grbach",
-        "title": "Senior Director Sector Communications Leader",
-        "linkedin": "https://www.linkedin.com/in/joann-grbach-a706ab14"
-      },
-      {
-        "name": "Nathan Drevna",
-        "title": "Senior Director, Employee Communications",
-        "linkedin": "https://www.linkedin.com/in/nathan-drevna-6472375b"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 82,
-    "category": "Fortune 500 Accounts",
-    "company": "Vanguard Group",
-    "summary": "Vanguard posted a Director, Enterprise Platform Engineering (Windows Endpoint Infrastructure) role in February 2026 with responsibility for 'enterprise-scale fleet of 20,000+ devices' including Azure Virtual Desktop, Intune/AutoPilot, and collaboration infrastructure. The role includes CIS/SOX/PCI compliance enforcement and partner alignment with 'collaboration, procurement, and business stakeholders.' This large-scale endpoint modernization directly encompasses video streaming infrastructure decisions.",
-    "source_url": "https://www.vanguardjobs.com/job/23013831/senior-manager-platform-engineering-windows-endpoint-infrastructure-dallas-tx/",
-    "why_vbrick": "Vanguard's endpoint modernization program—encompassing 20,000+ devices, Azure Virtual Desktop, and Microsoft Intune governance—is a key infrastructure moment for enterprise video. As employees transition to cloud-managed endpoints, eCDN becomes critical to ensure video quality on variable bandwidth connections including Azure Virtual Desktop. Vbrick's eCDN, native Microsoft 365 integration, and SOC II/FINRA-ready compliance map directly to Vanguard's regulated financial environment requirements.",
-    "outreach_angle": "",
-    "target_persona": "Director of Enterprise Platform Engineering / Collaboration Technology Lead",
-    "industry": "Financial Services / Asset Management",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "job_posting",
-    "finding_id": "",
-    "employee_count": "20,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Nitin Tandon",
-        "title": "Managing Director, Global Chief Information Officer",
-        "linkedin": "https://www.linkedin.com/in/nitin-tandon-24b615"
-      },
-      {
-        "name": "Guy Delp",
-        "title": "Principal, Chief Information Security Officer (CISO)",
-        "linkedin": "https://www.linkedin.com/in/guy-delp"
-      },
-      {
-        "name": "Jon Couture",
-        "title": "Chief Human Resources Officer and Managing Director of Human Resources",
-        "linkedin": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-management-team.html"
-      },
-      {
-        "name": "Chris McIsaac",
-        "title": "Managing Director of Marketing & Communications",
-        "linkedin": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-management-team.html"
-      },
-      {
-        "name": "Joseph Brennan",
-        "title": "Managing Director and Global Chief Risk Officer",
-        "linkedin": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-management-team.html"
-      },
-      {
-        "name": "Natalie Lamarque",
-        "title": "Chief Legal Officer and Managing Director, Office of the General Counsel",
-        "linkedin": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-management-team.html"
-      },
-      {
-        "name": "Kory Jensen",
-        "title": "SVP IT",
-        "linkedin": "https://www.linkedin.com/in/koryjensen"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 83,
-    "category": "Fortune 500 Accounts",
-    "company": "Merck KGaA (US Operations)",
-    "summary": "Merck KGaA's Global Head of Analytics and AI Product Portfolio confirmed in June 2025 that the firm is actively using AI-generated video (Synthesia) for internal product updates and multilingual training, calling out 'great potential for avatars to make information more digestible and accessible.' This signals that Merck KGaA's communications and L&D teams are actively investing in scalable video production and distribution for a multilingual, global workforce.",
-    "source_url": "https://fortune.com/2025/06/26/ai-digital-avatars-corporate-video-training-gen-z/",
-    "why_vbrick": "Merck KGaA's active investment in AI-powered video content—including multilingual production—creates demand for an enterprise video platform that can securely host, manage, and distribute that content at scale with proper governance. Vbrick's AI-powered search, automated transcription in 100+ languages, HIPAA-compliant storage, and GDPR-aligned data controls match Merck's regulated European and US operations requirements. The existing AI video workflow requires an enterprise VOD platform to be truly enterprise-grade.",
-    "outreach_angle": "",
-    "target_persona": "Global Head of Digital Learning / VP of Internal Communications",
-    "industry": "Pharmaceuticals / Life Sciences",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ai_video_initiative",
-    "finding_id": "",
-    "employee_count": "63,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Matthias Geselle",
-        "title": "Global Head of IT, SVP",
-        "linkedin": "https://www.linkedin.com/in/mgeselle"
-      },
-      {
-        "name": "Volker Buß",
-        "title": "Chief Security Officer (CSO) &amp; CISO",
-        "linkedin": "https://www.linkedin.com/in/volker-bu%C3%9F-a52817116"
-      },
-      {
-        "name": "Ajay Rao",
-        "title": "Executive Director &amp; Head, Digital Workplace",
-        "linkedin": "https://www.linkedin.com/in/ajay-rao-49271a31"
-      },
-      {
-        "name": "Birgit Held",
-        "title": "VP, Global Head of Communications Business Market Services",
-        "linkedin": "https://www.linkedin.com/in/birgit-held-6785262"
-      },
-      {
-        "name": "Jens Lindner",
-        "title": "Head of Global Communication Services",
-        "linkedin": "https://www.linkedin.com/in/jens-lindner-aa487b2b"
-      },
-      {
-        "name": "Bipin Sasi",
-        "title": "Director and Head of Infrastructure Automation Engineering",
-        "linkedin": "https://www.linkedin.com/in/bipinsasi"
-      },
-      {
-        "name": "Lars Dittmann",
-        "title": "Head of International IT Strategy, PMO Communications",
-        "linkedin": "https://www.linkedin.com/in/lars-dittmann-6579a43"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 84,
-    "category": "Fortune 500 Accounts",
-    "company": "SAP SE (North America)",
-    "summary": "SAP's VP of Business Management Office for North America stated in June 2025: 'We see Synthesia not just as a training tool, but as a communications platform.' SAP is scaling AI video across its sales and marketing processes globally. This positions SAP as an organization with a rapidly growing enterprise video footprint—requiring robust platform infrastructure for video governance, distribution, search, and analytics.",
-    "source_url": "https://fortune.com/2025/06/26/ai-digital-avatars-corporate-video-training-gen-z/",
-    "why_vbrick": "SAP's shift to viewing video as a 'communications platform' indicates growing demand for enterprise video management infrastructure beyond content creation. Vbrick's integration with SAP's Microsoft 365 environment (Teams, SharePoint), AI-powered search across video libraries, and GDPR-compliant European data residency options align directly with SAP's global compliance requirements. As SAP's video library scales, Vbrick's governance and archiving capabilities become essential.",
-    "outreach_angle": "",
-    "target_persona": "VP of Learning & Development / Chief Communications Officer",
-    "industry": "Enterprise Software / Technology",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ai_video_initiative",
-    "finding_id": "",
-    "employee_count": "105,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Sebastian Lange",
-        "title": "Chief Security Officer",
-        "linkedin": "https://www.linkedin.com/in/selange"
-      },
-      {
-        "name": "Jan Meyer",
-        "title": "SVP, Global Head of Learning Systems",
-        "linkedin": "https://www.linkedin.com/in/janmey"
-      },
-      {
-        "name": "Christian Schmeichel",
-        "title": "SVP and Global Head of People & Culture Services",
-        "linkedin": "https://www.linkedin.com/in/christianschmeichel"
-      },
-      {
-        "name": "Susan Miller",
-        "title": "Head of Intelligent Spend and Business Network Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/susanmiller215"
-      },
-      {
-        "name": "Thorsten Jahnke",
-        "title": "Senior Vice President, Head of Customer & Partner Processes, AI & IT",
-        "linkedin": "https://www.linkedin.com/in/thorstenjahnke"
-      },
-      {
-        "name": "Volker Rieger",
-        "title": "VP Global Communication Technologies & IT Services Germany",
-        "linkedin": "https://www.linkedin.com/in/volker-rieger-3013519"
-      },
-      {
-        "name": "Andreas Hauke",
-        "title": "Head of the Office of the Chief Security Officer",
-        "linkedin": "https://www.linkedin.com/in/andreas-hauke-02b74933"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 85,
-    "category": "Fortune 500 Accounts",
-    "company": "Lockheed Martin Corporation",
-    "summary": "Lockheed Martin published its '2026 Look Ahead: Delivering the Future of Defense' positioning in January 2026, emphasizing accelerated delivery across layered defense, autonomous systems, and advanced space capabilities. The company is investing in rapid production ecosystems and unified information systems including SkyKeeper C2 for interoperability. Internal communications to a 122,000-person defense workforce spanning classified and unclassified environments requires compliant enterprise video infrastructure at scale.",
-    "source_url": "https://www.lockheedmartin.com/en-us/news/features/2026/Delivering-the-Future-of-Defense.html",
-    "why_vbrick": "Lockheed Martin's classified defense work necessitates FedRAMP-authorized, FIPS 140-2 compliant video infrastructure for secure internal communications. As the company accelerates delivery operations, video-based training, mission briefings, and executive communications require an enterprise platform capable of operating across classified boundaries with granular access controls. Vbrick's government-grade compliance certifications and support for air-gapped deployment scenarios are direct competitive advantages for Lockheed's complex security environment.",
-    "outreach_angle": "",
-    "target_persona": "CIO / CISO / Head of Internal Technology",
-    "industry": "Defense / Aerospace",
-    "urgency_score": 2,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "technology_investment",
-    "finding_id": "",
-    "employee_count": "122,000+",
+    "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "current_platform": "Unknown",
     "corroborating_signals": 0,
@@ -3800,19 +4166,83 @@ const FINDINGS = [
         "linkedin": "https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 86,
+    "id": 93,
     "category": "Fortune 500 Accounts",
-    "company": "Marriott International",
-    "summary": "Marriott posted a Senior Director, Engineering and Architecture – Global Hotel In-Room Entertainment Technology role (visible on Indeed in Q1 2026), explicitly requiring 'strong understanding of network optimization, low-latency streaming, and cloud-based video delivery.' The role is focused on optimizing software architectures for low-latency, high-quality video streaming across Marriott's global hotel network of 9,000+ properties.",
-    "source_url": "https://www.indeed.com/q-video-streaming-architecture-jobs.html",
-    "why_vbrick": "Marriott's active hiring for a senior streaming architecture role signals investment in enterprise-grade video delivery infrastructure across its global property network. While the role is guest-facing, Marriott also operates one of the world's largest hospitality employee bases (377K+) requiring internal communications video infrastructure. Vbrick's eCDN would enable Marriott to deliver corporate communications, compliance training, and brand standards videos across bandwidth-constrained hotel network environments worldwide.",
+    "company": "Goldman Sachs",
+    "summary": "Goldman Sachs (40,000+ employees) hosted its TMT conference in December 2025, featuring live-streamed analyst presentations and corporate communications. The bank operates complex internal communications requirements for its globally distributed investment banking, asset management, and consumer banking divisions. Goldman Sachs's regulatory environment (FINRA, SEC) requires archiving and compliance-grade records management for all internal video communications including town halls, training, and client-facing media.",
+    "source_url": "https://www.morganstanley.com/im/en-ie/intermediary-investor/insights/the-beat/the-beat-outlook-2026-video.html",
+    "why_vbrick": "Goldman Sachs's FINRA and SEC compliance requirements make VBRICK's FINRA-ready archiving and SOC II Type 2 directly relevant. The bank's active conference streaming (TMT 2025) demonstrates existing large-scale video infrastructure investment. VBRICK's real-time analytics and AI search would improve discoverability of archived compliance training content. With 40,000+ employees across global trading floors and offices, eCDN ensures reliable delivery of firm-wide communications without network saturation.",
     "outreach_angle": "",
-    "target_persona": "Senior Director of Engineering / VP of Technology Infrastructure",
-    "industry": "Hospitality",
-    "urgency_score": 2,
+    "target_persona": "Head of Internal Communications / CTO / Chief Compliance Officer",
+    "industry": "Financial Services / Investment Banking",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "low",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "internal_comms_investment",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Sriram Parthasarathy",
+        "title": "Vice President Infrastructure SRE",
+        "linkedin": "https://www.linkedin.com/in/sriram-parthasarathy-2b889919"
+      },
+      {
+        "name": "Martin Schweitzer",
+        "title": "Vice President – Global Head of Data Center Operations",
+        "linkedin": "https://www.linkedin.com/in/martin-schweitzer-5524a7a"
+      },
+      {
+        "name": "Caleb Rajkumar",
+        "title": "Senior Multimedia Specialist- Lead",
+        "linkedin": "https://www.linkedin.com/in/caleb-rajkumar-b70098a3"
+      },
+      {
+        "name": "Gerald Witzel",
+        "title": "Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/gerald-witzel-b2a964b"
+      },
+      {
+        "name": "Nick Carcaterra",
+        "title": "Managing Director, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/nick-carcaterra-a2119212"
+      },
+      {
+        "name": "Kevin Durfee",
+        "title": "Vice President, Learning & Talent Executive",
+        "linkedin": "https://www.linkedin.com/in/kevin-durfee-a612b543"
+      },
+      {
+        "name": "Joseph Stein",
+        "title": "Executive Director, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/joseph-stein-9ab6b628"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 94,
+    "category": "Fortune 500 Accounts",
+    "company": "Northrop Grumman",
+    "summary": "Northrop Grumman (95,000+ employees) maintains active listings for Director of Communications and Media Manager roles on its careers portal. The company's Director of Communications role is actively posted, signaling investment in enterprise communications infrastructure. Northrop Grumman's defense and space programs require secure, cleared video distribution across facilities in Herndon VA, Melbourne FL, San Diego CA, and other locations. The company's Space Systems and Mission Systems divisions routinely require video training and secure event broadcasting.",
+    "source_url": "https://jobs.northropgrumman.com",
+    "why_vbrick": "Northrop Grumman's cleared environments require FedRAMP and FIPS 140-2 compliant video—a prerequisite VBRICK satisfies. With 95,000 employees across defense, space, and cyber divisions, enterprise eCDN is essential for firm-wide communications. VBRICK's government contract vehicles (SEWP, GSA) align with Northrop's procurement processes. The company's Director of Communications posting signals active investment in communications infrastructure modernization.",
+    "outreach_angle": "",
+    "target_persona": "VP IT / Director, Enterprise Communications",
+    "industry": "Aerospace & Defense",
+    "urgency_score": 1,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -3823,60 +4253,188 @@ const FINDINGS = [
     "date": "",
     "finding_type": "job_posting",
     "finding_id": "",
-    "employee_count": "377,000+",
+    "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [
       {
-        "name": "Kaustubh K",
-        "title": "Vice President Cyber Security",
-        "linkedin": "https://www.linkedin.com/in/kaustubh-kubde"
+        "name": "Travis Garriss",
+        "title": "Vice President and Chief Information and Digital Officer",
+        "linkedin": "https://www.linkedin.com/in/travisgarriss"
       },
       {
-        "name": "Kathy Ploof",
-        "title": "Vice President Information Technology",
-        "linkedin": "https://www.linkedin.com/in/kathy-ploof-4a2b044"
+        "name": "Melanie M Heitkamp",
+        "title": "Corporate Vice President and Chief Human Resources Officer",
+        "linkedin": "https://www.linkedin.com/in/melanie-m-heitkamp-514ba099"
       },
       {
-        "name": "Andra Gregory",
-        "title": "VP Sr. Director, Digital Planning Operations",
-        "linkedin": "https://www.linkedin.com/in/andragregory"
+        "name": "Lucy Kennedy Ryan",
+        "title": "Corporate Vice President and Chief Communications Officer",
+        "linkedin": "https://www.linkedin.com/in/lucykennedyryan"
       },
       {
-        "name": "David Pinkham",
-        "title": "Senior Director, Global Business Operations Communications",
-        "linkedin": "https://www.linkedin.com/in/david-pinkham-53466722"
+        "name": "Michael Clothier",
+        "title": "Sector Chief Information Security Officer - Aeronautics",
+        "linkedin": "https://www.linkedin.com/in/michael-clothier-82b35416"
       },
       {
-        "name": "Victor Arguelles",
-        "title": "VP, Learning Design and Development, Global Talent Development",
-        "linkedin": "https://www.linkedin.com/in/victorargu"
+        "name": "Paige Healey",
+        "title": "Chief of Staff and Director, Communications",
+        "linkedin": "https://www.linkedin.com/in/paigehealey"
       },
       {
-        "name": "Tayn Pavelic",
-        "title": "Vice President, Global Leadership Development",
-        "linkedin": "https://www.linkedin.com/in/tayn-pavelic-530516b"
+        "name": "Joann Grbach",
+        "title": "Senior Director Sector Communications Leader",
+        "linkedin": "https://www.linkedin.com/in/joann-grbach-a706ab14"
       },
       {
-        "name": "Erik Antons",
-        "title": "Managing Vice President, Chief Safety & Security Officer",
-        "linkedin": "https://www.linkedin.com/in/erikantons"
+        "name": "Nathan Drevna",
+        "title": "Senior Director, Employee Communications",
+        "linkedin": "https://www.linkedin.com/in/nathan-drevna-6472375b"
       }
     ],
-    "is_new": false
+    "is_new": true
   },
   {
-    "id": 87,
+    "id": 95,
     "category": "Fortune 500 Accounts",
-    "company": "U.S. Army / Department of War",
-    "summary": "The U.S. Army awarded Anduril Industries a $20B contract in March 2026 for AI-enabled Lattice platform integration across Army operations. AT&T was awarded a contract modification for Wireless Priority Services on 5G for the National Security and Emergency Preparedness program ($9.16M). Separately, ARCH Systems received a $21.4M contract for Kessel Run Enterprise software toolchain at Hanscom AFB. These defense contracts signal broad Army investment in enterprise IT modernization including communications infrastructure.",
-    "source_url": "https://www.war.gov/News/Contracts/Contract/Article/4434754/contracts-for-march-13-2026/",
-    "why_vbrick": "The Army's rapid modernization of enterprise software and AI-enabled communications infrastructure creates demand for secure, FedRAMP High-eligible video delivery. As the Army adopts AI platforms and expands software-defined networking, internal training video, mission briefings, and leadership communications will require a government-grade video platform. Vbrick's FIPS 140-2, FedRAMP authorization, and DISA-aligned security controls position it for Army enterprise video contracts through existing GWACs.",
+    "company": "Chevron Corporation",
+    "summary": "Chevron (45,000+ employees) presented at its November 2025 Investor Day on its AI-driven APOLO platform for shale development, signaling active AI technology investment across the enterprise. The company also hosted a live investor webcast for the presentation. Chevron's global operations span the U.S., Kazakhstan, Guyana, and the Eastern Mediterranean—creating significant requirements for multi-site video communications for safety briefings, operational updates, and executive town halls. Production output growth in 2025–2026 (8% increase) indicates workforce expansion and associated communications needs.",
+    "source_url": "https://www.youtube.com/watch?v=jUlNwwPkXaY",
+    "why_vbrick": "Chevron's distributed global energy operations (refinery sites, upstream fields, corporate campuses) are a natural eCDN use case where satellite and limited-bandwidth locations make efficient video distribution critical. VBRICK's eCDN can reduce bandwidth consumption by up to 98% at constrained sites. Chevron's AI investment signals openness to AI-augmented video (search, transcription). GDPR compliance is relevant for European operations. Safety training video delivery at oil and gas facilities is a core VBRICK use case.",
     "outreach_angle": "",
-    "target_persona": "Army CIO / DISA Program Manager",
-    "industry": "Federal Government / Defense",
-    "urgency_score": 2,
+    "target_persona": "VP IT / Global Head of Employee Communications",
+    "industry": "Energy / Oil & Gas",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "low",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "video_analytics_ai",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Les Copeland",
+        "title": "Chief Information Officer",
+        "linkedin": "https://www.linkedin.com/in/les-copeland-6b158918"
+      },
+      {
+        "name": "Grant Gauld",
+        "title": "Senior Technical Manager – IT Service Management, Application & Platform Engineering",
+        "linkedin": "https://www.linkedin.com/in/grant-gauld-6996ba7a"
+      },
+      {
+        "name": "Sarah Mahone",
+        "title": "Program Manager, Global Exploration",
+        "linkedin": "https://www.linkedin.com/in/sarah-mahone-b6647a12"
+      },
+      {
+        "name": "Josh Durham",
+        "title": "Video Collaboration Architect",
+        "linkedin": "https://www.linkedin.com/in/josh-durham-10099428"
+      },
+      {
+        "name": "Sherry Hunyadi",
+        "title": "Chief Security Architect / General Manager, Cyber Intelligence Center",
+        "linkedin": "https://www.linkedin.com/in/sherry-hunyadi"
+      },
+      {
+        "name": "Lindsey Benton",
+        "title": "Senior Manager, Communications Strategy, Planning and Analytics",
+        "linkedin": "https://www.linkedin.com/in/lindseyabenton"
+      },
+      {
+        "name": "Minh Lee",
+        "title": "Principal Network Engineer",
+        "linkedin": "https://www.linkedin.com/in/minh-lee-58b91927"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 96,
+    "category": "Fortune 500 Accounts",
+    "company": "Morgan Stanley",
+    "summary": "Morgan Stanley (~80,000 employees) hosted its TMT Conference in March 2026, including live-streamed sessions on AI, cybersecurity, and investment themes. The bank routinely livestreams investor and client events. Morgan Stanley's investment management and investment banking operations require FINRA-compliant recording and archiving of all client-facing and regulatory communications. The bank's active AI focus (featured at its TMT conference) signals readiness to evaluate AI-augmented communications platforms.",
+    "source_url": "https://www.youtube.com/watch?v=eqxKvga-13w",
+    "why_vbrick": "Morgan Stanley's FINRA regulatory environment requires archiving of all material communications—a core VBRICK capability. With 80,000+ employees across global trading floors, eCDN is critical for delivering firm-wide town halls without saturating trading floor networks. VBRICK's real-time analytics provide CIOs with visibility into video delivery quality during high-stakes regulatory communications. The bank's AI focus (TMT conference) signals openness to AI-enhanced video tools including VBRICK's transcription and search.",
+    "outreach_angle": "",
+    "target_persona": "Head of Internal Communications / CTO / Chief Compliance Officer",
+    "industry": "Financial Services / Investment Banking",
+    "urgency_score": 1,
+    "urgency_rationale": "",
+    "confidence": "low",
+    "confidence_rationale": "",
+    "evidence_quote": null,
+    "source_verified": false,
+    "source_type": "Other",
+    "additional_sources": [],
+    "date": "",
+    "finding_type": "video_analytics_ai",
+    "finding_id": "",
+    "employee_count": "Unknown",
+    "is_fortune500": "Unverified",
+    "current_platform": "Unknown",
+    "corroborating_signals": 0,
+    "stakeholders": [
+      {
+        "name": "Michael Tuosto",
+        "title": "Video Conferencing and Streaming Media Tech Manager",
+        "linkedin": "https://www.linkedin.com/in/michael-tuosto-47796b3"
+      },
+      {
+        "name": "Chirag Shah",
+        "title": "Vice President - IT Infrastructure Project Manager",
+        "linkedin": "https://www.linkedin.com/in/chirag-shah-37885551"
+      },
+      {
+        "name": "L Max Perez",
+        "title": "Vice President - IT Operations and Program Lead (ITAM)",
+        "linkedin": "https://www.linkedin.com/in/lmaxperez"
+      },
+      {
+        "name": "Tully Cunningham",
+        "title": "Executive Director, Enterprise Technology Services",
+        "linkedin": "https://www.linkedin.com/in/tully-cunningham-13a3714"
+      },
+      {
+        "name": "Megan Powers",
+        "title": "Executive Director, Head Of Innovation, Platforms And Communications Compliance",
+        "linkedin": "https://www.linkedin.com/in/megan-powers-201a134"
+      },
+      {
+        "name": "Lynn Cocchiola",
+        "title": "Executive Director, Morgan Stanley Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/lynn-cocchiola"
+      },
+      {
+        "name": "Eileen Levy",
+        "title": "Managing Director, HR Technology",
+        "linkedin": "https://www.linkedin.com/in/eileenlevy"
+      }
+    ],
+    "is_new": true
+  },
+  {
+    "id": 97,
+    "category": "Fortune 500 Accounts",
+    "company": "Booz Allen Hamilton",
+    "summary": "Booz Allen Hamilton (~35,000 employees) secured a spot on the $561M MAC contract from Washington Headquarters Services alongside Leidos and Deloitte in February 2026. Booz Allen's core business is delivering IT and digital modernization services to DoD and civilian agencies—including programs that require secure video communications and training content delivery. The firm's growing presence on DoD modernization contracts (including the ODCAPE Joint Data Support Division award) positions it as both a potential VBRICK channel partner and an end-customer for secure internal video.",
+    "source_url": "https://www.govconwire.com/articles/whs-pentagon-booz-allen-hamilton-leidos-contract",
+    "why_vbrick": "Booz Allen's cleared workforce (~35,000 employees, many with TS/SCI clearances) requires FedRAMP/FIPS 140-2-compliant video for internal training and client program support. VBRICK's government compliance credentials are a requirement, not a differentiator, in Booz Allen's operating environment. A channel partnership or teaming arrangement with Booz Allen could accelerate VBRICK placements across its DoD client base. Booz Allen is also a direct enterprise customer for its own internal communications platform.",
+    "outreach_angle": "",
+    "target_persona": "CIO / Director of Digital Workplace / DoD Program Manager",
+    "industry": "Federal IT / Defense Consulting",
+    "urgency_score": 1,
     "urgency_rationale": "",
     "confidence": "medium",
     "confidence_rationale": "",
@@ -3887,481 +4445,47 @@ const FINDINGS = [
     "date": "",
     "finding_type": "federal_contract",
     "finding_id": "",
-    "employee_count": "475,000+ active duty + civilian workforce",
+    "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [
       {
-        "name": "Richard Keller",
-        "title": "VP, IT Solution Delivery And Engagement Supervisory Program Manager",
-        "linkedin": "https://www.linkedin.com/in/richard-a-keller"
+        "name": "Franco Susi",
+        "title": "Vice President, Health IT Operations",
+        "linkedin": "https://www.linkedin.com/in/franco-susi-6573169"
       },
       {
-        "name": "Cliff Sweney",
-        "title": "Director, Enterprise Portfolio",
-        "linkedin": "https://www.linkedin.com/in/cliff-sweney-474a2473"
+        "name": "Kyle Miller",
+        "title": "Vice President, Infrastructure Cybersecurity",
+        "linkedin": "https://www.linkedin.com/in/kyle-miller-459b5410"
       },
       {
-        "name": "Donald Sanders",
-        "title": "Executive Portfolio Director, Corporate Portfolio (A), Office Of Information And Technology (OIT)",
-        "linkedin": "https://www.linkedin.com/in/dr-donald-sanders"
+        "name": "Christopher Meyer",
+        "title": "Vice President of Technology",
+        "linkedin": "https://www.linkedin.com/in/christopher-meyer-1924774"
       },
       {
-        "name": "Ron Haskell",
-        "title": "Director of Broadcast and Video, Veterans Health Administration",
-        "linkedin": "https://www.linkedin.com/in/ron-haskell-1b72b788"
+        "name": "Natalie Ade",
+        "title": "Internal Events Experiences Manager",
+        "linkedin": "https://www.linkedin.com/in/natalie-ade-64b130114"
       },
       {
-        "name": "John D Oswalt",
-        "title": "DCIO - FOIA, Records, Assessment, Compliance, & Privacy /Chief Privacy Officer",
-        "linkedin": "https://www.linkedin.com/in/john-d-oswalt-0242117"
+        "name": "Allison Barlotta",
+        "title": "Chief Ethics and Compliance Officer",
+        "linkedin": "https://www.linkedin.com/in/allison-barlotta-46429a133"
       },
       {
-        "name": "Jack Galvin",
-        "title": "Deputy Chief Information Officer, End User Services",
-        "linkedin": "https://www.linkedin.com/in/jack-galvin-1866a386"
+        "name": "Samantha Morsink",
+        "title": "Vice President, Leadership, Talent Performance",
+        "linkedin": "https://www.linkedin.com/in/samantha-morsink-53231b72"
       },
       {
-        "name": "Paul Tibbits",
-        "title": "Executive Director, Workforce And Organization Development",
-        "linkedin": "https://www.linkedin.com/in/paul-tibbits-md-579ab39"
+        "name": "Kari Merkel",
+        "title": "Director Brand, Experiences, Creative",
+        "linkedin": "https://www.linkedin.com/in/kari-merkel-baa08647"
       }
     ],
-    "is_new": false
-  },
-  {
-    "id": 88,
-    "category": "Competitor Intelligence",
-    "company": "Enterprise organizations using Zoom for large-scale internal broadcasts",
-    "summary": "Zoom Events large meeting sessions are hard-capped at 5,000 attendees regardless of license tier — even if a Zoom Events/Webinars Plus license supports 10,000, meeting sessions are capped at 5,000. The Zoom expo floor is limited to 1,500 concurrent users per event. For organizations with 10,000+ employees running concurrent training or all-hands events, Zoom requires special support requests and does not offer native eCDN for internal network bandwidth management. High-traffic events have generated reports of audio/video quality degradation and inaccurate transcripts per G2 reviews.",
-    "source_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063766",
-    "why_vbrick": "Vbrick's eCDN architecture eliminates the attendee ceiling and bandwidth cost problem simultaneously. Unlike Zoom, which requires escalation for large events, Vbrick scales natively for simultaneous 50,000+ viewer broadcasts across internal networks. Real-time analytics and AI transcription maintain quality at scale.",
-    "outreach_angle": "Demo scenario: 'Walk me through what happens when 8,000 employees join your next all-hands on Zoom.' Surface the 5,000-cap limitation and bandwidth degradation risk, then demonstrate Vbrick's eCDN scaling capability.",
-    "target_persona": "Head of Internal Communications, IT Infrastructure Director, CTO",
-    "industry": "Enterprise (>5,000 employees — Retail, Manufacturing, Financial Services)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "High",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Scale/Architecture Limitation",
-    "finding_id": "",
-    "competitor": "Zoom Events/Webinars",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 89,
-    "category": "Competitor Intelligence",
-    "company": "Universities and large enterprises using Panopto for lecture capture and training",
-    "summary": "Trustpilot reviews over a multi-year period document consistent Panopto recording failures: 'At least 1/3 of recordings were ruined by camera focusing on the corner of the room, sound not working, recording cutting out or PowerPoint going black' (Aarhus University, 5-year user). Another reviewer: 'This software only works half of the time.' Panopto's January 2025 status page logged 'Elevated Archive Restoration Error Rates on NA Cloud' lasting over 48 hours. Student-facing complaints about upload failures, slow processing, and mobile app crashes are extensive and recurring.",
-    "source_url": "https://www.trustpilot.com/review/www.panopto.com",
-    "why_vbrick": "Panopto's recurring recording reliability issues create direct risk for compliance-sensitive training content (e.g., regulatory training, accredited courses, legal depositions). Vbrick's enterprise video platform provides guaranteed recording integrity, real-time AI transcription, and managed archiving with SLA-backed availability — critical for organizations where missed recordings create compliance or legal exposure.",
-    "outreach_angle": "Ask: 'What percentage of your compliance training recordings on Panopto have experienced processing failures or archive retrieval errors in the past 12 months? What's the cost of a failed recording during a mandated regulatory training?' Lead with Vbrick's archival reliability and SOC II Type 2 audit trail.",
-    "target_persona": "Head of L&D, IT Director, Compliance Training Manager",
-    "industry": "Higher Education, Healthcare (compliance training), Financial Services (regulatory training)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "Medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Negative Reviews — Reliability and Recording Failures",
-    "finding_id": "",
-    "competitor": "Panopto",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 90,
-    "category": "Competitor Intelligence",
-    "company": "Enterprise organizations using Qumu (Enghouse Video) for internal video",
-    "summary": "Qumu was acquired by Enghouse Systems for just $18M in an all-cash deal (closed February 2023), after failed merger attempts and its stock declining from a high of ~$200M valuation to $6M in cash reserves at acquisition. Now operating as 'Enghouse Video' under a Canadian enterprise software conglomerate with no primary video industry focus, Qumu is competing on legacy customer retention rather than active enterprise video platform innovation. The acquisition price reflects the platform's commoditization. Enghouse's typical model is operational efficiency over product investment.",
-    "source_url": "https://futurumgroup.com/insights/enghouse-systems-to-acquire-qumu-for-18-million-in-an-all-cash-deal/",
-    "why_vbrick": "Qumu customers purchased an enterprise video platform from a company that has now been absorbed as a minor product line by a non-video-focused Canadian enterprise software conglomerate. Product roadmap uncertainty, reduced engineering investment, and a parent company without video industry expertise create significant displacement risk. Vbrick's dedicated enterprise video focus, FedRAMP/FIPS compliance, and active AI roadmap (AI search, transcription) offer a differentiated upgrade path.",
-    "outreach_angle": "Lead with: 'The company that built Qumu sold for $18M — a fraction of what it was worth. It's now a minor product line at an enterprise software conglomerate. Are you confident in their video platform roadmap for the next 3 years?' Position Vbrick as a purpose-built, compliance-ready alternative.",
-    "target_persona": "IT Director, Head of Corporate Communications, VP of Digital Workplace",
-    "industry": "Financial Services, Manufacturing, Healthcare",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "Medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Acquisition/Ownership Change — Reduced Investment",
-    "finding_id": "",
-    "competitor": "Qumu",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 91,
-    "category": "Competitor Intelligence",
-    "company": "Zoom Events customers in enterprise with complex recurring event workflows",
-    "summary": "Software Advice and G2 reviewers consistently flag: 'The way that you setup Webinars is not very intuitive, you select a start time, and you have to state how many hours your event is — very few people think in this way.' Enterprise-grade complaints include high cost for large events, complex admin dashboards, inaccurate meeting transcripts, and restricted attendee interaction models. The expo floor is limited to 1,500 concurrent users. For regulated industries, Zoom's AI Companion raised data consent scrutiny in 2023 — a persistent concern for financial services and healthcare.",
-    "source_url": "https://www.softwareadvice.com/webinar/zoom-video-webinars-profile/reviews/",
-    "why_vbrick": "Vbrick's enterprise event platform is purpose-built for internal corporate communications and regulated industry use cases — not adapted from a consumer meeting tool. Native FINRA/HIPAA compliance, eCDN for bandwidth management, real-time analytics, and AI-powered search/transcription deliver enterprise-grade capabilities without Zoom's consumer-lineage limitations.",
-    "outreach_angle": "Ask: 'When you plan a large all-hands on Zoom Events, how much admin overhead goes into configuration vs. execution? What happens when 5,000+ employees join simultaneously?' Lead with Vbrick's simplified enterprise event workflow and eCDN scaling capability.",
-    "target_persona": "Head of Corporate Events, IT Director, Internal Communications Manager",
-    "industry": "Financial Services, Healthcare, Enterprise Technology",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "Medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "Platform Complexity / Limitations",
-    "finding_id": "",
-    "competitor": "Zoom Events/Webinars",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 92,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: State Consent Laws for Video Recording – All-Party Consent Requirements",
-    "summary": "Eleven U.S. states (California, Delaware, Florida, Maryland, Massachusetts, Montana, New Hampshire, Pennsylvania, Washington, Illinois, Michigan) require all-party consent for recording video conference sessions. Cross-state calls default to the strictest law (typically California). Enterprise video platforms used for client meetings, investor calls, earnings presentations, or regulated communications must provide explicit consent notification and capture before recording begins. Violations can result in criminal penalties (felonies in some states) and civil lawsuits. Courts apply video conference consent laws the same as in-person recording consent. California's CIPA is actively litigated, with hundreds of lawsuits annually targeting platforms using session replay or video tracking without consent.",
-    "source_url": "https://store.viaim.ai/blogs/news/is-it-legal-to-record-a-meeting",
-    "why_vbrick": "Enterprise video platforms that handle regulated client communications across state lines require built-in consent management, recording notifications, and opt-out workflows. Vbrick's platform with configurable consent prompts, recording indicators, and audit logs satisfies all-party consent requirements. This is a direct differentiator versus consumer-grade platforms that record by default without jurisdiction-aware consent management. Legal, compliance, and HR teams at enterprises in all-party consent states are active buyers for video platforms with demonstrable consent management features.",
-    "outreach_angle": "",
-    "target_persona": "Legal Counsel, Chief Compliance Officer, HR Director",
-    "industry": "Multi-Industry",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 93,
-    "category": "Compliance & Regulatory",
-    "company": "Regulation: ADA Title III Review – Potential WCAG Mandate for Private Sector Video (Oct 2025)",
-    "summary": "In October 2025, the DOJ announced it will re-examine all ADA Title II and III regulations on a yet-to-be-determined timetable. While Title II already mandates WCAG 2.1 Level AA for government entities (April 2026 deadline), Title III—covering private businesses—currently lacks a codified digital accessibility standard. The DOJ's review signals potential rulemaking that would impose WCAG compliance on private sector websites and video content. Meanwhile, ADA-based accessibility lawsuits against private organizations continue to increase annually (per UsableNet data). Courts regularly reference WCAG 2.1 AA as the benchmark in Title III accessibility disputes.",
-    "source_url": "https://www.pivotalaccessibility.com/2025/11/doj-to-revisit-ada-title-ii-and-iii-and-what-it-means-for-digital-accessibility/",
-    "why_vbrick": "Private sector enterprises operating enterprise video platforms are navigating growing litigation risk under ADA Title III, even before formal rulemaking. Vbrick's Section 508 compliance and WCAG-aligned accessibility features provide a defensible compliance posture. The DOJ's announced Title III review creates a proactive buying signal for private sector enterprises—particularly in healthcare, financial services, and retail—that want to align with the expected regulatory direction before formal mandates are issued.",
-    "outreach_angle": "",
-    "target_persona": "Legal Counsel, IT Director, Accessibility Officer",
-    "industry": "Multi-Industry (Private Sector)",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "regulatory_change",
-    "finding_id": "",
-    "compliance_standard": "",
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 94,
-    "category": "Fortune 500 Accounts",
-    "company": "IBM Corporation",
-    "summary": "IBM operates IBM Video Streaming as an active enterprise product (powered by IBM Watson AI) for its own internal use and external customers—covering live streaming, town halls, CEO broadcasts, and on-demand content management at global scale. IBM's $11B acquisition of Confluent (Apache Kafka) in late 2025 signals a broader real-time data streaming infrastructure strategy that extends into enterprise video. IBM Video Streaming serves Salesforce and 30+ enterprise clients, with capabilities including AI search, automated captioning, and multi-CDN delivery.",
-    "source_url": "https://www.ibm.com/products/video-streaming",
-    "why_vbrick": "IBM is both a competitor and potential partner/displacement target in enterprise video. IBM's Watson AI-powered video capabilities compete with Vbrick's AI search and transcription features, but IBM Video Streaming lacks Vbrick's FedRAMP/FIPS 140-2 compliance posture, Section 508 accessibility certification, and FINRA-ready archiving. IBM clients in regulated industries (financial services, healthcare, government) are strong Vbrick displacement opportunities—particularly where FedRAMP or HIPAA compliance is required.",
-    "outreach_angle": "",
-    "target_persona": "Head of Enterprise Video / CIO (IBM Clients in Regulated Industries)",
-    "industry": "Technology / Consulting",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "tech_stack_change",
-    "finding_id": "",
-    "employee_count": "280,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Barry Baker",
-        "title": "Vice President of Product Management, zSystems and LinuxONE",
-        "linkedin": "https://www.linkedin.com/in/barrymbaker"
-      },
-      {
-        "name": "Louis Lazarus",
-        "title": "VP, Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/louislazarus"
-      },
-      {
-        "name": "Larry Traola",
-        "title": "Practice Manager, Streaming Media / IT Specialist",
-        "linkedin": "https://www.linkedin.com/in/larry-traola-05284211"
-      },
-      {
-        "name": "Frederic Surand",
-        "title": "Global Voice&Video Leader - CIO Organization, Senior Managing Consultant",
-        "linkedin": "https://www.linkedin.com/in/frederic-surand-b5778334"
-      },
-      {
-        "name": "Sukhvir Saini",
-        "title": "Sr. Network Architect Hybrid Cloud",
-        "linkedin": "https://www.linkedin.com/in/sukhvir-saini-6a9a843b"
-      },
-      {
-        "name": "Nilam Bhatt",
-        "title": "Data Privacy And Regulatory Compliance Lead - IBM Consulting, CISO",
-        "linkedin": "https://www.linkedin.com/in/nilam-bhatt-12a5005"
-      },
-      {
-        "name": "Brittany Forgione",
-        "title": "Director, Marketing Communications, IBM Research",
-        "linkedin": "https://www.linkedin.com/in/brittanyforgione"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 95,
-    "category": "Fortune 500 Accounts",
-    "company": "Mondelēz International",
-    "summary": "Mondelēz International (owner of Oreo, Cadbury, Ritz, Sour Patch Kids) has deployed AI-generated video at scale across its global organization as a solution for what was previously 'a mountain of PDFs'—using AI video to communicate complex information to a large, distributed, multilingual consumer goods workforce. This active scaling of video content signals the need for enterprise video infrastructure to manage distribution and governance.",
-    "source_url": "https://fortune.com/2025/06/26/ai-digital-avatars-corporate-video-training-gen-z/",
-    "why_vbrick": "Mondelēz's geographically distributed workforce (90K+ employees across factories, offices, and sales teams in 80+ countries) faces the exact bandwidth and delivery challenges that Vbrick's eCDN solves. Delivering video to manufacturing locations with constrained network infrastructure requires multicast and edge caching capabilities. Vbrick's GDPR-compliant architecture and multilingual AI transcription/translation also align with Mondelēz's European headquarters and multinational operations.",
-    "outreach_angle": "",
-    "target_persona": "Global Head of Internal Communications / VP Learning & Development",
-    "industry": "Consumer Goods / Food Manufacturing",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ai_video_initiative",
-    "finding_id": "",
-    "employee_count": "90,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Jasraj Joshi",
-        "title": "Global Head - Unified Communications And Collaboration Services (UCC)",
-        "linkedin": "https://www.linkedin.com/in/jasraj-joshi-850bb159"
-      },
-      {
-        "name": "Kiril Topalov",
-        "title": "VP Chief Enterprise Architect",
-        "linkedin": "https://www.linkedin.com/in/kiril-topalov-41564b51"
-      },
-      {
-        "name": "Allan Castro",
-        "title": "Network Technology Architect",
-        "linkedin": "https://www.linkedin.com/in/allan-castro-820a661b"
-      },
-      {
-        "name": "Jonas Bruzas",
-        "title": "Senior Vice President, Chief Global Compliance & Ethics Officer",
-        "linkedin": "https://www.linkedin.com/in/jonas-bruzas-5881981"
-      },
-      {
-        "name": "Michelle Samuel",
-        "title": "Global Director - Internal Communications",
-        "linkedin": "https://www.linkedin.com/in/michelledsamuel"
-      },
-      {
-        "name": "Maria Macuare",
-        "title": "SVP Global Chief Data Officer",
-        "linkedin": "https://www.linkedin.com/in/maria-macuare-59990a3"
-      },
-      {
-        "name": "Chetan Kattarmal",
-        "title": "UC Architect",
-        "linkedin": "https://www.linkedin.com/in/chetankattarmal"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 96,
-    "category": "Fortune 500 Accounts",
-    "company": "Brandlive (serving Fortune 500 clients)",
-    "summary": "Brandlive launched BrandTV in March 2026—a dedicated enterprise streaming platform for corporate town halls and on-demand video. The platform features AI-powered planning tools, broadcast-quality HD streaming, instant content archiving, and custom branded streaming portals. The launch announcement explicitly targets Fortune 500 companies running CEO town halls to 'thousands to tens of thousands of employees.' This market launch signals strong enterprise buyer demand for broadcast-grade internal streaming platforms.",
-    "source_url": "https://www.globenewswire.com/news-release/2026/03/12/3254942/0/en/Brandlive-launches-BrandTV-the-Enterprise-Streaming-Platform-Every-Company-Needs.html",
-    "why_vbrick": "The Brandlive BrandTV launch validates strong market demand for enterprise town hall and on-demand video platforms—directly Vbrick's core market. As Fortune 500 companies evaluate BrandTV, Vbrick's key differentiators include: built-in eCDN (vs. BrandTV's dependency on external delivery), FedRAMP/HIPAA/FINRA compliance (vs. BrandTV's consumer-grade compliance posture), Microsoft Teams integration for hybrid events, and Vbrick's AI search across the entire video archive—features BrandTV lacks for regulated industries.",
-    "outreach_angle": "",
-    "target_persona": "Head of Internal Communications / VP Events & Engagement",
-    "industry": "Technology / Enterprise Event Platform",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "large_event_technology",
-    "finding_id": "",
-    "employee_count": "Vendor serving 10,000+ employee enterprises",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [],
-    "is_new": false
-  },
-  {
-    "id": 97,
-    "category": "Fortune 500 Accounts",
-    "company": "Humana Inc.",
-    "summary": "Humana's Data Storytelling Lead from its Visualization Center of Excellence is presenting at Ragan's Employee Communications & Culture Conference (April 2026) on measurement and data analytics for internal communications. Humana's active investment in analytics-driven employee communications, including visual data storytelling, signals a move toward measurable video engagement infrastructure across its 67,000-employee healthcare workforce.",
-    "source_url": "https://www.prdaily.com/how-fortune-500-communicators-are-rethinking-employee-communications-and-culture/",
-    "why_vbrick": "Humana's HIPAA-regulated environment and analytics-driven communications strategy align directly with Vbrick's capabilities. Vbrick's real-time analytics dashboard provides the engagement and viewer data that Humana's Visualization Center of Excellence would require to prove ROI on internal video investment. HIPAA-compliant video hosting for clinical training, benefits education, and executive communications makes Vbrick a natural fit for Humana's regulated healthcare workforce.",
-    "outreach_angle": "",
-    "target_persona": "VP of Internal Communications / Head of HR Technology",
-    "industry": "Healthcare / Insurance",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "medium",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "ai_video_initiative",
-    "finding_id": "",
-    "employee_count": "67,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Dalia Powers",
-        "title": "SVP and Chief Information Officer - Digital, Data And Analytics",
-        "linkedin": "https://www.linkedin.com/in/daliapowers"
-      },
-      {
-        "name": "Brett Hudspeth",
-        "title": "Vice President, Segment CIO - Medicare & Medicaid",
-        "linkedin": "https://www.linkedin.com/in/bretthudspeth"
-      },
-      {
-        "name": "Craig Klopatek",
-        "title": "SVP & CIO, Insurance Segment",
-        "linkedin": "https://www.linkedin.com/in/craigklopatek"
-      },
-      {
-        "name": "Carla Keppler Laporta",
-        "title": "Associate Vice President - Internal Communications",
-        "linkedin": "https://www.linkedin.com/in/carlakeppler"
-      },
-      {
-        "name": "Robert J Bertrand",
-        "title": "Director, Internal Communications",
-        "linkedin": "https://www.linkedin.com/in/robertjbertrand"
-      },
-      {
-        "name": "Kelli Legaspi",
-        "title": "Director, Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/kelli-legaspi-5a6b984"
-      },
-      {
-        "name": "Cindy Aikens",
-        "title": "Technology Associate VP, Humana Military",
-        "linkedin": "https://www.linkedin.com/in/cindyaikens"
-      }
-    ],
-    "is_new": false
-  },
-  {
-    "id": 98,
-    "category": "Fortune 500 Accounts",
-    "company": "AT&T Inc.",
-    "summary": "AT&T invested in a nationwide 5G capacity expansion using EchoStar mid-band spectrum in November 2025, boosting speeds by up to 80% and deploying to 23,000 cell sites. Simultaneously, AT&T launched 'Express Waves' 100G/400G optical fiber services targeting data center interconnects. The firm also maintains an active role in the White House Communications Agency NSEP Priority Service contract. This infrastructure investment trajectory creates demand for enterprise video distribution to AT&T's own 150,000+ employees across distributed telecom operations.",
-    "source_url": "https://about.att.com/story/2025/att-boosts-5g-capacity-nationwide.html",
-    "why_vbrick": "AT&T's massive internal workforce spread across field operations, data centers, and corporate offices requires a robust eCDN to deliver video without saturating enterprise WAN links. Vbrick's combination of multicast, P2P, and edge caching eCDN technologies is specifically designed for distributed workforces like AT&T's. The firm's national security work (White House Communications Agency contract) also signals government-grade compliance requirements where Vbrick's FedRAMP posture provides differentiated value.",
-    "outreach_angle": "",
-    "target_persona": "VP of Internal Technology / Head of Enterprise Communications",
-    "industry": "Telecommunications",
-    "urgency_score": 1,
-    "urgency_rationale": "",
-    "confidence": "low",
-    "confidence_rationale": "",
-    "evidence_quote": null,
-    "source_verified": false,
-    "source_type": "Other",
-    "additional_sources": [],
-    "date": "",
-    "finding_type": "technology_investment",
-    "finding_id": "",
-    "employee_count": "150,000+",
-    "is_fortune500": "Unverified",
-    "current_platform": "Unknown",
-    "corroborating_signals": 0,
-    "stakeholders": [
-      {
-        "name": "Amy Abert",
-        "title": "Assistant Vice President Technology",
-        "linkedin": "https://www.linkedin.com/in/amy-abert-0a4664103"
-      },
-      {
-        "name": "Kim Hart",
-        "title": "Vice President Consumer Communications",
-        "linkedin": "https://www.linkedin.com/in/kihart"
-      },
-      {
-        "name": "Victoria Decarmine",
-        "title": "Director, Corporate Communications",
-        "linkedin": "https://www.linkedin.com/in/victoria-decarmine-79636118"
-      },
-      {
-        "name": "Darcie Henry",
-        "title": "SEVP & CHRO",
-        "linkedin": "https://www.linkedin.com/in/darcie-henry-cakaric"
-      },
-      {
-        "name": "Jeff Wilson",
-        "title": "Vice President, Streaming Video Engineering",
-        "linkedin": "https://www.linkedin.com/in/jeff-wilson-7996b051"
-      },
-      {
-        "name": "Jason Wallace",
-        "title": "Director - Media Technology",
-        "linkedin": "https://www.linkedin.com/in/jason-wallace-8806a09"
-      },
-      {
-        "name": "Ashley Hoptay",
-        "title": "AVP, Communications & PR",
-        "linkedin": "https://www.linkedin.com/in/ahoptay"
-      }
-    ],
-    "is_new": false
+    "is_new": true
   }
 ];
