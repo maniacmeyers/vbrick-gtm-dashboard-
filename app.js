@@ -973,15 +973,13 @@
       "</div>";
     html += "</div>";
 
-    // Outreach
-    html += '<div class="modal-section">';
-    html +=
-      '<div class="modal-section-title">Suggested Outreach Angle</div>';
-    html +=
-      '<div class="modal-outreach">' +
-      escapeHtml(finding.outreach_angle || "") +
-      "</div>";
-    html += "</div>";
+    // Outreach Angle (only show if populated)
+    if (finding.outreach_angle && finding.outreach_angle.trim()) {
+      html += '<div class="modal-section">';
+      html += '<div class="modal-section-title">Suggested Outreach Angle</div>';
+      html += '<div class="modal-outreach">' + escapeHtml(finding.outreach_angle) + '</div>';
+      html += '</div>';
+    }
 
     // Maniac Method Outreach
     var outreach = generateJMMOutreach(finding);
@@ -1072,13 +1070,11 @@
       html += '<div class="modal-section-title">Key Stakeholders</div>';
       html += '<div class="stakeholder-grid">';
       finding.stakeholders.forEach(function (s) {
-        var role = (s.role || "Stakeholder").toLowerCase().replace(/\s+/g, "-");
         html += '<div class="stakeholder-card">';
-        html += '<div class="stakeholder-role-badge ' + escapeHtml(role) + '">' + escapeHtml(s.role || "Stakeholder") + '</div>';
         html += '<div class="stakeholder-name">' + escapeHtml(s.name || "") + '</div>';
         html += '<div class="stakeholder-title">' + escapeHtml(s.title || "") + '</div>';
-        if (s.linkedin_url) {
-          html += '<a href="' + escapeHtml(s.linkedin_url) + '" target="_blank" class="stakeholder-linkedin">View on LinkedIn \u2192</a>';
+        if (s.linkedin && s.linkedin.includes('linkedin.com')) {
+          html += '<a href="' + escapeHtml(s.linkedin) + '" target="_blank" rel="noopener" class="stakeholder-linkedin">LinkedIn Profile \u2192</a>';
         }
         html += '</div>';
       });
