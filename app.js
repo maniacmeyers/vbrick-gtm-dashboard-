@@ -1256,6 +1256,48 @@
     return div.innerHTML;
   }
 
+  // ---- Run Research Button ----
+  var researchBtn = document.getElementById('runResearchBtn');
+  if (researchBtn) {
+    researchBtn.addEventListener('click', function() {
+      var overlay = document.createElement('div');
+      overlay.className = 'research-confirm-overlay';
+      overlay.innerHTML = '<div class="research-confirm-box">' +
+        '<h3>Run Research Refresh</h3>' +
+        '<p>This will launch a full GTM intelligence research cycle across all 4 categories (Competitor Intelligence, Market Triggers, Compliance & Regulatory, Fortune 500 Accounts). It typically takes 5-10 minutes.</p>' +
+        '<div class="research-confirm-actions">' +
+        '<button class="research-confirm-cancel">Cancel</button>' +
+        '<button class="research-confirm-go">Run Research</button>' +
+        '</div></div>';
+      document.body.appendChild(overlay);
+      requestAnimationFrame(function() { overlay.classList.add('open'); });
+
+      overlay.querySelector('.research-confirm-cancel').addEventListener('click', function() {
+        overlay.classList.remove('open');
+        setTimeout(function() { overlay.remove(); }, 300);
+      });
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+          overlay.classList.remove('open');
+          setTimeout(function() { overlay.remove(); }, 300);
+        }
+      });
+      overlay.querySelector('.research-confirm-go').addEventListener('click', function() {
+        overlay.remove();
+        // Open Perplexity Computer with pre-filled research prompt
+        var prompt = encodeURIComponent('Run VBRICK GTM Intelligence research refresh now. Run all 4 research agents, merge, rebalance urgency, deploy the dashboard, and push to GitHub/Netlify.');
+        window.open('https://www.perplexity.ai/?q=' + prompt, '_blank');
+        // Show running state
+        researchBtn.classList.add('running');
+        researchBtn.querySelector('span').textContent = 'Running...';
+        setTimeout(function() {
+          researchBtn.classList.remove('running');
+          researchBtn.querySelector('span').textContent = 'Run Research';
+        }, 600000); // Reset after 10 min
+      });
+    });
+  }
+
   // ---- CSV Export with Column Picker ----
   var CSV_COLUMNS = [
     { key: 'id', label: 'ID', getter: function(f){ return f.id; } },
