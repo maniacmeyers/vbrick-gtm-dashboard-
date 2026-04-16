@@ -1187,9 +1187,44 @@
       html += "</div>";
     }
 
+    // Conversation feedback bar
+    var fbState = _feedbackState[finding.id] || null;
+    html += '<div class="feedback-bar">';
+    html += '<span class="feedback-label">Did this lead to a conversation?</span>';
+    html += '<div class="feedback-btns">';
+    html += '<button class="feedback-btn' + (fbState === 'yes' ? ' active-yes' : '') + '" data-fb="yes" data-fid="' + finding.id + '">Yes</button>';
+    html += '<button class="feedback-btn' + (fbState === 'no' ? ' active-no' : '') + '" data-fb="no" data-fid="' + finding.id + '">No</button>';
+    html += '<button class="feedback-btn' + (fbState === 'pending' ? ' active-pending' : '') + '" data-fb="pending" data-fid="' + finding.id + '">Not Yet</button>';
+    html += '</div>';
+    if (fbState) html += '<span class="feedback-saved">Saved</span>';
+    html += '</div>';
+
     modalContent.innerHTML = html;
     modalOverlay.classList.add("open");
     document.body.style.overflow = "hidden";
+
+    // Wire up feedback buttons
+    modalContent.querySelectorAll('.feedback-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var fid = btn.dataset.fid;
+        var val = btn.dataset.fb;
+        _feedbackState[fid] = val;
+        // Update UI
+        modalContent.querySelectorAll('.feedback-btn').forEach(function(b) {
+          b.classList.remove('active-yes', 'active-no', 'active-pending');
+        });
+        btn.classList.add('active-' + val);
+        var savedEl = modalContent.querySelector('.feedback-saved');
+        if (!savedEl) {
+          savedEl = document.createElement('span');
+          savedEl.className = 'feedback-saved';
+          btn.parentElement.parentElement.appendChild(savedEl);
+        }
+        savedEl.textContent = 'Saved';
+        // Log feedback (fire-and-forget to access log)
+        if (typeof logAccess === 'function') logAccess('feedback_' + val, fid);
+      });
+    });
 
     // Tab switching for outreach
     var tabs = modalContent.querySelectorAll('.outreach-tab');
@@ -1314,6 +1349,9 @@
     { key: 'competitor', label: 'Competitor', getter: function(f){ return f.competitor||''; } },
     { key: 'stakeholders', label: 'Stakeholders (Name / Title / LinkedIn)', getter: null }
   ];
+
+  // Conversation feedback state (in-memory, persists within session)
+  var _feedbackState = {};
 
   // Column selection (in-memory, persists within session)
   var _exportPrefsCache = null;
