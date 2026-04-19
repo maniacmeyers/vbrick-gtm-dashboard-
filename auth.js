@@ -264,13 +264,13 @@ function createAuthScreen() {
 }
 
 function showDashboard() {
-  document.querySelector(".dashboard").style.display = "";
-  document.querySelector(".site-footer").style.display = "";
+  var dash = document.querySelector(".dashboard");
+  if (dash) dash.style.display = "";
 }
 
 function hideDashboard() {
-  document.querySelector(".dashboard").style.display = "none";
-  document.querySelector(".site-footer").style.display = "none";
+  var dash = document.querySelector(".dashboard");
+  if (dash) dash.style.display = "none";
 }
 
 // ─── Sign Out Button (added to sidebar) ──────────────────────
