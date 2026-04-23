@@ -74,6 +74,7 @@
     triggers: "Market Triggers",
     compliance: "Compliance & Regulatory",
     fortune500: "Fortune 500 Accounts",
+    account_plans: "Account Plans",
     playbook: "Outbound Playbook",
   };
 
@@ -297,10 +298,13 @@
     var tableContainer = document.querySelector('.table-container');
     var playbookEl = document.getElementById('playbookContainer');
 
+    var plansEl = document.getElementById('plansContainer');
+
     if (currentView === 'playbook') {
       if (filtersBar) filtersBar.style.display = 'none';
       if (kpiGrid) kpiGrid.style.display = 'none';
       if (tableContainer) tableContainer.style.display = 'none';
+      if (plansEl) plansEl.style.display = 'none';
       findingCount.textContent = '';
       if (!playbookEl) {
         playbookEl = document.createElement('div');
@@ -312,11 +316,27 @@
       return;
     }
 
-    // Normal view: show standard elements, hide playbook
+    if (currentView === 'account_plans') {
+      if (filtersBar) filtersBar.style.display = 'none';
+      if (kpiGrid) kpiGrid.style.display = 'none';
+      if (tableContainer) tableContainer.style.display = 'none';
+      if (playbookEl) playbookEl.style.display = 'none';
+      if (!plansEl) {
+        plansEl = document.createElement('div');
+        plansEl.id = 'plansContainer';
+        document.getElementById('mainContent').appendChild(plansEl);
+      }
+      plansEl.style.display = 'block';
+      renderAccountPlans(plansEl);
+      return;
+    }
+
+    // Normal view: show standard elements, hide playbook/plans
     if (filtersBar) filtersBar.style.display = '';
     if (kpiGrid) kpiGrid.style.display = '';
     if (tableContainer) tableContainer.style.display = '';
     if (playbookEl) playbookEl.style.display = 'none';
+    if (plansEl) plansEl.style.display = 'none';
 
     var data = getFilteredFindings();
     updateKPIs(data);
@@ -1291,46 +1311,262 @@
     return div.innerHTML;
   }
 
-  // ---- Run Research Button ----
+  // ---- Run Research Button + Split Menu ----
   var researchBtn = document.getElementById('runResearchBtn');
-  if (researchBtn) {
-    researchBtn.addEventListener('click', function() {
-      var overlay = document.createElement('div');
-      overlay.className = 'research-confirm-overlay';
-      overlay.innerHTML = '<div class="research-confirm-box">' +
-        '<h3>Run Research Refresh</h3>' +
-        '<p>This will launch a full GTM intelligence research cycle across all 4 categories (Competitor Intelligence, Market Triggers, Compliance & Regulatory, Fortune 500 Accounts). It typically takes 5-10 minutes.</p>' +
-        '<div class="research-confirm-actions">' +
-        '<button class="research-confirm-cancel">Cancel</button>' +
-        '<button class="research-confirm-go">Run Research</button>' +
-        '</div></div>';
-      document.body.appendChild(overlay);
-      requestAnimationFrame(function() { overlay.classList.add('open'); });
+  var researchCaret = document.getElementById('runResearchCaret');
+  var researchMenu = document.getElementById('researchMenu');
 
-      overlay.querySelector('.research-confirm-cancel').addEventListener('click', function() {
-        overlay.classList.remove('open');
-        setTimeout(function() { overlay.remove(); }, 300);
-      });
-      overlay.addEventListener('click', function(e) {
-        if (e.target === overlay) {
-          overlay.classList.remove('open');
-          setTimeout(function() { overlay.remove(); }, 300);
-        }
-      });
-      overlay.querySelector('.research-confirm-go').addEventListener('click', function() {
-        overlay.remove();
-        // Open Perplexity Computer with pre-filled research prompt
-        var prompt = encodeURIComponent('Run VBRICK GTM Intelligence research refresh now. Run all 4 research agents, merge, rebalance urgency, deploy the dashboard, and push to GitHub/Netlify.');
-        window.open('https://www.perplexity.ai/?q=' + prompt, '_blank');
-        // Show running state
-        researchBtn.classList.add('running');
-        researchBtn.querySelector('span').textContent = 'Running...';
-        setTimeout(function() {
-          researchBtn.classList.remove('running');
-          researchBtn.querySelector('span').textContent = 'Run Research';
-        }, 600000); // Reset after 10 min
+  function setResearchRunning() {
+    if (!researchBtn) return;
+    researchBtn.classList.add('running');
+    var span = researchBtn.querySelector('span');
+    if (span) span.textContent = 'Running...';
+    setTimeout(function() {
+      researchBtn.classList.remove('running');
+      if (span) span.textContent = 'Run Research';
+    }, 600000);
+  }
+
+  function launchComputerPrompt(promptText) {
+    window.open('https://www.perplexity.ai/?q=' + encodeURIComponent(promptText), '_blank');
+    setResearchRunning();
+  }
+
+  function runBroadResearch() {
+    showConfirm({
+      title: 'Run Broad Market Scan',
+      body: 'This launches all 4 research agents (Competitor Intelligence, Market Triggers, Compliance & Regulatory, Fortune 500 Accounts) across the full ICP. Typically takes 5-10 minutes.',
+      go: 'Run Research',
+      onGo: function() {
+        launchComputerPrompt('Run VBRICK GTM Intelligence research refresh now. Run all 4 research agents, merge, rebalance urgency, deploy the dashboard, and push to GitHub/Netlify.');
+      }
+    });
+  }
+
+  function runSingleAccountResearch() {
+    showSingleAccountModal();
+  }
+
+  function runCsvBulkResearch() {
+    showCsvUploadModal();
+  }
+
+  function openAccountPlansView() {
+    // Navigate to account plans view
+    var navBtn = document.querySelector('.nav-item[data-view="account_plans"]');
+    if (navBtn) navBtn.click();
+  }
+
+  if (researchBtn) {
+    researchBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      runBroadResearch();
+    });
+  }
+
+  if (researchCaret && researchMenu) {
+    researchCaret.addEventListener('click', function(e) {
+      e.stopPropagation();
+      researchMenu.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+      if (!researchMenu.contains(e.target) && e.target !== researchCaret) {
+        researchMenu.classList.remove('open');
+      }
+    });
+    researchMenu.querySelectorAll('.research-menu-item').forEach(function(item) {
+      item.addEventListener('click', function() {
+        researchMenu.classList.remove('open');
+        var mode = item.dataset.mode;
+        if (mode === 'broad') runBroadResearch();
+        else if (mode === 'single') runSingleAccountResearch();
+        else if (mode === 'csv') runCsvBulkResearch();
+        else if (mode === 'plan') openAccountPlansView();
       });
     });
+  }
+
+  // Generic confirm modal
+  function showConfirm(opts) {
+    var overlay = document.createElement('div');
+    overlay.className = 'research-confirm-overlay';
+    overlay.innerHTML = '<div class="research-confirm-box">' +
+      '<h3>' + escapeHtml(opts.title) + '</h3>' +
+      '<p>' + escapeHtml(opts.body) + '</p>' +
+      '<div class="research-confirm-actions">' +
+      '<button class="research-confirm-cancel">Cancel</button>' +
+      '<button class="research-confirm-go">' + escapeHtml(opts.go || 'Go') + '</button>' +
+      '</div></div>';
+    document.body.appendChild(overlay);
+    requestAnimationFrame(function(){ overlay.classList.add('open'); });
+    function close() {
+      overlay.classList.remove('open');
+      setTimeout(function(){ overlay.remove(); }, 250);
+    }
+    overlay.querySelector('.research-confirm-cancel').addEventListener('click', close);
+    overlay.addEventListener('click', function(e){ if (e.target === overlay) close(); });
+    overlay.querySelector('.research-confirm-go').addEventListener('click', function(){
+      close();
+      if (typeof opts.onGo === 'function') opts.onGo();
+    });
+  }
+
+  // Single-account research modal
+  function showSingleAccountModal() {
+    var overlay = document.createElement('div');
+    overlay.className = 'research-input-overlay';
+    overlay.innerHTML = '<div class="research-input-box">' +
+      '<h3>Research a Single Account</h3>' +
+      '<p>Enter a company name. VBRICK GTM Intelligence will run all 4 research agents focused on this specific account and return the same structured output (findings, stakeholders, outreach).</p>' +
+      '<label style="display:block;font-size:var(--text-xs);font-weight:600;margin-bottom:6px;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.05em;">Account Name</label>' +
+      '<input type="text" id="singleAccountInput" class="research-input-field" placeholder="e.g. JPMorgan Chase, Pfizer, Department of Veterans Affairs" autocomplete="off">' +
+      '<div class="research-input-hint">Also generates an account plan (overview, stakeholders→challenges, SWOT, VBRICK positioning, point-of-view hypothesis).</div>' +
+      '<div class="research-confirm-actions" style="justify-content:flex-end;">' +
+        '<button class="research-confirm-cancel">Cancel</button>' +
+        '<button class="research-confirm-go" id="singleAccountGo">Run Research</button>' +
+      '</div>' +
+      '</div>';
+    document.body.appendChild(overlay);
+    requestAnimationFrame(function(){ overlay.classList.add('open'); });
+    var input = document.getElementById('singleAccountInput');
+    setTimeout(function(){ input && input.focus(); }, 100);
+
+    function close() {
+      overlay.classList.remove('open');
+      setTimeout(function(){ overlay.remove(); }, 250);
+    }
+    overlay.querySelector('.research-confirm-cancel').addEventListener('click', close);
+    overlay.addEventListener('click', function(e){ if (e.target === overlay) close(); });
+    function submit() {
+      var name = (input.value || '').trim();
+      if (!name) { input.focus(); return; }
+      close();
+      var promptText = 'Run VBRICK GTM Intelligence deep-dive research on a single account: "' + name + '". ' +
+        'Run all 4 research agents (RA-01 Executive/Strategic, RA-02 Technology/Infrastructure, RA-03 Regulatory/Compliance, RA-04 Hiring/Org-Change) scoped to this account only. ' +
+        'Apply VBRICK ICP signal detection (157 signal types). Identify verified current stakeholders with LinkedIn URLs. ' +
+        'Generate outreach_angle for every finding. Merge into the dashboard data.js with is_new=true. ' +
+        'Then generate the Account Plan (overview, stakeholders mapped to business challenges VBRICK solves, SWOT, VBRICK positioning, point-of-view hypothesis). ' +
+        'Deploy and push to GitHub/Netlify.';
+      launchComputerPrompt(promptText);
+    }
+    document.getElementById('singleAccountGo').addEventListener('click', submit);
+    input.addEventListener('keydown', function(e){ if (e.key === 'Enter') submit(); });
+  }
+
+  // CSV bulk upload modal
+  function showCsvUploadModal() {
+    var overlay = document.createElement('div');
+    overlay.className = 'research-input-overlay';
+    overlay.innerHTML = '<div class="research-input-box">' +
+      '<h3>Bulk Account Research</h3>' +
+      '<p>Upload a CSV with one account per row. The first column is used as the account name (header row auto-detected and skipped). All 4 research agents run across each account in parallel. Same structured output as a single-account run.</p>' +
+      '<div class="research-csv-dropzone" id="csvDropzone">' +
+        '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>' +
+        '<div style="font-weight:600;font-size:var(--text-sm);color:var(--nm-text-heading);">Drop CSV here or click to browse</div>' +
+        '<div style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:4px;">Max 100 accounts per run</div>' +
+        '<input type="file" id="csvFileInput" accept=".csv,text/csv" style="display:none;">' +
+      '</div>' +
+      '<div id="csvPreviewContainer" style="display:none;">' +
+        '<label style="display:block;font-size:var(--text-xs);font-weight:600;margin-bottom:6px;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.05em;">Accounts detected: <span id="csvCount">0</span></label>' +
+        '<div class="research-csv-preview" id="csvPreview"></div>' +
+      '</div>' +
+      '<div class="research-input-hint">Also generates account plans (overview, stakeholders→challenges, SWOT, positioning) for every account in the file.</div>' +
+      '<div class="research-confirm-actions" style="justify-content:flex-end;">' +
+        '<button class="research-confirm-cancel">Cancel</button>' +
+        '<button class="research-confirm-go" id="csvGo" disabled style="opacity:0.5;">Run Research</button>' +
+      '</div>' +
+      '</div>';
+    document.body.appendChild(overlay);
+    requestAnimationFrame(function(){ overlay.classList.add('open'); });
+
+    var dz = document.getElementById('csvDropzone');
+    var fileInput = document.getElementById('csvFileInput');
+    var goBtn = document.getElementById('csvGo');
+    var accounts = [];
+
+    function close() {
+      overlay.classList.remove('open');
+      setTimeout(function(){ overlay.remove(); }, 250);
+    }
+    overlay.querySelector('.research-confirm-cancel').addEventListener('click', close);
+    overlay.addEventListener('click', function(e){ if (e.target === overlay) close(); });
+
+    dz.addEventListener('click', function(){ fileInput.click(); });
+    dz.addEventListener('dragover', function(e){ e.preventDefault(); dz.classList.add('dragover'); });
+    dz.addEventListener('dragleave', function(){ dz.classList.remove('dragover'); });
+    dz.addEventListener('drop', function(e){
+      e.preventDefault();
+      dz.classList.remove('dragover');
+      if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+    });
+    fileInput.addEventListener('change', function(){
+      if (fileInput.files.length) handleFile(fileInput.files[0]);
+    });
+
+    function handleFile(file) {
+      var reader = new FileReader();
+      reader.onload = function(ev) {
+        accounts = parseCsvAccounts(ev.target.result);
+        if (accounts.length === 0) {
+          alert('No accounts found in that file. Make sure the first column contains account names.');
+          return;
+        }
+        if (accounts.length > 100) accounts = accounts.slice(0, 100);
+        renderPreview();
+      };
+      reader.readAsText(file);
+    }
+
+    function renderPreview() {
+      document.getElementById('csvPreviewContainer').style.display = 'block';
+      document.getElementById('csvCount').textContent = accounts.length;
+      var prev = document.getElementById('csvPreview');
+      prev.innerHTML = accounts.map(function(a){
+        return '<div class="research-csv-preview-item">' + escapeHtml(a) + '</div>';
+      }).join('');
+      goBtn.disabled = false;
+      goBtn.style.opacity = '1';
+    }
+
+    goBtn.addEventListener('click', function(){
+      if (!accounts.length) return;
+      close();
+      var listStr = accounts.map(function(a){ return '- ' + a; }).join('\n');
+      var promptText = 'Run VBRICK GTM Intelligence bulk account research. ' + accounts.length + ' accounts to research in parallel:\n\n' + listStr + '\n\n' +
+        'For each account: run all 4 research agents (RA-01, RA-02, RA-03, RA-04) scoped to that account. ' +
+        'Apply VBRICK ICP signal detection (157 signal types). Identify verified current stakeholders with LinkedIn URLs. ' +
+        'Generate outreach_angle for every finding. Merge all findings into data.js with is_new=true. ' +
+        'For every account, also generate an Account Plan (overview, stakeholders mapped to business challenges, SWOT, VBRICK positioning, point-of-view hypothesis). ' +
+        'Deploy and push to GitHub/Netlify.';
+      launchComputerPrompt(promptText);
+    });
+  }
+
+  function parseCsvAccounts(text) {
+    var lines = text.split(/\r?\n/);
+    var out = [];
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i].trim();
+      if (!line) continue;
+      // Parse first column, handle quoted values
+      var first;
+      if (line.charAt(0) === '"') {
+        var endQuote = line.indexOf('"', 1);
+        while (endQuote > -1 && line.charAt(endQuote + 1) === '"') {
+          endQuote = line.indexOf('"', endQuote + 2);
+        }
+        first = line.substring(1, endQuote).replace(/""/g, '"');
+      } else {
+        var comma = line.indexOf(',');
+        first = comma === -1 ? line : line.substring(0, comma);
+      }
+      first = first.trim();
+      if (!first) continue;
+      // Skip likely header row
+      if (i === 0 && /^(company|account|name|organization|org)$/i.test(first)) continue;
+      out.push(first);
+    }
+    return out;
   }
 
   // ---- CSV Export with Column Picker ----
@@ -1582,6 +1818,473 @@
     });
     html += '</div>';
     container.innerHTML = html;
+  }
+
+  // ---- Account Plans Generator ----
+  // Normalize company names for grouping (handles suffix variations)
+  function normalizeCompanyKey(name) {
+    if (!name) return '';
+    return String(name).toLowerCase()
+      .replace(/\s+—.*$/, '')   // strip em-dash suffix (e.g. "— Government & Regulated")
+      .replace(/\s+-.*$/, '')   // strip hyphen suffix if it's clearly a segment descriptor
+      .replace(/\b(inc\.?|corp\.?|corporation|llc|plc|ltd|limited|company|co\.?|group|holdings)\b/g, '')
+      .replace(/[^a-z0-9]/g, '')
+      .trim();
+  }
+
+  // Skip these synthetic/group entries from account plans
+  function isPlanSkipCompany(name) {
+    if (!name) return true;
+    var n = name.toLowerCase().trim();
+    // Single-name filters
+    if (/^(multiple|unknown|various|n\/a|tbd|n\/a|none)$/i.test(n)) return true;
+    // Regulation / broad-signal entries are not real accounts
+    if (/^regulation:/i.test(n)) return true;
+    if (/^(various|several|many|all|global)\s/i.test(n)) return true;
+    // Generic group phrases
+    if (/\bcustomers$/i.test(n)) return true;
+    if (/\borganizations using\b/i.test(n)) return true;
+    if (/\bfirms\s+on\b/i.test(n)) return true;
+    if (/\borgs?\s+on\b/i.test(n)) return true;
+    if (/\bagencies?\s+on\b/i.test(n)) return true;
+    if (/\bcontractors?\s+and\b/i.test(n)) return true;
+    if (/\benterprises?\s+on\b/i.test(n)) return true;
+    if (/\bfortune\s+500\b/i.test(n)) return true;
+    if (/\bregulated\s+sectors?\b/i.test(n)) return true;
+    if (/\bgovernment\s+&?\s+regulated\b/i.test(n)) return true;
+    // Descriptive group buckets (not real single accounts)
+    if (/^(large|mid|small)[\s-]?(enterprise|organization|firm|agency|company|companies)/i.test(n)) return true;
+    if (/^(all|any)\s/i.test(n)) return true;
+    if (/\brunning\s+(town|all|webinars|events)/i.test(n)) return true;
+    if (/\b(customers|users|enterprises|organizations|firms|agencies|companies)\b.*\b(requiring|needing|using|on|with)\b/i.test(n)) return true;
+    if (/\b(events|webinars)\s+customers\b/i.test(n)) return true;
+    // Competitor-named group buckets
+    if (/brightcove|kaltura|panopto|vimeo|qumu|microsoft stream|teams live/i.test(n) && /customers?|users?|organizations?/i.test(n)) return true;
+    return false;
+  }
+
+  // Group findings by normalized company to power the Account Plans list
+  function getAccountGroups() {
+    var groups = {};
+    FINDINGS.forEach(function(f) {
+      if (!f || !f.company) return;
+      if (isPlanSkipCompany(f.company)) return;
+      var key = normalizeCompanyKey(f.company);
+      if (!key) return;
+      if (!groups[key]) {
+        groups[key] = {
+          key: key,
+          displayName: f.company,
+          findings: [],
+          stakeholders: {},
+          industries: {},
+          maxUrgency: 0
+        };
+      }
+      var g = groups[key];
+      // Prefer the shortest clean display name
+      if ((f.company || '').length < (g.displayName || '').length) g.displayName = f.company;
+      g.findings.push(f);
+      if (typeof f.urgency_score === 'number' && f.urgency_score > g.maxUrgency) g.maxUrgency = f.urgency_score;
+      if (f.industry) g.industries[f.industry] = (g.industries[f.industry] || 0) + 1;
+      (f.stakeholders || []).forEach(function(s) {
+        if (!s || !s.name) return;
+        var sk = s.name.toLowerCase() + '|' + (s.linkedin || '');
+        if (!g.stakeholders[sk]) g.stakeholders[sk] = { name: s.name, title: s.title || '', linkedin: s.linkedin || '', findings: [] };
+        g.stakeholders[sk].findings.push(f);
+      });
+    });
+    return Object.keys(groups).map(function(k){ return groups[k]; })
+      .sort(function(a,b){
+        if (b.maxUrgency !== a.maxUrgency) return b.maxUrgency - a.maxUrgency;
+        return b.findings.length - a.findings.length;
+      });
+  }
+
+  // Map a finding to the VBRICK business challenge it represents
+  function findingToChallenge(f) {
+    var cls = classifyType(f);
+    var map = {
+      competitor_displacement: 'Vendor risk / platform migration (stable enterprise support, SLAs, compliance)',
+      rto: 'Return-to-office & all-hands scaling without network crush (eCDN)',
+      compliance: 'FedRAMP / FINRA / HIPAA / Section 508 / GDPR compliance gap',
+      security: 'Enterprise video security (FIPS 140-2, encryption, DRM, audit trails)',
+      leadership: 'New CIO/CTO/Comms leader with mandate to modernize video',
+      ma: 'M&A platform consolidation / standardization on one video stack',
+      workforce: 'Workforce restructuring — communications continuity across dispersed teams',
+      job_posting: 'Hiring signals indicating video/comms investment',
+      digital_transformation: 'Digital transformation / AI-video modernization',
+      internal_comms: 'Town hall, all-hands, and internal events at scale',
+      federal_contract: 'Federal contract requiring FedRAMP-authorized video platform',
+      ecdn_scale: 'Bandwidth / network strain from video at scale — eCDN required',
+      pricing: 'Current vendor pricing pressure / renewal leverage',
+      outage: 'Reliability incident — SLA-backed enterprise video needed'
+    };
+    return map[cls] || 'Enterprise video strategy';
+  }
+
+  // Generate a SWOT from the finding set for this company
+  function generateSWOT(group) {
+    var findings = group.findings;
+    var hasCompliance = findings.some(function(f){ return classifyType(f) === 'compliance'; });
+    var hasCompetitor = findings.some(function(f){ return classifyType(f) === 'competitor_displacement'; });
+    var hasRTO = findings.some(function(f){ return classifyType(f) === 'rto'; });
+    var hasLeadership = findings.some(function(f){ return classifyType(f) === 'leadership'; });
+    var hasFederal = findings.some(function(f){ return classifyType(f) === 'federal_contract' || /federal|gov/i.test(f.industry || ''); });
+    var hasSecurity = findings.some(function(f){ return classifyType(f) === 'security'; });
+    var hasDX = findings.some(function(f){ return classifyType(f) === 'digital_transformation'; });
+    var hasMA = findings.some(function(f){ return classifyType(f) === 'ma'; });
+    var hasWorkforce = findings.some(function(f){ return classifyType(f) === 'workforce'; });
+
+    var strengths = [];
+    var weaknesses = [];
+    var opportunities = [];
+    var threats = [];
+
+    // Strengths (from account's perspective — why this is a good fit for VBRICK)
+    if (hasFederal) strengths.push('Regulated / federal footprint aligned to VBRICK\'s FedRAMP + FIPS 140-2 posture');
+    if (Object.keys(group.stakeholders).length >= 3) strengths.push('Multi-stakeholder map already identified (' + Object.keys(group.stakeholders).length + ' verified contacts)');
+    if (group.findings.length >= 3) strengths.push(group.findings.length + ' active signals across multiple VBRICK ICP categories');
+    if (hasLeadership) strengths.push('New leadership creates mandate-driven buying window');
+    if (strengths.length === 0) strengths.push('Account is in active VBRICK ICP based on detected signals');
+
+    // Weaknesses (gaps / risks in the account’s current state)
+    if (hasCompetitor) weaknesses.push('Current video vendor showing instability, retirement, or compliance gaps');
+    if (hasRTO) weaknesses.push('RTO / hybrid mandate likely straining existing video delivery');
+    if (hasWorkforce) weaknesses.push('Workforce restructuring creates internal-comms continuity risk');
+    if (hasCompliance && !hasFederal) weaknesses.push('Compliance exposure in current video stack (regulatory signals detected)');
+    if (!hasStakeholderCoverage(group)) weaknesses.push('Limited stakeholder coverage — needs further mapping before first call');
+    if (weaknesses.length === 0) weaknesses.push('No material internal gaps detected — qualify on vendor fit and timing');
+
+    // Opportunities
+    if (hasCompetitor) opportunities.push('Vendor displacement window — renewal timing is the unlock');
+    if (hasCompliance) opportunities.push('Lead with FedRAMP / FIPS 140-2 / FINRA-ready archiving');
+    if (hasRTO || hasDX) opportunities.push('Position eCDN + analytics for scaled town halls and all-hands');
+    if (hasLeadership) opportunities.push('Engage new leader early before platform decisions lock in');
+    if (hasMA) opportunities.push('Consolidation moment — standardize on one enterprise video stack');
+    if (hasSecurity) opportunities.push('Security-first posture maps to VBRICK\'s enterprise controls');
+    if (opportunities.length === 0) opportunities.push('Establish point-of-view conversation before a competitor takes the seat');
+
+    // Threats
+    if (hasCompetitor) threats.push('Incumbent may cut price or bundle to hold the account through renewal');
+    threats.push('Microsoft Teams / Stream positioning as \'good enough\' inside the M365 stack');
+    if (hasMA) threats.push('M&A freeze on new vendor commitments during integration');
+    if (hasWorkforce) threats.push('Internal chaos may delay any new vendor purchase cycle');
+    if (threats.length <= 1) threats.push('Horizontal sales-intel tools (Salesmotion, Coldreach, Autobound) trying to occupy the same conversation');
+
+    return { strengths: strengths, weaknesses: weaknesses, opportunities: opportunities, threats: threats };
+  }
+
+  function hasStakeholderCoverage(group) {
+    var roles = Object.keys(group.stakeholders).map(function(k){ return (group.stakeholders[k].title || '').toLowerCase(); });
+    var hasIT = roles.some(function(t){ return /(cio|cto|it|infrastructure|network|digital)/.test(t); });
+    var hasSec = roles.some(function(t){ return /(ciso|security|compliance|risk|privacy)/.test(t); });
+    var hasComms = roles.some(function(t){ return /(comm|employee experience|hr|people|internal)/.test(t); });
+    return (hasIT ? 1 : 0) + (hasSec ? 1 : 0) + (hasComms ? 1 : 0) >= 2;
+  }
+
+  function generateAccountPlan(group) {
+    var topFinding = group.findings.slice().sort(function(a,b){ return (b.urgency_score||0) - (a.urgency_score||0); })[0];
+    var industries = Object.keys(group.industries).sort(function(a,b){ return group.industries[b] - group.industries[a]; });
+    var topIndustry = industries[0] || '';
+
+    // Overview: synthesize from top finding + breadth of signals
+    var signalTypes = {};
+    group.findings.forEach(function(f){ var c = classifyType(f); signalTypes[c] = (signalTypes[c]||0)+1; });
+    var signalBreakdown = Object.keys(signalTypes).map(function(k){ return k.replace(/_/g,' ') + ' (' + signalTypes[k] + ')'; }).join(', ');
+
+    var overview = group.displayName + (topIndustry ? ' (' + topIndustry + ')' : '') + ' is showing ' + group.findings.length +
+      ' active VBRICK ICP signal' + (group.findings.length === 1 ? '' : 's') +
+      ' across: ' + signalBreakdown + '. ' +
+      'Highest-urgency signal: ' + (topFinding.finding_type || 'trigger') + ' — ' + (topFinding.summary || '').split('.').slice(0, 2).join('.') + '.';
+
+    var swot = generateSWOT(group);
+
+    // Stakeholders mapped to challenges
+    var stakeholderMap = Object.keys(group.stakeholders).map(function(k){
+      var s = group.stakeholders[k];
+      var challenges = {};
+      s.findings.forEach(function(f){ challenges[findingToChallenge(f)] = true; });
+      return {
+        name: s.name,
+        title: s.title,
+        linkedin: s.linkedin,
+        challenges: Object.keys(challenges)
+      };
+    });
+
+    // VBRICK positioning
+    var positioning = buildPositioning(group, swot);
+
+    // Point-of-view hypothesis
+    var hypothesis = buildHypothesis(group, topFinding);
+
+    return {
+      company: group.displayName,
+      industry: topIndustry,
+      overview: overview,
+      stakeholderMap: stakeholderMap,
+      swot: swot,
+      positioning: positioning,
+      hypothesis: hypothesis,
+      findings: group.findings
+    };
+  }
+
+  function buildPositioning(group, swot) {
+    var cls = group.findings.map(classifyType);
+    var pillars = [];
+    if (cls.includes('compliance') || /government|federal|healthcare|financial|pharma/i.test(Object.keys(group.industries).join(' '))) {
+      pillars.push('Compliance-first: FedRAMP Moderate, FIPS 140-2, SOC II Type 2, Section 508, HIPAA, FINRA-ready archiving');
+    }
+    if (cls.includes('ecdn_scale') || cls.includes('rto') || cls.includes('internal_comms')) {
+      pillars.push('Scale-first: purpose-built eCDN that delivers video to 100k+ concurrent viewers without crushing the corporate network');
+    }
+    if (cls.includes('competitor_displacement')) {
+      pillars.push('Stability-first: dedicated enterprise support, published SLAs, and an ownership model that is not cutting staff or pivoting to consumer');
+    }
+    if (cls.includes('digital_transformation') || cls.includes('internal_comms')) {
+      pillars.push('Integration-first: native Microsoft 365 / Teams / SharePoint integration — layer enterprise video onto the existing collaboration stack');
+    }
+    if (pillars.length === 0) {
+      pillars.push('Enterprise-grade video infrastructure that delivers, secures, and governs internal video at scale');
+    }
+    return pillars;
+  }
+
+  function buildHypothesis(group, topFinding) {
+    var cls = classifyType(topFinding);
+    var why = '';
+    if (cls === 'competitor_displacement') {
+      why = 'Their current video vendor is in turmoil. The renewal conversation is the wedge.';
+    } else if (cls === 'compliance') {
+      why = 'A compliance requirement — not a preference — is forcing a platform review. Timing is the unlock.';
+    } else if (cls === 'rto') {
+      why = 'RTO mandate means more town halls and more concurrent streams. The network will break before the vendor does. Get in front of IT and Comms together.';
+    } else if (cls === 'leadership') {
+      why = 'A new leader is deciding what to rebuild. First 90 days is when the vendor map gets drawn.';
+    } else if (cls === 'federal_contract') {
+      why = 'Federal contract requirements force a FedRAMP-authorized platform. VBRICK is one of the only options.';
+    } else if (cls === 'ma') {
+      why = 'M&A creates a consolidation moment. Two vendor stacks become one. Whoever earns the standardization decision wins the whole integrated org.';
+    } else {
+      why = 'Signal indicates active investment in internal video or comms. Start the conversation before a competitor does.';
+    }
+    return {
+      why_now: why,
+      first_conversation: 'Open with the specific trigger (' + (topFinding.finding_type || 'signal') + '). Ask if they own the eCDN / video strategy. If yes, \'why?\' and listen. If no, get referred. Do not pitch the product. Book a follow-on technical conversation with the right stakeholder pod.',
+      test: 'Within 14 days, confirm: (1) the business challenge is real, (2) the buying pod (IT + Security + Comms), (3) the forcing function (renewal date, compliance deadline, leadership mandate, event date).'
+    };
+  }
+
+  function renderAccountPlans(container) {
+    var groups = getAccountGroups();
+    findingCount.textContent = groups.length + ' account' + (groups.length === 1 ? '' : 's');
+
+    var html = '<div class="plans-view">';
+    html += '<div class="plans-toolbar">';
+    html += '<input type="text" id="plansSearch" class="plans-search" placeholder="Search accounts..." autocomplete="off">';
+    html += '<button class="plan-action-btn plan-action-btn--primary" id="plansNewSingle">+ Research new account</button>';
+    html += '<button class="plan-action-btn" id="plansNewBulk">Upload CSV</button>';
+    html += '</div>';
+
+    if (groups.length === 0) {
+      html += '<div class="empty-state" style="padding:var(--space-8);text-align:center;"><p>No account-specific findings yet. Run single-account or bulk research to generate plans.</p></div>';
+    } else {
+      html += '<div class="plans-grid" id="plansGrid">';
+      groups.forEach(function(g) {
+        var urgencyLabel = URGENCY_NAMES[g.maxUrgency] || 'Low';
+        var urgencyClass = 'urgency-' + g.maxUrgency;
+        var stakeCount = Object.keys(g.stakeholders).length;
+        var industries = Object.keys(g.industries).sort(function(a,b){ return g.industries[b] - g.industries[a]; });
+        html += '<div class="plan-card" data-key="' + g.key + '">';
+        html += '<div class="plan-card-company">' + escapeHtml(g.displayName) + '</div>';
+        html += '<div class="plan-card-industry">' + escapeHtml(industries[0] || 'Industry unclassified') + '</div>';
+        html += '<div class="plan-card-stats">';
+        html += '<div class="plan-card-stat"><strong>' + g.findings.length + '</strong> signal' + (g.findings.length === 1 ? '' : 's') + '</div>';
+        html += '<div class="plan-card-stat"><strong>' + stakeCount + '</strong> stakeholder' + (stakeCount === 1 ? '' : 's') + '</div>';
+        html += '<div class="plan-card-stat"><span class="urgency-badge ' + urgencyClass + '" style="display:inline-flex;align-items:center;"><span class="urgency-dot"></span>' + urgencyLabel + '</span></div>';
+        html += '</div>';
+        html += '<div class="plan-card-action">View account plan →</div>';
+        html += '</div>';
+      });
+      html += '</div>';
+    }
+    html += '</div>';
+    container.innerHTML = html;
+
+    // Wire events
+    var searchInput = document.getElementById('plansSearch');
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        var q = searchInput.value.toLowerCase();
+        container.querySelectorAll('.plan-card').forEach(function(card) {
+          var name = card.querySelector('.plan-card-company').textContent.toLowerCase();
+          card.style.display = name.includes(q) ? '' : 'none';
+        });
+      });
+    }
+    var newSingleBtn = document.getElementById('plansNewSingle');
+    if (newSingleBtn) newSingleBtn.addEventListener('click', function(){ showSingleAccountModal(); });
+    var newBulkBtn = document.getElementById('plansNewBulk');
+    if (newBulkBtn) newBulkBtn.addEventListener('click', function(){ showCsvUploadModal(); });
+
+    container.querySelectorAll('.plan-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var key = card.dataset.key;
+        var grp = groups.find(function(g){ return g.key === key; });
+        if (grp) openAccountPlanModal(grp);
+      });
+    });
+  }
+
+  function openAccountPlanModal(group) {
+    var plan = generateAccountPlan(group);
+    var html = '<div class="plan-actions">';
+    html += '<button class="plan-action-btn plan-action-btn--primary" id="planDownloadMd">Download Markdown</button>';
+    html += '<button class="plan-action-btn" id="planCopyPlan">Copy to clipboard</button>';
+    html += '</div>';
+
+    html += '<h2 style="margin:0 0 4px;font-size:var(--text-xl);">' + escapeHtml(plan.company) + '</h2>';
+    if (plan.industry) html += '<div style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-4);">' + escapeHtml(plan.industry) + '</div>';
+
+    // Overview
+    html += '<div class="plan-section">';
+    html += '<div class="plan-section-title">Account Overview</div>';
+    html += '<p>' + escapeHtml(plan.overview) + '</p>';
+    html += '</div>';
+
+    // Stakeholders mapped to challenges
+    html += '<div class="plan-section">';
+    html += '<div class="plan-section-title">Stakeholders Mapped to Business Challenges</div>';
+    if (plan.stakeholderMap.length === 0) {
+      html += '<p style="color:var(--color-text-muted);">No verified stakeholders yet. Run research to enrich this account.</p>';
+    } else {
+      plan.stakeholderMap.forEach(function(s) {
+        html += '<div class="plan-stakeholder-row">';
+        html += '<div class="name">' + escapeHtml(s.name);
+        if (s.linkedin) html += ' <a href="' + escapeHtml(s.linkedin) + '" target="_blank" rel="noopener" style="font-size:var(--text-xs);color:var(--nm-accent);margin-left:8px;">LinkedIn ↗</a>';
+        html += '</div>';
+        html += '<div class="title">' + escapeHtml(s.title) + '</div>';
+        html += '<div class="challenges"><strong>Maps to:</strong> ' + s.challenges.map(escapeHtml).join('; ') + '</div>';
+        html += '</div>';
+      });
+    }
+    html += '</div>';
+
+    // SWOT
+    html += '<div class="plan-section">';
+    html += '<div class="plan-section-title">SWOT Analysis</div>';
+    html += '<div class="plan-swot-grid">';
+    html += '<div class="plan-swot-cell plan-swot-cell--s"><h4>Strengths</h4><ul>' + plan.swot.strengths.map(function(x){return '<li>'+escapeHtml(x)+'</li>';}).join('') + '</ul></div>';
+    html += '<div class="plan-swot-cell plan-swot-cell--w"><h4>Weaknesses</h4><ul>' + plan.swot.weaknesses.map(function(x){return '<li>'+escapeHtml(x)+'</li>';}).join('') + '</ul></div>';
+    html += '<div class="plan-swot-cell plan-swot-cell--o"><h4>Opportunities</h4><ul>' + plan.swot.opportunities.map(function(x){return '<li>'+escapeHtml(x)+'</li>';}).join('') + '</ul></div>';
+    html += '<div class="plan-swot-cell plan-swot-cell--t"><h4>Threats</h4><ul>' + plan.swot.threats.map(function(x){return '<li>'+escapeHtml(x)+'</li>';}).join('') + '</ul></div>';
+    html += '</div></div>';
+
+    // VBRICK Positioning
+    html += '<div class="plan-section">';
+    html += '<div class="plan-section-title">VBRICK Positioning</div>';
+    html += '<ul>' + plan.positioning.map(function(p){ return '<li>' + escapeHtml(p) + '</li>'; }).join('') + '</ul>';
+    html += '</div>';
+
+    // Hypothesis
+    html += '<div class="plan-section">';
+    html += '<div class="plan-section-title">Point-of-View Hypothesis</div>';
+    html += '<p><strong>Why now:</strong> ' + escapeHtml(plan.hypothesis.why_now) + '</p>';
+    html += '<p><strong>First conversation:</strong> ' + escapeHtml(plan.hypothesis.first_conversation) + '</p>';
+    html += '<p><strong>14-day test:</strong> ' + escapeHtml(plan.hypothesis.test) + '</p>';
+    html += '</div>';
+
+    // Active findings list
+    html += '<div class="plan-section">';
+    html += '<div class="plan-section-title">Active Signals (' + plan.findings.length + ')</div>';
+    plan.findings.slice().sort(function(a,b){return (b.urgency_score||0)-(a.urgency_score||0);}).forEach(function(f){
+      var score = f.urgency_score || 0;
+      var urgencyLabel = URGENCY_NAMES[score] || 'Low';
+      html += '<div class="plan-stakeholder-row" style="cursor:pointer;" data-finding-id="' + f.id + '">';
+      html += '<div class="name"><span class="urgency-badge urgency-' + score + '" style="margin-right:8px;"><span class="urgency-dot"></span>' + urgencyLabel + '</span>' + escapeHtml(f.finding_type || 'Signal') + '</div>';
+      html += '<div class="title">' + escapeHtml((f.summary || '').slice(0, 180)) + ((f.summary || '').length > 180 ? '...' : '') + '</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+
+    modalContent.innerHTML = html;
+    modalOverlay.classList.add('open');
+
+    // Wire action buttons
+    document.getElementById('planDownloadMd').addEventListener('click', function() {
+      downloadPlanMarkdown(plan);
+    });
+    document.getElementById('planCopyPlan').addEventListener('click', function() {
+      var md = planToMarkdown(plan);
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(md).then(function(){
+          var btn = document.getElementById('planCopyPlan');
+          var orig = btn.textContent; btn.textContent = 'Copied';
+          setTimeout(function(){ btn.textContent = orig; }, 1500);
+        });
+      }
+    });
+    modalContent.querySelectorAll('[data-finding-id]').forEach(function(row) {
+      row.addEventListener('click', function() {
+        var id = parseInt(row.dataset.findingId);
+        if (id) openModal(id);
+      });
+    });
+  }
+
+  function planToMarkdown(plan) {
+    var md = '# Account Plan: ' + plan.company + '\n\n';
+    if (plan.industry) md += '**Industry:** ' + plan.industry + '\n\n';
+    md += '## Account Overview\n\n' + plan.overview + '\n\n';
+
+    md += '## Stakeholders Mapped to Business Challenges\n\n';
+    if (plan.stakeholderMap.length === 0) {
+      md += '_No verified stakeholders yet._\n\n';
+    } else {
+      plan.stakeholderMap.forEach(function(s) {
+        md += '### ' + s.name + '\n';
+        md += '- **Title:** ' + s.title + '\n';
+        if (s.linkedin) md += '- **LinkedIn:** ' + s.linkedin + '\n';
+        md += '- **Maps to challenges:**\n';
+        s.challenges.forEach(function(c){ md += '  - ' + c + '\n'; });
+        md += '\n';
+      });
+    }
+
+    md += '## SWOT Analysis\n\n';
+    md += '### Strengths\n' + plan.swot.strengths.map(function(x){return '- ' + x;}).join('\n') + '\n\n';
+    md += '### Weaknesses\n' + plan.swot.weaknesses.map(function(x){return '- ' + x;}).join('\n') + '\n\n';
+    md += '### Opportunities\n' + plan.swot.opportunities.map(function(x){return '- ' + x;}).join('\n') + '\n\n';
+    md += '### Threats\n' + plan.swot.threats.map(function(x){return '- ' + x;}).join('\n') + '\n\n';
+
+    md += '## VBRICK Positioning\n\n' + plan.positioning.map(function(p){return '- ' + p;}).join('\n') + '\n\n';
+
+    md += '## Point-of-View Hypothesis\n\n';
+    md += '**Why now:** ' + plan.hypothesis.why_now + '\n\n';
+    md += '**First conversation:** ' + plan.hypothesis.first_conversation + '\n\n';
+    md += '**14-day test:** ' + plan.hypothesis.test + '\n\n';
+
+    md += '## Active Signals (' + plan.findings.length + ')\n\n';
+    plan.findings.forEach(function(f){
+      md += '- **[' + (URGENCY_NAMES[f.urgency_score||0] || 'Low') + ']** ' + (f.finding_type || 'Signal') + ' — ' + (f.summary || '').split('.').slice(0,2).join('.') + '\n';
+    });
+    md += '\n---\n_Generated by VBRICK GTM Intelligence Dashboard_\n';
+    return md;
+  }
+
+  function downloadPlanMarkdown(plan) {
+    var md = planToMarkdown(plan);
+    var blob = new Blob([md], { type: 'text/markdown;charset=utf-8;' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'account-plan-' + (plan.company || 'account').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'') + '-' + new Date().toISOString().slice(0,10) + '.md';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   }
 
   // ---- Update Time ----
