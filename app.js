@@ -11,6 +11,28 @@
   var URGENCY_LABELS = { 3: "critical", 2: "high", 1: "medium", 0: "low" };
   var URGENCY_NAMES = { 3: "Critical", 2: "High", 1: "Medium", 0: "Low" };
 
+  // ---- Cadence summary (loaded async from cadence-summary.json) ----
+  var CADENCE = { byId: {}, counts: { fresh: 0, due: 0 }, loaded: false };
+  fetch('./cadence-summary.json', { cache: 'no-store' })
+    .then(function(r) { return r.ok ? r.json() : null; })
+    .then(function(data) {
+      if (!data) return;
+      CADENCE.counts = data.counts || {};
+      (data.by_finding || []).forEach(function(f) { CADENCE.byId[f.id] = f; });
+      CADENCE.loaded = true;
+      var pill = document.getElementById('cadencePill');
+      if (pill) {
+        var fresh = CADENCE.counts.fresh || 0;
+        var due = CADENCE.counts.due || 0;
+        var total = fresh + due;
+        var savedPct = total ? Math.round(fresh / total * 100) : 0;
+        pill.textContent = 'Cadence: ' + fresh + ' fresh · ' + due + ' due  (skip ' + savedPct + '%)';
+        pill.style.display = '';
+      }
+      if (typeof renderFindings === 'function') renderFindings();
+    })
+    .catch(function() {});
+
   // ---- State ----
   var currentView = "overview";
   var currentSort = { key: "urgency", dir: "asc" };
@@ -993,6 +1015,25 @@
       "</div>";
     html += "</div>";
 
+    // Cadence info block (when finding is monitored)
+    var cad = CADENCE.byId[finding.id];
+    if (cad) {
+      var bClass = cad.status === 'fresh' ? 'cadence-badge--fresh' : 'cadence-badge--due';
+      var bLabel = cad.status === 'fresh' ? 'fresh · will skip' : 'due · will research';
+      var nextEligible = '—';
+      if (cad.next_eligible) {
+        var d = new Date(cad.next_eligible);
+        if (!isNaN(d)) nextEligible = d.toLocaleDateString();
+      }
+      html += '<div class="cadence-info-block">';
+      html += '<div class="cadence-info-row"><span>Signal type</span><strong>' + escapeHtml(cad.signal_type) + '</strong></div>';
+      html += '<div class="cadence-info-row"><span>Cadence</span><strong>' + escapeHtml(cad.cadence) + '</strong></div>';
+      html += '<div class="cadence-info-row"><span>Status</span><span class="cadence-badge ' + bClass + '">' + bLabel + '</span></div>';
+      html += '<div class="cadence-info-row"><span>Next eligible</span><strong>' + escapeHtml(nextEligible) + '</strong></div>';
+      html += '<div class="cadence-info-row"><span>Reason</span><span>' + escapeHtml(cad.reason || '') + '</span></div>';
+      html += '</div>';
+    }
+
     // Outreach Angle (only show if populated)
     if (finding.outreach_angle && finding.outreach_angle.trim()) {
       html += '<div class="modal-section">';
@@ -1338,7 +1379,7 @@
       body: 'This launches all 4 research agents (Competitor Intelligence, Market Triggers, Compliance & Regulatory, Fortune 500 Accounts) across the full ICP. Typically takes 5-10 minutes.',
       go: 'Run Research',
       onGo: function() {
-        launchComputerPrompt('Run VBRICK GTM Intelligence research refresh now. Run all 4 research agents, merge, rebalance urgency, deploy the dashboard, and push to GitHub/Netlify.');
+        launchComputerPrompt('Run VBRICK GTM Intelligence research refresh now using DELTA / cadence-gated mode. Before running each agent: load the cadence ledger via `python3 /home/user/workspace/research-ledger.py skip-list` to get the list of (company, signal_type) pairs whose cadence window has not yet elapsed (10-K annual, earnings quarterly, exec/M&A/funding quarterly, partnerships weekly, press/job-postings daily, etc.). DO NOT re-research any (company, signal_type) pair on the skip list — carry their existing findings forward unchanged. Only research new accounts and (company, signal_type) pairs that are due. After agents complete, run merge-and-normalize.py (which auto-updates the ledger and cadence-summary.json), then deploy and push to GitHub/Netlify.');
       }
     });
   }
@@ -1442,10 +1483,12 @@
       if (!name) { input.focus(); return; }
       close();
       var promptText = 'Run VBRICK GTM Intelligence deep-dive research on a single account: "' + name + '". ' +
+        'New accounts always get FULL research (no cadence skip applies on first run for an account). ' +
         'Run all 4 research agents (RA-01 Executive/Strategic, RA-02 Technology/Infrastructure, RA-03 Regulatory/Compliance, RA-04 Hiring/Org-Change) scoped to this account only. ' +
         'Apply VBRICK ICP signal detection (157 signal types). Identify verified current stakeholders with LinkedIn URLs. ' +
         'Generate outreach_angle for every finding. Merge into the dashboard data.js with is_new=true. ' +
         'Then generate the Account Plan (overview, stakeholders mapped to business challenges VBRICK solves, SWOT, VBRICK positioning, point-of-view hypothesis). ' +
+        'After merge, the cadence ledger auto-records all findings so future cycles will skip-gate them. ' +
         'Deploy and push to GitHub/Netlify.';
       launchComputerPrompt(promptText);
     }
@@ -1533,10 +1576,12 @@
       close();
       var listStr = accounts.map(function(a){ return '- ' + a; }).join('\n');
       var promptText = 'Run VBRICK GTM Intelligence bulk account research. ' + accounts.length + ' accounts to research in parallel:\n\n' + listStr + '\n\n' +
-        'For each account: run all 4 research agents (RA-01, RA-02, RA-03, RA-04) scoped to that account. ' +
+        'For each account: this is a NEW account run, so all 4 agents do FULL research (cadence skip only applies on subsequent runs). ' +
+        'Run all 4 research agents (RA-01, RA-02, RA-03, RA-04) scoped to that account. ' +
         'Apply VBRICK ICP signal detection (157 signal types). Identify verified current stakeholders with LinkedIn URLs. ' +
         'Generate outreach_angle for every finding. Merge all findings into data.js with is_new=true. ' +
         'For every account, also generate an Account Plan (overview, stakeholders mapped to business challenges, SWOT, VBRICK positioning, point-of-view hypothesis). ' +
+        'After merge, the cadence ledger auto-records all findings so future cycles will skip-gate them. ' +
         'Deploy and push to GitHub/Netlify.';
       launchComputerPrompt(promptText);
     });
