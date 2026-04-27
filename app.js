@@ -40,8 +40,53 @@
     urgency: "all",
     persona: "all",
     industry: "all",
+    region: "all",
     search: "",
   };
+
+  // ---- Region inference ----
+  // Map a finding to NA / EMEA / APAC / LATAM / Global based on signals.
+  // Uses an explicit f.region field if present (set by future research runs);
+  // otherwise infers from company name and summary keywords.
+  // Restricted to high-signal regulatory + place keywords. Common ambiguous tokens (uk, eu) removed — they were matching things like 'duke' / 'asse' substrings.
+  var EMEA_KEYWORDS = ['gdpr','eu ai act','nis2','dora','schrems','popia','mifid','psd2','psd3','europe','european','britain','british','germany','german','france','french','spain','spanish','italy','italian','netherlands','dutch','switzerland','swiss','sweden','swedish','norway','norwegian','denmark','danish','finland','finnish','austria','austrian','belgium','belgian','ireland','irish','portugal','portuguese','luxembourg','greece','greek','czech','romania','hungary','iceland','liechtenstein','monaco','uae','dubai','abu dhabi','saudi arabia','riyadh','jeddah','qatar','kuwait','bahrain','oman','israel','tel aviv','jerusalem','egypt','morocco','south africa','nigeria','kenya','emea','london','paris','berlin','munich','frankfurt','amsterdam','rotterdam','madrid','barcelona','milan','rome','zurich','geneva','stockholm','oslo','copenhagen','helsinki','dublin','brussels','vienna','warsaw','lisbon','athens','prague','garante','aepd','autoriteit','datatilsynet','sdaia','pdpl','euribor','eurex','dax 40','cac 40','ftse 100','aex 25','ibex 35','ftse mib','geschäftsbericht','geschaftsbericht','document d\'enregistrement universel'];
+  // EMEA company-name needles. Trimmed of any single token shorter than 4 chars that could collide (e.g. 'sse','iag','tim','crh','snb','smi','ico','pif','dax','aex','obx','urd','dso','dsv','ccp','dgse','bnd','bce').
+  var EMEA_COMPANIES = ['hsbc','astrazeneca','glaxosmithkline','unilever','vodafone','barclays','lloyds banking','natwest','standard chartered','aviva','prudential plc','sainsbury','bae systems','rolls-royce','arm holdings','bt group','sky group','reckitt','diageo','imperial brands','national grid','centrica','easyjet','totalenergies','lvmh','l\'oréal','loreal','hermès','hermes','kering','sanofi','airbus','safran','thales','dassault','bnp paribas','crédit agricole','credit agricole','société générale','societe generale','axa','stellantis','renault','schneider electric','saint-gobain','vinci','bouygues','veolia','engie','edf','danone','capgemini','atos','orange','publicis','vivendi','air liquide','arcelormittal','michelin','legrand','pernod ricard','siemens','sap','allianz','deutsche telekom','mercedes','bmw','volkswagen','porsche','continental','infineon','basf','bayer','linde','henkel','beiersdorf','deutsche bank','commerzbank','munich re','hannover rück','adidas','puma','hugo boss','zalando','rwe','e.on','lufthansa','rheinmetall','asml','ing group','abn amro','philips','ahold delhaize','heineken','dsm','wolters kluwer','randstad','akzo nobel','kpn','nn group','aegon','adyen','prosus','santander','bbva','caixabank','telefónica','telefonica','iberdrola','endesa','repsol','cellnex','inditex','ferrovial','acs','aena','mapfre','amadeus','enel','eni','unicredit','intesa sanpaolo','generali','ferrari','leonardo','snam','italgas','telecom italia','tim ','pirelli','nestlé','nestle','roche','novartis','ubs','zurich insurance','swiss re','abb','holcim','sika','lonza','swisscom','richemont','swiss life','adecco','geberit','swatch','logitech','volvo','ericsson','atlas copco','sandvik','h&m','ikea','nordea','seb','swedbank','handelsbanken','tele2','hexagon','securitas','maersk','novo nordisk','ørsted','orsted','carlsberg','vestas','coloplast','demant','pandora','dsv','equinor','telenor','dnb bank','yara','nokia','stora enso','upm-kymmene','kone','wärtsilä','wartsila','sampo','fortum','neste','outokumpu','ryanair','crh','kerry group','smurfit kappa','ab inbev','kbc','solvay','ucb','proximus','omv','erste group','voestalpine','andritz','galp energia','jerónimo martins','jeronimo martins','saudi aramco','sabic','stc','al rajhi','snb','public investment fund','pif','neom','adnoc','etisalat','dp world','emaar','first abu dhabi','qatar national bank','ooredoo','bank hapoalim','bank leumi','teva','check point','cyberark','mobileye','elbit','iai','rafael','standard bank','firstrand','absa','nedbank','naspers','mtn','sasol','anglo american','dangote','safaricom','equity group','ocp group','attijariwafa','european commission','european parliament','european central bank','ecb ','ema ','esma','europol','frontex','nato','ministry of defence','cabinet office','home office','hm treasury','ncsc','nhs england','met police','gchq','bundesministerium','bnd','bsi germany','bafin','bundesbank','auswärtiges amt','ministère des armées','dgse','anssi','banque de france','ministero della difesa','banca d\'italia','agenzia per la cybersicurezza','ministerio de defensa','banco de españa','banco de espana','ministerie van defensie','de nederlandsche bank','schweizerische eidgenossenschaft','eidgenössisches departement','finma','swiss national bank','forsvaret','försvarsmakten','forsvarsmakten'];
+  var APAC_KEYWORDS = ['japan','japanese','china','chinese','india','indian','korea','korean','singapore','australia','australian','new zealand','indonesia','vietnam','philippines','thailand','malaysia','taiwan','hong kong','tokyo','shanghai','beijing','seoul','mumbai','delhi','sydney','melbourne','jakarta','bangkok','manila','kuala lumpur','apac','asia-pacific','asia pacific'];
+  var LATAM_KEYWORDS = ['brazil','brazilian','mexico','mexican','argentina','argentine','chile','colombia','peru','venezuela','latam','latin america','são paulo','sao paulo','rio de janeiro','mexico city','buenos aires'];
+
+  // Match a needle as a whole word (case-insensitive). Avoids 'sse' inside 'assessed', etc.
+  function _whole(haystack, needle) {
+    if (!needle) return false;
+    // For multi-word phrases, accept as substring (they're already specific enough)
+    if (needle.indexOf(' ') !== -1) return haystack.indexOf(needle) !== -1;
+    // For short single-word needles, require word boundaries
+    var re = new RegExp('(^|[^a-z0-9])' + needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z0-9]|$)', 'i');
+    return re.test(haystack);
+  }
+
+  function inferRegion(finding) {
+    if (finding.region) return finding.region;
+    // Restrict the haystack to high-signal fields only — NOT the full evidence_quote, which often includes incidental EU mentions for US companies
+    var blob = ((finding.company || '') + ' — ' + (finding.summary || '') + ' — ' + (finding.industry || '')).toLowerCase();
+    var companyOnly = (finding.company || '').toLowerCase();
+    var i;
+    // Company name is the strongest signal — check it first against the EMEA companies list
+    for (i = 0; i < EMEA_COMPANIES.length; i++) {
+      if (_whole(companyOnly, EMEA_COMPANIES[i])) return 'EMEA';
+    }
+    // Then check the broader blob against high-signal regulatory/regional keywords
+    for (i = 0; i < EMEA_KEYWORDS.length; i++) {
+      if (_whole(blob, EMEA_KEYWORDS[i])) return 'EMEA';
+    }
+    for (i = 0; i < APAC_KEYWORDS.length; i++) {
+      if (_whole(blob, APAC_KEYWORDS[i])) return 'APAC';
+    }
+    for (i = 0; i < LATAM_KEYWORDS.length; i++) {
+      if (_whole(blob, LATAM_KEYWORDS[i])) return 'LATAM';
+    }
+    return 'NA';
+  }
 
   // ---- DOM refs ----
   var findingsBody = document.getElementById("findingsBody");
@@ -156,6 +201,16 @@
     });
   });
 
+  var regionChips = document.querySelectorAll("#regionChips .chip");
+  regionChips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      regionChips.forEach(function (c) { c.classList.remove("active"); });
+      chip.classList.add("active");
+      filters.region = chip.dataset.value;
+      renderFindings();
+    });
+  });
+
   var industrySelect = document.getElementById("industryFilter");
   industrySelect.addEventListener("change", function () {
     filters.industry = this.value;
@@ -220,6 +275,13 @@
     if (filters.industry !== "all") {
       data = data.filter(function (f) {
         return (f.industry || "").toLowerCase().includes(filters.industry.toLowerCase());
+      });
+    }
+
+    // Region
+    if (filters.region !== "all") {
+      data = data.filter(function (f) {
+        return inferRegion(f) === filters.region;
       });
     }
 
@@ -422,9 +484,11 @@
         '<td><span class="persona-badge">' +
         escapeHtml(f.target_persona || "") +
         "</span></td>";
+      var rgn = inferRegion(f);
       html +=
         '<td><span class="industry-text">' +
         escapeHtml(f.industry || "") +
+        (rgn && rgn !== 'NA' ? ' <span class="region-badge region-' + rgn + '">' + rgn + '</span>' : '') +
         "</span></td>";
       html +=
         '<td><button class="view-btn" data-id="' +
@@ -1422,7 +1486,13 @@
       body: 'This launches all 4 research agents (Competitor Intelligence, Market Triggers, Compliance & Regulatory, Fortune 500 Accounts) across the full ICP. Typically takes 5-10 minutes.',
       go: 'Run Research',
       onGo: function() {
-        launchComputerPrompt('Run VBRICK GTM Intelligence research refresh now using DELTA / cadence-gated mode. Before running each agent: load the cadence ledger via `python3 /home/user/workspace/research-ledger.py skip-list` to get the list of (company, signal_type) pairs whose cadence window has not yet elapsed (10-K annual, earnings quarterly, exec/M&A/funding quarterly, partnerships weekly, press/job-postings daily, etc.). DO NOT re-research any (company, signal_type) pair on the skip list — carry their existing findings forward unchanged. Only research new accounts and (company, signal_type) pairs that are due. After agents complete, run merge-and-normalize.py (which auto-updates the ledger and cadence-summary.json), then deploy and push to GitHub/Netlify.');
+        launchComputerPrompt('Run VBRICK GTM Intelligence research refresh now using DELTA / cadence-gated mode across BOTH North America and EMEA. ' +
+          'Before running each agent: load the cadence ledger via `python3 /home/user/workspace/research-ledger.py skip-list` to get the list of (company, signal_type) pairs whose cadence window has not yet elapsed. ' +
+          'EMEA SCOPE: include FTSE 100 (UK), CAC 40 (France), DAX 40 (Germany), AEX 25 (Netherlands), IBEX 35 (Spain), FTSE MIB (Italy), SMI (Switzerland), OMX 30 (Nordics) constituents, plus EMEA public sector and defense (EU institutions, NATO, MoD UK, Bundeswehr, Min. des Armées, etc.), plus Middle East (Saudi Aramco, ADNOC, Emirates NBD, Israeli defense majors) and South Africa Tier 1. ' +
+          'EMEA SIGNALS: in addition to standard ICP signals, monitor GDPR enforcement (ICO/CNIL/BfDI/Garante/AEPD), EU AI Act compliance deadlines (Aug 2026, Aug 2027), NIS2 transposition + sector designations, DORA financial sector compliance, UK Online Safety Act, Schrems II / data sovereignty mandates (SecNumCloud, BSI C5), MiFID II recording, Saudi PDPL, UAE PDPL, POPIA, sovereign cloud adoption (OVH, T-Systems, Bleu, S3NS), TED contract awards, EMEA leadership changes, EWC meetings. ' +
+          'For each EMEA finding, set finding.region = "EMEA" explicitly. Use UK Annual Report / Geschäftsbericht / URD as the EMEA equivalents of 10-K. Honor European earnings cadence (semi-annual). ' +
+          'DO NOT re-research any (company, signal_type) pair on the skip list — carry their existing findings forward unchanged. Only research new accounts and (company, signal_type) pairs that are due. ' +
+          'After agents complete, run merge-and-normalize.py (which auto-updates the ledger and cadence-summary.json), then deploy and push to GitHub/Netlify.');
       }
     });
   }
@@ -1528,7 +1598,9 @@
       var promptText = 'Run VBRICK GTM Intelligence deep-dive research on a single account: "' + name + '". ' +
         'New accounts always get FULL research (no cadence skip applies on first run for an account). ' +
         'Run all 4 research agents (RA-01 Executive/Strategic, RA-02 Technology/Infrastructure, RA-03 Regulatory/Compliance, RA-04 Hiring/Org-Change) scoped to this account only. ' +
-        'Apply VBRICK ICP signal detection (157 signal types). Identify verified current stakeholders with LinkedIn URLs. ' +
+        'Apply VBRICK ICP signal detection across NA + EMEA signal libraries (regulations include SOX/CMMC/FedRAMP/FINRA/HIPAA for NA and GDPR/EU AI Act/NIS2/DORA/UK Online Safety Act/MiFID II/Saudi PDPL/UAE PDPL/POPIA for EMEA). ' +
+        'Detect the account\'s headquarters region and set finding.region accordingly (NA, EMEA, APAC, LATAM). For EMEA accounts use UK Annual Report / Geschäftsbericht / URD as the 10-K equivalent and honor European semi-annual earnings cadence. ' +
+        'Identify verified current stakeholders with LinkedIn URLs (include EMEA-specific roles: DPO, Head of Internal Comms, Works Council reps where applicable). ' +
         'Generate outreach_angle for every finding. Merge into the dashboard data.js with is_new=true. ' +
         'Then generate the Account Plan (overview, stakeholders mapped to business challenges VBRICK solves, SWOT, VBRICK positioning, point-of-view hypothesis). ' +
         'After merge, the cadence ledger auto-records all findings so future cycles will skip-gate them. ' +
