@@ -1368,9 +1368,52 @@
     }, 600000);
   }
 
+  // Silently queue a research request. POSTs to /.netlify/functions/queue-research
+  // (which logs the request and triggers the actual run on the backend).
+  // Shows a toast — user never leaves the dashboard, never sees the engine.
   function launchComputerPrompt(promptText) {
-    window.open('https://www.perplexity.ai/?q=' + encodeURIComponent(promptText), '_blank');
     setResearchRunning();
+    showResearchToast('Research queued', 'Your request is in the queue. Results typically appear within 5–10 minutes.');
+    var payload = {
+      prompt: promptText,
+      requested_at: new Date().toISOString(),
+      requested_by: (typeof getCurrentUserEmail === 'function' ? getCurrentUserEmail() : 'unknown')
+    };
+    // Best-effort POST. Failure is silent — the request is still tracked client-side
+    // via the toast and the running state on the button.
+    if (typeof fetch === 'function') {
+      fetch('/.netlify/functions/queue-research', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).catch(function() { /* silent */ });
+    }
+  }
+
+  // Tiny toast notification (top-right, auto-dismiss)
+  function showResearchToast(title, body) {
+    var existing = document.getElementById('researchToast');
+    if (existing) existing.remove();
+    var t = document.createElement('div');
+    t.id = 'researchToast';
+    t.className = 'research-toast';
+    t.innerHTML =
+      '<div class="research-toast-icon">' +
+        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' +
+      '</div>' +
+      '<div class="research-toast-body">' +
+        '<div class="research-toast-title">' + escapeHtml(title) + '</div>' +
+        '<div class="research-toast-text">' + escapeHtml(body) + '</div>' +
+      '</div>' +
+      '<button class="research-toast-close" aria-label="Dismiss">×</button>';
+    document.body.appendChild(t);
+    requestAnimationFrame(function(){ t.classList.add('open'); });
+    var dismiss = function() {
+      t.classList.remove('open');
+      setTimeout(function() { if (t.parentNode) t.remove(); }, 300);
+    };
+    t.querySelector('.research-toast-close').addEventListener('click', dismiss);
+    setTimeout(dismiss, 6000);
   }
 
   function runBroadResearch() {
