@@ -2450,3 +2450,69 @@ html, body { height: 100%; margin: 0; }
 .cadence-info-row span:first-child {
   color: var(--color-text-muted);
 }
+
+/* Research queue toast */
+.research-toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 2000;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--nm-base);
+  box-shadow: var(--nm-flat);
+  border-radius: 14px;
+  max-width: 380px;
+  min-width: 280px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.research-toast.open {
+  opacity: 1;
+  transform: translateX(0);
+}
+.research-toast-icon {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.research-toast-body {
+  flex: 1;
+  min-width: 0;
+}
+.research-toast-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--nm-text-heading);
+  margin-bottom: 2px;
+}
+.research-toast-text {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+.research-toast-close {
+  flex: 0 0 auto;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: var(--transition-interactive);
+}
+.research-toast-close:hover {
+  background: rgba(0,0,0,0.04);
+  color: var(--nm-text-heading);
+}
