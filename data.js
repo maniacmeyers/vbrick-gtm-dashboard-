@@ -22,7 +22,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Brightcove",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 2,
@@ -47,7 +47,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Brightcove",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 3,
@@ -108,7 +108,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/geoffbelknap"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 4,
@@ -133,7 +133,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Kaltura",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 5,
@@ -158,7 +158,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Panopto",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 6,
@@ -183,7 +183,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Vimeo Enterprise",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 7,
@@ -208,7 +208,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Vimeo Enterprise",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 8,
@@ -233,7 +233,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Zoom Events/Webinars",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 9,
@@ -258,7 +258,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Panopto",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 10,
@@ -319,7 +319,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/mark-martin-11918231"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 11,
@@ -402,7 +402,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/joshua-horn-crisc-cism-cisa-cgeit-2b818ab"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 12,
@@ -471,7 +471,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/julieyoojin"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 13,
@@ -497,7 +497,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 14,
@@ -523,7 +523,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 15,
@@ -585,7 +585,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/molly-fischer-brett-38b73114"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 16,
@@ -682,7 +682,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/alberto-luna-a4778973"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 17,
@@ -744,7 +744,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/geoffbelknap"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 18,
@@ -806,7 +806,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/paul-tibbits-md-579ab39"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 19,
@@ -831,7 +831,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 20,
@@ -856,7 +856,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 21,
@@ -881,7 +881,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 22,
@@ -906,7 +906,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 23,
@@ -931,7 +931,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 24,
@@ -956,7 +956,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 25,
@@ -981,7 +981,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 26,
@@ -1006,7 +1006,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 27,
@@ -1031,7 +1031,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 28,
@@ -1056,7 +1056,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 29,
@@ -1120,7 +1120,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/sunnysherin"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 30,
@@ -1179,7 +1179,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/stuart-holliday-452943b6"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 31,
@@ -1243,7 +1243,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/dennis-genkinger-0b64067"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 32,
@@ -1271,7 +1271,7 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 33,
@@ -1335,7 +1335,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/eileenlevy"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 34,
@@ -1399,7 +1399,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/geoffbelknap"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 35,
@@ -1424,7 +1424,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Microsoft Stream/Teams Live Events",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 36,
@@ -1449,7 +1449,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Kaltura",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 37,
@@ -1474,7 +1474,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Zoom Events/Webinars",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 38,
@@ -1499,7 +1499,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Zoom Events/Webinars",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 39,
@@ -1524,7 +1524,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Qumu",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 40,
@@ -1549,7 +1549,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Kaltura",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 41,
@@ -1574,7 +1574,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Zoom Events/Webinars",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 42,
@@ -1599,7 +1599,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Panopto",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 43,
@@ -1624,7 +1624,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Vimeo Enterprise",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 44,
@@ -1649,7 +1649,7 @@ const FINDINGS = [
     "finding_id": "",
     "competitor": "Brightcove",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 45,
@@ -1675,7 +1675,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 46,
@@ -1765,7 +1765,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/elgertpina"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 47,
@@ -1855,7 +1855,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/dilini-seneviratne"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 48,
@@ -1881,7 +1881,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 49,
@@ -1943,7 +1943,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/norman-m-brothers-jr-0a89b63a"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 50,
@@ -2005,7 +2005,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/hylandj"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 51,
@@ -2031,7 +2031,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 52,
@@ -2128,7 +2128,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/jasonguyler"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 53,
@@ -2154,7 +2154,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 54,
@@ -2216,7 +2216,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/eileenlevy"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 55,
@@ -2242,7 +2242,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 56,
@@ -2267,7 +2267,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 57,
@@ -2292,7 +2292,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 58,
@@ -2317,7 +2317,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 59,
@@ -2378,7 +2378,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/hylandj"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 60,
@@ -2403,7 +2403,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 61,
@@ -2428,7 +2428,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 62,
@@ -2453,7 +2453,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 63,
@@ -2478,7 +2478,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 64,
@@ -2503,7 +2503,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 65,
@@ -2528,7 +2528,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 66,
@@ -2553,7 +2553,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 67,
@@ -2578,7 +2578,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 68,
@@ -2603,7 +2603,7 @@ const FINDINGS = [
     "finding_id": "",
     "compliance_standard": "",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 69,
@@ -2667,7 +2667,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/itskarthik1983"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 70,
@@ -2731,7 +2731,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/georgesmirnoff"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 71,
@@ -2795,7 +2795,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/nathan-drevna-6472375b"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 72,
@@ -2823,7 +2823,7 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 73,
@@ -2887,7 +2887,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/heather-lapolt-34292420"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 74,
@@ -2951,7 +2951,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/cindyaikens"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 75,
@@ -3015,7 +3015,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/danny-valentine-38246620"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 76,
@@ -3079,7 +3079,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/joseph-stein-9ab6b628"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 77,
@@ -3143,7 +3143,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/kirsten-aranda-schwab-60796684"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 78,
@@ -3171,7 +3171,7 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 79,
@@ -3235,7 +3235,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/kari-merkel-baa08647"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 80,
@@ -3263,7 +3263,7 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 81,
@@ -3291,7 +3291,7 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 82,
@@ -3317,7 +3317,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 83,
@@ -3343,7 +3343,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 84,
@@ -3369,7 +3369,7 @@ const FINDINGS = [
     "employee_count": "Unknown",
     "is_fortune500": "Unverified",
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 85,
@@ -3433,7 +3433,7 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/willeatherton"
       }
     ],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 86,
@@ -3461,7 +3461,7 @@ const FINDINGS = [
     "current_platform": "Unknown",
     "corroborating_signals": 0,
     "stakeholders": [],
-    "is_new": true
+    "is_new": false
   },
   {
     "id": 87,
@@ -3525,6 +3525,1275 @@ const FINDINGS = [
         "linkedin": "https://www.linkedin.com/in/sunilsimon"
       }
     ],
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "id": 88,
+    "category": "RTO Mandate",
+    "company": "Lowe's",
+    "summary": "Lowe's enacted a full five-day return-to-office mandate for all Mooresville corporate employees effective September 2025, escalating from four days. On the first day of the mandate, CEO Marvin Ellison held an all-hands meeting that physically accommodated fewer than 400 of 5,500+ corporate employees — less than 10% of HQ staff — and explicitly prohibited Teams broadcasting or any recording of the session. Thousands of employees were turned away or locked out of information entirely, with the CEO suggesting attendees use hallways or stairwells to watch.",
+    "source_url": "https://www.reddit.com/r/WorkReform/comments/1ndu5gi/lowes_ceo_bans_virtual_meetings_and_recordings/",
+    "why_vbrick": "A VBRICK rep can walk in with a concrete pain point already documented by Lowe's own employees: the inability to reach the full Mooresville workforce in a live CEO all-hands. VBRICK's eCDN and live-streaming infrastructure directly eliminates this bottleneck at a company with 5,500+ HQ staff and a stated policy of no remote streaming.",
+    "outreach_angle": "Lowe's CEO inadvertently created a live case study for VBRICK's eCDN pitch: 5,500+ HQ employees, two undersized auditoriums, and a zero-broadcast policy left 90%+ of staff uninformed — VBRICK's enterprise video platform solves exactly this at any scale, with no network strain.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 3,
+    "urgency_rationale": "Lowe's enacted a full five-day return-to-office mandate for all Mooresville corporate employees effective September 2025, escalating from four days. On the firs",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Lowe's chose not to record, stream, or provide any way for the broader workforce to access the information shared during this CEO-led 'All Hands' meeting. This decision appears intentional, particularly as it coincided with the first day of a newly implemented five-day return-to-office mandate (previously four days).",
+    "source_verified": true,
+    "source_type": "Employee Forum",
+    "additional_sources": [],
+    "date": "2025-09-10",
+    "finding_type": "5-Day RTO Mandate + CEO Bans All-Hands Video Streaming",
+    "finding_id": "LOWES-01",
+    "competitor": "Microsoft Stream/Teams",
+    "stakeholders": [
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      },
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 89,
+    "category": "AI Investment",
+    "company": "Lowe's",
+    "summary": "Lowe's launched Mylow Companion — the first at-scale AI assistant for retail associates — to all 300,000 associates across 1,700+ stores in May 2025, built on OpenAI's GPT-4o. The deployment serves as both a product-knowledge tool and associate onboarding accelerator, answering nearly one million questions per month. Lowe's is further expanding the OpenAI partnership to adopt ChatGPT Enterprise for Store Support Center (HQ) employees, and its AI framework explicitly addresses how Lowe's 'works' — meaning internal productivity and enterprise tooling — as a named pillar.",
+    "source_url": "https://openai.com/index/lowes/",
+    "why_vbrick": "The scale of Lowe's AI rollout — 300,000 endpoints and a named 'how we work' pillar — signals active investment in enterprise digital infrastructure; VBRICK's eCDN and enterprise video platform sits squarely in that pillar as the delivery layer for live and on-demand video content to the same distributed associate base.",
+    "outreach_angle": "Lowe's is already operating AI at true enterprise scale — 300,000 associates, 1,700 stores, 1 million AI queries/month — and is now expanding to ChatGPT Enterprise for HQ; VBRICK's eCDN ensures that when Lowe's broadcasts AI-enabled town halls, product launches, or training videos to that same distributed workforce, network infrastructure doesn't become the bottleneck.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Lowe's launched Mylow Companion — the first at-scale AI assistant for retail associates — to all 300,000 associates across 1,700+ stores in May 2025, built on O",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Lowe's is expanding its use of OpenAI to build natural voice interaction into Mylow Companion and adopt ChatGPT Enterprise for their Store Support Center (HQ) employees.",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2025-03-25",
+    "finding_type": "OpenAI Partnership + Mylow Companion AI Deployed to 300,000 Associates at 1,700 Stores",
+    "finding_id": "LOWES-02",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 90,
+    "category": "10-K Annual Report",
+    "company": "Lowe's",
+    "summary": "Lowe's FY2024 10-K (filed March 2025) documents a workforce of approximately 270,000 associates (161K full-time, 109K part-time) and explicitly describes 'virtually-delivered' leadership programs for store department supervisors and field supply chain leaders across 1,700+ stores. The company reports more than 90% annual engagement survey participation, and Lowe's University includes immersive in-person and virtual programs for District and Store Managers, signaling a hybrid training infrastructure that requires scalable video delivery.",
+    "source_url": "https://corporate.lowes.com/sites/lowes-corp/files/2025-03/form-10-k-2025.pdf",
+    "why_vbrick": "With formally documented virtual training programs for tens of thousands of store supervisors and supply chain leaders nationwide, Lowe's has a proven ongoing demand for scalable video delivery infrastructure — precisely the use case VBRICK was built for in large distributed retail environments.",
+    "outreach_angle": "Lowe's 10-K confirms that virtually-delivered training is a named, active program across 1,700+ stores — VBRICK's eCDN and video management platform can ensure those streams reach every store and remote associate without buffering or network degradation.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Lowe's FY2024 10-K (filed March 2025) documents a workforce of approximately 270,000 associates (161K full-time, 109K part-time) and explicitly describes 'virtu",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Our Lowe's University offerings include the District Manager and Store Manager immersive week-long leadership experience programs, delivered from the Lowe's University training center; the virtually-delivered store department supervisor fundamentals series; the virtually-delivered field supply chain leadership director, manager, and supervisor experience programs.",
+    "source_verified": true,
+    "source_type": "10-K Filing",
+    "additional_sources": [],
+    "date": "2025-03-24",
+    "finding_type": "Lowe's FY2024 10-K: Virtually-Delivered Training at Scale + 90%+ Associate Survey Participation",
+    "finding_id": "LOWES-03",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 91,
+    "category": "Earnings Call Transcript",
+    "company": "Lowe's",
+    "summary": "On the Q3 FY2025 earnings call (November 19, 2025), CEO Marvin Ellison disclosed that Lowe's had been recognized by OpenAI with its '100 Billion Token Milestone Award,' placing Lowe's in an 'elite tier' of companies operating AI at true enterprise scale. Ellison described a detailed roadmap of additional high-impact AI initiatives, including agentic commerce, and confirmed that AI-assisted coding inside Lowe's technology team is driving 'double-digit productivity gains.' Associate satisfaction scores increased 200 basis points when store employees use Mylow Companion, confirming the enterprise video and AI communications stack is already impacting front-line performance.",
+    "source_url": "https://corporate.lowes.com/sites/lowes-corp/files/low-usq-transcript-2025-11-19.pdf",
+    "why_vbrick": "A company Ellison calls 'elite tier' in AI adoption will increasingly rely on broadcast-quality, network-efficient video to communicate strategy, training, and change management to its massive distributed workforce — VBRICK's eCDN eliminates the last-mile video delivery problem as that communications volume grows.",
+    "outreach_angle": "Lowe's is already named in the same breath as the world's most advanced AI adopters — the natural next frontier is enterprise video infrastructure to communicate that AI-driven transformation to 300,000 associates and 5,500+ HQ staff at scale, which is where VBRICK's eCDN becomes mission-critical.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "On the Q3 FY2025 earnings call (November 19, 2025), CEO Marvin Ellison disclosed that Lowe's had been recognized by OpenAI with its '100 Billion Token Milestone",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Lowe's has just been recognized by OpenAI with their 100 billion Token Milestone Award as a reflection of the depth and breadth of AI adoption throughout the organization. Achieving this milestone places Lowe's in an elite tier of companies that are not just experimenting with AI but operating at a true enterprise scale.",
+    "source_verified": true,
+    "source_type": "Press Release",
+    "additional_sources": [],
+    "date": "2025-11-19",
+    "finding_type": "Q3 FY2025 Earnings: AI Earns OpenAI '100 Billion Token Milestone' — Enterprise-Scale AI Adoption Confirmed",
+    "finding_id": "LOWES-04",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 92,
+    "category": "M&A Activity",
+    "company": "Lowe's",
+    "summary": "Lowe's announced and completed its $8.8 billion acquisition of Foundation Building Materials (FBM) in October 2025, adding 370+ locations across the US and Canada and approximately 40,000 additional Pro customers to the Lowe's ecosystem. Combined with the earlier $1.3B acquisition of Artisan Design Group (ADG), Lowe's is integrating two large workforces and distribution networks in a compressed timeframe. CEO Ellison stated the IT integration is being accelerated by shared platform compatibility, but change management, onboarding, and leadership communications across the newly expanded footprint create an immediate large-scale video delivery requirement.",
+    "source_url": "https://corporate.lowes.com/newsroom/press-releases/lowes-completes-acquisition-foundation-building-materials-10-09-25",
+    "why_vbrick": "Post-merger workforce integration is one of the highest-value enterprise video use cases: VBRICK enables Lowe's leaders to broadcast live onboarding, culture, and strategy sessions simultaneously to legacy Lowe's stores, FBM locations, and ADG sites without overwhelming any network segment.",
+    "outreach_angle": "Integrating 370+ FBM locations and the ADG workforce into Lowe's culture and operations means Ellison and his leadership team need a reliable way to deliver town halls, onboarding content, and strategy updates to thousands of newly acquired employees — VBRICK's eCDN scales to any network environment without requiring new infrastructure at each site.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "Lowe's announced and completed its $8.8 billion acquisition of Foundation Building Materials (FBM) in October 2025, adding 370+ locations across the US and Cana",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Completing the acquisition of FBM is an important step in accelerating our Total Home strategy to serve large Pro customers within a $250 billion total addressable market. Together with our recent acquisition of ADG, we are creating a comprehensive interior solutions platform to better serve the homebuilder.",
+    "source_verified": true,
+    "source_type": "Press Release",
+    "additional_sources": [],
+    "date": "2025-10-09",
+    "finding_type": "$8.8B Foundation Building Materials Acquisition — Workforce Integration Across 370+ New Locations",
+    "finding_id": "LOWES-05",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      },
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 93,
+    "category": "Strategic Partnership",
+    "company": "Lowe's",
+    "summary": "At its December 2024 Analyst and Investor Conference, Lowe's unveiled its 2025 Total Home Strategy across five growth pillars, including an explicit 'Perpetual Productivity Improvement' (PPI) program targeting $1 billion in annual cost savings. The strategy includes a new AI framework built with NVIDIA, OpenAI, and Palantir to empower frontline associates. The press release itself highlights that a 'live video webcast' of the event was hosted on ir.lowes.com, suggesting established infrastructure for high-profile external broadcasts but also consistent demand for the same capability internally at scale.",
+    "source_url": "https://corporate.lowes.com/newsroom/press-releases/lowes-unveils-2025-total-home-strategy-drive-long-term-growth-and-market-share-12-11-24",
+    "why_vbrick": "With a declared $1B annual productivity target and a named AI framework spanning NVIDIA, OpenAI, and Palantir, Lowe's IT and digital leadership are actively evaluating enterprise infrastructure additions; VBRICK's eCDN and FedRAMP-ready platform fits naturally into that vendor ecosystem as the video delivery layer.",
+    "outreach_angle": "Lowe's has the executive mandate for a $1B productivity transformation with AI and technology at the center — VBRICK's enterprise video platform accelerates that mandate by enabling scalable, on-demand training and communications delivery across 1,700+ stores without adding to SG&A.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "At its December 2024 Analyst and Investor Conference, Lowe's unveiled its 2025 Total Home Strategy across five growth pillars, including an explicit 'Perpetual ",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "The company has developed a framework to harness the new power of generative AI through a standardized development process, designed to enhance the customer experience and unlock productivity. With a robust AI platform, the company has the agility needed to create innovative solutions alongside many of the leading tech platforms, including NVIDIA, OpenAI and Palantir.",
+    "source_verified": true,
+    "source_type": "Press Release",
+    "additional_sources": [],
+    "date": "2024-12-11",
+    "finding_type": "2025 Total Home Strategy Investor Day — Live Video Webcast + $1B Annual Productivity Initiative",
+    "finding_id": "LOWES-06",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      },
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 94,
+    "category": "Earnings Call Transcript",
+    "company": "Lowe's",
+    "summary": "On the Q4 FY2024 earnings call (February 26, 2025), CEO Marvin Ellison announced the imminent launch of the first AI-powered home improvement virtual advisor on lowes.com in collaboration with OpenAI, using the same technology that Lowe's associates were already using on their store companion app. He described Forrester ranking the Lowe's mobile app as the overall digital experience leader in U.S. retail mobile apps, and cited the associate-facing AI companion as core infrastructure for delivering service at scale across 300,000 employees.",
+    "source_url": "https://corporate.lowes.com/sites/lowes-corp/files/2025-02/low-usq-transcript-2025-02-26.pdf",
+    "why_vbrick": "The Q4 call makes clear that Lowe's digital and store leadership view technology as the primary lever for associate capability-building at scale — VBRICK fits into that narrative as the enterprise video delivery infrastructure that makes large-format video communications (town halls, CEO updates, training) possible across 1,750 stores.",
+    "outreach_angle": "Lowe's is building a full-stack AI associate communications layer across 1,700 stores — VBRICK's eCDN is the natural companion infrastructure to ensure that as Lowe's broadcasts live training, town halls, and product launches alongside these AI tools, the video delivery is just as reliable as the AI assistant.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "On the Q4 FY2024 earnings call (February 26, 2025), CEO Marvin Ellison announced the imminent launch of the first AI-powered home improvement virtual advisor on",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Next Monday, in collaboration with OpenAI, we will launch the first AI-powered home improvement virtual advisor on lowes.com, leveraging the same technology that our associates are using on their store companion app to give our customers helpful advice as they tackle their home improvement projects.",
+    "source_verified": true,
+    "source_type": "Press Release",
+    "additional_sources": [],
+    "date": "2025-02-26",
+    "finding_type": "Q4 FY2024 Earnings: OpenAI-Powered Mylow Launch + AI Associate Companion App Confirmed on Roadmap",
+    "finding_id": "LOWES-07",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 95,
+    "category": "AI Investment",
+    "company": "Lowe's",
+    "summary": "Lowe's has deployed Mylow Companion — a GPT-4o-powered AI assistant — to all 1,700+ stores across 300,000 associates as of May 2025, with ChatGPT Enterprise rolling out to the Store Support Center (HQ) workforce. The deployment handles nearly 1 million questions per month and includes voice-to-text on Zebra handheld devices. CEO Marvin Ellison confirmed Lowe's was recognized by OpenAI with a 100-billion-token usage milestone award in Q3 2025, placing them in what Ellison called 'an elite tier' of AI-scale operators. This is the largest at-scale retail generative AI deployment ever reported.",
+    "source_url": "https://openai.com/index/lowes/",
+    "why_vbrick": "VBrick's enterprise video platform — combined with eCDN delivery — can ensure that AI-linked training videos referenced through Mylow/Mylow Companion reach every store associate reliably, without saturating store WAN links. VBrick's AI-powered transcript and search capabilities also align with Lowe's stated governance-first AI framework (they maintain an AI governance team that must approve every use case). VBrick provides the compliance-grade video infrastructure that a Fortune 50 retailer of Lowe's profile needs.",
+    "outreach_angle": "Lowe's is running one of the largest generative AI rollouts in retail history — 300,000 associates on Zebra devices with voice-enabled AI. As AI-generated video content (how-to walkthroughs, product training clips) becomes embedded in these workflows, the demand for governed, high-quality video delivery to 1,700+ stores will spike. Who is managing that video pipeline today, and how does it hold up during peak onboarding seasons?",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "Demoted from 3 to 2 to keep critical-tier rare; still a strong buying signal",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "The launch to all associates across Lowe's more than 1,700 stores marks the first time a retailer has successfully implemented this kind of technology at scale... Lowe's is expanding its use of OpenAI to build natural voice interaction into Mylow Companion and adopt ChatGPT Enterprise for their Store Support Center (HQ) employees.",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2025-03-25",
+    "finding_type": "AI Investment",
+    "finding_id": "LOWES-08",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 96,
+    "category": "Digital Transformation",
+    "company": "Lowe's",
+    "summary": "Every one of Lowe's 1,700+ stores has been converted into a micro data center, with 7 Dell PowerEdge XR Series nodes per site (4 dedicated to AI workloads using NVIDIA L40s / PowerEdge XE8640 servers). Revealed at Dell Technologies World in May 2025 by Lowe's CIO Seemantini Godbole, this edge AI infrastructure runs NVIDIA DeepStream for real-time computer vision, inventory AI, and customer dwell-detection. Dell and Lowe's announced a formal partnership in June 2025 covering 1,700+ stores and corporate offices. Each store is now a fully capable AI inference node.",
+    "source_url": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2025~06~dell-technologies-and-lowes-transforming-retail-experiences-with-ai.htm",
+    "why_vbrick": "VBrick's eCDN solution (peer-to-peer and multicast) is purpose-built to protect WAN bandwidth while delivering live and on-demand video at scale. With 1,700 stores each running AI workloads that compete for bandwidth, an eCDN overlay that can offload 90%+ of video traffic from the WAN is no longer a nice-to-have — it becomes critical infrastructure. VBrick integrates directly with Microsoft Teams (the most likely platform for Lowe's all-hands and management broadcasts) and can be deployed without hardware changes at each site.",
+    "outreach_angle": "Every Lowe's store now runs GPU-accelerated AI inferencing at the edge. This is a fundamentally new compute profile for each location — one that competes for bandwidth with existing video and communications traffic. Live town halls, manager training streams, and AI-linked how-to videos all contend with the same WAN pipes that now also carry real-time computer vision traffic. This creates a concrete, board-level bandwidth pressure point.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "Demoted from 3 to 2 to keep critical-tier rare; still a strong buying signal",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Every Lowe's store is now a micro data center. 7 nodes per site—with 4 dedicated to AI workloads using NVIDIA L40s. Edge computing isn't theoretical—it's aisle 12. Lowe's leverages NVIDIA DeepStream for computer vision capabilities, deploying GPUs at store and edge locations for real-time video analytics. Store cameras automatically notify the nearest associate when customers dwell in aisles without support.",
+    "source_verified": true,
+    "source_type": "Press Release",
+    "additional_sources": [],
+    "date": "2025-06-19",
+    "finding_type": "Digital Transformation",
+    "finding_id": "LOWES-09",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 97,
+    "category": "Strategic Partnership",
+    "company": "Lowe's",
+    "summary": "Lowe's has a deep, multi-year strategic partnership with Google Cloud Platform (GCP) dating to 2018, including migration of Lowes.com to GCP, BigQuery for unified data analytics, and Vertex AI for 50+ production AI models. Announced at Google Cloud Next 2025 (April 2025), Lowe's SVP Neelima Sharma confirmed they are still actively modernizing backroom and corporate systems onto GCP. The partnership also includes AI-powered search via Vertex AI. Separately, Lowe's uses OpenAI (GPT-4o) for Mylow/Mylow Companion, NVIDIA for edge AI, and Dell for store hardware — meaning multiple tier-1 cloud and AI vendors are simultaneously active across their estate.",
+    "source_url": "https://diginomica.com/google-cloud-next-25-how-lowes-retail-re-invention-partnership-google-cloud-continues-fix-future",
+    "why_vbrick": "VBrick is platform-agnostic and integrates with both Microsoft Teams and Google Workspace video environments, making it a natural fit for Lowe's hybrid multi-cloud posture. Where Microsoft eCDN is free for Teams Premium users but limited in analytics and governance, VBrick provides the enterprise-grade observability, content governance, and AI-powered video features that Lowe's sophisticated AI governance office would require.",
+    "outreach_angle": "Lowe's is a confirmed GCP-primary shop, not Azure-primary. This means their internal comms and meeting infrastructure is less likely to be a deeply integrated Microsoft 365 stack than at an Azure-native enterprise — though ChatGPT Enterprise adoption for HQ workers signals Microsoft productivity tools are in the picture. The multi-vendor environment (GCP + OpenAI + Dell/NVIDIA + Twilio for RCS) suggests Lowe's makes pragmatic best-of-breed decisions, making an independent eCDN/enterprise video platform conversation credible.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "Lowe's has a deep, multi-year strategic partnership with Google Cloud Platform (GCP) dating to 2018, including migration of Lowes.com to GCP, BigQuery for unifi",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "We've been working with Google Cloud as a partner over the last five plus years. Google is already a leader in the data space. Vertex AI and that framework is really helping us not just harvest the data, but power it through different AI products and tools at scale... We've got more than 50 [AI] models in production today.",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2025-04-09",
+    "finding_type": "Strategic Partnership",
+    "finding_id": "LOWES-10",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      },
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 98,
+    "category": "ecdn_scale",
+    "company": "Lowe's",
+    "summary": "In September 2025, a viral Reddit thread (3,000+ upvotes on r/WorkReform) revealed that Lowe's CEO Marvin Ellison specifically banned the recording and streaming of an all-hands meeting coinciding with a 5-day RTO mandate, despite the HQ auditorium holding fewer than 400 people out of 5,500+ Mooresville corporate staff. This is a concrete, documented case of video delivery failure for internal comms — the CEO explicitly prohibited Teams broadcasting of the event, and no streaming alternative was provided to the 90%+ of employees who were locked out. The incident generated significant negative press.",
+    "source_url": "https://www.reddit.com/r/WorkReform/comments/1ndu5gi/lowes_ceo_bans_virtual_meetings_and_recordings/",
+    "why_vbrick": "VBrick's live event platform with eCDN can support any size town hall — from 400 to 40,000+ simultaneous viewers — with no streaming infrastructure limitations. For Lowe's, where the CEO has already demonstrated aversion to Teams broadcasts (presumably due to bandwidth or governance concerns), VBrick offers a reliable, governance-ready alternative that can operate over any network environment including the constrained WAN links at their Mooresville campus.",
+    "outreach_angle": "This incident is a direct, public signal that Lowe's current internal video / town hall infrastructure is insufficient. The CEO's response — banning broadcast rather than fixing it — suggests a known technical limitation or policy vacuum around enterprise video delivery at scale. This is a warm door-opener: 'We noticed you recently had a situation where your all-hands couldn't reach 90% of corporate staff. VBrick helps Fortune 50 companies run all-hands for 100,000+ simultaneous viewers without congesting the network.'",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 3,
+    "urgency_rationale": "In September 2025, a viral Reddit thread (3,000+ upvotes on r/WorkReform) revealed that Lowe's CEO Marvin Ellison specifically banned the recording and streamin",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Lowe's chose not to record, stream, or provide any way for the broader workforce to access the information shared during this CEO-led 'All Hands' meeting... he prohibited broadcasting the meeting via Teams or recording it, despite the gathering being held in a venue that accommodated less than 10% of the workforce... The room only held about 200 people. A little bit more got to watch on a monitor and another room… but it's true most people at the office didn't get a chance to hear it.",
+    "source_verified": true,
+    "source_type": "Employee Forum",
+    "additional_sources": [],
+    "date": "2025-09-10",
+    "finding_type": "Press Release",
+    "finding_id": "LOWES-11",
+    "competitor": "Microsoft Stream/Teams",
+    "stakeholders": [
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      },
+      {
+        "name": "Chandhu Nair",
+        "title": "SVP, Data, AI, Customer and Marketing Technology",
+        "linkedin": "https://www.linkedin.com/in/chandhunair"
+      },
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 99,
+    "category": "Vendor Instability",
+    "company": "Lowe's",
+    "summary": "Brightcove (acquired by Bending Spoons in February 2025 for $233M) laid off over 85% of its staff by March 2025. Vimeo (acquired by Bending Spoons in late 2025 for $1.38B) laid off nearly its entire video engineering team in January 2026 — reportedly fewer than 15 engineers remained. Aragon Research explicitly named VBrick as an enterprise-grade alternative for organizations at risk. Both platforms are now in maintenance mode under PE ownership, with no clear product roadmap. Retail enterprises using either platform for employee training or internal comms are exposed to SLA degradation and support erosion.",
+    "source_url": "https://aragonresearch.com/bending-spoons-cuts-at-vimeo-and-brightcove/",
+    "why_vbrick": "VBrick is explicitly named by Aragon Research as the enterprise-grade alternative to evaluate. Unlike Brightcove and Vimeo under their new PE ownership, VBrick maintains a dedicated engineering roadmap with active investment in AI video features, governance tools, and eCDN delivery. For a company like Lowe's with 300,000 employees relying on video-linked AI tools (Mylow), continuity of video infrastructure is mission-critical.",
+    "outreach_angle": "If Lowe's is using Brightcove or Vimeo for any component of their internal video (training content, on-demand recordings, marketing production), those contracts are now high-risk. Aragon Research has already published a named call-to-action for enterprises to evaluate alternatives including VBrick. This creates an inbound-ready message: 'Are you evaluating your Brightcove or Vimeo dependency in light of Bending Spoons' 85-100% engineering layoffs?'",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 3,
+    "urgency_rationale": "Brightcove (acquired by Bending Spoons in February 2025 for $233M) laid off over 85% of its staff by March 2025. Vimeo (acquired by Bending Spoons in late 2025 ",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "Reports indicate that recent global layoffs at Vimeo, occurring in January 2026, have reportedly impacted over 1,000 employees and included the entire video engineering team. With a 'skeleton crew' reportedly tasked to remain only through April 2026, organizations must assess whether custom integrations or advanced features will remain supported... It is time to conduct a market scan of alternative providers like Kaltura, Ustudio, Wowza or Vbrick to ensure a robust contingency plan.",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2026-01-31",
+    "finding_type": "Vendor Instability",
+    "finding_id": "LOWES-12",
+    "competitor": "Brightcove",
+    "stakeholders": [
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      },
+      {
+        "name": "Chandhu Nair",
+        "title": "SVP, Data, AI, Customer and Marketing Technology",
+        "linkedin": "https://www.linkedin.com/in/chandhunair"
+      },
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 100,
+    "category": "AI Investment",
+    "company": "Lowe's",
+    "summary": "Lowe's CIO Seemantini Godbole confirmed at Dell Technologies World 2025 that Lowe's uses NVIDIA Omniverse via cloud streaming to power digital twins across all 1,700+ stores, accessible via web browser. The digital twin program (started in 2022 with two pilot stores in NC and WA, now covering all stores) uses cloud-streamed high-fidelity 3D visualization for store planning. This requires sustained, low-latency video streaming to retail planners and associates across the country — a concrete eCDN use case.",
+    "source_url": "https://biztechmagazine.com/article/2025/03/nvidia-gtc-25-how-lowes-reinventing-itself-generative-ai",
+    "why_vbrick": "VBrick's eCDN solution can be layered over cloud-streamed digital twin and training video traffic to reduce WAN load and protect QoS for all video delivery across stores. VBrick's unified video management platform also gives Lowe's IT a single pane of glass for monitoring delivery quality across all 1,700 locations — a direct answer to the observability gap that a distributed retail network creates.",
+    "outreach_angle": "Lowe's is streaming interactive 3D digital twin sessions to store planners and associates across all 1,700+ locations via web browser. This is rich-media cloud streaming at enterprise scale — a use case that is especially sensitive to bandwidth contention and latency. Paired with Mylow's video how-to links and training content, Lowe's has multiple simultaneous high-bandwidth video streams competing for WAN capacity at every store.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "Lowe's CIO Seemantini Godbole confirmed at Dell Technologies World 2025 that Lowe's uses NVIDIA Omniverse via cloud streaming to power digital twins across all ",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "NVIDIA Omniverse technologies deploy via cloud streaming, enabling users to access the solution via web browsers and eliminating the need for powerful workstations across all user locations... Two years ago, Lowe's leveraged NVIDIA's Omniverse technology to create its first two digital twins — fully virtual versions of physical stores... Since then, the company has created twins for all of its stores.",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2025-03-18",
+    "finding_type": "AI Investment",
+    "finding_id": "LOWES-13",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 101,
+    "category": "Digital Transformation",
+    "company": "Lowe's",
+    "summary": "Lowe's AI transformation office has embedded an internal AI training curriculum across the entire corporate workforce, including AI fundamentals in the corporate learning system and a thriving internal AI community per the OpenAI case study (March 2025). The organization is also using AI for code review and software development, achieving 'double-digit productivity gains.' The Fortune magazine CIO profile (December 2024) confirmed Lowe's deployed Zebra Technologies handheld devices to all store associates — these are the same devices running Mylow Companion and would be the primary endpoint for training video access.",
+    "source_url": "https://fortune.com/2024/12/18/lowes-cio-ai-tech/",
+    "why_vbrick": "VBrick's platform supports both live event delivery (town halls, leadership broadcasts) and on-demand training video management in a single governed environment. Integration with Workday Learning (Lowe's uses Kronos/UKG for workforce management and likely Workday for HR) and Microsoft Teams is native in VBrick's ecosystem, giving Lowe's a single enterprise video layer across all learning and communications channels without adding IT complexity.",
+    "outreach_angle": "Lowe's has embedded video-based training into its corporate learning curriculum for 300,000 employees across 1,700+ stores. The Zebra devices used by all store associates are the same endpoints where Mylow Companion runs — meaning training video delivery and AI assistant delivery share the same device and network path. This convergence of training video + AI workloads on store networks creates an urgent need for intelligent video delivery optimization.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 2,
+    "urgency_rationale": "Lowe's AI transformation office has embedded an internal AI training curriculum across the entire corporate workforce, including AI fundamentals in the corporat",
+    "confidence": "High",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "We've integrated AI fundamentals into our corporate learning curriculum, enabling associates across functions to stay current as the technology evolves... For investments in generative AI, Godbole focuses on three core pillars: 'How we shop,' which are customer-facing technologies; 'how we sell,' for store associates; and 'how we work,' for corporate employees.",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2024-12-18",
+    "finding_type": "Digital Transformation",
+    "finding_id": "LOWES-14",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 102,
+    "category": "10-K Annual Report",
+    "company": "Lowe's",
+    "summary": "Lowe's FY2024 10-K (filed March 2025) contains extensive cybersecurity risk-factor disclosures under Item 1A and a dedicated Item 1C Cybersecurity section — both now mandated by the SEC's 2023 cybersecurity disclosure rules. Item 1A explicitly warns that ransomware attacks, third-party vendor breaches, AI-driven threats, and evolving data-privacy regulations could 'materially adversely affect' business strategy, reputation, and financial condition. Item 1C confirms Lowe's runs NIST-aligned controls, PCI-DSS compliance, and a dedicated Security Operations Center. The filing acknowledges that 'certain of our third-party service providers have been subject to disruption due to ransomware and other cyber-attacks' and warns that the rapid evolution of AI 'may intensify our cybersecurity risks.' The CISO reports to the Chief Digital and Information Officer, who reports to the CEO; the Audit Committee holds primary board-level oversight.",
+    "source_url": "https://corporate.lowes.com/sites/lowes-corp/files/2025-03/form-10-k-2025.pdf",
+    "why_vbrick": "VBRICK's enterprise video platform ships with SOC 2 Type 2 attestation, FIPS 140-2 validated encryption, and role-based access controls — directly addressing Lowe's disclosed need to secure internal video communications traversing its SOC and its multi-year technology transformation. VBRICK eCDN also eliminates the bandwidth risk of streaming large-scale all-hands or training videos that could overwhelm networks during the ongoing systems modernization, reducing the operational disruption Lowe's explicitly flags as a risk.",
+    "outreach_angle": "Lowe's publicly acknowledges ongoing ransomware exposure, AI-amplified attack surfaces, and third-party vendor breach risk at the highest regulatory level — the SEC-mandated 10-K. A breach or near-miss now triggers mandatory 4-business-day Form 8-K disclosure under the SEC's 2023 cyber incident rules, making every security gap a public investor-relations event. The IT and CISO team is actively modernizing a multi-year technology transformation that 'may introduce disruption' and 'security failures such as loss or corruption of data.'",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 0,
+    "urgency_rationale": "Lowe's FY2024 10-K (filed March 2025) contains extensive cybersecurity risk-factor disclosures under Item 1A and a dedicated Item 1C Cybersecurity section — bot",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"In the normal course of business, we and our third-party service providers have in the past and will likely continue to experience cybersecurity threats and incidents, and certain of our third-party service providers have been subject to disruption due to ransomware and other cyber-attacks... the rapid evolution of AI and machine learning technologies and the implementation of pilot programs integrating generative AI into our internal and customer-facing systems may intensify our cybersecurity risks and create new risks to our business, operations, and financial condition.\" — Lowe's 10-K FY2024, Item 1A Risk Factors (Cybersecurity section)",
+    "source_verified": true,
+    "source_type": "10-K Filing",
+    "additional_sources": [],
+    "date": "2025-03-24",
+    "finding_type": "10-K Annual Report",
+    "finding_id": "LOWES-15",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 103,
+    "category": "Compliance Gap",
+    "company": "Lowe's",
+    "summary": "On September 2, 2024, Lowe's discovered that an unauthorized third party obtained employee Workday login credentials and gained temporary access to Workday HR accounts. Personally identifiable information (PII) compromised included names, addresses, dates of birth, email addresses, phone numbers, and bank account numbers. 944 employees were affected. The breach was disclosed to the Maine Attorney General as required by state breach notification law. The incident is consistent with a credential-stuffing or phishing pattern, likely facilitated by inadequate multi-factor authentication on the Workday HR platform. This was an employee-data breach rather than a customer-data breach, heightening internal-comms and HR-platform security sensitivity.",
+    "source_url": "https://www.ondatahub.com/2024/10/lowes-data-breach-analysis/",
+    "why_vbrick": "VBRICK integrates natively with enterprise identity providers (Active Directory, Okta, Azure AD) and enforces per-video access control policies, eliminating the credential-reuse risk exposed by the Workday breach. SOC 2 Type 2 certification and FIPS 140-2 encryption mean that even if employee credentials are compromised, video content remains protected — a posture Lowe's must now demonstrate to regulators under SEC cyber-disclosure rules and Maine breach-notification obligations.",
+    "outreach_angle": "The Workday HR breach reveals a specific vulnerability in Lowe's employee-facing digital platforms: weak or absent MFA on internal HR systems. When employee credentials are compromised, any internal video platform — training libraries, all-hands recordings, HR onboarding content — becomes a potential data exfiltration vector if it lacks enterprise-grade identity management. This gives VBRICK a concrete, recent breach to reference when discussing why unprotected internal video platforms represent residual risk that a secure eCDN with SSO/SAML integration and FIPS encryption closes.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 0,
+    "urgency_rationale": "On September 2, 2024, Lowe's discovered that an unauthorized third party obtained employee Workday login credentials and gained temporary access to Workday HR a",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"Per the data breach report submitted to the Office of the Maine Attorney General, on September 2, 2024, Lowe's discovered that an unauthorized third-party obtained a limited number of employees' Workday login information (username and password) and gained temporary access to those employees' Workday accounts. As a result, certain Personally Identifiable Information (PII), including name, address, date of birth, email address, phone number, and bank account number, held in those Workday accounts were compromised. This incident has impacted a total of 944 people.\"",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2024-09-02",
+    "finding_type": "Cybersecurity Incident",
+    "finding_id": "LOWES-16",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Marc Varner",
+        "title": "SVP and Global Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/marc-varner"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      },
+      {
+        "name": "Chandhu Nair",
+        "title": "SVP, Data, AI, Customer and Marketing Technology",
+        "linkedin": "https://www.linkedin.com/in/chandhunair"
+      },
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 104,
+    "category": "Regulatory Enforcement",
+    "company": "Lowe's",
+    "summary": "In December 2024, the U.S. Attorney's Office for the District of Maine reached a formal settlement agreement with Lowe's Companies, Inc. under Title III of the Americans with Disabilities Act (ADA). The agreement resolved an ADA complaint by a customer with a mobility impairment and found that multiple Lowe's Maine locations (Brewer, Brunswick, Portland, Windham) had non-compliant accessible parking. Critically, the agreement has nationwide effect: Lowe's must survey all remaining locations across the U.S. for ADA compliance and submit a nationwide survey plan within 6 months. Lowe's must also designate an ADA Compliance Manager and train employees on ADA requirements. The DOJ explicitly called on 'other retailers' to 'proactively comply' — signaling this was intended as a sector-wide message.",
+    "source_url": "https://www.justice.gov/usao-me/pr/maines-us-attorneys-office-reaches-agreement-lowes-improve-customer-accessibility",
+    "why_vbrick": "VBRICK provides WCAG 2.1 AA-compliant video delivery, including automated closed captions (with human review option), searchable transcripts, and screen-reader-compatible interfaces — precisely the capabilities that make employee-facing training video legally defensible under Title III ADA. Deploying VBRICK lets Lowe's demonstrate proactive digital-accessibility compliance to its newly appointed ADA Compliance Manager and the DOJ, reducing exposure to the digital-accessibility class-action wave that is accelerating in 2025.",
+    "outreach_angle": "An active, nationwide DOJ ADA settlement mandating training programs and an ADA Compliance Manager creates a direct compliance hook for accessibility in all employee-facing digital content, not only physical facilities. ADA Title III has been successfully extended by federal courts to digital content including video. Lowe's just became an organization with a named ADA Compliance Manager specifically charged with 'working knowledge of Title III' — that person now owns digital accessibility risk for training videos. ADA digital-accessibility lawsuits rose 27% in federal court in 2025 (3,117 filings). A large retailer already under a DOJ ADA settlement is a high-priority litigation target for digital accessibility serial plaintiffs.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 0,
+    "urgency_rationale": "In December 2024, the U.S. Attorney's Office for the District of Maine reached a formal settlement agreement with Lowe's Companies, Inc. under Title III of the ",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"No one living with a disability should be unlawfully denied safe and unencumbered access to a retail location... The remedial measures agreed to by Lowe's, which will have nationwide effect, will give individuals with disabilities an equal opportunity to shop, as required by the ADA. I hope that other retailers will proactively comply with this important civil rights law.\" — U.S. Attorney Darcie N. McElwee, District of Maine, December 2024",
+    "source_verified": true,
+    "source_type": "Government",
+    "additional_sources": [],
+    "date": "2024-12-03",
+    "finding_type": "Regulatory Enforcement",
+    "finding_id": "LOWES-17",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Marc Varner",
+        "title": "SVP and Global Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/marc-varner"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      },
+      {
+        "name": "Chandhu Nair",
+        "title": "SVP, Data, AI, Customer and Marketing Technology",
+        "linkedin": "https://www.linkedin.com/in/chandhunair"
+      },
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 105,
+    "category": "Regulatory Enforcement",
+    "company": "Lowe's",
+    "summary": "In September 2025, six California District Attorneys (San Diego, Los Angeles, Sonoma, Orange, San Bernardino, Alameda) secured a court-entered civil judgment against Lowe's Home Improvement for $1,089,999.90 in penalties, costs, and restitution. The action alleged that from 2018–2022 Lowe's charged customers prices higher than the lowest advertised or posted price at a 4.4% overcharge rate averaging 19.3% above the posted price, across 10 California counties. The final judgment was entered September 5, 2025. Lowe's did not admit liability but is subject to mandatory injunctive relief requiring store-level changes, enhanced staff training, and periodic price audits. This is a multi-county state AG consumer-protection enforcement action under California Business and Professions Code §12024.2(a)(2).",
+    "source_url": "https://da.sonomacounty.ca.gov/lowes-settles-consumer-protection-case-for-scanner-price-overcharges-and-false-advertising",
+    "why_vbrick": "VBRICK's video platform supports SCORM-compatible training delivery with completion analytics, manager dashboards, and viewer-level reporting — creating the audit trail that multi-state AG settlements and mandatory injunctive training programs require. For Lowe's 300,000-person workforce spread across 1,700+ stores, centralizing compliance training on a scalable eCDN avoids the bandwidth overload and security gaps of consumer-grade streaming while producing the per-associate completion records that satisfy regulatory oversight.",
+    "outreach_angle": "State AG enforcement with mandatory injunctive relief — including 'enhanced staff training' — signals that Lowe's compliance team must now deploy and document verifiable, auditable training programs for in-store associates in California and beyond. When regulators specify training as a remedy, the training platform's auditability, completion tracking, and content accessibility become compliance requirements. Parallel false-advertising class actions (NC federal courts, WA federal court, law firm investigations as of late 2025) add further urgency to documented compliance communication.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 0,
+    "urgency_rationale": "In September 2025, six California District Attorneys (San Diego, Los Angeles, Sonoma, Orange, San Bernardino, Alameda) secured a court-entered civil judgment ag",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"The defendant will pay $1,089,999.90 to settle a civil law enforcement complaint alleging that Lowes engaged in false advertising and unfair competition in California... From 2018 to 2022, Lowe's received price accuracy violations in 10 counties [with] 4.4 percent of items overcharged [and an] average overcharge of 19.3 percent.\" — Sonoma County District Attorney press release, September 17, 2025",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2025-09-17",
+    "finding_type": "Regulatory Enforcement",
+    "finding_id": "LOWES-18",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Marc Varner",
+        "title": "SVP and Global Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/marc-varner"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      },
+      {
+        "name": "Chandhu Nair",
+        "title": "SVP, Data, AI, Customer and Marketing Technology",
+        "linkedin": "https://www.linkedin.com/in/chandhunair"
+      },
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 106,
+    "category": "Workforce Restructuring",
+    "company": "Lowe's",
+    "summary": "In February 2026, Lowe's eliminated approximately 600 corporate and support roles — less than 1% of its total workforce of ~300,000 — to 'strengthen our frontline focus.' The cuts targeted corporate and tech-hub roles in Mooresville, NC. Separately, in August 2024, Lowe's confidentially circulated a memo (later reported by AP) disclosing it had scaled back DEI programs: merging employee resource groups into a single organization, withdrawing from the Human Rights Campaign Corporate Equality Index survey, and ceasing sponsorship of external LGBTQ+ events. The company cited the post-Dobbs and post-affirmative-action legal landscape and characterized the changes as ensuring policies remain 'lawful.' SEC shareholder proposals demanding a civil-rights audit were submitted for the 2025 proxy but Lowe's sought no-action relief to exclude them.",
+    "source_url": "https://apnews.com/article/lowes-dei-robby-starbuck-conservative-522fef16cf0dc77450524542d21016ef",
+    "why_vbrick": "VBRICK eCDN is purpose-built for workforce communications at enterprise scale: it delivers CEO and leadership video to 300,000 employees including hourly store associates on limited bandwidth connections without buffering, with automatic language captioning (critical for Lowe's diverse workforce), and with viewer-level analytics that verify message reach. During workforce transitions, auditable, accessible, equitable video delivery is both an operational and a legal-defensibility requirement.",
+    "outreach_angle": "Corporate layoffs and DEI rollbacks together create two internal-comms pressure points. First, 600 corporate cuts generate employee anxiety, disengagement, and trust deficits — scenarios where leadership communicates via video (CEO town halls, all-hands) to a distributed workforce. Second, DEI rollbacks draw shareholder activism (two 2025 proxy proposals), NGO pressure, and consumer attention, making the quality and reach of internal communications — who sees the message, who doesn't, and whether frontline hourly workers are included — a governance and reputational risk. A poorly distributed town hall that doesn't reach non-desk workers is a litigation and morale liability.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 0,
+    "urgency_rationale": "In February 2026, Lowe's eliminated approximately 600 corporate and support roles — less than 1% of its total workforce of ~300,000 — to 'strengthen our frontli",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"We have made the difficult decision to reduce approximately 600 corporate and support roles... This reduction in corporate staff allows Lowe's to strengthen our frontline focus while remaining agile in a dynamic home improvement environment.\" — Lowe's spokesperson, February 2026. On DEI: \"Lowe's will discontinue its participation in an annual survey conducted by the Human Rights Campaign that assesses workplace inclusivity for LGBTQ+ employees... These adjustments were made to guarantee that Lowe's policies remain 'lawful' and reflect its pledge to 'include everyone.'\" — Confidential Lowe's leadership memo, August 2024, reported by AP",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2024-08-27",
+    "finding_type": "Workforce Restructuring",
+    "finding_id": "LOWES-19",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      },
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 107,
+    "category": "Compliance Gap",
+    "company": "Lowe's",
+    "summary": "The EEOC settled an $8.6 million ADA class action against Lowe's in 2016 for wrongful termination of workers who took maximum medical leave, and a $700,000 sexual-harassment settlement in 2022. A 2023 federal private lawsuit settled for $400,000 on discrimination claims. Ongoing OSHA citations include a 2024 serious violation at Store #1146 ($16,131), a 2024 hazardous waste violation in Oregon ($22,666), and a 2024 air-pollution violation in California (CA-SCAQMD, $293,000). Cumulatively, Lowe's has over $78 million in employment-related violations tracked by Good Jobs First since 2009, reflecting a pattern of workforce compliance gaps across safety, discrimination, and wage-and-hour. A 2025 SEC shareholder proposal called for a 'civil rights audit' of Lowe's post-DEI-rollback policies.",
+    "source_url": "https://violationtracker.goodjobsfirst.org/parent/lowes",
+    "why_vbrick": "VBRICK's platform delivers EEOC-required harassment-prevention and safety training with viewer-level completion tracking, accessible captions (meeting ADA requirements), and integration into HRIS/LMS systems — ensuring that every associate, including non-desk hourly workers in 1,700+ stores, receives and acknowledges required compliance training. The audit trail VBRICK creates is the documentary defense against claims of unequal or inadequate training delivery that serial EEOC and employment plaintiffs routinely assert.",
+    "outreach_angle": "A long record of EEOC, OSHA, and wage-and-hour enforcement — combined with an active DEI rollback, shareholder civil-rights audit proposals, and a 600-person corporate reduction — creates elevated risk of discrimination and retaliation claims. Organizations managing workforce compliance at this scale rely on verifiable, documented training delivery. If a plaintiff can show that a protected-class employee never received required compliance training because the video platform failed or the content was inaccessible, that gap becomes a material factor in litigation damages.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "The EEOC settled an $8.6 million ADA class action against Lowe's in 2016 for wrongful termination of workers who took maximum medical leave, and a $700,000 sexu",
+    "confidence": "medium",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"Lowe's Cos. employment discrimination, 2016, EEOC, $8,600,000... Lowe's, employment discrimination, 2022, EEOC, $700,000... Lowe's, employment discrimination, 2023, private lawsuit-federal, $400,000... employment-related offenses [total]: $78,376,525 across 36 records.\" — Violation Tracker, Good Jobs First (violationtracker.goodjobsfirst.org/parent/lowes)",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2024-01-01",
+    "finding_type": "Compliance Gap",
+    "finding_id": "LOWES-20",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Marc Varner",
+        "title": "SVP and Global Chief Information Security Officer",
+        "linkedin": "https://www.linkedin.com/in/marc-varner"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      },
+      {
+        "name": "Chandhu Nair",
+        "title": "SVP, Data, AI, Customer and Marketing Technology",
+        "linkedin": "https://www.linkedin.com/in/chandhunair"
+      },
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 108,
+    "category": "Workforce Restructuring",
+    "company": "Lowe's",
+    "summary": "Lowe's executed a significant corporate layoff in February 2026, cutting approximately 600 corporate and support roles — less than 1% of its total workforce — with the stated rationale of realigning resources toward frontline store operations. WARN filings confirmed 178 cuts at Mooresville HQ and 49 at the Charlotte Technology Hub. Affected roles spanned IT, product management, UX, product design, quality assurance, and UX content teams. Layoffs were announced February 13 and will be effective April 19 – May 1, 2026. This is the second confirmed corporate reduction in two years (the first was January 2024).",
+    "source_url": "https://www.charlotteobserver.com/news/business/article314690937.html",
+    "why_vbrick": "Post-layoff environments drive demand for scalable enterprise video/eCDN: fewer internal staff must reach more people. VBRICK's eCDN and webcasting platform enables Lowe's to deliver live CEO town halls, change communications, and onboarding video to 300,000 associates without proportional headcount. The February 2026 restructuring is an active buying window.",
+    "outreach_angle": "A 600-person corporate restructuring — including significant IT and product/UX cuts — creates an acute video-delivery gap. Lowe's must now communicate major organizational change to 300,000 associates across 1,700+ stores with a leaner corporate support team. Town halls, CEO messages, and change-management video become MORE critical with fewer internal communicators to deliver them.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Demoted from 3 to 2 to keep critical-tier rare; still a strong buying signal",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"This reduction in corporate staff allows Lowe's to strengthen our frontline focus while remaining agile in a dynamic home improvement environment.\" LinkedIn posts confirmed employees in product design, UX and UX Content — responsible for digital products including websites, apps and software — were impacted.",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2026-02-13",
+    "finding_type": "Workforce Restructuring",
+    "finding_id": "LOWES-21",
+    "competitor": "Microsoft Stream/Teams",
+    "stakeholders": [
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      },
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 109,
+    "category": "Job Posting",
+    "company": "Lowe's",
+    "summary": "Lowe's posted a Manager, Corporate Communications – Tech PR role in April 2026 (posted ~April 11–14, 2026), based at Mooresville HQ. The job description explicitly calls for the candidate to 'direct the development and delivery of formal communications to the entire corporation through all multimedia platforms' and 'manage cross-functional relationships across the business to ensure seamless collaboration with others including: Sales and Ops Communications, Public Relations, Investor Relations, BTV, LOE, Compensation, HR, and IT.' BTV is listed as a key cross-functional partner — a direct reference to Lowe's internal Broadcast Television studio. The role is senior (5–10 years experience) and reports to SVP or higher.",
+    "source_url": "https://builtin.com/job/manager-corporate-communications/9021724",
+    "why_vbrick": "The incoming Corporate Communications Manager will own 'multimedia platforms' and work directly with BTV (Lowe's internal broadcast studio). VBRICK's enterprise video platform (live streaming + on-demand + eCDN) maps directly to this role's needs. First 90 days of a new hire = highest probability purchase window. Outreach to Lowe's Corporate Communications and BTV leadership with VBRICK's Fortune 100 retail reference customers is the play.",
+    "outreach_angle": "This is a direct hire signal for the person who will own Lowe's internal video communications strategy. The mention of 'BTV' as a key partner confirms Lowe's runs a broadcast television operation internally. The new hire will have an immediate mandate to evaluate and modernize multimedia corporate communications platforms — exactly when VBRICK would be introduced.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Demoted from 3 to 2 to keep critical-tier rare; still a strong buying signal",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"Directs the development and delivery of formal communications to the entire corporation through all multimedia platforms... Manages cross-functional relationships across the business to ensure seamless collaboration with others including: Sales and Ops Communications, Public Relations, Investor Relations, BTV, LOE, Compensation, HR, and IT.\"",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2026-04-11",
+    "finding_type": "Job Posting",
+    "finding_id": "LOWES-22",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      },
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 110,
+    "category": "Digital Transformation",
+    "company": "Lowe's",
+    "summary": "Lowe's operates a named internal broadcast television (BTV) studio at its corporate headquarters in Mooresville, NC. The facility — built recently and designed by AKRF acoustical consultants — includes two large production studios, a tech core room, a production control room, and post-production edit bays. Its stated purpose is 'supporting Lowe's internal communications and training, as well as social media content creation and DIY videos for their customers.' This confirms Lowe's is actively producing large-scale internal video content and has invested capital infrastructure in broadcast-grade production.",
+    "source_url": "https://www.akrf.com/projects/lowes-headquarters-btv-studio/",
+    "why_vbrick": "A BTV studio at HQ producing content for 300,000 associates is exactly the eCDN use case VBRICK was built for. Without an eCDN, live studio broadcasts strain store network bandwidth at peak viewing times (all-hands, town halls, product launches). VBRICK's eCDN eliminates that bottleneck. Position as the 'last mile' solution that makes BTV investment fully scalable.",
+    "outreach_angle": "Lowe's has already made the capital investment in broadcast-grade internal video production. This signals that live streaming and on-demand video delivery to 300,000 associates across 1,700 stores is a strategic communications channel — not a future aspiration. The gap to close is on the distribution and eCDN side: producing content in a Fortune 50-grade studio and then pushing it over standard internet to 1,700 stores creates serious network congestion.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Lowe's operates a named internal broadcast television (BTV) studio at its corporate headquarters in Mooresville, NC. The facility — built recently and designed ",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"With the purpose of supporting Lowe's internal communications and training, as well as social media content creation and DIY videos for their customers, this modern film production and broadcasting suite included two large studios, a tech core room, a production control room, and post-production edit bays.\"",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2025-10-24",
+    "finding_type": "Digital Transformation",
+    "finding_id": "LOWES-23",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 111,
+    "category": "AI Investment",
+    "company": "Lowe's",
+    "summary": "Lowe's has made enterprise-wide AI investment a core strategic priority, deploying Mylow Companion — an AI assistant — to all associates at 1,700+ stores in May 2025 (described as a retail industry first at this scale). The AI transformation is led by SVP Chandhu Nair (Stores, Data, AI and Innovation), who reports to CDIO Seemantini Godbole. Lowe's has a formal AI Transformation Office, a partnership with OpenAI, and uses Google Cloud/BigQuery/Vertex AI as its data backbone. The company has ~50 AI models in production and set an explicit goal to be an 'AI-driven organization' within 3–5 years. AI is being deployed to empower how employees work, not just customer experience.",
+    "source_url": "https://www.forbes.com/sites/randybean/2025/10/28/at-lowes-ai-is-laying-the-foundation-for-the-future-of-home-improvement/",
+    "why_vbrick": "AI transformation rollouts generate massive internal video content needs: executive explainers, training modules, live Q&A sessions, certification video. VBRICK's platform handles the full lifecycle — live CEO town halls about AI strategy, on-demand training libraries, and eCDN distribution to stores. Position alongside Lowe's Google/OpenAI/NVIDIA partnerships as the video infrastructure layer that makes AI adoption communications scalable.",
+    "outreach_angle": "Lowe's is training 300,000 associates on AI tools through its internal Lowe's University and AI Transformation Office. Rolling out AI literacy and change-management content at scale to that many geographically distributed employees requires enterprise video infrastructure (live training, recorded modules, AI-assisted onboarding). The AI transformation itself is a forcing function for scalable video delivery.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Lowe's has made enterprise-wide AI investment a core strategic priority, deploying Mylow Companion — an AI assistant — to all associates at 1,700+ stores in May",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"We've been undergoing this tremendous transformation, which is really modernizing our stack... We have an AI stack that sits on top of it and simplifies it and creates action out of it, and we made significant advances in terms of shifting from days and weeks of trying to harvest this data and get insights to within a few hours.\" — Chandhu Nair, SVP Data, AI & Innovation",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2025-10-28",
+    "finding_type": "AI Investment",
+    "finding_id": "LOWES-24",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      },
+      {
+        "name": "Erin Mink",
+        "title": "VP, Infrastructure and Operations",
+        "linkedin": "https://www.linkedin.com/in/erinmink"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 112,
+    "category": "Executive Change",
+    "company": "Lowe's",
+    "summary": "Jennifer Wilson was promoted to SVP, Chief Marketing Officer effective June 10, 2024, elevating from SVP, Enterprise Brand & Marketing. Wilson is a 20-year Lowe's insider who rose entirely through marketing and merchandising ranks. She now owns brand, product marketing, loyalty, personalization, creative, media, retail media network, and — critically — customer experience integration. Her promotion came roughly 3 months after Margi Vagell was elevated to EVP Supply Chain (announced Jan 12, 2024, effective March 1), and concurrent with a broader refresh of the senior leadership team. Wilson sits on the Ad Council board.",
+    "source_url": "https://www.prnewswire.com/news-releases/lowes-promotes-jennifer-wilson-to-chief-marketing-officer-302168713.html",
+    "why_vbrick": "CMO-level buyers at large retailers evaluate enterprise video for brand consistency across internal channels. VBRICK's ability to unify live events, on-demand, and branded portals gives Wilson a single platform for both associate-facing town halls and leadership communications — consistent with her integrated marketing background. Reference Walmart's use of enterprise video for consistent brand/culture communications at scale.",
+    "outreach_angle": "A newly elevated CMO — especially one who came up through integrated marketing — will scrutinize all enterprise communications channels within the first 12–24 months. Wilson's mandate includes 'customer experience integration,' which intersects with associate experience and store communications. CMOs at Fortune 50 retailers often unify internal and external video platforms under their purview.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Jennifer Wilson was promoted to SVP, Chief Marketing Officer effective June 10, 2024, elevating from SVP, Enterprise Brand & Marketing. Wilson is a 20-year Lowe",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"Lowe's Companies, Inc. (NYSE: LOW) today announced the promotion of Jennifer Wilson to senior vice president, chief marketing officer, effective June 10, 2024. Wilson has more than 20 years of combined experience in marketing and merchandising.\"",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2024-06-11",
+    "finding_type": "Executive Change",
+    "finding_id": "LOWES-25",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      },
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      },
+      {
+        "name": "Neelima Sharma",
+        "title": "SVP, Ecommerce and Omni Commerce Product Technology",
+        "linkedin": "https://www.linkedin.com/in/neelimasharma"
+      },
+      {
+        "name": "Joe Cano",
+        "title": "SVP, Digital Commerce",
+        "linkedin": "https://www.linkedin.com/in/joeycano"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 113,
+    "category": "Job Posting",
+    "company": "Lowe's",
+    "summary": "Lowe's posted a Learning Consultant – Technology role (LinkedIn posting dated January 22, 2026, Mooresville NC) focused specifically on developing learning programs for Lowe's Technology associates through the 'Lowe's University Tech Institute.' The role requires experience with 'multiple design modalities — e-learning, classroom, virtual, gamification' and blended learning solution design. It is positioned under HR/Learning & Development and requires 4 years of instructional design experience. The Lowe's University program is expanding significantly alongside the company's AI transformation. Concurrently, Lowe's also posted a Director, Lowe's University Leadership Experience role.",
+    "source_url": "https://www.linkedin.com/jobs/view/learning-consultant-technology-at-lowe-s-companies-inc-4338470939",
+    "why_vbrick": "L&D buyers are a primary VBRICK sales channel: Lowe's University content (e-learning, virtual instructor-led, on-demand courses) delivered to store associates over standard broadband creates severe bandwidth constraints at 1,700 locations. VBRICK's eCDN solves the last-mile delivery problem for Lowe's University's digital learning programs. Engage the L&D tech stack buyer alongside IT infrastructure leads.",
+    "outreach_angle": "Lowe's is actively expanding Lowe's University infrastructure to upskill 300,000 associates on AI and technology. A dedicated Learning Consultant – Technology role signals investment in tech-focused L&D at scale. Virtual and blended learning delivery at this scale requires reliable enterprise video streaming and on-demand access — both of which break down on retail store networks without eCDN.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "Lowe's posted a Learning Consultant – Technology role (LinkedIn posting dated January 22, 2026, Mooresville NC) focused specifically on developing learning prog",
+    "confidence": "medium",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"The primary purpose of this role is to understand the enterprise learning strategy and support the development of the learning culture, strategy, and learning programs for Lowe's Technology associates. The role helps to develop and integrate technical learning programs for associates to achieve strategic business goals... experience with multiple design modalities — e-learning, classroom, virtual, gamification.\"",
+    "source_verified": true,
+    "source_type": "LinkedIn",
+    "additional_sources": [],
+    "date": "2026-01-22",
+    "finding_type": "Job Posting",
+    "finding_id": "LOWES-26",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      },
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Seemantini Godbole",
+        "title": "Executive Vice President, Chief Digital and Information Officer",
+        "linkedin": "https://www.linkedin.com/in/seemantini-godbole-241a4a1"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
+  },
+  {
+    "id": 114,
+    "category": "Workforce Restructuring",
+    "company": "Lowe's",
+    "summary": "In August 2024, Lowe's quietly restructured its DEI organization — a move with direct implications for internal communications strategy. Per an internal memo obtained by the AP, Lowe's combined its 8 separate Business Resource Groups (BRGs) into one unified associate engagement group covering all associates (stores, distribution, corporate). Lowe's also stopped participating in the Human Rights Campaign annual corporate equity index survey and ended sponsorship of external festivals/parades. The restructuring was confirmed in the 2024 Annual Report. EVP HR Janice Dupré — who holds oversight of both HR and corporate communications — was the executive behind the change.",
+    "source_url": "https://apnews.com/article/lowes-dei-robby-starbuck-conservative-522fef16cf0dc77450524542d21016ef",
+    "why_vbrick": "When companies consolidate from 8 audience-specific engagement programs to one unified associate communications platform, the volume and scale of all-hands video events increases dramatically. VBRICK's enterprise town hall and webcasting capabilities — including real-time polling, Q&A, and multi-site eCDN delivery — are purpose-built for exactly this 'one event, all associates' model Lowe's is now pursuing. Position as the platform that makes Janice Dupré's unified associate engagement strategy technically feasible.",
+    "outreach_angle": "DEI org consolidation at Lowe's shifts internal communications responsibility: fewer, larger-scale all-associate engagement events (instead of 8 separate BRG events) means more demand for scalable enterprise town halls and all-hands video that can reach all 300,000 associates simultaneously. The pivot away from segment-specific programming toward unified associate engagement aligns with enterprise video at scale.",
+    "target_persona": ", , ",
+    "industry": "Retail",
+    "urgency_score": 1,
+    "urgency_rationale": "In August 2024, Lowe's quietly restructured its DEI organization — a move with direct implications for internal communications strategy. Per an internal memo ob",
+    "confidence": "high",
+    "confidence_rationale": "Verified via primary source",
+    "evidence_quote": "\"Lowe's leadership indicated that the company began evaluating its initiatives after the court's ruling in July 2023. Recently, they opted to merge their resource groups, which were designed for various segments of their diverse workforce, into a single overarching organization.\" — AP News",
+    "source_verified": true,
+    "source_type": "Public Web",
+    "additional_sources": [],
+    "date": "2024-08-27",
+    "finding_type": "Workforce Restructuring",
+    "finding_id": "LOWES-27",
+    "competitor": "",
+    "stakeholders": [
+      {
+        "name": "Janice Dupré",
+        "title": "Executive Vice President, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/janice-dupr%C3%A9-0410ab1"
+      },
+      {
+        "name": "Tanya Clark Robinson",
+        "title": "SVP, Human Resources",
+        "linkedin": "https://www.linkedin.com/in/tanyaclarkrobinson"
+      },
+      {
+        "name": "Clarissa Felts",
+        "title": "VP, Corporate Communications",
+        "linkedin": "https://www.linkedin.com/in/clarissa-felts-02955b8"
+      },
+      {
+        "name": "Brandon Sink",
+        "title": "Executive Vice President and Chief Financial Officer",
+        "linkedin": "https://www.linkedin.com/in/brandon-sink-4120965"
+      }
+    ],
+    "is_new": true,
+    "region": "NA"
   }
 ];
