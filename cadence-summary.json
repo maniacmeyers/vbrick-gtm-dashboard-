@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-26T23:32:07.135489Z",
-  "last_run_date": "2026-04-15T12:00:00Z",
-  "total_findings": 87,
+  "generated_at": "2026-05-01T18:21:47.604648Z",
+  "last_run_date": "2026-05-01T18:21:47.604648Z",
+  "total_findings": 114,
   "counts": {
-    "fresh": 61,
-    "due": 26
+    "fresh": 89,
+    "due": 25
   },
   "by_finding": [
     {
@@ -12,696 +12,912 @@
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 2,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 3,
       "signal_type": "Product Discontinuation",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.135921Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 4,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 5,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 6,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 7,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 8,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 9,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 10,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 11,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 12,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 13,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 14,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.137064Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 15,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 16,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 17,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 18,
       "signal_type": "Digital Transformation",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 19,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 20,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 21,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 22,
       "signal_type": "Regulatory Enforcement",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.137898Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 23,
       "signal_type": "Regulatory Enforcement",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.138029Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 24,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 25,
       "signal_type": "Regulatory Enforcement",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.138293Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 26,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 27,
       "signal_type": "Regulatory Enforcement",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.138686Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 28,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.139101Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 29,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.139250Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 30,
       "signal_type": "Strategic Partnership",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.139313Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 31,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 32,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 33,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 34,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.139729Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 35,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 36,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 37,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.140107Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 38,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.140287Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 39,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 40,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.140558Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 41,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.140745Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 42,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 43,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 44,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 45,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 46,
       "signal_type": "Executive Leadership Change",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 47,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 48,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 49,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "fresh",
-      "reason": "quarterly cadence \u2014 last researched 11d ago (min 90d)",
-      "next_eligible": "2026-07-14T12:00:00Z"
+      "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
+      "next_eligible": "2026-07-30T18:21:47.604648Z"
     },
     {
       "id": 50,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.141428Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 51,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.141544Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 52,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 53,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.141650Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 54,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.141658Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 55,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.141777Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 56,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 57,
       "signal_type": "Regulatory Enforcement",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.142019Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 58,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 59,
       "signal_type": "Product Launch",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.142232Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 60,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 61,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.142664Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 62,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.142868Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 63,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 64,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 65,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.143304Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 66,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 67,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 68,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 69,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 70,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 71,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 72,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 73,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 74,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 75,
       "signal_type": "Digital Transformation",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 76,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 77,
       "signal_type": "Strategic Partnership",
       "cadence": "weekly",
-      "status": "due",
-      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
-      "next_eligible": "2026-05-03T23:32:07.144511Z"
+      "status": "fresh",
+      "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
+      "next_eligible": "2026-05-08T18:21:47.604648Z"
     },
     {
       "id": 78,
       "signal_type": "Digital Transformation",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 79,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 80,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 81,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 82,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 83,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 84,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 85,
       "signal_type": "News Event",
       "cadence": "daily",
-      "status": "due",
-      "reason": "daily cadence \u2014 11d since last (>= 1d)",
-      "next_eligible": "2026-04-27T23:32:07.145268Z"
+      "status": "fresh",
+      "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
+      "next_eligible": "2026-05-02T18:21:47.604648Z"
     },
     {
       "id": 86,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
     },
     {
       "id": 87,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "fresh",
-      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
-      "next_eligible": "2026-05-15T12:00:00Z"
+      "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
+      "next_eligible": "2026-05-31T18:21:47.604648Z"
+    },
+    {
+      "id": 88,
+      "signal_type": "RTO Mandate",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 233d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614382Z"
+    },
+    {
+      "id": 89,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 402d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614391Z"
+    },
+    {
+      "id": 90,
+      "signal_type": "10-K Annual Report",
+      "cadence": "after_10k_filing",
+      "status": "due",
+      "reason": "Annual 10-K cycle \u2014 403d since last (>= 300d)",
+      "next_eligible": "2027-02-25T18:21:47.614399Z"
+    },
+    {
+      "id": 91,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 92,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 204d since last (>= 90d)",
+      "next_eligible": "2026-07-30T18:21:47.614423Z"
+    },
+    {
+      "id": 93,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 506d since last (>= 7d)",
+      "next_eligible": "2026-05-08T18:21:47.614430Z"
+    },
+    {
+      "id": 94,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 95,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 402d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614447Z"
+    },
+    {
+      "id": 96,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 316d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614453Z"
+    },
+    {
+      "id": 97,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 387d since last (>= 7d)",
+      "next_eligible": "2026-05-08T18:21:47.614459Z"
+    },
+    {
+      "id": 98,
+      "signal_type": "Press Release",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 233d since last (>= 1d)",
+      "next_eligible": "2026-05-02T18:21:47.614465Z"
+    },
+    {
+      "id": 99,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 90d since last (>= 90d)",
+      "next_eligible": "2026-07-30T18:21:47.614513Z"
+    },
+    {
+      "id": 100,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 409d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614521Z"
+    },
+    {
+      "id": 101,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 499d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614526Z"
+    },
+    {
+      "id": 102,
+      "signal_type": "10-K Annual Report",
+      "cadence": "after_10k_filing",
+      "status": "due",
+      "reason": "Annual 10-K cycle \u2014 403d since last (>= 300d)",
+      "next_eligible": "2027-02-25T18:21:47.614532Z"
+    },
+    {
+      "id": 103,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 606d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614538Z"
+    },
+    {
+      "id": 104,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 514d since last (>= 7d)",
+      "next_eligible": "2026-05-08T18:21:47.614544Z"
+    },
+    {
+      "id": 105,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 226d since last (>= 7d)",
+      "next_eligible": "2026-05-08T18:21:47.614549Z"
+    },
+    {
+      "id": 106,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 612d since last (>= 7d)",
+      "next_eligible": "2026-05-08T18:21:47.614555Z"
+    },
+    {
+      "id": 107,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 851d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614560Z"
+    },
+    {
+      "id": 108,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 77d since last (>= 7d)",
+      "next_eligible": "2026-05-08T18:21:47.614566Z"
+    },
+    {
+      "id": 109,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 20d since last (>= 1d)",
+      "next_eligible": "2026-05-02T18:21:47.614572Z"
+    },
+    {
+      "id": 110,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 189d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614578Z"
+    },
+    {
+      "id": 111,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 185d since last (>= 30d)",
+      "next_eligible": "2026-05-31T18:21:47.614583Z"
+    },
+    {
+      "id": 112,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 689d since last (>= 1d)",
+      "next_eligible": "2026-05-02T18:21:47.614750Z"
+    },
+    {
+      "id": 113,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 99d since last (>= 1d)",
+      "next_eligible": "2026-05-02T18:21:47.614756Z"
+    },
+    {
+      "id": 114,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 612d since last (>= 7d)",
+      "next_eligible": "2026-05-08T18:21:47.614762Z"
     }
   ]
 }
