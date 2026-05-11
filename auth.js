@@ -27,7 +27,9 @@ const AUTH_CONFIG = {
     // jeff@careermaniacs.com
     "74deb573ac01bc95c8b2fab2ce4f82e6a06f13bef4a42922484505bf2272ac9d",
     // ai@aimaniacs.ai
-    "11934bc4e575cbbd1ba0cc458fe309eea6099f30ef6893abf058a589614e1d99"
+    "11934bc4e575cbbd1ba0cc458fe309eea6099f30ef6893abf058a589614e1d99",
+    // annabelle.frost@vbrick.com
+    "20eb34934e8badcbc15ef3f708237ee31f2c47820d862b4cd6871df2cd9f22a5"
   ],
   
   // Session duration in hours
