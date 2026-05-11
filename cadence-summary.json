@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-01T18:21:47.604648Z",
-  "last_run_date": "2026-05-01T18:21:47.604648Z",
-  "total_findings": 114,
+  "generated_at": "2026-05-11T15:05:45.749140Z",
+  "last_run_date": "2026-05-11T15:05:45.749140Z",
+  "total_findings": 378,
   "counts": {
-    "fresh": 89,
-    "due": 25
+    "fresh": 119,
+    "due": 259
   },
   "by_finding": [
     {
@@ -13,7 +13,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 3,
@@ -29,7 +29,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 5,
@@ -45,7 +45,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 6,
@@ -53,7 +53,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 8,
@@ -69,7 +69,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 9,
@@ -77,7 +77,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 10,
@@ -85,7 +85,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 11,
@@ -93,7 +93,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 12,
@@ -101,7 +101,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 13,
@@ -109,7 +109,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 14,
@@ -117,7 +117,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 15,
@@ -125,7 +125,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 16,
@@ -133,7 +133,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 17,
@@ -141,7 +141,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 18,
@@ -149,7 +149,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 19,
@@ -157,7 +157,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 20,
@@ -165,7 +165,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 21,
@@ -173,7 +173,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 22,
@@ -181,7 +181,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 23,
@@ -189,7 +189,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 24,
@@ -197,7 +197,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 25,
@@ -205,7 +205,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 26,
@@ -213,7 +213,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 27,
@@ -221,7 +221,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 28,
@@ -229,7 +229,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 29,
@@ -237,7 +237,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 30,
@@ -245,7 +245,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 31,
@@ -253,7 +253,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 32,
@@ -261,7 +261,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 33,
@@ -269,7 +269,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 34,
@@ -277,7 +277,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 35,
@@ -285,7 +285,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 36,
@@ -293,7 +293,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 37,
@@ -301,7 +301,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 38,
@@ -309,7 +309,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 39,
@@ -317,7 +317,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 40,
@@ -325,7 +325,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 41,
@@ -333,7 +333,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 42,
@@ -341,7 +341,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 43,
@@ -349,7 +349,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 44,
@@ -357,7 +357,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 45,
@@ -365,7 +365,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 46,
@@ -373,7 +373,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 47,
@@ -381,7 +381,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 48,
@@ -389,7 +389,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 49,
@@ -397,7 +397,7 @@
       "cadence": "quarterly",
       "status": "fresh",
       "reason": "quarterly cadence \u2014 last researched 0d ago (min 90d)",
-      "next_eligible": "2026-07-30T18:21:47.604648Z"
+      "next_eligible": "2026-08-09T15:05:45.749140Z"
     },
     {
       "id": 50,
@@ -405,7 +405,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 51,
@@ -413,7 +413,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 52,
@@ -421,7 +421,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 53,
@@ -429,7 +429,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 54,
@@ -437,7 +437,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 55,
@@ -445,7 +445,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 56,
@@ -453,7 +453,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 57,
@@ -461,7 +461,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 58,
@@ -469,7 +469,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 59,
@@ -477,7 +477,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 60,
@@ -485,7 +485,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 61,
@@ -493,7 +493,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 62,
@@ -501,7 +501,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 63,
@@ -509,7 +509,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 64,
@@ -517,7 +517,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 65,
@@ -525,7 +525,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 66,
@@ -533,7 +533,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 67,
@@ -541,7 +541,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 68,
@@ -549,7 +549,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 69,
@@ -557,7 +557,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 70,
@@ -565,7 +565,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 71,
@@ -573,7 +573,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 72,
@@ -581,7 +581,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 73,
@@ -589,7 +589,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 74,
@@ -597,7 +597,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 75,
@@ -605,7 +605,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 76,
@@ -613,7 +613,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 77,
@@ -621,7 +621,7 @@
       "cadence": "weekly",
       "status": "fresh",
       "reason": "weekly cadence \u2014 last researched 0d ago (min 7d)",
-      "next_eligible": "2026-05-08T18:21:47.604648Z"
+      "next_eligible": "2026-05-18T15:05:45.749140Z"
     },
     {
       "id": 78,
@@ -629,7 +629,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 79,
@@ -637,7 +637,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 80,
@@ -645,7 +645,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 81,
@@ -653,7 +653,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 82,
@@ -661,7 +661,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 83,
@@ -669,7 +669,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 84,
@@ -677,7 +677,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 85,
@@ -685,7 +685,7 @@
       "cadence": "daily",
       "status": "fresh",
       "reason": "daily cadence \u2014 last researched 0d ago (min 1d)",
-      "next_eligible": "2026-05-02T18:21:47.604648Z"
+      "next_eligible": "2026-05-12T15:05:45.749140Z"
     },
     {
       "id": 86,
@@ -693,7 +693,7 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 87,
@@ -701,31 +701,31 @@
       "cadence": "monthly",
       "status": "fresh",
       "reason": "monthly cadence \u2014 last researched 0d ago (min 30d)",
-      "next_eligible": "2026-05-31T18:21:47.604648Z"
+      "next_eligible": "2026-06-10T15:05:45.749140Z"
     },
     {
       "id": 88,
       "signal_type": "RTO Mandate",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 233d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614382Z"
+      "reason": "monthly cadence \u2014 243d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759116Z"
     },
     {
       "id": 89,
       "signal_type": "AI Investment",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 402d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614391Z"
+      "reason": "monthly cadence \u2014 412d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759125Z"
     },
     {
       "id": 90,
       "signal_type": "10-K Annual Report",
       "cadence": "after_10k_filing",
       "status": "due",
-      "reason": "Annual 10-K cycle \u2014 403d since last (>= 300d)",
-      "next_eligible": "2027-02-25T18:21:47.614399Z"
+      "reason": "Annual 10-K cycle \u2014 413d since last (>= 300d)",
+      "next_eligible": "2027-03-07T15:05:45.759134Z"
     },
     {
       "id": 91,
@@ -740,16 +740,16 @@
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "due",
-      "reason": "quarterly cadence \u2014 204d since last (>= 90d)",
-      "next_eligible": "2026-07-30T18:21:47.614423Z"
+      "reason": "quarterly cadence \u2014 214d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.759160Z"
     },
     {
       "id": 93,
       "signal_type": "Strategic Partnership",
       "cadence": "weekly",
       "status": "due",
-      "reason": "weekly cadence \u2014 506d since last (>= 7d)",
-      "next_eligible": "2026-05-08T18:21:47.614430Z"
+      "reason": "weekly cadence \u2014 516d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759168Z"
     },
     {
       "id": 94,
@@ -764,160 +764,2272 @@
       "signal_type": "AI Investment",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 402d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614447Z"
+      "reason": "monthly cadence \u2014 412d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759189Z"
     },
     {
       "id": 96,
       "signal_type": "Digital Transformation",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 316d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614453Z"
+      "reason": "monthly cadence \u2014 326d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759196Z"
     },
     {
       "id": 97,
       "signal_type": "Strategic Partnership",
       "cadence": "weekly",
       "status": "due",
-      "reason": "weekly cadence \u2014 387d since last (>= 7d)",
-      "next_eligible": "2026-05-08T18:21:47.614459Z"
+      "reason": "weekly cadence \u2014 397d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759203Z"
     },
     {
       "id": 98,
       "signal_type": "Press Release",
       "cadence": "daily",
       "status": "due",
-      "reason": "daily cadence \u2014 233d since last (>= 1d)",
-      "next_eligible": "2026-05-02T18:21:47.614465Z"
+      "reason": "daily cadence \u2014 243d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.759209Z"
     },
     {
       "id": 99,
       "signal_type": "M&A Activity",
       "cadence": "quarterly",
       "status": "due",
-      "reason": "quarterly cadence \u2014 90d since last (>= 90d)",
-      "next_eligible": "2026-07-30T18:21:47.614513Z"
+      "reason": "quarterly cadence \u2014 100d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.759260Z"
     },
     {
       "id": 100,
       "signal_type": "AI Investment",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 409d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614521Z"
+      "reason": "monthly cadence \u2014 419d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759267Z"
     },
     {
       "id": 101,
       "signal_type": "Digital Transformation",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 499d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614526Z"
+      "reason": "monthly cadence \u2014 509d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759273Z"
     },
     {
       "id": 102,
       "signal_type": "10-K Annual Report",
       "cadence": "after_10k_filing",
       "status": "due",
-      "reason": "Annual 10-K cycle \u2014 403d since last (>= 300d)",
-      "next_eligible": "2027-02-25T18:21:47.614532Z"
+      "reason": "Annual 10-K cycle \u2014 413d since last (>= 300d)",
+      "next_eligible": "2027-03-07T15:05:45.759279Z"
     },
     {
       "id": 103,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 606d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614538Z"
+      "reason": "monthly cadence \u2014 616d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759286Z"
     },
     {
       "id": 104,
       "signal_type": "Regulatory Enforcement",
       "cadence": "weekly",
       "status": "due",
-      "reason": "weekly cadence \u2014 514d since last (>= 7d)",
-      "next_eligible": "2026-05-08T18:21:47.614544Z"
+      "reason": "weekly cadence \u2014 524d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759293Z"
     },
     {
       "id": 105,
       "signal_type": "Regulatory Enforcement",
       "cadence": "weekly",
       "status": "due",
-      "reason": "weekly cadence \u2014 226d since last (>= 7d)",
-      "next_eligible": "2026-05-08T18:21:47.614549Z"
+      "reason": "weekly cadence \u2014 236d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759299Z"
     },
     {
       "id": 106,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
       "status": "due",
-      "reason": "weekly cadence \u2014 612d since last (>= 7d)",
-      "next_eligible": "2026-05-08T18:21:47.614555Z"
+      "reason": "weekly cadence \u2014 622d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759305Z"
     },
     {
       "id": 107,
       "signal_type": "Compliance Gap",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 851d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614560Z"
+      "reason": "monthly cadence \u2014 861d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759313Z"
     },
     {
       "id": 108,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
       "status": "due",
-      "reason": "weekly cadence \u2014 77d since last (>= 7d)",
-      "next_eligible": "2026-05-08T18:21:47.614566Z"
+      "reason": "weekly cadence \u2014 87d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759319Z"
     },
     {
       "id": 109,
       "signal_type": "Job Posting",
       "cadence": "daily",
       "status": "due",
-      "reason": "daily cadence \u2014 20d since last (>= 1d)",
-      "next_eligible": "2026-05-02T18:21:47.614572Z"
+      "reason": "daily cadence \u2014 30d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.759325Z"
     },
     {
       "id": 110,
       "signal_type": "Digital Transformation",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 189d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614578Z"
+      "reason": "monthly cadence \u2014 199d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759335Z"
     },
     {
       "id": 111,
       "signal_type": "AI Investment",
       "cadence": "monthly",
       "status": "due",
-      "reason": "monthly cadence \u2014 185d since last (>= 30d)",
-      "next_eligible": "2026-05-31T18:21:47.614583Z"
+      "reason": "monthly cadence \u2014 195d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759368Z"
     },
     {
       "id": 112,
       "signal_type": "News Event",
       "cadence": "daily",
       "status": "due",
-      "reason": "daily cadence \u2014 689d since last (>= 1d)",
-      "next_eligible": "2026-05-02T18:21:47.614750Z"
+      "reason": "daily cadence \u2014 699d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.759617Z"
     },
     {
       "id": 113,
       "signal_type": "Job Posting",
       "cadence": "daily",
       "status": "due",
-      "reason": "daily cadence \u2014 99d since last (>= 1d)",
-      "next_eligible": "2026-05-02T18:21:47.614756Z"
+      "reason": "daily cadence \u2014 109d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.759634Z"
     },
     {
       "id": 114,
       "signal_type": "Workforce Restructuring",
       "cadence": "weekly",
       "status": "due",
-      "reason": "weekly cadence \u2014 612d since last (>= 7d)",
-      "next_eligible": "2026-05-08T18:21:47.614762Z"
+      "reason": "weekly cadence \u2014 622d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759645Z"
+    },
+    {
+      "id": 115,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 199d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759656Z"
+    },
+    {
+      "id": 116,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 306d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.759860Z"
+    },
+    {
+      "id": 117,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 532d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759877Z"
+    },
+    {
+      "id": 118,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 258d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.759892Z"
+    },
+    {
+      "id": 119,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 314d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.759907Z"
+    },
+    {
+      "id": 120,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 121,
+      "signal_type": "URD Filing (France)",
+      "cadence": "after_10k_filing",
+      "status": "due",
+      "reason": "Annual 10-K cycle \u2014 426d since last (>= 300d)",
+      "next_eligible": "2027-03-07T15:05:45.759941Z"
+    },
+    {
+      "id": 122,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 613d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.759953Z"
+    },
+    {
+      "id": 123,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 213d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.759963Z"
+    },
+    {
+      "id": 124,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 194d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.759973Z"
+    },
+    {
+      "id": 125,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 521d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.759984Z"
+    },
+    {
+      "id": 126,
+      "signal_type": "NIS2 Directive",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 411d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.759994Z"
+    },
+    {
+      "id": 127,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 347d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760005Z"
+    },
+    {
+      "id": 128,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 12d ago (min 90d)",
+      "next_eligible": "2026-07-28T12:00:00Z"
+    },
+    {
+      "id": 129,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 279d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760119Z"
+    },
+    {
+      "id": 130,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 132d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760131Z"
+    },
+    {
+      "id": 131,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 132,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 130d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760174Z"
+    },
+    {
+      "id": 133,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 1083d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760185Z"
+    },
+    {
+      "id": 134,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 501d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760192Z"
+    },
+    {
+      "id": 135,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 278d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760199Z"
+    },
+    {
+      "id": 136,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 3093d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760206Z"
+    },
+    {
+      "id": 137,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 880d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760212Z"
+    },
+    {
+      "id": 138,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 510d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760218Z"
+    },
+    {
+      "id": 139,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 299d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760292Z"
+    },
+    {
+      "id": 140,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 25d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.760302Z"
+    },
+    {
+      "id": 141,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760310Z"
+    },
+    {
+      "id": 142,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 1713d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760316Z"
+    },
+    {
+      "id": 143,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 41d ago (min 90d)",
+      "next_eligible": "2026-06-29T12:00:00Z"
+    },
+    {
+      "id": 144,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 796d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760410Z"
+    },
+    {
+      "id": 145,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 1635d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.760596Z"
+    },
+    {
+      "id": 146,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 11d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760604Z"
+    },
+    {
+      "id": 147,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 420d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760610Z"
+    },
+    {
+      "id": 148,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 48d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760617Z"
+    },
+    {
+      "id": 149,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 95d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760626Z"
+    },
+    {
+      "id": 150,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 556d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760633Z"
+    },
+    {
+      "id": 151,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 740d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760639Z"
+    },
+    {
+      "id": 152,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 709d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760645Z"
+    },
+    {
+      "id": 153,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 161d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760651Z"
+    },
+    {
+      "id": 154,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 155,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 200d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760668Z"
+    },
+    {
+      "id": 156,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 157,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 436d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760683Z"
+    },
+    {
+      "id": 158,
+      "signal_type": "Sovereign Cloud Adoption",
+      "cadence": "monthly",
+      "status": "fresh",
+      "reason": "monthly cadence \u2014 last researched 14d ago (min 30d)",
+      "next_eligible": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": 159,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 111d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760695Z"
+    },
+    {
+      "id": 160,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 495d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760701Z"
+    },
+    {
+      "id": 161,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 872d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760707Z"
+    },
+    {
+      "id": 162,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "fresh",
+      "reason": "monthly cadence \u2014 last researched 14d ago (min 30d)",
+      "next_eligible": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": 163,
+      "signal_type": "NIS2 Directive",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 571d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760723Z"
+    },
+    {
+      "id": 164,
+      "signal_type": "Federal Contract",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 538d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760729Z"
+    },
+    {
+      "id": 165,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 91d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760736Z"
+    },
+    {
+      "id": 166,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 403d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760741Z"
+    },
+    {
+      "id": 167,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 252d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760750Z"
+    },
+    {
+      "id": 168,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 440d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760801Z"
+    },
+    {
+      "id": 169,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 41d ago (min 90d)",
+      "next_eligible": "2026-06-29T12:00:00Z"
+    },
+    {
+      "id": 170,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 250d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760813Z"
+    },
+    {
+      "id": 171,
+      "signal_type": "10-K Annual Report",
+      "cadence": "after_10k_filing",
+      "status": "due",
+      "reason": "Annual 10-K cycle \u2014 432d since last (>= 300d)",
+      "next_eligible": "2027-03-07T15:05:45.760827Z"
+    },
+    {
+      "id": 172,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 83d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760835Z"
+    },
+    {
+      "id": 173,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 462d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760841Z"
+    },
+    {
+      "id": 174,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 626d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760849Z"
+    },
+    {
+      "id": 175,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 595d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760855Z"
+    },
+    {
+      "id": 176,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 334d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760861Z"
+    },
+    {
+      "id": 177,
+      "signal_type": "Data Sovereignty",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 462d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760868Z"
+    },
+    {
+      "id": 178,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 73d ago (min 90d)",
+      "next_eligible": "2026-05-28T12:00:00Z"
+    },
+    {
+      "id": 179,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 181d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760880Z"
+    },
+    {
+      "id": 180,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 19d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760885Z"
+    },
+    {
+      "id": 181,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 93d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760892Z"
+    },
+    {
+      "id": 182,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 4d ago (min 90d)",
+      "next_eligible": "2026-08-05T12:00:00Z"
+    },
+    {
+      "id": 183,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 184,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 336d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760911Z"
+    },
+    {
+      "id": 185,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 602d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760919Z"
+    },
+    {
+      "id": 186,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "fresh",
+      "reason": "monthly cadence \u2014 last researched 5d ago (min 30d)",
+      "next_eligible": "2026-06-05T12:00:00Z"
+    },
+    {
+      "id": 187,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 430d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.760932Z"
+    },
+    {
+      "id": 188,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 299d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.760938Z"
+    },
+    {
+      "id": 189,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 433d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760944Z"
+    },
+    {
+      "id": 190,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 4d ago (min 90d)",
+      "next_eligible": "2026-08-05T12:00:00Z"
+    },
+    {
+      "id": 191,
+      "signal_type": "NIS2 Directive",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 467d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.760957Z"
+    },
+    {
+      "id": 192,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 314d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.760963Z"
+    },
+    {
+      "id": 193,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 581d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761068Z"
+    },
+    {
+      "id": 194,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 430d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.761080Z"
+    },
+    {
+      "id": 195,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 446d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761088Z"
+    },
+    {
+      "id": 196,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 74d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761094Z"
+    },
+    {
+      "id": 197,
+      "signal_type": "UK Annual Report",
+      "cadence": "after_10k_filing",
+      "status": "due",
+      "reason": "Annual 10-K cycle \u2014 446d since last (>= 300d)",
+      "next_eligible": "2027-03-07T15:05:45.761101Z"
+    },
+    {
+      "id": 198,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 234d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761109Z"
+    },
+    {
+      "id": 199,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 280d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.761281Z"
+    },
+    {
+      "id": 200,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 74d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761288Z"
+    },
+    {
+      "id": 201,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 270d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761295Z"
+    },
+    {
+      "id": 202,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 832d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.761301Z"
+    },
+    {
+      "id": 203,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 479d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761308Z"
+    },
+    {
+      "id": 204,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 4d ago (min 90d)",
+      "next_eligible": "2026-08-05T12:00:00Z"
+    },
+    {
+      "id": 205,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 718d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.761322Z"
+    },
+    {
+      "id": 206,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 411d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761428Z"
+    },
+    {
+      "id": 207,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 52d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.761441Z"
+    },
+    {
+      "id": 208,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 11d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.761450Z"
+    },
+    {
+      "id": 209,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 91d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761456Z"
+    },
+    {
+      "id": 210,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 87d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761463Z"
+    },
+    {
+      "id": 211,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 418d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761469Z"
+    },
+    {
+      "id": 212,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 292d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.761475Z"
+    },
+    {
+      "id": 213,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 262d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761481Z"
+    },
+    {
+      "id": 214,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 291d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.761663Z"
+    },
+    {
+      "id": 215,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 262d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.761674Z"
+    },
+    {
+      "id": 216,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 145d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761695Z"
+    },
+    {
+      "id": 217,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 45d ago (min 90d)",
+      "next_eligible": "2026-06-25T12:00:00Z"
+    },
+    {
+      "id": 218,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 61d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.761707Z"
+    },
+    {
+      "id": 219,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 452d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761713Z"
+    },
+    {
+      "id": 220,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 334d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.761790Z"
+    },
+    {
+      "id": 221,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 276d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.761990Z"
+    },
+    {
+      "id": 222,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 395d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762000Z"
+    },
+    {
+      "id": 223,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 102d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762008Z"
+    },
+    {
+      "id": 224,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 202d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762017Z"
+    },
+    {
+      "id": 225,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 214d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762023Z"
+    },
+    {
+      "id": 226,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 173d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762029Z"
+    },
+    {
+      "id": 227,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 417d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762035Z"
+    },
+    {
+      "id": 228,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 418d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762042Z"
+    },
+    {
+      "id": 229,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "fresh",
+      "reason": "monthly cadence \u2014 last researched 25d ago (min 30d)",
+      "next_eligible": "2026-05-16T12:00:00Z"
+    },
+    {
+      "id": 230,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 41d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762177Z"
+    },
+    {
+      "id": 231,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 41d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762184Z"
+    },
+    {
+      "id": 232,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 479d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762191Z"
+    },
+    {
+      "id": 233,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 113d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762197Z"
+    },
+    {
+      "id": 234,
+      "signal_type": "NIS2 Directive",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 180d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762204Z"
+    },
+    {
+      "id": 235,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 249d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762210Z"
+    },
+    {
+      "id": 236,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 24d ago (min 90d)",
+      "next_eligible": "2026-07-16T12:00:00Z"
+    },
+    {
+      "id": 237,
+      "signal_type": "Product Launch",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 155d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.762295Z"
+    },
+    {
+      "id": 238,
+      "signal_type": "Federal Contract",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 472d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762302Z"
+    },
+    {
+      "id": 239,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 438d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762309Z"
+    },
+    {
+      "id": 240,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 241,
+      "signal_type": "Sovereign Cloud Adoption",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 492d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762327Z"
+    },
+    {
+      "id": 242,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 490d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762334Z"
+    },
+    {
+      "id": 243,
+      "signal_type": "NIS2 Directive",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 359d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762363Z"
+    },
+    {
+      "id": 244,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 130d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762426Z"
+    },
+    {
+      "id": 245,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 218d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762435Z"
+    },
+    {
+      "id": 246,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "fresh",
+      "reason": "monthly cadence \u2014 last researched 11d ago (min 30d)",
+      "next_eligible": "2026-05-30T12:00:00Z"
+    },
+    {
+      "id": 247,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 370d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762448Z"
+    },
+    {
+      "id": 248,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 160d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.762454Z"
+    },
+    {
+      "id": 249,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 102d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762461Z"
+    },
+    {
+      "id": 250,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 344d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762469Z"
+    },
+    {
+      "id": 251,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 322d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762548Z"
+    },
+    {
+      "id": 252,
+      "signal_type": "RTO Mandate",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 101d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762555Z"
+    },
+    {
+      "id": 253,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 94d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762561Z"
+    },
+    {
+      "id": 254,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "fresh",
+      "reason": "monthly cadence \u2014 last researched 25d ago (min 30d)",
+      "next_eligible": "2026-05-16T12:00:00Z"
+    },
+    {
+      "id": 255,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 99d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762573Z"
+    },
+    {
+      "id": 256,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "fresh",
+      "reason": "monthly cadence \u2014 last researched 10d ago (min 30d)",
+      "next_eligible": "2026-05-31T12:00:00Z"
+    },
+    {
+      "id": 257,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 231d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762584Z"
+    },
+    {
+      "id": 258,
+      "signal_type": "NIS2 Directive",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 249d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762590Z"
+    },
+    {
+      "id": 259,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 453d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762597Z"
+    },
+    {
+      "id": 260,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 599d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762603Z"
+    },
+    {
+      "id": 261,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 344d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762609Z"
+    },
+    {
+      "id": 262,
+      "signal_type": "RTO Mandate",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 320d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762746Z"
+    },
+    {
+      "id": 263,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 188d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762810Z"
+    },
+    {
+      "id": 264,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 53d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762817Z"
+    },
+    {
+      "id": 265,
+      "signal_type": "UK Annual Report",
+      "cadence": "after_10k_filing",
+      "status": "due",
+      "reason": "Annual 10-K cycle \u2014 538d since last (>= 300d)",
+      "next_eligible": "2027-03-07T15:05:45.762823Z"
+    },
+    {
+      "id": 266,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 216d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762830Z"
+    },
+    {
+      "id": 267,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 1749d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762836Z"
+    },
+    {
+      "id": 268,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 154d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762842Z"
+    },
+    {
+      "id": 269,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 165d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762848Z"
+    },
+    {
+      "id": 270,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 209d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.762855Z"
+    },
+    {
+      "id": 271,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 392d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762861Z"
+    },
+    {
+      "id": 272,
+      "signal_type": "Data Sovereignty",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 468d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762867Z"
+    },
+    {
+      "id": 273,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 237d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762873Z"
+    },
+    {
+      "id": 274,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 617d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.762879Z"
+    },
+    {
+      "id": 275,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 165d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.762885Z"
+    },
+    {
+      "id": 276,
+      "signal_type": "RTO Mandate",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 482d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763014Z"
+    },
+    {
+      "id": 277,
+      "signal_type": "UK Annual Report",
+      "cadence": "after_10k_filing",
+      "status": "due",
+      "reason": "Annual 10-K cycle \u2014 423d since last (>= 300d)",
+      "next_eligible": "2027-03-07T15:05:45.763021Z"
+    },
+    {
+      "id": 278,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 255d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763027Z"
+    },
+    {
+      "id": 279,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 231d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763033Z"
+    },
+    {
+      "id": 280,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 4d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.763039Z"
+    },
+    {
+      "id": 281,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 96d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763045Z"
+    },
+    {
+      "id": 282,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 355d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763051Z"
+    },
+    {
+      "id": 283,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 544d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763060Z"
+    },
+    {
+      "id": 284,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 126d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763066Z"
+    },
+    {
+      "id": 285,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 391d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763072Z"
+    },
+    {
+      "id": 286,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 508d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763078Z"
+    },
+    {
+      "id": 287,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 801d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763084Z"
+    },
+    {
+      "id": 288,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 725d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763090Z"
+    },
+    {
+      "id": 289,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 608d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763096Z"
+    },
+    {
+      "id": 290,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 291,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 279d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763169Z"
+    },
+    {
+      "id": 292,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 240d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763175Z"
+    },
+    {
+      "id": 293,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 405d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.763181Z"
+    },
+    {
+      "id": 294,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 437d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763187Z"
+    },
+    {
+      "id": 295,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 531d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763193Z"
+    },
+    {
+      "id": 296,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 459d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763199Z"
+    },
+    {
+      "id": 297,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 724d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763263Z"
+    },
+    {
+      "id": 298,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 725d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763269Z"
+    },
+    {
+      "id": 299,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 473d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763275Z"
+    },
+    {
+      "id": 300,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 467d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763281Z"
+    },
+    {
+      "id": 301,
+      "signal_type": "UK Annual Report",
+      "cadence": "after_10k_filing",
+      "status": "fresh",
+      "reason": "10-K research current \u2014 last 298d ago (annual cadence, 300d min)",
+      "next_eligible": "2026-05-13T12:00:00Z"
+    },
+    {
+      "id": 302,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 27d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763296Z"
+    },
+    {
+      "id": 303,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 304,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 173d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763309Z"
+    },
+    {
+      "id": 305,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 188d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763315Z"
+    },
+    {
+      "id": 306,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 306d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763323Z"
+    },
+    {
+      "id": 307,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 403d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763329Z"
+    },
+    {
+      "id": 308,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 467d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763334Z"
+    },
+    {
+      "id": 309,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 18d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763340Z"
+    },
+    {
+      "id": 310,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 437d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763370Z"
+    },
+    {
+      "id": 311,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 384d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763380Z"
+    },
+    {
+      "id": 312,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 476d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.763563Z"
+    },
+    {
+      "id": 313,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 179d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763570Z"
+    },
+    {
+      "id": 314,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 67d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763580Z"
+    },
+    {
+      "id": 315,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 504d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763586Z"
+    },
+    {
+      "id": 316,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 271d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763594Z"
+    },
+    {
+      "id": 317,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 90d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763600Z"
+    },
+    {
+      "id": 318,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 585d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763606Z"
+    },
+    {
+      "id": 319,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 61d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763614Z"
+    },
+    {
+      "id": 320,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 479d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763621Z"
+    },
+    {
+      "id": 321,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 37d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763629Z"
+    },
+    {
+      "id": 322,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 76d ago (min 90d)",
+      "next_eligible": "2026-05-25T12:00:00Z"
+    },
+    {
+      "id": 323,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 587d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763642Z"
+    },
+    {
+      "id": 324,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 255d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.763648Z"
+    },
+    {
+      "id": 325,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 523d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763654Z"
+    },
+    {
+      "id": 326,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 54d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763660Z"
+    },
+    {
+      "id": 327,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 285d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763665Z"
+    },
+    {
+      "id": 328,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 88d ago (min 90d)",
+      "next_eligible": "2026-05-13T12:00:00Z"
+    },
+    {
+      "id": 329,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 431d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763677Z"
+    },
+    {
+      "id": 330,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 480d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763747Z"
+    },
+    {
+      "id": 331,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 300d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763753Z"
+    },
+    {
+      "id": 332,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 55d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763759Z"
+    },
+    {
+      "id": 333,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 1161d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763765Z"
+    },
+    {
+      "id": 334,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 4d ago (min 90d)",
+      "next_eligible": "2026-08-05T12:00:00Z"
+    },
+    {
+      "id": 335,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 662d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763777Z"
+    },
+    {
+      "id": 336,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 216d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763782Z"
+    },
+    {
+      "id": 337,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 76d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.763788Z"
+    },
+    {
+      "id": 338,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 612d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763794Z"
+    },
+    {
+      "id": 339,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 405d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763802Z"
+    },
+    {
+      "id": 340,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 97d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.763808Z"
+    },
+    {
+      "id": 341,
+      "signal_type": "M&A Activity",
+      "cadence": "quarterly",
+      "status": "fresh",
+      "reason": "quarterly cadence \u2014 last researched 10d ago (min 90d)",
+      "next_eligible": "2026-07-30T12:00:00Z"
+    },
+    {
+      "id": 342,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 45d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763820Z"
+    },
+    {
+      "id": 343,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 326d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763826Z"
+    },
+    {
+      "id": 344,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 272d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.763831Z"
+    },
+    {
+      "id": 345,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 90d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.764007Z"
+    },
+    {
+      "id": 346,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 250d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764015Z"
+    },
+    {
+      "id": 347,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 105d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764021Z"
+    },
+    {
+      "id": 348,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 437d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764026Z"
+    },
+    {
+      "id": 349,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 727d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764032Z"
+    },
+    {
+      "id": 350,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 272d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764038Z"
+    },
+    {
+      "id": 351,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 285d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764044Z"
+    },
+    {
+      "id": 352,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 283d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764050Z"
+    },
+    {
+      "id": 353,
+      "signal_type": "News Event",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 90d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.764176Z"
+    },
+    {
+      "id": 354,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 377d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764183Z"
+    },
+    {
+      "id": 355,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 76d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764189Z"
+    },
+    {
+      "id": 356,
+      "signal_type": "Earnings Call Transcript",
+      "cadence": "after_earnings",
+      "status": "fresh",
+      "reason": "Quarter closed 2026-03-31 \u2014 earnings typically released by 2026-06-19",
+      "next_eligible": "2026-06-19T23:59:59Z"
+    },
+    {
+      "id": 357,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 76d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764204Z"
+    },
+    {
+      "id": 358,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 410d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764211Z"
+    },
+    {
+      "id": 359,
+      "signal_type": "Sovereign Cloud Adoption",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 68d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764217Z"
+    },
+    {
+      "id": 360,
+      "signal_type": "DORA Compliance",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 201d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764226Z"
+    },
+    {
+      "id": 361,
+      "signal_type": "MiFID II Recording",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 237d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764232Z"
+    },
+    {
+      "id": 362,
+      "signal_type": "Regulatory Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 62d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764238Z"
+    },
+    {
+      "id": 363,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 377d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764298Z"
+    },
+    {
+      "id": 364,
+      "signal_type": "Job Posting",
+      "cadence": "daily",
+      "status": "due",
+      "reason": "daily cadence \u2014 166d since last (>= 1d)",
+      "next_eligible": "2026-05-12T15:05:45.764303Z"
+    },
+    {
+      "id": 365,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 159d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764391Z"
+    },
+    {
+      "id": 366,
+      "signal_type": "Executive Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 252d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764468Z"
+    },
+    {
+      "id": 367,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 207d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764475Z"
+    },
+    {
+      "id": 368,
+      "signal_type": "Strategic Partnership",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 538d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764482Z"
+    },
+    {
+      "id": 369,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 173d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764488Z"
+    },
+    {
+      "id": 370,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 200d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764493Z"
+    },
+    {
+      "id": 371,
+      "signal_type": "Digital Transformation",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 280d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764499Z"
+    },
+    {
+      "id": 372,
+      "signal_type": "AI Investment",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 334d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764505Z"
+    },
+    {
+      "id": 373,
+      "signal_type": "GDPR Enforcement",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 713d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764510Z"
+    },
+    {
+      "id": 374,
+      "signal_type": "Compliance Gap",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 511d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764516Z"
+    },
+    {
+      "id": 375,
+      "signal_type": "EU AI Act",
+      "cadence": "monthly",
+      "status": "due",
+      "reason": "monthly cadence \u2014 173d since last (>= 30d)",
+      "next_eligible": "2026-06-10T15:05:45.764522Z"
+    },
+    {
+      "id": 376,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 490d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764528Z"
+    },
+    {
+      "id": 377,
+      "signal_type": "Workforce Restructuring",
+      "cadence": "weekly",
+      "status": "due",
+      "reason": "weekly cadence \u2014 192d since last (>= 7d)",
+      "next_eligible": "2026-05-18T15:05:45.764536Z"
+    },
+    {
+      "id": 378,
+      "signal_type": "EMEA Leadership Change",
+      "cadence": "quarterly",
+      "status": "due",
+      "reason": "quarterly cadence \u2014 801d since last (>= 90d)",
+      "next_eligible": "2026-08-09T15:05:45.764544Z"
     }
   ]
 }
