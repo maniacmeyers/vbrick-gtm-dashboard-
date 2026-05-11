@@ -1,0 +1,14 @@
+# Block direct access to any backup / source / dotfiles / configs
+/*.bak             /index.html  404
+/*.source.js       /index.html  404
+/*.map             /index.html  404
+/.git/*            /index.html  404
+/.env*             /index.html  404
+/package.json      /index.html  404
+/package-lock.json /index.html  404
+
+# Block search engine indexing
+/robots.txt /robots.txt 200
+
+# SPA fallback (any unknown path -> dashboard)
+/*  /index.html  200
